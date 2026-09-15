@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#141A1F">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Morning</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{height:100%;background:#141A1F;}
+body{
+  font-family:'Work Sans',system-ui,sans-serif;
+  color:#F4EFE4;
+  -webkit-tap-highlight-color:transparent;
+  overflow:hidden;
+}
+
+#app{display:flex;flex-direction:column;height:100vh;height:100dvh;}
+
+a.section{
+  flex:1;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:clamp(20px,5vw,36px) clamp(20px,7vw,48px);
+  text-decoration:none;color:inherit;
+  position:relative;overflow:hidden;
+  border-bottom:1px solid rgba(244,239,228,.08);
+  transition:filter .15s ease;
+}
+a.section:last-child{border-bottom:none;}
+a.section:active{filter:brightness(1.15);}
+
+a.section.feed   {background:#0E2D2B;}
+a.section.brief  {background:#2A1C0A;}
+a.section.review {background:#111828;}
+
+.section-tag{
+  font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;
+  opacity:.55;margin-bottom:10px;
+}
+.section-title{
+  font-family:'Fraunces',serif;font-weight:600;
+  font-size:clamp(26px,5.5vw,38px);line-height:1.1;
+  margin-bottom:8px;
+}
+.section-desc{font-size:14px;line-height:1.5;opacity:.6;max-width:34ch;}
+
+.section-accent{
+  position:absolute;top:clamp(20px,4vh,32px);right:clamp(20px,5vw,36px);
+  width:8px;height:8px;border-radius:50%;
+}
+.feed   .section-accent{background:#7FD8C6;}
+.brief  .section-accent{background:#F2B85B;}
+.review .section-accent{background:#8FB8E8;}
+
+.lock-icon{
+  position:absolute;top:clamp(20px,4vh,32px);right:clamp(20px,5vw,36px);
+  opacity:.4;
+}
+.lock-icon svg{width:16px;height:16px;}
+
+.section-arrow{
+  position:absolute;bottom:clamp(20px,4vh,32px);right:clamp(20px,5vw,36px);
+  font-size:22px;opacity:.3;
+}
+
+/* colour the title per section */
+.feed   .section-title{color:#7FD8C6;}
+.brief  .section-title{color:#F2B85B;}
+.review .section-title{color:#8FB8E8;}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+</style>
+</head>
+<body>
+<div id="app">
+
+  <a class="section feed" href="./feed/">
+    <p class="section-tag">Daily feed</p>
+    <h2 class="section-title">The Feed</h2>
+    <p class="section-desc">Macro, energy and general knowledge cards — capped daily so it ends.</p>
+    <span class="section-accent"></span>
+    <span class="section-arrow">›</span>
+  </a>
+
+  <a class="section brief" href="./brief/">
+    <p class="section-tag">Market intelligence</p>
+    <h2 class="section-title">Daily brief</h2>
+    <p class="section-desc">Weekday evening summary of macro moves and energy markets.</p>
+    <span class="section-accent"></span>
+    <span class="section-arrow">›</span>
+  </a>
+
+  <a class="section review" href="./review/">
+    <p class="section-tag">Portfolio</p>
+    <h2 class="section-title">Week in review</h2>
+    <p class="section-desc">Saturday morning portfolio report.</p>
+    <span class="lock-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="11" width="18" height="11" rx="2"/>
+        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+      </svg>
+    </span>
+    <span class="section-arrow">›</span>
+  </a>
+
+</div>
+</body>
+</html>

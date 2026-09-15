@@ -1,0 +1,5 @@
+.DS_Store
+feed/.env
+feed/data/raw/
+feed/data/cards.new.json
+feed/logs/
