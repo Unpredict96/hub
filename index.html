@@ -67,6 +67,11 @@ a.section.review {background:#111828;}
   font-size:22px;opacity:.3;
 }
 
+.section-updated{
+  position:absolute;bottom:clamp(20px,4vh,32px);left:clamp(20px,7vw,48px);
+  font-size:11px;opacity:.35;
+}
+
 /* colour the title per section */
 .feed   .section-title{color:#7FD8C6;}
 .brief  .section-title{color:#F2B85B;}
@@ -83,6 +88,7 @@ a.section.review {background:#111828;}
     <h2 class="section-title">The Feed</h2>
     <p class="section-desc">Macro, energy and general knowledge cards — capped daily so it ends.</p>
     <span class="section-accent"></span>
+    <span class="section-updated" id="feed-updated"></span>
     <span class="section-arrow">›</span>
   </a>
 
@@ -91,6 +97,7 @@ a.section.review {background:#111828;}
     <h2 class="section-title">Daily brief</h2>
     <p class="section-desc">Weekday evening summary of macro moves and energy markets.</p>
     <span class="section-accent"></span>
+    <span class="section-updated" id="brief-updated"></span>
     <span class="section-arrow">›</span>
   </a>
 
@@ -104,9 +111,33 @@ a.section.review {background:#111828;}
         <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
       </svg>
     </span>
+    <span class="section-updated" id="review-updated"></span>
     <span class="section-arrow">›</span>
   </a>
 
 </div>
+<script>
+function fmtDate(d) {
+  const now = new Date();
+  const diffDays = Math.floor((now - d) / 86400000);
+  if (diffDays === 0) return 'Updated today';
+  if (diffDays === 1) return 'Updated yesterday';
+  return 'Updated ' + d.toLocaleDateString('en-GB', {day:'numeric', month:'short'});
+}
+
+async function stamp(url, id) {
+  try {
+    const r = await fetch(url, {method:'HEAD'});
+    if (!r.ok) return;
+    const lm = r.headers.get('Last-Modified');
+    if (!lm) return;
+    document.getElementById(id).textContent = fmtDate(new Date(lm));
+  } catch {}
+}
+
+stamp('feed/data/cards.json', 'feed-updated');
+stamp('brief/latest.html',    'brief-updated');
+stamp('review/latest.html',   'review-updated');
+</script>
 </body>
 </html>
