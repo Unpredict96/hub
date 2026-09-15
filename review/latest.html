@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>:root{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Portfolio Week in Review — 15 September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&display=swap">
+</head>
+<body>
+<style>
+:root{
+  --bg:#f4f6f6; --surface:#ffffff; --surface-2:#eef2f2;
+  --ink:#111a1c; --ink-2:#4d5b5e; --ink-3:#77878a;
+  --line:#dce4e5; --line-strong:#c3cfd1;
+  --accent:#0b5a64; --accent-2:#0e7580; --accent-soft:#dcebed;
+  --pos:#186b41; --pos-soft:#dcefe3;
+  --neg:#a4382b; --neg-soft:#f8e2de;
+  --warn:#8a5c0c; --warn-soft:#f7ecd4;
+  --shadow:0 1px 2px rgba(16,32,35,.06), 0 6px 18px rgba(16,32,35,.05);
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b1113; --surface:#131b1e; --surface-2:#182226;
+    --ink:#e7eeef; --ink-2:#9cabae; --ink-3:#76878b;
+    --line:#243033; --line-strong:#33454a;
+    --accent:#59b8c3; --accent-2:#7ccdd6; --accent-soft:#123137;
+    --pos:#4cb984; --pos-soft:#11301f;
+    --neg:#e3806e; --neg-soft:#361914;
+    --warn:#d6a648; --warn-soft:#33260e;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.3);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b1113; --surface:#131b1e; --surface-2:#182226;
+  --ink:#e7eeef; --ink-2:#9cabae; --ink-3:#76878b;
+  --line:#243033; --line-strong:#33454a;
+  --accent:#59b8c3; --accent-2:#7ccdd6; --accent-soft:#123137;
+  --pos:#4cb984; --pos-soft:#11301f;
+  --neg:#e3806e; --neg-soft:#361914;
+  --warn:#d6a648; --warn-soft:#33260e;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.3);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--serif); font-size:17px; line-height:1.62;
+  font-optical-sizing:auto; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:39rem; margin:0 auto; padding-inline:20px; padding-block:0 64px}
+a{color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent)}
+a:hover{border-bottom-color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+p{margin:0 0 15px}
+b,strong{font-weight:600}
+
+/* ---------- masthead ---------- */
+.mast{border-bottom:1px solid var(--line-strong); padding-block:40px 20px; margin-bottom:24px}
+.eyebrow{font-size:12.5px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent); margin:0 0 12px; font-weight:600}
+h1{font-weight:500; font-size:clamp(31px,7.2vw,42px); line-height:1.08;
+  letter-spacing:-.015em; margin:0 0 10px; text-wrap:balance}
+.dek{margin:0; color:var(--ink-2); font-size:16px; font-style:italic}
+
+/* ---------- signal strip ---------- */
+.figs{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px;
+  background:var(--line); border:1px solid var(--line); border-radius:8px; overflow:hidden; margin-bottom:12px}
+@media (min-width:640px){.figs{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.fig{background:var(--surface); padding:15px 15px 13px}
+.fig .k{font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3);
+  margin-bottom:6px; font-weight:600}
+.fig .v{font-size:25px; font-weight:500; line-height:1.05; letter-spacing:-.01em;
+  font-variant-numeric:tabular-nums}
+.fig .s{font-size:13px; color:var(--ink-2); margin-top:4px; font-variant-numeric:tabular-nums}
+.v.up{color:var(--pos)} .v.down{color:var(--neg)}
+.footnote{font-size:13.5px; color:var(--ink-3); margin:0 0 30px; font-style:italic}
+
+/* ---------- contents ---------- */
+.toc{background:var(--surface); border:1px solid var(--line); border-radius:8px;
+  padding:16px 20px 18px; margin-bottom:38px; box-shadow:var(--shadow)}
+.toc h4{font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3);
+  margin:0 0 10px; font-weight:600}
+.toc ol{margin:0; padding-left:20px; font-size:16px}
+.toc li{margin-bottom:5px}
+.toc li::marker{color:var(--ink-3); font-variant-numeric:tabular-nums}
+
+/* ---------- sections ---------- */
+section{margin-bottom:46px; scroll-margin-top:16px}
+h2{font-weight:500; font-size:27px; letter-spacing:-.012em; margin:0 0 4px; text-wrap:balance; line-height:1.18}
+h2 .no{color:var(--ink-3); font-size:19px; font-variant-numeric:tabular-nums; margin-right:8px}
+.sub{margin:0 0 20px; color:var(--ink-2); font-size:15.5px; font-style:italic}
+h3{font-size:19px; font-weight:600; letter-spacing:-.005em; margin:30px 0 8px; line-height:1.28}
+h4.mini{font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent);
+  margin:24px 0 6px; font-weight:600}
+ul.body{margin:0 0 16px; padding-left:20px}
+ul.body li{margin-bottom:7px}
+
+/* ---------- alert ---------- */
+.alert{background:var(--warn-soft); border-left:3px solid var(--warn);
+  border-radius:0 6px 6px 0; padding:15px 17px; margin:0 0 28px}
+.alert h3{margin:0 0 4px; font-size:16px; font-weight:700}
+.alert p{margin:0; font-size:15px; color:var(--ink-2)}
+.note{background:var(--accent-soft); border-radius:6px; padding:14px 16px; margin:18px 0}
+.note p{margin:0 0 10px; font-size:15.5px}
+.note p:last-child{margin-bottom:0}
+.note .lab{font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent);
+  font-weight:600; display:block; margin-bottom:4px}
+
+/* ---------- chips ---------- */
+.chip{display:inline-flex; align-items:center; font-size:11.5px; letter-spacing:.07em;
+  text-transform:uppercase; font-weight:600; padding:3px 8px; border-radius:3px; white-space:nowrap}
+.chip.pos{background:var(--pos-soft); color:var(--pos)}
+.chip.neg{background:var(--neg-soft); color:var(--neg)}
+.chip.mix{background:var(--warn-soft); color:var(--warn)}
+.chip.neu{background:var(--surface-2); color:var(--ink-2)}
+
+/* ---------- tables ---------- */
+.tscroll{overflow-x:auto; border:1px solid var(--line); border-radius:8px; background:var(--surface);
+  box-shadow:var(--shadow); margin:0 0 18px}
+table{border-collapse:collapse; width:100%; min-width:460px; font-size:15px}
+th,td{text-align:left; padding:10px 13px; border-bottom:1px solid var(--line); vertical-align:top}
+thead th{font-size:10.5px; letter-spacing:.11em; text-transform:uppercase; color:var(--ink-3);
+  font-weight:600; background:var(--surface-2)}
+tbody tr:last-child td{border-bottom:none}
+td.n{font-variant-numeric:tabular-nums; text-align:right; white-space:nowrap}
+td.n.up{color:var(--pos)} td.n.down{color:var(--neg)}
+td .fname{font-weight:600}
+td .fmeta{color:var(--ink-3); font-size:13px; margin-top:1px}
+
+/* ---------- book lines ---------- */
+.book{border:1px solid var(--line); border-radius:8px; overflow:hidden;
+  background:var(--surface); box-shadow:var(--shadow); margin-bottom:18px}
+.bl{padding:15px 18px; border-top:1px solid var(--line)}
+.book .bl:first-child{border-top:none}
+.bl-head{display:flex; flex-wrap:wrap; gap:8px 12px; align-items:baseline; margin-bottom:5px}
+.tick{font-weight:700; font-size:16px; letter-spacing:.01em}
+.px{font-variant-numeric:tabular-nums; font-size:15px; color:var(--ink-2); margin-left:auto}
+.px .up{color:var(--pos)} .px .down{color:var(--neg)}
+.bl p{margin:0; font-size:15.5px; color:var(--ink-2)}
+.bl p + p{margin-top:8px}
+
+/* ---------- calendar ---------- */
+.cal{border-left:2px solid var(--line-strong); margin-left:5px}
+.day{padding:15px 0 15px 20px; position:relative}
+.day::before{content:""; position:absolute; left:-6px; top:22px; width:10px; height:10px;
+  border-radius:50%; background:var(--accent); border:2px solid var(--bg)}
+.day.key::before{background:var(--neg); width:12px; height:12px; left:-7px}
+.day + .day{border-top:1px solid var(--line)}
+.dname{font-size:13px; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--ink); margin-bottom:6px}
+.dname span{color:var(--ink-3); font-weight:500; letter-spacing:.02em; text-transform:none}
+.day ul{margin:0; padding-left:18px; font-size:15.5px; color:var(--ink-2)}
+.day li{margin-bottom:7px}
+.day li:last-child{margin-bottom:0}
+.day li b{color:var(--ink)}
+
+.later{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin-top:20px}
+.lcard{background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:13px 15px}
+.lcard .when{font-size:11.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--accent);
+  margin-bottom:4px; font-weight:600}
+.lcard .what{font-size:15.5px; font-weight:600; margin-bottom:2px}
+.lcard .why{font-size:14px; color:var(--ink-2); line-height:1.45}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line-strong); padding-top:20px; margin-top:8px;
+  font-size:14px; color:var(--ink-3)}
+footer h4{font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-2);
+  margin:0 0 8px; font-weight:600}
+footer ul{margin:0 0 16px; padding-left:18px}
+footer li{margin-bottom:4px}
+.disc{border-top:1px solid var(--line); padding-top:14px; margin-top:4px; font-style:italic}
+
+@media (max-width:420px){
+  body{font-size:16.5px}
+  .wrap{padding-inline:16px}
+  .fig .v{font-size:22px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <p class="eyebrow">Weekly Review &nbsp;·&nbsp; Tuesday 15 September 2026</p>
+  <h1>FOMC eve: energy grinds higher, the book is essentially flat</h1>
+  <p class="dek">Trading 212 and interactive investor, General and ISA. FX 1 GBP = 1.3474 USD. Prices are Tuesday 15 September intraday — this is an off-schedule mid-week run; the regular Saturday report will carry Friday closes.</p>
+</header>
+
+<div class="alert">
+  <h3>Off-schedule run</h3>
+  <p>The standard window is Saturday morning using Friday closes. This report was run on Tuesday 15 September, the day before the FOMC decision. All values use today&rsquo;s intraday prices; moves vs last week are against the 11 September closes in the price history.</p>
+</div>
+
+<div class="figs">
+  <div class="fig"><div class="k">Market value</div><div class="v">£170,026</div><div class="s">29 lines, 4 accounts</div></div>
+  <div class="fig"><div class="k">Book cost</div><div class="v">£139,641</div><div class="s">unchanged</div></div>
+  <div class="fig"><div class="k">Unrealised P&L</div><div class="v up">+£30,385</div><div class="s">+21.8% on cost</div></div>
+  <div class="fig"><div class="k">Vs 11 Sep</div><div class="v up">+£176</div><div class="s">essentially flat</div></div>
+</div>
+<p class="footnote">Prices are intraday Tuesday 15 September; OEIC prices are Monday 14 September single prices except Fundsmith, Fidelity European and Royal London which are Tuesday 15 September. GBP/USD 1.3474 used throughout.</p>
+
+<div class="toc">
+  <h4>Contents</h4>
+  <ol>
+    <li><a href="#movers">What moved the book</a></li>
+    <li><a href="#equities">Individual equities</a></li>
+    <li><a href="#funds">Funds and ETFs</a></li>
+    <li><a href="#ahead">The week ahead</a></li>
+  </ol>
+</div>
+
+<section id="movers">
+  <h2>What moved the book</h2>
+  <p class="sub">Ranked by how much of the £170,026 each item touches. Moves are against Friday 11 September closes.</p>
+
+  <h3>01 &nbsp;<span style="font-weight:400">Fidelity European pulled back &mdash; the biggest single drag</span></h3>
+  <p>Your second-largest fund line fell 1.4% from 3,165p to 3,120p, costing the book <strong>£223</strong>. The immediate driver is the energy–rates feedback loop flagged last week: TTF pushed higher again, to approximately €79.45/MWh today (up 2.4% from last Friday&rsquo;s €77.60), and ECB rate expectations have risen with it. ASML and Schneider, which together make up over 12% of this fund, are both exposed to higher energy input costs and tighter monetary conditions. The Fidelity European one-year return is the weakest among your core funds at +9.7% on your book — it now occupies that position precisely because Europe is the hardest place to be when gas and rates both move against you.</p>
+  <div class="note"><p><span class="lab">Exposure</span>494.79 units, II ISA. Book cost £14,069; value <strong>£15,437</strong>; unrealised P&L +£1,368 (+9.7%). Week change <strong class="down">−£223</strong>.</p></div>
+
+  <h3>02 &nbsp;<span style="font-weight:400">Fundsmith recovered modestly — the thesis fork is still open</span></h3>
+  <p>Fundsmith added 1.2%, from 693p to 701.51p, contributing <strong>+£187</strong> to the book. It remains the only core fund showing a loss on cost at −1.9%, and that gap is still the cleanest single measure of how much the deliberate underweight to AI-adjacent technology has cost over two years. Tomorrow&rsquo;s FOMC is the near-term fork: if the dot plot signals a hiking cycle rather than a single insurance move, Fundsmith&rsquo;s quality-and-defensives tilt becomes the right positioning. If it signals one and done, the gap with the index funds will likely widen again.</p>
+  <div class="note"><p><span class="lab">Exposure</span>2,202.34 units, II ISA. Book cost £15,750; value <strong>£15,450</strong>; unrealised P&L −£300 (−1.9%). Week change <strong class="up">+£187</strong>.</p></div>
+
+  <h3>03 &nbsp;<span style="font-weight:400">Shell added £173 — energy is still the right trade, but the arithmetic matters</span></h3>
+  <p>Shell rose 2.5% from 3,551p to 3,640.50p as Brent reached $107.46 and TTF extended its run. The stock is now up <strong>+163%</strong> on your book cost and is worth £7,026. The consensus target is around 3,819p, about 5% above today&rsquo;s price — so the near-term upside is not compressing dramatically, but the risk is asymmetric: a credible US–Iran ceasefire or Hormuz de-escalation could give back most of the five-week gain in a session. The carry has been excellent; position sizing discipline matters more now than it did at 3,000p.</p>
+  <div class="note"><p><span class="lab">Exposure</span>193 shares, II General. Book cost £2,672; value <strong>£7,026</strong>; unrealised P&L +£4,354 (+162.9%). Week change <strong class="up">+£173</strong>.</p></div>
+
+  <h3>04 &nbsp;<span style="font-weight:400">GSK was the best equity mover &mdash; +4.7% this week</span></h3>
+  <p>GSK added 83.5p to reach 1,855p, contributing <strong>+£81</strong> despite being just 1.1% of the portfolio. The driver was a fresh catalyst: the mRNA seasonal flu vaccine candidate received FDA fast-track designation on 12 September following the positive Phase II data from earlier in the month — a meaningful step toward a commercial programme that has not yet been priced by a consensus still sitting at Hold and a 2,155p average target. Defensive pharma with a covered yield is structurally attractive heading into a potential hiking cycle, and GSK specifically has the pipeline upside that the defensives box alone doesn&rsquo;t give you.</p>
+  <div class="note"><p><span class="lab">Exposure</span>97 shares, II ISA. Book cost £1,317; value <strong>£1,799</strong>; unrealised P&L +£482 (+36.6%). Week change <strong class="up">+£81</strong>.</p></div>
+
+  <h3>05 &nbsp;<span style="font-weight:400">Broadcom and semiconductor ETFs continued their re-rating</span></h3>
+  <p>Broadcom fell 6.3% from $361.99 to $339.27 this week, a further move in the post-Q3 guidance disappointment that was already running last Saturday. SMH.L (VanEck Semiconductor) dropped 4.4% from $106.32 to $101.66. The combined drag on the book is <strong>−£63</strong> across your direct AVGO line (£507, −£32) and SMH (£642, −£27). The structural picture for custom XPUs remains intact — Broadcom&rsquo;s AI ASIC revenue grew 221% y/y — but the market is now applying a lower multiple to that growth, and the memory pricing cycle that Micron is benefiting from is the same cycle compressing Broadcom&rsquo;s margins. Your look-through semiconductor exposure via ATT and the index funds amplifies this beyond the two direct lines.</p>
+  <div class="note"><p><span class="lab">Exposure</span>AVGO 2.01 shares T212 ISA: value £507; SMH.L 8.51 shares T212 ISA: value £642. ATT look-through to semis adds ~£400 at current weights.</p></div>
+
+</section>
+
+<section id="equities">
+  <h2>Individual equities</h2>
+  <p class="sub">Fourteen equity lines, £33,378 — 19.6% of the book at current prices.</p>
+
+  <div class="book">
+
+    <div class="bl">
+      <div class="bl-head">
+        <span class="tick">UKW.L</span>
+        <span class="chip neu">Greencoat UK Wind</span>
+        <span class="px">111.60p &nbsp;<span class="up">+1.0% wk</span></span>
+      </div>
+      <p>8,349 shares, II ISA. Value <strong>£9,317</strong> (+£92 week); book cost £10,075; unrealised P&L −7.5%. Trading at an estimated 16.5% discount to NAV. The FOMC–BoE sequence this week is the highest-volatility two days this position has faced all year: a hawkish dot plot tomorrow and a split MPC vote Thursday would both compress the gilt spread that determines how this trust is valued. The operational case (above-budget wind output, 36% higher H1 net cash) is unchanged; the discount-rate risk is the only question.</p>
+    </div>
+
+    <div class="bl">
+      <div class="bl-head">
+        <span class="tick">SHEL.L</span>
+        <span class="chip pos">Shell</span>
+        <span class="px">3,640.50p &nbsp;<span class="up">+2.5% wk</span></span>
+      </div>
+      <p>193 shares, II General. Value <strong>£7,026</strong> (+£173 week); book cost £2,672; unrealised P&L +163%. The position is now worth 2.6× book. Brent at $107.46 and TTF at €79.45 support the short-term thesis; the practical question now is what the reversal looks like. A ceasefire or Hormuz reopening would be the trigger, and those events tend to happen with less notice than the supply shocks that preceded them. <em>Outstanding: confirm the £13.85 average book cost against your platform statements.</em></p>
+    </div>
+
+    <div class="bl">
+      <div class="bl-head">
+        <span class="tick">BRK-B</span>
+        <span class="chip neu">Berkshire Hathaway B</span>
+        <span class="px">$516.76 &nbsp;<span class="up">+1.3% wk</span></span>
+      </div>
+      <p>16.23 shares, T212 General. Value <strong>£6,226</strong> (+£102 week); book cost £6,332; unrealised P&L −1.7%. Still the position best structurally placed for a hiking cycle. Cash pile earns more, BHE benefits from the same energy shortage driving Shell, no duration liability. The small loss on cost is an entry-price artefact not a thesis problem.</p>
+    </div>
+
+    <div class="bl">
+      <div class="bl-head">
+        <span class="tick">ATT.L</span>
+        <span class="chip mix">Allianz Technology Trust</span>
+        <span class="px">693.00p &nbsp;<span class="down">−1.7% wk</span></span>
+      </div>
+      <p>619 shares, II ISA. Value <strong>£4,290</strong> (−£74 week); book cost £1,998; unrealised P&L +115%. Estimated NAV 763p implies the discount has widened slightly to about 9.2% from 7.25% last week. NVIDIA 9.2%, Alphabet 8.95%, Apple 8.89% — the three names most exposed to a hiking-cycle de-rating. This is the highest-beta holding in the book and the most likely to move sharply on tomorrow&rsquo;s dot plot in either direction.</p>
+    </div>
+
+    <div class="bl">
+      <div class="bl-head">
+        <span class="tick">GAW.L</span>
+        <span class="chip pos">Games Workshop</span>
+        <span class="px">17,630p &nbsp;<span class="down">−0.5% wk</span></span>
+      </div>
+      <p>15 shares, II ISA. Value <strong>£2,645</strong> (−£12 week); book cost £1,566; unrealised P&L +69%. No AI exposure, no material rate sensitivity — useful ballast in a week dominated by macro. The tariff and resin-cost question raised last quarter remains open; the interims on 12 January are where it gets answered. 140p dividend payable 5 October (holds 15 shares ≈ £21).</p>
+    </div>
+
+    <div class="bl">
+      <div class="bl-head">
+        <span class="tick">GSK.L</span>
+        <span class="chip pos">GSK</span>
+        <span class="px">1,855.00p &nbsp;<span class="up">+4.7% wk</span></span>
+      </div>
+      <p>97 shares, II ISA. Value <strong>£1,799</strong> (+£81 week); book cost £1,317; unrealised P&L +36.6%. Best single-week performer in the equity book. FDA fast-track designation for the mRNA flu vaccine on Friday added a fresh near-term catalyst on top of the Phase II data and Dresden site closure cost action. Consensus at Hold with a 2,155p target implies 16% upside from here.</p>
+    </div>
+
+    <div class="bl">
+      <div class="bl-head">
+        <span class="tick">GOOGL</span>
+        <span class="chip pos">Alphabet</span>
+        <span class="px">$344.98 &nbsp;<span class="up">+1.9% wk</span></span>
+      </div>
+      <p>6.29 shares, T212 ISA. Value <strong>£1,610</strong> (+£37 week); book cost £1,402; unrealised P&L +14.8%. The direct line is small, but your look-through Alphabet exposure across ATT (8.95%), Fundsmith (6.1%), Rathbone (3.5%) and the index funds is approximately £5,100 — over three times the direct line. Add nothing to the direct line before accounting for that.</p>
+    </div>
+
+    <div class="bl">
+      <div class="bl-head">
+        <span class="tick">AVGO</span>
+        <span class="chip neg">Broadcom</span>
+        <span class="px">$339.27 &nbsp;<span class="down">−6.3% wk</span></span>
+      </div>
+      <p>2.01 shares, T212 ISA. Value <strong>£507</strong> (−£32 week); book cost £424; unrealised P&L +19.5%. The post-Q3 guidance re-rating continues. AI ASIC revenue grew 221% y/y and the custom-XPU thesis is intact, but the market is applying a lower multiple. The position is small enough that this is a watch item rather than an action item.</p>
+    </div>
+
+    <div class="bl">
+      <div class="bl-head">
+        <span class="tick">META</span>
+        <span class="chip pos">Meta Platforms</span>
+        <span class="px">$670.24 &nbsp;<span class="up">+3.4% wk</span></span>
+      </div>
+      <p>1.0 share, T212 ISA. Value <strong>£497</strong> (+£18 week); book cost £499; unrealised P&L −0.4%. Q3 results 28 October alongside Microsoft and Alphabet — the AI capex return question arrives all at once for those three names.</p>
+    </div>
+
+    <div class="bl">
+      <div class="bl-head">
+        <span class="tick">MSFT</span>
+        <span class="chip pos">Microsoft</span>
+        <span class="px">$497.12 &nbsp;<span class="up">+0.3% wk</span></span>
+      </div>
+      <p>1.62 shares, T212 ISA. Value <strong>£598</strong> (+£4 week); book cost £573; unrealised P&L +4.3%. Flat on the week. Q3 28 October.</p>
+    </div>
+
+    <div class="bl">
+      <div class="bl-head">
+        <span class="tick">AMD</span>
+        <span class="chip neg">Advanced Micro Devices</span>
+        <span class="px">$504.20 &nbsp;<span class="down">−2.3% wk</span></span>
+      </div>
+      <p>1.62 shares, T212 ISA. Value <strong>£605</strong> (−£12 week); book cost £192; unrealised P&L +215%. Small position, large gain — no action implied.</p>
+    </div>
+
+    <div class="bl">
+      <div class="bl-head">
+        <span class="tick">AAPL</span>
+        <span class="chip neu">Apple</span>
+        <span class="px">$331.34 &nbsp;<span class="down">−0.3% wk</span></span>
+      </div>
+      <p>2.0 shares, T212 ISA. Value <strong>£492</strong> (flat week); book cost £379; unrealised P&L +30%. Q3 29 October alongside Amazon — first hard data on the foldable iPhone cycle.</p>
+    </div>
+
+    <div class="bl">
+      <div class="bl-head">
+        <span class="tick">NVDA</span>
+        <span class="chip neg">Nvidia</span>
+        <span class="px">$212.17 &nbsp;<span class="down">−2.8% wk</span></span>
+      </div>
+      <p>2.17 shares, T212 ISA. Value <strong>£341</strong> (−£8 week); book cost £212; unrealised P&L +60.9%. The direct line is the smallest expression of your NVIDIA exposure — look-through via SWDA, VUAG, ATT, Royal London adds approximately £5,000 more. Q3 results 18 November; $108.9bn revenue expected. <em>Outstanding: confirm the £30.20 average book cost on SMH against platform statements.</em></p>
+    </div>
+
+    <div class="bl">
+      <div class="bl-head">
+        <span class="tick">DIDIY</span>
+        <span class="chip neg">DiDi Global</span>
+        <span class="px">$3.56 &nbsp;<span class="up">+0.6% wk</span></span>
+      </div>
+      <p>526 shares, T212 General. Value <strong>£1,391</strong> (+£13 week); book cost £1,500; unrealised P&L −7.3%. China&rsquo;s August activity data released today — industrial production +4.8% y/y in line, retail sales +0.8% (light). No near-term catalyst; Q3 report expected late November.</p>
+    </div>
+
+    <div class="bl">
+      <div class="bl-head">
+        <span class="tick">AMZN</span>
+        <span class="chip neg">Amazon</span>
+        <span class="px">$248.42 &nbsp;<span class="down">−3.3% wk</span></span>
+      </div>
+      <p>1.75 shares, T212 ISA. Value <strong>£323</strong> (−£10 week); book cost £310; unrealised P&L +4.3%. Q3 29 October. The FTC advertising lawsuit remains a background risk; the Qualcomm chip agreement does not materially alter the bull case at this position size.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="funds">
+  <h2>Funds and ETFs</h2>
+  <p class="sub">Fifteen fund and ETF lines across twelve distinct vehicles, £136,648 — 80.4% of the book. Regime read is the only analysis that adds value at this level.</p>
+
+  <div class="tscroll">
+    <table>
+      <thead>
+        <tr><th>Fund</th><th>Account</th><th class="n">Price</th><th class="n">Value</th><th class="n">P&amp;L</th><th>Regime read</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="fname">Royal London Global Equity Diversified M Acc</div><div class="fmeta">404 holdings · US 61.3% · NVDA 5.3%, AAPL 4.5%, MSFT 3.0% · +19.5% 1yr</div></td>
+          <td>II ISA</td><td class="n">296.20p</td><td class="n">£19,137</td><td class="n up">+28.7%</td>
+          <td>Largest single line. Gained £58 on the week. The breadth and 0.41% charge make it the most defensible core holding, but the AI-concentrated top weights mean it moves on the same things as everything else.</td>
+        </tr>
+        <tr>
+          <td><div class="fname">Fidelity European W Acc</div><div class="fmeta">46 holdings · France 25%, Switzerland 16.9%, Netherlands 15.3% · ASML 8.7%, Roche 5.0%, Schneider 4.0% · +9.7% on cost</div></td>
+          <td>II ISA</td><td class="n">3,120p</td><td class="n up">£15,437</td><td class="n up">+9.7%</td>
+          <td>Biggest weekly drag, −£223. Energy costs via ASML and Schneider; ECB tightening continuing. Weakest one-year return among core funds, but your only meaningful non-US diversification.</td>
+        </tr>
+        <tr>
+          <td><div class="fname">Fundsmith Equity I Acc</div><div class="fmeta">28 holdings · Stryker 6.4%, IDEXX 6.2%, Alphabet 6.1% · −1.5% 1yr</div></td>
+          <td>II ISA</td><td class="n">701.51p</td><td class="n down">£15,450</td><td class="n down">−1.9%</td>
+          <td>Recovered +£187 this week but the only core fund still below book. Tomorrow&rsquo;s dot plot is the near-term fork: a hiking cycle would vindicate the quality tilt; a one-and-done hold would not.</td>
+        </tr>
+        <tr>
+          <td><div class="fname">Vanguard FTSE Global All Cap Index Acc</div><div class="fmeta">7,475 holdings · US 58.3% · NVDA 4.2%, AAPL 3.8%, MSFT 2.9% · +19.0% on cost</div></td>
+          <td>II General</td><td class="n">29,083.71p</td><td class="n">£14,608</td><td class="n up">+19.0%</td>
+          <td>Down £34 on the week. Does its job — broadest diversification by count, but 58% US means it still moves with the Fed. Lowest charge of any fund in the book at 0.23%.</td>
+        </tr>
+        <tr>
+          <td><div class="fname">iShares Core MSCI World ETF (SWDA.L)</div><div class="fmeta">1,343 holdings · NVDA 5.7%, AAPL 5.1%, MSFT 3.8% · +17.9% on cost · 0.20% OCF</div></td>
+          <td>II ISA</td><td class="n">10,767p</td><td class="n">£13,243</td><td class="n up">+17.9%</td>
+          <td>Down £128 on the week. Developed-market core with heavy AI-top-weight overlap against Global All Cap and the LifeStrategy lines.</td>
+        </tr>
+        <tr>
+          <td><div class="fname">Vanguard LifeStrategy 100% Equity A Acc</div><div class="fmeta">Two lines: II General £13,138 (+35.7%), II ISA £12,676 (+23.1%) · US 45.8%, UK 11.3% · +29.2% combined on cost</div></td>
+          <td>II Gen + ISA</td><td class="n">49,238.67p</td><td class="n">£25,814</td><td class="n up">+29.2%</td>
+          <td>Down £42 combined on the week. The 11.3% UK sleeve makes Thursday&rsquo;s BoE decision relevant here, and the lower US weight makes it the most defensive index line in a hiking scenario.</td>
+        </tr>
+        <tr>
+          <td><div class="fname">Rathbone Global Opportunities S Acc</div><div class="fmeta">54 holdings · US 63.2% · Amphenol 4.0%, Alphabet 3.5%, ARM 3.4% · +22.4% on cost</div></td>
+          <td>II ISA</td><td class="n">224.64p</td><td class="n">£12,671</td><td class="n up">+22.4%</td>
+          <td>Up £137 on the week — the second-best fund mover after Fundsmith. Second consecutive year of underperformance versus IA Global sector, but your cost basis means you are still ahead. Same structural question as Fundsmith: is the AI underweight the wrong bet, or is this week&rsquo;s potential rate inflection the moment it becomes the right one?</td>
+        </tr>
+        <tr>
+          <td><div class="fname">Vanguard S&amp;P 500 ETF Acc (VUAG.L)</div><div class="fmeta">Two lines: II General £10,225 (+36.7%), II ISA £2,176 (+27.9%) · NVDA 7.6%, AAPL 7.1%, MSFT 5.4% · 0.07% OCF</div></td>
+          <td>II Gen + ISA</td><td class="n">£108.78</td><td class="n">£12,401</td><td class="n up">+35.0%</td>
+          <td>Down £104 combined on the week. Purest S&amp;P 500 expression and the one with the most to give back if the dot plot signals a hiking cycle. Best five-year performer in the book.</td>
+        </tr>
+        <tr>
+          <td><div class="fname">Vanguard S&amp;P 500 UCITS ETF (VUSA.L)</div><div class="fmeta">Distributing class, identical index to VUAG · 0.91% yield · +39.1% on cost</div></td>
+          <td>II ISA</td><td class="n">£106.768</td><td class="n">£2,456</td><td class="n up">+39.1%</td>
+          <td>Down £12 on the week. Holding both VUAG and VUSA inside the same ISA adds admin without adding exposure — tidy-up candidate on the next rebalance.</td>
+        </tr>
+        <tr>
+          <td><div class="fname">VanEck Semiconductor UCITS ETF (SMH.L)</div><div class="fmeta">Micron 11.3%, AMD 11.3%, NVDA 11.0% · 52wk $50.23–$126.78 · USD · +150% on cost</div></td>
+          <td>T212 ISA</td><td class="n">$101.66</td><td class="n">£642</td><td class="n up">+150%</td>
+          <td>Down £27 on the week; now 20% below its 52-week high. The Broadcom re-rating and memory price cycle are both running through this ETF. <em>Outstanding: confirm the £30.20 average book cost.</em></td>
+        </tr>
+        <tr>
+          <td><div class="fname">iShares Automation &amp; Robotics (RBOT.L)</div><div class="fmeta">Snowflake 3.9%, Advantest 3.8%, ServiceNow 3.5% · USD · +43.5% on cost · 0.40% OCF</div></td>
+          <td>T212 ISA</td><td class="n">$20.49</td><td class="n">£287</td><td class="n up">+43.5%</td>
+          <td>Down £6 on the week. In practice more software than robotics, so it carries the same duration risk as the rest of the tech book.</td>
+        </tr>
+        <tr>
+          <td><div class="fname">EMQQ Emerging Markets Internet (EMQP.L)</div><div class="fmeta">Sea Ltd ADR 9.2% · 52wk 668.66p–1,004.24p · 0.86% OCF · −18.1% on cost</div></td>
+          <td>T212 ISA</td><td class="n">704.20p</td><td class="n down">£213</td><td class="n down">−18.1%</td>
+          <td>Down £3 on the week. China August retail sales +0.8% y/y released today — in line with a weak print. Still the only fund line showing a loss on cost. Most expensive charge in the T212 ISA at 0.86%.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="ahead">
+  <h2>The week ahead</h2>
+  <p class="sub">The FOMC decision tomorrow is the most important event this portfolio faces until Q3 earnings begin in October. Everything else this week is downstream of it.</p>
+
+  <div class="cal">
+
+    <div class="day">
+      <div class="dname">Tuesday <span>· 15 Sep · today</span></div>
+      <ul>
+        <li><b>China August data released this morning</b> — industrial production +4.8% y/y (in line), retail sales +0.8% (light). Modest incremental negative for DIDIY and EMQP; no material revision to the thesis on either.</li>
+        <li><b>UK labour market (July)</b> — wage growth data watched by the MPC ahead of Thursday.</li>
+        <li>FOMC meeting day one. No signal expected before tomorrow&rsquo;s 19:00 UK decision.</li>
+      </ul>
+    </div>
+
+    <div class="day key">
+      <div class="dname">Wednesday <span>· 16 Sep</span></div>
+      <ul>
+        <li><b>FOMC decision, 19:00 UK</b> — 90% priced for a 25bp hike from 3.50–3.75% to 3.75–4.00%. The decision itself is almost priced; the dot plot and Powell&rsquo;s press conference carry the information. If the median dot implies 4.00–4.25% by year-end (two hikes), that is materially worse for 80% of this book than a one-and-done signal. Two-year Treasuries at 4.65% and the ten-year at 4.975% leave little priced-in cushion if the tone surprises hawkish.</li>
+        <li><b>UK August CPI, 07:00 UK</b> — last data the MPC sees before Thursday. Expected around 3.2% y/y. A hot print raises the chance of a surprise hike at noon Thursday.</li>
+        <li><b>US August retail sales</b> — ex-auto +0.5% expected.</li>
+      </ul>
+    </div>
+
+    <div class="day key">
+      <div class="dname">Thursday <span>· 17 Sep</span></div>
+      <ul>
+        <li><b>Bank of England decision, 12:00 UK</b> — consensus is a hold at 3.75% on a 6–3 vote. Watch the vote split: if it moves toward 5–4 or a majority-hold with more hawkish dissents, Greencoat UK Wind (already 16.5% below NAV) takes another leg down. A surprise hike would be the worst-case scenario for UKW specifically and for the LifeStrategy UK sleeve.</li>
+        <li><b>US Philadelphia Fed survey</b> — first post-FOMC read on manufacturing sentiment.</li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <div class="dname">Friday <span>· 18 Sep</span></div>
+      <ul>
+        <li><b>Bank of Japan decision</b> — ~79% priced for a 25bp rise to 1.25%. A hiking BoJ transmits to global equities via the carry unwind, reaching your funds even though you hold no Japanese equity directly.</li>
+        <li><b>Quarterly triple witching</b> — elevated option-expiry volumes; Friday&rsquo;s close is less meaningful as a reference price.</li>
+        <li><b>UK August retail sales</b> — relevant to Games Workshop&rsquo;s UK consumer base.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="later">
+    <div class="lcard"><div class="when">Mon 21 Sep</div><div class="what">Broadcom dividend record date</div><div class="why">Payable 30 September. Must hold through Monday to qualify.</div></div>
+    <div class="lcard"><div class="when">Mon 5 Oct</div><div class="what">Games Workshop 140p dividend</div><div class="why">≈£21 on your 15 shares.</div></div>
+    <div class="lcard"><div class="when">Late Oct</div><div class="what">Shell and GSK Q3</div><div class="why">Shell&rsquo;s first quarter fully reflecting the crude and gas rally.</div></div>
+    <div class="lcard"><div class="when">Wed 28 Oct</div><div class="what">Microsoft, Alphabet, Meta Q3</div><div class="why">AI capex-vs-returns question, asked of all three simultaneously.</div></div>
+    <div class="lcard"><div class="when">Thu 29 Oct</div><div class="what">Apple and Amazon Q3</div><div class="why">First hard data on the foldable iPhone cycle.</div></div>
+    <div class="lcard"><div class="when">Wed 18 Nov</div><div class="what">Nvidia Q3 FY27</div><div class="why">$108.9bn revenue expected. Largest look-through exposure.</div></div>
+    <div class="lcard"><div class="when">Fri 27 Nov</div><div class="what">DiDi Q3</div><div class="why">Next catalyst for your worst-performing position.</div></div>
+    <div class="lcard"><div class="when">Tue 12 Jan</div><div class="what">Games Workshop interims</div><div class="why">Where the tariff and resin cost warning gets quantified.</div></div>
+  </div>
+</section>
+
+<footer>
+  <h4>Sources</h4>
+  <ul>
+    <li>US equity prices: <a href="https://stockanalysis.com/">stockanalysis.com</a></li>
+    <li>LSE equities and ETFs: <a href="https://www.ajbell.co.uk/">AJ Bell market research</a></li>
+    <li>OEIC fund prices: <a href="https://www.hl.co.uk/">Hargreaves Lansdown fund factsheets</a></li>
+    <li>FX: <a href="https://www.poundsterlinglive.com/data/currencies/gbp-pairs/GBPUSD-exchange-rate">Pound Sterling Live</a></li>
+    <li>Brent crude: <a href="https://convextrade.com/metrics/brent">Convex Trade</a></li>
+    <li>TTF gas: <a href="https://www.tradingeconomics.com/commodity/natural-gas">Trading Economics</a></li>
+    <li>FOMC preview: <a href="https://www.advisorperspectives.com/articles/2026/09/14/debating-coming-fed-decision">Advisor Perspectives</a>, <a href="https://www.chase.com/personal/investments/learning-and-insights/article/september-2026-rate-hike-now-expected-amid-energy-shocks">Chase</a></li>
+    <li>BoE preview: <a href="https://hoa.org.uk/news/interest-rate-predictions-2/">HomeOwners Alliance</a></li>
+    <li>GSK FDA fast-track: <a href="https://www.gsk.com/en-gb/media/press-releases/">GSK press releases</a></li>
+  </ul>
+  <p class="disc">Generated 15 September 2026 from holdings.numbers as last saved 12 September. Prices are Tuesday 15 September intraday; OEIC prices are Monday 14 September or Tuesday 15 September single prices as noted. This is an automated research summary for personal use, not financial advice — I am not a financial adviser, and nothing here is a recommendation to buy or sell.</p>
+</footer>
+
+</div>
+</body>
+</html>
