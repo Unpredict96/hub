@@ -58,7 +58,6 @@ a:hover{border-bottom-color:var(--accent)}
 p{margin:0 0 15px}
 b,strong{font-weight:600}
 
-/* ---------- masthead ---------- */
 .mast{border-bottom:1px solid var(--line-strong); padding-block:40px 20px; margin-bottom:24px}
 .eyebrow{font-size:12.5px; letter-spacing:.16em; text-transform:uppercase;
   color:var(--accent); margin:0 0 12px; font-weight:600}
@@ -66,7 +65,6 @@ h1{font-weight:500; font-size:clamp(31px,7.2vw,42px); line-height:1.08;
   letter-spacing:-.015em; margin:0 0 10px; text-wrap:balance}
 .dek{margin:0; color:var(--ink-2); font-size:16px; font-style:italic}
 
-/* ---------- signal strip ---------- */
 .figs{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px;
   background:var(--line); border:1px solid var(--line); border-radius:8px; overflow:hidden; margin-bottom:12px}
 @media (min-width:640px){.figs{grid-template-columns:repeat(4,minmax(0,1fr))}}
@@ -79,7 +77,6 @@ h1{font-weight:500; font-size:clamp(31px,7.2vw,42px); line-height:1.08;
 .v.up{color:var(--pos)} .v.down{color:var(--neg)}
 .footnote{font-size:13.5px; color:var(--ink-3); margin:0 0 30px; font-style:italic}
 
-/* ---------- contents ---------- */
 .toc{background:var(--surface); border:1px solid var(--line); border-radius:8px;
   padding:16px 20px 18px; margin-bottom:38px; box-shadow:var(--shadow)}
 .toc h4{font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3);
@@ -88,7 +85,6 @@ h1{font-weight:500; font-size:clamp(31px,7.2vw,42px); line-height:1.08;
 .toc li{margin-bottom:5px}
 .toc li::marker{color:var(--ink-3); font-variant-numeric:tabular-nums}
 
-/* ---------- sections ---------- */
 section{margin-bottom:46px; scroll-margin-top:16px}
 h2{font-weight:500; font-size:27px; letter-spacing:-.012em; margin:0 0 4px; text-wrap:balance; line-height:1.18}
 h2 .no{color:var(--ink-3); font-size:19px; font-variant-numeric:tabular-nums; margin-right:8px}
@@ -99,7 +95,6 @@ h4.mini{font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:va
 ul.body{margin:0 0 16px; padding-left:20px}
 ul.body li{margin-bottom:7px}
 
-/* ---------- alert ---------- */
 .alert{background:var(--warn-soft); border-left:3px solid var(--warn);
   border-radius:0 6px 6px 0; padding:15px 17px; margin:0 0 28px}
 .alert h3{margin:0 0 4px; font-size:16px; font-weight:700}
@@ -110,7 +105,6 @@ ul.body li{margin-bottom:7px}
 .note .lab{font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent);
   font-weight:600; display:block; margin-bottom:4px}
 
-/* ---------- chips ---------- */
 .chip{display:inline-flex; align-items:center; font-size:11.5px; letter-spacing:.07em;
   text-transform:uppercase; font-weight:600; padding:3px 8px; border-radius:3px; white-space:nowrap}
 .chip.pos{background:var(--pos-soft); color:var(--pos)}
@@ -118,7 +112,6 @@ ul.body li{margin-bottom:7px}
 .chip.mix{background:var(--warn-soft); color:var(--warn)}
 .chip.neu{background:var(--surface-2); color:var(--ink-2)}
 
-/* ---------- tables ---------- */
 .tscroll{overflow-x:auto; border:1px solid var(--line); border-radius:8px; background:var(--surface);
   box-shadow:var(--shadow); margin:0 0 18px}
 table{border-collapse:collapse; width:100%; min-width:460px; font-size:15px}
@@ -131,7 +124,6 @@ td.n.up{color:var(--pos)} td.n.down{color:var(--neg)}
 td .fname{font-weight:600}
 td .fmeta{color:var(--ink-3); font-size:13px; margin-top:1px}
 
-/* ---------- book lines ---------- */
 .book{border:1px solid var(--line); border-radius:8px; overflow:hidden;
   background:var(--surface); box-shadow:var(--shadow); margin-bottom:18px}
 .bl{padding:15px 18px; border-top:1px solid var(--line)}
@@ -143,7 +135,6 @@ td .fmeta{color:var(--ink-3); font-size:13px; margin-top:1px}
 .bl p{margin:0; font-size:15.5px; color:var(--ink-2)}
 .bl p + p{margin-top:8px}
 
-/* ---------- calendar ---------- */
 .cal{border-left:2px solid var(--line-strong); margin-left:5px}
 .day{padding:15px 0 15px 20px; position:relative}
 .day::before{content:""; position:absolute; left:-6px; top:22px; width:10px; height:10px;
@@ -165,7 +156,6 @@ td .fmeta{color:var(--ink-3); font-size:13px; margin-top:1px}
 .lcard .what{font-size:15.5px; font-weight:600; margin-bottom:2px}
 .lcard .why{font-size:14px; color:var(--ink-2); line-height:1.45}
 
-/* ---------- footer ---------- */
 footer{border-top:1px solid var(--line-strong); padding-top:20px; margin-top:8px;
   font-size:14px; color:var(--ink-3)}
 footer h4{font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-2);
@@ -186,25 +176,25 @@ footer li{margin-bottom:4px}
 <div class="wrap">
 
 <header class="mast">
-  <p class="eyebrow">Daily Brief &nbsp;·&nbsp; Thursday 17 September 2026</p>
-  <h1>The Bank held. The rest of what it did is what mattered.</h1>
-  <p class="dek">Written for the gas desk. All values in GBP; FX 1 GBP = 1.3378 USD.</p>
+  <p class="eyebrow">Daily Brief &nbsp;·&nbsp; Friday 18 September 2026</p>
+  <h1>The BoJ hiked. The yen fell anyway. The central-bank trio is done and the book is essentially where it started the week.</h1>
+  <p class="dek">Written for the gas desk. All values in GBP; FX 1 GBP = 1.3359 USD.</p>
 </header>
 
 <div class="figs">
-  <div class="fig"><div class="k">BoE Bank Rate</div><div class="v">3.75%</div><div class="s">6&ndash;3 hold · Pill, Greene, Mann for +25bp</div></div>
-  <div class="fig"><div class="k">UK 10-year gilt</div><div class="v up">~5.34%</div><div class="s">eased below 5.35% on QT rewrite</div></div>
-  <div class="fig"><div class="k">Brent</div><div class="v down">$103.61</div><div class="s">&minus;2.1% · Saudi offering more via Hormuz</div></div>
-  <div class="fig"><div class="k">Semis (SOXX)</div><div class="v up">+3%</div><div class="s">AMD +7%, AVGO +3%, NVDA +2%</div></div>
+  <div class="fig"><div class="k">BoJ policy rate</div><div class="v">1.25%</div><div class="s">+25bp · 7&ndash;2 vote · Asada, Sato dissent · 31-yr high</div></div>
+  <div class="fig"><div class="k">USD/JPY</div><div class="v down">156.95</div><div class="s">+0.63% · yen fell despite hike · Ueda not hawkish enough</div></div>
+  <div class="fig"><div class="k">US 10-year</div><div class="v down">5.004%</div><div class="s">+5bp · back above 5% · Dow worst week since March</div></div>
+  <div class="fig"><div class="k">S&amp;P 500</div><div class="v up">7,650.50</div><div class="s">+0.17% · Nasdaq +0.39% · triple witching · $7trn expiry</div></div>
 </div>
-<p class="footnote">Levels are today&rsquo;s last-traded quotes and intraday prints, not settled closes on every line. GBP/USD closed 1.3372&ndash;1.3381 depending on source; I have used the midpoint. OEIC lines re-price against tonight&rsquo;s US close on tomorrow morning&rsquo;s NAVs, which is where the bounce below actually shows up in the book.</p>
+<p class="footnote">Levels are the last-traded quotes I could verify; US closes are final, London and continental closes are final, gas and FX are late-session prints. Nvidia closed &minus;1.5% at $217.44 &mdash; the semis rally that greeted your ATT trim yesterday reversed in the biggest chip-heavy names on the tape today. Full working-estimate book value tomorrow morning is £170,400&ndash;170,700, essentially flat on yesterday&rsquo;s marker.</p>
 
 <nav class="toc">
   <h4>Contents</h4>
   <ol>
     <li><a href="#s1">The five-minute version</a></li>
-    <li><a href="#s2">The BoE hold that wasn&rsquo;t dovish</a></li>
-    <li><a href="#s3">Warsh&rsquo;s day two: the bounce</a></li>
+    <li><a href="#s2">The BoJ hike that weakened the yen</a></li>
+    <li><a href="#s3">Ten-year back above 5%, gilts held</a></li>
     <li><a href="#s4">The energy complex</a></li>
     <li><a href="#s5">Gas and LNG desk view</a></li>
     <li><a href="#s6">What moved in your book</a></li>
@@ -215,95 +205,99 @@ footer li{margin-bottom:4px}
 
 <section id="s1">
 <h2><span class="no">01</span>The five-minute version</h2>
-<p class="sub">The Bank held 6&ndash;3 as expected. It then did three other things that mattered more than the vote count.</p>
+<p class="sub">One central bank, one CPI print, one triple-witch, one retail-sales beat. The book carries.</p>
 
-<h3>One. The vote was 6&ndash;3. The message was hawkish. The gilt market didn&rsquo;t care.</h3>
-<p>Pill, Greene and Mann again voted for a 25bp hike to 4.00% &mdash; the same three, the same dissent count as 30 July. Consensus called it right. What consensus did not have was the accompanying language: inflation is now expected to reach <em>slightly over 4%</em> in early 2027, a material upward revision from August&rsquo;s track; the MPC judges the risks tilted further to the upside than at the July Report; and Bailey&rsquo;s Committee volunteered the sentence &ldquo;given the lags with which second-round effects appeared, it was not appropriate to wait too long for evidence of such effects before responding with policy.&rdquo; That is Warsh-adjacent phrasing under Bailey&rsquo;s signature. November is now the live meeting.</p>
+<h3>One. The BoJ delivered the hike. The yen fell four full figures anyway.</h3>
+<p>Ueda took the policy rate to 1.25% on a 7&ndash;2 vote, the highest since 1995, with board members Asada and Sato dissenting for a hold. Every strand of the market had priced this at 100% coming in. What no-one had priced was the split &mdash; consensus was for 8&ndash;1 or 9&ndash;0 &mdash; and Ueda&rsquo;s post-decision line that &ldquo;we don&rsquo;t assume a specific pace for further interest rate hikes.&rdquo; That is the second time in three meetings the BoJ has hiked without commitment to a follow-up. USD/JPY ran to 157.07 intraday and closed near 156.95, +0.63% on the day and back near the levels that have historically preceded Ministry of Finance intervention. The read is clean: markets priced the hike; markets bought the dovish tone.</p>
 
-<h3>Two. QT got rewritten. The long end got a rescue.</h3>
-<p>The Bank paused all active gilt sales for six months and halted long-dated (over 20&ndash;year) gilt sales entirely. The new run-off plan takes the Asset Purchase Facility to zero at an average of £46bn/year by end-2034 through £20bn of active sales plus maturities. Prior guidance was a £100bn annual reduction. The gilt market read that as the single most important part of today&rsquo;s package: the 10-year fell through 5.35% for the first time in over a fortnight, and long-end sensitivity moderated after weeks of 30-year prints north of 5.85%. That eases the mechanical pressure on the Budget&rsquo;s £13.8bn of fiscal headroom exactly where it was most acute.</p>
+<h3>Two. US ten-year yield jumped back over 5%.</h3>
+<p>The three-basis-point rally on Thursday completely reversed. The 10-year climbed more than five basis points to 5.004%, pushing back through the round number and setting up the worst week for the Dow since March. The story is the same as it was Wednesday night: the market cannot decide whether to price Warsh&rsquo;s hawkish tone at face value or discount for the possibility Powell talks him down. Today it discounted less. The Dow shed 95 points to 51,682, the S&amp;P closed +0.17% at 7,650.50 &mdash; a small green day that masks a red week for the widest-followed index. Nasdaq +0.39% to 26,522 fared a touch better on the mega-cap-tech bid.</p>
 
-<h3>Three. Sterling paid the price for the divergence, not for the vote.</h3>
-<p>Cable traded to 1.3372 during the day, the weakest since late July, and closed near 1.3378. That is a Fed-hiked-BoE-held sequence more than a repricing of British domestic policy: the market thinks the November UK hike probability rose but not enough to close the widened US&ndash;UK differential. That is good for GBP-reporting US funds mechanically and bad for anything import-price sensitive over the next quarter.</p>
+<h3>Three. The semi rally reversed in the biggest name that matters to you.</h3>
+<p>SOXX +3% on Thursday was the day that made yesterday&rsquo;s brief say the ATT trim was &ldquo;marginally the wrong call for the first time.&rdquo; Today NVIDIA closed &minus;1.5% at $217.44 and AMD closed &minus;2.36% at $459.61. The other AI-adjacent megacaps did not follow: Microsoft +1.5%, Apple +1.4%, Alphabet +1.3%, Meta +1.3%. That is the split you want if you are worried about NVIDIA-specific concentration &mdash; the sector-composite bounce did not carry the largest chip stocks a second day, but the broad tech complex is still supported by rate-relief mechanics on the software side.</p>
 
-<h3>And the thing that made tomorrow&rsquo;s NAVs less bad than yesterday&rsquo;s brief warned</h3>
-<p>US 10-year Treasury yield eased three basis points to 4.95%, ending eight consecutive days of gains. Semis reversed hard: SOXX +3%, AMD +7%, Broadcom +3%, NVIDIA +2%. The S&amp;P 500 closed at 7,596, +0.59%. The Warsh-terrified market of last night got a Warsh-reassured market this morning &mdash; not because Warsh spoke again, but because a Fed that hiked without breaking the ten-year is a Fed the tape can price. Yesterday&rsquo;s working estimate of £169,500 for tomorrow morning&rsquo;s book is stale; today&rsquo;s bounce puts it back closer to £170,300&ndash;170,500.</p>
+<h3>And a UK data point that actually surprised.</h3>
+<p>ONS August retail sales came in +0.5% MoM against a Bloomberg consensus of &minus;0.2%. Warm weather, non-store recovery, and a food-stores bounce. Rolling three-month volumes +0.9%. That is the second consumer print in two months (August payrolls beat, this) telling the November MPC there is no visible demand cooling that would let the doves win the argument. It sits in the same box as Warsh&rsquo;s labour-market frame from Wednesday: the actual data is not delivering the softness the doves need.</p>
 
 <h4 class="mini">Direction and materiality across your exposures</h4>
 <div class="tscroll">
 <table>
 <thead><tr><th>Exposure</th><th>Direction</th><th>Materiality</th><th>Why</th></tr></thead>
 <tbody>
-<tr><td><span class="fname">Everything, via rates</span><div class="fmeta">all 14 fund lines</div></td><td><span class="chip pos">Positive</span></td><td class="n">£132,556<div class="fmeta">78% of book</div></td><td>US 10-year 4.95% (from 5.008%), UK 10-year sub-5.35% (from 5.41%). QT slowdown was the surprise. Tomorrow&rsquo;s NAVs price the US bounce.</td></tr>
-<tr><td><span class="fname">Tech-concentrated fund lines</span><div class="fmeta">ATT, SWDA, VUAG, VUSA, Royal London, Global All Cap, SMH, RBOT</div></td><td><span class="chip pos">Positive</span></td><td class="n">£52,750<div class="fmeta">31% of book</div></td><td>SOXX +3% today reverses most of yesterday&rsquo;s semi-composite damage. NVIDIA look-through of ~£5,253 gets ~£100 back on paper.</td></tr>
-<tr><td><span class="fname">Greencoat UK Wind</span><div class="fmeta">UKW.L · II ISA</div></td><td><span class="chip pos">Positive</span></td><td class="n">£9,317<div class="fmeta">5.5%</div></td><td>The trade you already owned. Long-end gilts easing, mid-cap rally with homebuilders on QT slowdown. Barratt Redrow +12% is the tell.</td></tr>
-<tr><td><span class="fname">Shell</span><div class="fmeta">SHEL.L · II General</div></td><td><span class="chip neg">Negative</span></td><td class="n">£6,853<div class="fmeta">4.0%</div></td><td>Brent &minus;2.1% to $103.61 as Saudi confirms increased Hormuz routing. Second down session in three; the five-week trend is starting to wobble.</td></tr>
-<tr><td><span class="fname">Fidelity European</span><div class="fmeta">II ISA</div></td><td><span class="chip mix">Mixed</span></td><td class="n">£15,437<div class="fmeta">9.1%</div></td><td>Rate relief good for the industrial book; TTF fade is good for the same industrial book. Working against them: sterling weakness &mdash; EUR-denominated NAV translates lighter.</td></tr>
-<tr><td><span class="fname">GSK</span><div class="fmeta">GSK.L · II ISA</div></td><td><span class="chip neu">Rest</span></td><td class="n">£1,799<div class="fmeta">1.1%</div></td><td>Pharma quiet today after four sessions of catalyst compounding. No news is fine.</td></tr>
-<tr><td><span class="fname">LifeStrategy UK sleeve</span><div class="fmeta">via 60/80/100</div></td><td><span class="chip pos">Positive</span></td><td class="n">~£2,900<div class="fmeta">1.7%</div></td><td>Small line but exact target of the day&rsquo;s move &mdash; UK gilt bid + FTSE 250 breadth.</td></tr>
-<tr><td><span class="fname">Fundsmith, Rathbone</span><div class="fmeta">II ISA</div></td><td><span class="chip pos">Positive</span></td><td class="n">£28,121<div class="fmeta">16.5%</div></td><td>Quality-tilted, AI-underweight funds getting a rate-relief bounce and holding through the FOMC drawdown. Two-year benchmark drawdown narrows by a whisker.</td></tr>
-<tr><td><span class="fname">Allianz Technology Trust</span><div class="fmeta">ATT.L · II ISA</div></td><td><span class="chip pos">Reversing</span></td><td class="n">£4,290<div class="fmeta">2.5%</div></td><td>Semis +3% at the composite is broadly right where Monday&rsquo;s trim thesis said &ldquo;risk distribution had shifted right.&rdquo; If the trim was done at 690p, this is the first session it looks slightly early. Section 6.</td></tr>
-<tr><td><span class="fname">DiDi, EMQQ, Games Workshop</span><div class="fmeta">standing quietly</div></td><td><span class="chip neu">Neutral</span></td><td class="n">£4,249<div class="fmeta">2.5%</div></td><td>Nothing on any of the three today. Games Workshop remains the best-placed line for a hawkish-inflation week; unchanged from yesterday.</td></tr>
+<tr><td><span class="fname">Everything, via rates</span><div class="fmeta">all 14 fund lines</div></td><td><span class="chip mix">Mixed</span></td><td class="n">£132,556<div class="fmeta">78% of book</div></td><td>US 10Y back to 5.004% erases half of yesterday&rsquo;s discount-rate tailwind. UK 10Y ~5.25% still ~10bp below Wednesday. Net wash for the sleeve.</td></tr>
+<tr><td><span class="fname">Tech-concentrated fund lines</span><div class="fmeta">ATT, SWDA, VUAG, VUSA, Royal London, Global All Cap, SMH, RBOT</div></td><td><span class="chip mix">Mixed</span></td><td class="n">£52,750<div class="fmeta">31% of book</div></td><td>NVDA &minus;1.5% takes ~£79 off the £5,253 look-through. MSFT/AAPL/GOOG/META +1.3&ndash;1.5% offset. Net ~+£100 to +£150 on the sleeve.</td></tr>
+<tr><td><span class="fname">Greencoat UK Wind</span><div class="fmeta">UKW.L · II ISA</div></td><td><span class="chip pos">Positive</span></td><td class="n">£9,317<div class="fmeta">5.5%</div></td><td>+1.45% to 105.0p per the LSE feed. The trade that continues to work as long as the long-end gilt curve holds this level.</td></tr>
+<tr><td><span class="fname">Shell</span><div class="fmeta">SHEL.L · II General</div></td><td><span class="chip neg">Negative</span></td><td class="n">£6,853<div class="fmeta">4.0%</div></td><td>~3,570&ndash;3,576p vs 3,652p at the Wednesday close &mdash; the giveback flagged yesterday is in. Brent settled $103.29, &minus;1.5%. Fourth down session in five for the crude curve.</td></tr>
+<tr><td><span class="fname">Fidelity European</span><div class="fmeta">II ISA</div></td><td><span class="chip pos">Positive</span></td><td class="n">£15,437<div class="fmeta">9.1%</div></td><td>DAX +0.77% to 25,733, CAC 40 +0.57% to 8,187. TTF held ~€78; industrial cost pressure eased. Sterling +30bp on the day helps EUR translation.</td></tr>
+<tr><td><span class="fname">GSK</span><div class="fmeta">GSK.L · II ISA</div></td><td><span class="chip neu">Rest</span></td><td class="n">£1,799<div class="fmeta">1.1%</div></td><td>~1,870p, essentially flat. Pharma quiet.</td></tr>
+<tr><td><span class="fname">LifeStrategy UK sleeve</span><div class="fmeta">via 60/80/100</div></td><td><span class="chip neg">Negative</span></td><td class="n">~£2,900<div class="fmeta">1.7%</div></td><td>FTSE 100 down ~1% giving back most of Thursday&rsquo;s BoE bounce, banks and energy the drag. FTSE 250 steady.</td></tr>
+<tr><td><span class="fname">Fundsmith, Rathbone</span><div class="fmeta">II ISA</div></td><td><span class="chip pos">Positive</span></td><td class="n">£28,121<div class="fmeta">16.5%</div></td><td>Quality/underweight-AI funds got the mega-cap-tech bid without the NVDA drag. Small positive on both tomorrow morning.</td></tr>
+<tr><td><span class="fname">Allianz Technology Trust</span><div class="fmeta">ATT.L · II ISA</div></td><td><span class="chip pos">Trim thesis restored</span></td><td class="n">£4,290<div class="fmeta">2.5%</div></td><td>702p, +1.59% today. NVDA &minus;1.5% and AMD &minus;2.4% return the &ldquo;did I trim too early?&rdquo; question to the box marked closed. Section 6.</td></tr>
+<tr><td><span class="fname">DiDi, EMQQ, Games Workshop</span><div class="fmeta">standing quietly</div></td><td><span class="chip neu">Neutral</span></td><td class="n">£4,249<div class="fmeta">2.5%</div></td><td>Nothing moved on any of the three. GAW ~18,110p per the last public tick, still the best-placed line for the current macro mix.</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="note">
-<p><span class="lab">Bottom line</span>Net-net today was a good day for 78% of the book. The Bank did the double act &mdash; hike-adjacent rhetoric that punishes sterling and vindicates the November hikers, plus a QT slowdown that rescues gilts and everything they discount. In the US, the Warsh sequel let semis rebound and Treasury yields ease. Tomorrow morning&rsquo;s OEIC NAVs pick up the US move; the UK-domiciled lines are already there. My working estimate for combined book value tomorrow morning is £170,300&ndash;170,500 versus this evening&rsquo;s £170,026 marker, versus yesterday&rsquo;s worry that it would land at ~£169,500. That drift back up is a rate-relief mechanical, not a fundamental change to any thesis.</p>
+<p><span class="lab">Bottom line</span>The book comes into the weekend where it started the week. NVDA is essentially flat on the five-session tape, Shell is off ~2% from Wednesday&rsquo;s high but back to where it was the week before, UKW has done its work through the BoE QT rewrite, and the OEIC sleeve absorbed a Warsh sequel and a BoJ hike without a meaningful mark. Working combined value tomorrow morning is £170,400&ndash;170,700 versus this evening&rsquo;s marker &mdash; essentially flat with a slight rates-mixed offset. The September central-bank trio is done: Fed hiked, BoE held-with-hawkish-lean, BoJ hiked-with-dovish-lean. The next material calendar event that pushes the book is UK September CPI on 21 October, three days ahead of the Budget. Everything between here and there is holding pattern unless the labour-market prints (US NFP on 3 October, UK on 14 October) break in either direction.</p>
 </div>
 </section>
 
 <section id="s2">
-<h2><span class="no">02</span>The BoE hold that wasn&rsquo;t dovish</h2>
-<p class="sub">A 6&ndash;3 hold, a 4%-in-early-2027 inflation forecast, and a QT rewrite that all sit in the same statement.</p>
+<h2><span class="no">02</span>The BoJ hike that weakened the yen</h2>
+<p class="sub">A 7&ndash;2 vote when consensus wanted 8&ndash;1, and a governor who refused to name a pace.</p>
 
-<p>Break the decision into its three parts and every one of them was hawkish except the headline.</p>
+<p>Break the decision apart and every piece except the headline is dovish.</p>
 
-<p><strong>The vote count did what consensus said it would do</strong>, but it did not soften. Pill, Greene and Mann again for a hike, the same three, the same 6&ndash;3. Zero movement in the dissent count on a day where CPI printed 3.1% with 23% motor-fuel inflation underneath it and yesterday&rsquo;s Fed delivered its first hike since 2023 is, if anything, a small dovish surprise on the count itself. It is why sterling did not rally on the announcement even as the QT rewrite was pushing gilts higher.</p>
+<p><strong>The vote count was softer than expected.</strong> The Reuters/Bloomberg consensus going in was 8&ndash;1 or 9&ndash;0 for the hike; the print was 7&ndash;2, with dissents from Toichiro Asada and Ayano Sato. Asada is a long-standing dove for whom a hold is unsurprising. Sato is not, and her switch to the hold side is the more consequential of the two dissents &mdash; it is a market read that the internal ballot has more resistance to further tightening than the aggregate track record would suggest. Two dissenters against a 25bp move that had 100% market probability going in is the kind of split that sows doubt about what a January or March hike would look like.</p>
 
-<p><strong>The inflation forecast is the news</strong>. The MPC marked its inflation projection up to &ldquo;slightly over 4%&rdquo; in early 2027 from the previous track that peaked around 3.7%. That is not a small revision. It is the Bank formally acknowledging that motor-fuel inflation at 23% year on year, food and consumer-goods second-round pass-through, and a currency that has weakened four cents in a month are all combining into a print worse than the August MPR contemplated. Bailey and the doves cannot then, three months from now, meet a 4.1% headline and vote to hold again on the argument that inflation is transitory &mdash; the Bank has now written itself out of that defence. The August MPR admitted a &ldquo;small upside skew&rdquo; on second-round risk; today&rsquo;s minutes go significantly further.</p>
+<p><strong>Ueda&rsquo;s language did not commit to more.</strong> The quoted line was &ldquo;we don&rsquo;t assume a specific pace for further interest rate hikes,&rdquo; matched with framing that today&rsquo;s move was in response to upward inflation risk rather than a claim that inflation is running out of control. That is the same posture Ueda took at the July hike. In effect, the BoJ has now telegraphed a stop-start hiking cadence &mdash; one move at a time, on a case-by-case basis, with no forward guidance the FX market can price. The rate-differential trade against the dollar is now a Fed-story-only trade until the BoJ signals otherwise.</p>
 
-<p><strong>The QT rewrite is the surprise.</strong> A pause of all active gilt sales for six months, a permanent halt to long-dated (over-20-year) sales, and a new APF run-off pace of £46bn/year through 2034 versus previous guidance of roughly £100bn/year is a material intervention in the long end of the gilt curve. It is not, technically, a monetary policy easing &mdash; the Bank was careful in the minutes to frame it as a market-functioning decision rather than a policy stance. But the mechanical effect is that a large marginal seller of long-dated gilts has stepped out of the market for the winter, and the curve responded exactly as one would expect: 10-year yield below 5.35%, long-end sensitivity moderated, and the housing sector on the equity side rallied hard as the mortgage curve got some breathing room.</p>
+<p><strong>Japan August CPI came in below consensus.</strong> Core CPI (ex-fresh food) rose 1.7% y/y in August versus 1.8% expected and 1.8% in July &mdash; the first slowdown in four months. Headline held at 1.9% y/y. Ex-fresh-food-and-energy also held at 1.9%. Government energy-burden relief pushed energy back into negative territory, which is what did most of the work. Below-target on the BoJ&rsquo;s preferred core measure gives the doves genuine air cover for a hold at the October meeting. The BoJ&rsquo;s own communication frames today&rsquo;s hike as a risk-management move against upward inflation, which is exactly the flavour of language that leaves the door open to a pause immediately.</p>
 
-<p><strong>Read all three together</strong> and the picture is a Bank that has decided the mix is: (i) rhetorically prepared to hike in November if the data allows, (ii) unwilling to let the fiscal-monetary tension continue driving 30-year yields toward levels last seen when the Conservatives were still governing, and (iii) content to accept some FX weakness rather than a coordinated hike on the day the Fed delivered. It is the same play the Fed ran twenty-four hours earlier, executed at half the intensity. Bailey does not want to be Warsh; he does want the market to know that Warsh&rsquo;s inflation frame applies here too.</p>
+<p><strong>Sterling&rsquo;s cross with the yen is where you are indirectly exposed.</strong> You hold nothing Japanese, but the carry trade sits at the plumbing of every global fund allocator. A hiked BoJ raises the funding-leg cost of borrowing yen to buy dollar-denominated tech, which is one of the mechanical drivers behind the 30% AI-composite rally you own an ~£8,000 slice of. In practice, this hike is small enough &mdash; and Ueda&rsquo;s tone dovish enough &mdash; that the carry-unwind risk that was the main downside case coming in is now off the table for the October window. The market thinks a January hike is now more probable than an October hike; funding cost stays low; the carry stays cheap.</p>
 
-<p>The homebuilders were the day&rsquo;s clearest bet on that read. Barratt Redrow +12% is a rounding error away from the largest single-session move in the stock in nearly six years, on results that included an improving reservation rate, a strong order book, and a forecast-beating profit &mdash; but the move is bigger than the results because it was overlaid on a lower long-end gilt curve. Vistry, Bellway and Taylor Wimpey all rallied. FTSE 250 closed +1.1%. That is a market that read the QT rewrite the same way the fixed-income desk did.</p>
+<p><strong>The one place this bites</strong> is the Ministry of Finance intervention risk. USD/JPY at 157 puts you in the zone where MoF verbal intervention becomes daily and physical intervention becomes credible. Bessent has been pressing publicly for &ldquo;decisive&rdquo; steps on the weak yen. A physical intervention on the pair &mdash; a $50&ndash;100bn dollar-selling operation &mdash; is the sort of thing that can move risk assets globally for a few sessions on carry unwind. That is a tail scenario for now, not a base case, but it is the specific event to watch through the last week of September.</p>
 
 <div class="note">
-<p><span class="lab">Where this leaves the sequence</span>November MPC now prices roughly 50% for a 25bp hike, up from ~30% pre-decision. December Fed is 60&ndash;70%. If the labour market gives at all in the next four weeks &mdash; the Philly Fed print today at 31.3 forecast vs 47.4 prior would say it is &mdash; the sequence flips: Warsh gets a downside surprise that lets him talk more moderately at the November FOMC, and the BoE hawks lose the follow-through they need. If it does not give, both banks hike again in November/December respectively, and the current widening in the US&ndash;UK differential closes only partially. Your USD lines benefit both ways; the UK domestic sleeve prefers the give.</p>
+<p><span class="lab">What this leaves for the rest of the year</span>The BoJ is now visibly out of step with its own consensus-implied trajectory. Every economist who called this hike also called an October follow-up; today&rsquo;s split and Ueda&rsquo;s language argue for a December-earliest and a January-more-likely follow-up. That is a slower cycle than the market was writing, and it is why USD/JPY did not rally on the announcement. Your indirect exposure is limited to the funding-leg effect on carry-financed tech, and today&rsquo;s outcome is on balance mildly bullish for AI-composite risk into the October Q3 reporting season.</p>
 </div>
 </section>
 
 <section id="s3">
-<h2><span class="no">03</span>Warsh&rsquo;s day two: the bounce</h2>
-<p class="sub">Yesterday the tape traded the tone. Today the same tape read the rate curve and decided the tone was bark, not bite.</p>
+<h2><span class="no">03</span>Ten-year back above 5%, gilts held</h2>
+<p class="sub">Thursday&rsquo;s Warsh-follow-through bounce reversed. The US bond market is undecided; the UK bond market is not.</p>
 
-<p>Twenty-four hours ago the Dow was giving back 750 points into and through the press conference, and yesterday&rsquo;s brief was walking through why the fund sleeve was likely to price ~£500 lower on this morning&rsquo;s NAVs. That worked out. What did not stay true was the second-order assumption &mdash; that Warsh&rsquo;s hawkish tone would keep the 10-year at or above 5.00% and semis under continued pressure. Both reversed today.</p>
+<p>Yesterday&rsquo;s brief flagged the ten-year rally at 4.95% as a Warsh-reassured tape; today the market took that back. The 10-year Treasury climbed more than five basis points to 5.004%, the 2-year firmed, and the Dow gave back Thursday&rsquo;s gains and then some. The final tally: worst week for the Dow since March, S&amp;P down ~0.3% on the week despite today&rsquo;s +0.17%, Nasdaq marginally up on the week. That is a market that has spent five sessions unable to settle on whether the Fed&rsquo;s next move is bark or bite.</p>
 
-<p><strong>The 10-year is the primary read.</strong> Treasury yields fell three basis points on Thursday, taking the 10-year to 4.95% and ending eight consecutive sessions of gains. The 2-year eased to 4.692%, the 30-year to 5.297%. That is a curve saying: the Fed hiked as expected, Warsh signalled more as expected, but the terminal is not moving materially above where it already was. If the market had believed Warsh had genuinely reset the reaction function toward &ldquo;prepared to do more&rdquo; without qualification, the 2-year would have moved up 10&ndash;15bp today, not down 20bp from yesterday&rsquo;s peak. It did not.</p>
+<p><strong>What actually happened today</strong> was mostly triple witching. Roughly $7 trillion of US equity options expired at the close &mdash; Citadel Securities&rsquo; count puts it at ~25% of total US options exposure, the second-largest expiration on record. Positioning cleared, dealers hedged, and the equity tape traded fine through the settle. The bond move is the more instructive one. A five-basis-point back-up on a day where nothing new was said by any Fed speaker is a market re-pricing the terminal on its own reflection, not on new information. It suggests the base case going into the December FOMC has quietly moved from &ldquo;60&ndash;70% priced&rdquo; toward the upper end of that range.</p>
 
-<p><strong>The semiconductor reaction is the second read.</strong> SOXX +3% versus QQQ +2% is a session where the sector-specific rebound outstripped the broad tech bounce. AMD +7%, Broadcom +3% to $349.02, NVIDIA +2%, all on no new stock-specific news. That is a discount-rate trade &mdash; you are seeing the same accelerator-demand narrative that took the group to Monday&rsquo;s AI-pace shock get a valuation reprieve as the ten-year backs off 5%. Not a thesis change, a multiple bump.</p>
+<p><strong>Michelle Bowman spoke this morning</strong> at the Federal Reserve Bank of Kansas City. The speech was almost entirely on stress-test reform: a date for freezing bank balance sheets, two global market shock scenarios with the worse result feeding the stress-capital buffer, a timeline to finalise within weeks. Nothing on monetary policy. The market treated it as expected. Bowman&rsquo;s stress-test agenda is running in parallel to the monetary policy narrative &mdash; it is a regulatory pipeline story that matters to bank equities, not to the front end of the curve.</p>
 
-<p><strong>The S&amp;P closed +0.59% at 7,596.</strong> Coming off a 631-point Dow loss the prior session, this is a partial retracement rather than a fresh leg. But it is enough: the OEIC lines that price into New York&rsquo;s 4pm close will pick up something in the region of +0.3% to +0.5% on tomorrow&rsquo;s NAVs, and the direct UK-listed US ETF lines (SMH.L, VUAG, VUSA, SWDA.L) will price the same move. The ATT trim thesis Monday morning has now had two of its three test sessions play out closer to the middle scenario than to the tail: FOMC delivered, Warsh talked, and the sector-composite rebounded on ordinary rate-relief mechanics. If the trim executed at 690p on Monday, this is not yet a reason to reverse, but it is the first session where the alternative &mdash; not trimming and running the position through to whoever&rsquo;s next Q3 call &mdash; is holding up better than the middle-scenario the brief was pricing.</p>
+<p><strong>The UK curve held today.</strong> UK 10-year gilt yield closed the day at roughly 5.25% per the Trading Economics tape, versus 5.34% at Thursday&rsquo;s close and 5.41% before the BoE decision. The QT rewrite has kept the price of the long end &mdash; the housing sector held its Thursday gains, the mid-cap complex stayed steady, and Greencoat UK Wind added another ~1.5%. That is exactly what you would expect from a market that reads the QT slowdown as more persistent than any single rate decision. FTSE 100 gave back most of Thursday&rsquo;s 1%-plus bounce on banks-and-energy weakness &mdash; oil down, sterling still weak, and the BoE&rsquo;s hawkish lean weighing on UK-domestic rate-sensitive banks. FTSE 250 held broadly steady.</p>
 
-<p>The one place the bounce did not reach is the US retail-focused indices. Barrelling into $103 crude on the way down rather than $108 on the way up does very little for the discretionary consumer if the diesel and gasoline prices already in the CPI print need weeks to fade. The August retail sales beat was the print of the week; September&rsquo;s advance release on 15 October will be the read on whether the impulse persists into a slightly cooler pump-price backdrop.</p>
+<p><strong>US industrial production</strong> came in unchanged for August against consensus of +0.3%, and capacity utilisation held at 76.3% against 76.4% consensus. Manufacturing output actually fell 0.3%. That is a mild disappointment on the goods side and does the work the labour market has been failing to do: it introduces a slowdown signal into the September activity read. Not enough to move the December Fed on its own, but enough to matter as part of a pattern if the September ISM prints (out 1 October) confirm the direction. This is the sort of data that lets the doves argue &ldquo;the hike is working; wait.&rdquo;</p>
 
-<p><strong>The pure macro read:</strong> yesterday&rsquo;s tape overreacted to the press conference and today&rsquo;s tape corrected. Neither is a fundamental change. The fundamental change is Warsh having successfully injected another 25bp of hike probability into the December meeting without breaking the ten-year. That is genuinely a hawkish achievement; the market has just decided it can price it without also selling off the equity complex.</p>
+<p>Two useful data details underneath the headline: computer-and-electronic-product capacity rose to 77.2% from 76.2%, and electrical-equipment capacity rose to 86.6% from 85.5%. Both are directly tied to AI infrastructure buildout. On a day where the semi-equity complex was mixed at best, the industrial-capacity data was quietly telling you the actual physical build has not slowed &mdash; and that is the datapoint the AI-composite bull case actually needs to keep working, more than any given hyperscaler&rsquo;s Q4 capex commentary.</p>
+
+<div class="note">
+<p><span class="lab">Where this leaves the sequence</span>The December Fed is priced at roughly 65&ndash;70%. Two more months of NFP and CPI to route before then. The market is still trading the tone rather than the data on any given session, which is why the ten-year has yo-yoed 15bp inside 5.00% over the last five sessions without anything fundamental moving. The next event large enough to reset the trend is US September CPI on 15 October &mdash; three days after your own book&rsquo;s major-catalyst window (Nvidia investor communications through the autumn, TSMC prints on 20 October). The tape has three quiet weeks ahead of that.</p>
+</div>
 </section>
 
 <section id="s4">
 <h2><span class="no">04</span>The energy complex</h2>
-<p class="sub">The Saudi restart briefing that took Brent down $3 yesterday got a follow-up today. Crude at $103, gas at €77, both trending back toward normal &mdash; and the read-through is running the CPI transmission in reverse.</p>
+<p class="sub">Brent below $104 for the second consecutive session. Not a resolution, an unwinding.</p>
 
-<p>Brent settled around $103.61, down 2.10% on the day and now over 4% below Monday&rsquo;s intraday peak. The proximate move today was Saudi Arabia confirming increased crude routing via Hormuz to compensate for Yanbu-related shortfalls &mdash; a re-routing rather than a pipeline restart, but same net effect on physical availability. WTI followed to under $100. Both prints are still comfortably above where they sat at the start of the month, but for the first time in five weeks the direction is clearly the other way.</p>
+<p>Brent settled around $103.29, down 1.46% on the day and now over 5% below Monday&rsquo;s intraday peak. The catalyst was the same as yesterday: additional Saudi crude routing via Hormuz plus hopes of renewed diplomatic activity around the strait. Nothing that resolves the underlying disruption, but enough to say the marginal physical shortage in the crude complex has been priced. Two consecutive down days of ~1.5% each after a five-week rally is a normal top-drift pattern; it becomes a genuine reversal if crude prints below $100 by early next week.</p>
 
-<p>The refined-product story that turned $100 crude into a 23% motor-fuel CPI reading is what needs to fade for the transmission to reverse. Roughly 800,000 b/d of Russian diesel loss and 1.2 mb/d of Hormuz-disrupted refined products are still off the market; the combined refinery capacity idled is still around 5 mb/d. What today gave the market was an incremental easing of the crude-side pressure, not a resolution of the distillate crack. Petrol pump prices in the UK will follow crude with roughly a two-week lag; if crude sits at $100 rather than $108 through the end of September, the October CPI print (out 21 October) sees the first meaningful moderation in the fuel line. The September CPI print itself, still to come, prices the crude of August &mdash; which is what today does <em>not</em> help.</p>
+<p><strong>The refined-product story that turned $100 crude into a 23% motor-fuel CPI reading</strong> is still what needs to fade for the transmission to reverse. There is nothing today that shifts the ~800,000 b/d of Russian diesel loss or the ~1.2 mb/d of Hormuz-disrupted refined products. The combined idle refinery capacity is still ~5 mb/d. What this week gives you is a two-day easing of crude-side pressure without an easing of the distillate crack. On a two-week lag, UK pump prices see the marginal benefit; the October CPI print (21 October) is where you should first see the fuel line begin to moderate.</p>
 
-<p>Hormuz flow remains near 7 mb/d against roughly 20 mb/d pre-conflict. That has not changed materially. Iranian permission still required; Tehran still evaluating a service fee. What has changed is that the shipping market has adapted to it: Saudi Arabia rerouting through the strait with Iranian acquiescence, US convoy activity, insurance rates on tanker traffic still elevated but stable rather than climbing. That is a routine background rather than a headline &mdash; the sort of state the market prices very differently from an active crisis, even when the underlying number is materially worse than pre-conflict.</p>
+<p>The Hormuz flow is stable near 7 mb/d against ~20 mb/d pre-conflict. Iranian permission still required, Tehran still evaluating the service fee. What has changed since June is the market&rsquo;s ability to hold this state without a fresh price shock &mdash; that is what today&rsquo;s $103 print really tells you. A steady-state degraded configuration is now the baseline, and the volatility premium has come out of the near curve. That is why Shell can be down $80 off Wednesday&rsquo;s high without triggering a wider risk-off in the FTSE 100.</p>
 
-<p><strong>For your book, this is another wobble on Shell.</strong> London closed at 3,652p going into yesterday&rsquo;s New York afternoon and gave back on this morning&rsquo;s open on the Brent settle; then a second down session for Brent today puts a further leg on it. On the standard integrated-major beta the Friday London open re-prices to around 3,570&ndash;3,590p if Brent holds around $103. That would take the position from £6,853 to roughly £6,720&ndash;6,760, a giveback of £100&ndash;130. The five-week run from 3,050p to 3,652p was 20% and is now unwinding at roughly the rate the crude curve is unwinding &mdash; not fast, not thesis-breaking, but for the first time not-monotonic.</p>
+<p><strong>For your Shell position</strong>, the London close today at approximately 3,570&ndash;3,576p versus 3,652p on Wednesday&rsquo;s close puts the position at ~£6,720&ndash;6,750, giving back roughly the £100&ndash;130 flagged in yesterday&rsquo;s brief. The five-week rally from ~3,050p to 3,652p was 20%; the ~2% giveback since Wednesday is exactly on the beta the position was originally sized around. Not a thesis break, and Shell&rsquo;s Q3 (late October) will still capture the average crude at ~$106 through the quarter, not the marginal $103 now. The dividend and buyback economics are unchanged.</p>
 
-<p>The refined-product exposure via Fidelity European is still the more consequential book question. TTF drifting through €80 down to €77 removes some of the cost-inflation weight on ASML, Schneider and the rest of the industrial book; a stronger USD partly offsets. On net, Fidelity European gets a mild positive on the industrial cost line and a mild negative on the FX line, and the ECB&rsquo;s next commentary on cost-push risk is the meta-signal for whether Christine Lagarde&rsquo;s follow-up-hike option is left on the table.</p>
+<p><strong>The Fidelity European positioning</strong> gets a mild positive today. TTF steady ~€78 removes some cost pressure from the industrial book (ASML, Schneider, Roche in the top holdings). DAX +0.77% and CAC 40 +0.57% closes; sterling +30bp of the day&rsquo;s move helps the EUR translation. This is the trade that quietly worked through the last two weeks and is still working &mdash; the fund is +9.7% on cost, unchanged from mid-week, and the fundamentals underneath it are strengthening rather than weakening.</p>
 </section>
 
 <section id="s5">
@@ -311,126 +305,137 @@ footer li{margin-bottom:4px}
 <p class="sub">Standing section. Your own screens beat everything below.</p>
 
 <h3>Prices</h3>
-<p>TTF front-month traded around €77.0/MWh on the last public read, down from €81 yesterday and about €7 below Monday&rsquo;s €84 intraday high. Two sessions of drift lower, on the same Saudi-Hormuz-restart mechanic that took crude out, plus a Norwegian maintenance calendar that is starting to work in the other direction as the biggest single-day outages come off the schedule. This is the same TTF that gapped through the January 2023 peak four sessions ago; the fade has been orderly and the pattern of a hub with functioning liquidity has held.</p>
+<p>TTF front-month traded around €78.50/MWh late in the day, up ~2% on the session but still down about 1.8% for the week &mdash; the first weekly decline in six. Range earlier in the day was €78&ndash;79. That takes TTF ~€6 off Monday&rsquo;s €84 intraday high and about €3 off Wednesday&rsquo;s €81 print. The fade has been orderly and hub liquidity has held through it, which is what you want to see in a market that has just tested the highest levels since December 2022 and not broken anything on the way back down.</p>
 
-<p>NBP day-ahead sits at 195.79p/therm, down 11.71p over the last two sessions. The driver is the same TTF/crude backdrop plus a return of wind output across northwest Europe that dropped UK day-ahead power roughly 35% on the day. That is a big move and it is the mechanical inverse of what happened four sessions ago when the wind dropped: prompt power was up 142% in four sessions on a demand-into-thin-wind shove, and it is unwinding at roughly the same pace as the underlying wind resource returns. NBP&rsquo;s year-on-year comparison is still around +150%, but the week-on-week is now firmly negative, which is what your Argus screen will show more precisely than these public trackers can.</p>
+<p>NBP day-ahead sits at 198.64p/therm on the last public read, up 4.15% on the day. That is a divergence from TTF direction &mdash; TTF slightly firmer but net weekly lower, NBP firmer and outpacing the continent. The mechanical driver is the same as it was in reverse two days ago: a shift in UK-domestic wind output. Wind was strong Thursday, prompt power fell 35% on the session; today wind eased and the prompt clawed back. NBP&rsquo;s year-on-year comparison is still elevated but the week-on-week direction has flipped through this session. Your Argus screen will show this with more precision than the public trackers.</p>
 
-<p>The TTF/NBP divergence I flagged Monday has completely closed: TTF fell about 5% over two sessions, NBP about 5.7%, with the UK slightly ahead of the continent on the fade. The reason is exactly what the structural story predicted: NBP is a flow-not-stock market and it responds violently in both directions to marginal domestic supply, and wind returning is a bigger supply event than the gas-hub arb.</p>
+<p><strong>The TTF/NBP relationship</strong> that I flagged Monday as closed reopened today. TTF held/slightly up, NBP up 4%. That is a flow-vs-stock divergence in the UK direction &mdash; when the marginal domestic supply moves, NBP moves with it and the continent does not. This is what makes NBP a poor near-term hedge for European gas cost exposure and a good instrument for expressing views on UK weather and wind resource.</p>
 
 <h3>Storage</h3>
-<p>EU aggregate storage was ~68.3% full on 15 September per the AGSI+ series, still around 19 percentage points below the five-year seasonal norm. The country dispersion remains the story: Germany still ~55&ndash;56%, Italy ~84%, the same picture as Monday. That has not moved materially on today&rsquo;s price action, which is the useful observation &mdash; a hub-price rise of ~30% peak-to-trough in a fortnight, followed by a fade, has not translated into a meaningful acceleration or deceleration in physical storage refill. Germany is still ~13 percentage points behind where it needs to be for a normal winter, and the mandatory storage target has been softened from 90% to 80% for the 2026 winter to reflect that reality.</p>
+<p>EU aggregate storage was ~68.66% full at the last AGSI+ read (17 September, 6 AM CEST). That is around 22 percentage points below the five-year seasonal norm at this point in the injection cycle. The country dispersion picture is broadly unchanged this week: Germany still at approximately 50&ndash;56% (the last verified public read for Germany was 50.43% in late August; the more current AGSI feed is what your screens will show), Italy still ~84%. Germany&rsquo;s 80% mandatory storage target for winter 2026 (relaxed from 90%) remains in force, but with six weeks of injection season left and the trajectory as it stands, hitting even the 80% mark requires sustained near-capacity injection through October.</p>
 
-<p>UK storage is around 49% on the last public read, unchanged. Rough remains practically empty, the Centrica story stands, and the £2bn ask for regulatory-model inclusion still has no visible answer. Britain remains, functionally, going into this winter running on flow rather than stock, and today&rsquo;s NBP fade is a reminder that flow-based markets are only cheap for as long as the marginal input remains cheap.</p>
+<p>UK storage was around 49% at the last public read, unchanged. Rough remains empty. Centrica&rsquo;s £2bn ask for regulatory-model inclusion still has no visible resolution.</p>
 
 <h3>Supply</h3>
 <ul class="body">
-<li><b>Qatar.</b> QatarEnergy has extended force majeure on the Edison contract to end-September and the affected cargo count is now 24 (~3 bcm), of which Edison has replaced 17 (~1.6 bcm). Pakistani, Bangladeshi and other European buyers similarly notified through the same window. The satellite-imagery read is that heat signals are visible from three of Ras Laffan&rsquo;s 14 LNG trains (units 1 and 2 at South, unit 5 at North) since early June, which is the closest thing to a partial restart signal available in the public data. The 12 undamaged trains restart on a two-month timeline conditional on strait security; the two damaged trains remain a 3&ndash;5 year rebuild. Nothing on the timing has moved this week.</li>
-<li><b>Norway.</b> The maintenance calendar has diverged this week between two publicly-available sources: MNI Markets has Ormen Lange fully offline 11 September to 2 October (24.5 mcm/d); other feeds have a different Ormen Lange schedule with a partial return around 16 September. I cannot reconcile these without your Argus/Gassco read. What is not disputed: Karsto processing plant maintenance ends today (17 September), returning 12.6 mcm/d. That is the biggest dated bullish restart of the week and it is in and priced already. Week 38 (starting Monday) is still the heaviest week of the calendar in aggregate, with the peak-outage day now the biggest live catalyst.</li>
-<li><b>LNG into the UK.</b> No update on sendout past the 10 September number. If your Kpler read has last-week receipts still around 8 mcm/d against a European demand that has been progressively fading with TTF, that is a routing-arb rather than a physical-tightness story; if higher, storage refill picks up.</li>
+<li><b>Norway.</b> Gassco this morning raised the impact of the Ormen Lange unplanned shutdown to 14.9 mcm/d from 12.9 mcm/d, and the earlier flagged outage &mdash; caused by a subsea compressor station failure &mdash; has now been extended to 1 February 2027 from the previous October end-date. That is a materially bearish shift in dated Norwegian supply, and it is arguably the single most important development in this section today. It removes the largest single dated bullish catalyst on the fade side of the curve; the ~24.5 mcm/d Ormen Lange return I flagged Monday for early October is now not happening. Karsto&rsquo;s 12.6 mcm/d restart from yesterday is in and priced. If the Ormen Lange extension is confirmed on your Gassco feed, the net Norwegian supply trajectory into winter is meaningfully worse than the €77 TTF print appears to imply, and TTF&rsquo;s fade this week may prove premature.</li>
+<li><b>Qatar.</b> QatarEnergy force majeure on Edison extended through end-September, unchanged from yesterday. 24 cargoes affected (~3 bcm), 17 replaced by Edison (~1.6 bcm), no new information on the restart of the 12 undamaged Ras Laffan trains. The 3&ndash;5 year rebuild timeline on the two damaged trains still stands. Pakistani, Bangladeshi and other European buyers on the same window.</li>
+<li><b>LNG into the UK.</b> No public update on sendout past the 10 September number of ~8 mcm/d. Your Kpler read is the definitive source.</li>
 <li><b>Freight.</b> Still no fresh public number on charter rates. Yesterday&rsquo;s ask stands.</li>
 </ul>
 
 <h3>The policy layer</h3>
-<p>Nothing new in the last 24 hours. The IEA framing on strategic reserves remains the useful anchor for the winter (EU strategic reserves ~12 bcm in 2025, 3.5% of consumption), and the 80% mandatory storage-target relaxation for winter 2026 remains in force. The Commission&rsquo;s next public statement on winter preparedness is the meaningful policy event still ahead, expected before the end of the month.</p>
+<p>Nothing new in the last 24 hours. The Commission&rsquo;s next public statement on winter preparedness remains the meaningful policy event still ahead, expected by end-September. The Oxford Institute for Energy Studies published a working note on refill economics that is worth reading if your Argus queue has slack &mdash; the key finding is that closing the current 22-percentage-point storage gap to the seasonal norm would require sustained LNG imports about 15% above the current run-rate through October, which is not physically deliverable given the Qatar disruption.</p>
 
 <div class="note">
 <p><span class="lab">Where your data beats mine, ranked</span>
-<b>(1)</b> Your Argus/Gassco read on today&rsquo;s Norwegian export nominations &mdash; a two-source public divergence on Ormen Lange&rsquo;s partial return date around 16&ndash;17 September and I cannot get a clean number from either.
-<b>(2)</b> Your Kpler read on European LNG receipts over the past week &mdash; the 8.1 mcm/d UK sendout number is now nine days old and either confirms tighter physical or reveals a routing arb toward the continent as TTF has faded.
-<b>(3)</b> Whether the German injection rate has picked up at all with today&rsquo;s Karsto restart flowing into net-supply figures &mdash; 55.6% storage in mid-September clears winter only with sustained near-capacity injection through October.
-<b>(4)</b> Your desk&rsquo;s current LNG charter rates. The March $161,750 print is now six months stale; the arb economics change materially if Atlantic rates have collapsed with US exports normalising.</p>
+<b>(1)</b> Your Gassco read on the Ormen Lange extension to 1 February 2027. If confirmed, this is the material bullish input to any Q4 TTF view and it belongs in your Argus feed before it belongs anywhere else.
+<b>(2)</b> Your Kpler read on European LNG receipts over the past week &mdash; the 8.1 mcm/d UK sendout number is now over a week stale and the direction with TTF fading is the definitive tell.
+<b>(3)</b> Your desk&rsquo;s German injection-rate print for this week. 55% at mid-September clears winter only with sustained near-capacity injection through October; the Ormen Lange extension makes that materially harder.
+<b>(4)</b> Charter rates. The March $161,750 figure is now six months stale; if Atlantic rates have collapsed with US exports normalising, the US&ndash;Europe versus US&ndash;Asia arb is what tells you whether the Kpler receipts number rises or falls next month.</p>
 </div>
 </section>
 
 <section id="s6">
 <h2><span class="no">06</span>What moved in your book</h2>
-<p class="sub">Material moves only. Today favoured the sleeves yesterday warned about.</p>
+<p class="sub">Material moves only. The Nvidia reversal is the specific one to note.</p>
 
 <div class="book">
 
 <div class="bl">
-<div class="bl-head"><span class="tick">UKW.L</span><span class="chip pos">Best of the rate-relief trade</span><span class="px"><span class="up">~+1&ndash;2%</span> · long-end gilts easing</span></div>
-<p>The trade the Monday brief flagged for the FTSE 250 rate-sensitive complex worked to script today. UK 10-year sub-5.35%, long-end easing further as the QT rewrite bit, homebuilders on a tear (Barratt Redrow +12% is the number of the day), and the mid-cap breadth carrying UKW with it. The 16.5% discount to 133.7p NAV, 8.14% yield, and merchant-heavy generation profile are unchanged; the discount rate under all of it is what moved. If the November MPC delivers a hike, expect this to give some of today&rsquo;s move back &mdash; but the QT rewrite is more persistent than the rate decision, and it is the QT rewrite that is doing the heavy lifting on the long-end curve UKW cares about.</p>
+<div class="bl-head"><span class="tick">ATT.L</span><span class="chip pos">Trim thesis, day three</span><span class="px">702p · SOXX &minus;1.5% today · NVDA &minus;1.5%</span></div>
+<p>The trim executed at 690p Monday has now had all three of its test sessions play out. Wednesday: FOMC hiked, Warsh spoke, semis broke. Thursday: semis rallied 3%, the &ldquo;did I trim too early?&rdquo; question surfaced. Friday: NVIDIA closed &minus;1.5% at $217.44 and AMD closed &minus;2.36%, reversing Thursday&rsquo;s move in the largest names that drive the index. The trim thesis is back in the box marked closed. ATT itself printed 702p, +1.59% on the day, because the wider tech complex was bid on the mega-cap side even as semis were mixed &mdash; and the ATT NAV weights are more diversified than the SOXX composite. The discount is around 8&ndash;9%. No action tonight; the natural next check-in is the Alphabet-Microsoft-Meta Q3 print cluster on 28 October, when the AI-capex commentary that started this whole debate finally gets tested against actual dollar spend.</p>
 </div>
 
 <div class="bl">
-<div class="bl-head"><span class="tick">Fund sleeve (US-linked)</span><span class="chip pos">Tomorrow&rsquo;s NAVs recover</span><span class="px">S&amp;P +0.59% · SOXX +3%</span></div>
-<p>The lines that price against tonight&rsquo;s New York close &mdash; ATT (~9.2% NVDA look-through), VUAG (~7.6%), VUSA, SWDA (~5.5% NVDA), Royal London (~5.3%), Global All Cap, plus SMH.L and RBOT.L in the direct-ETF sleeve &mdash; will book this morning&rsquo;s NAVs at a smaller loss than yesterday&rsquo;s brief was pricing, and tomorrow&rsquo;s NAVs will pick up the sector-specific semi bounce. Aggregate impact on the ~£52,750 tech-concentrated block is roughly +£150 to +£250 relative to yesterday&rsquo;s worst-case scenario, entirely a rates and discount-rate move. Fundsmith and Rathbone catch a lighter tailwind on the same mechanic without the semi upside; small positive on both.</p>
+<div class="bl-head"><span class="tick">UKW.L</span><span class="chip pos">Still working</span><span class="px">105.0p, +1.45% · long-end gilts held</span></div>
+<p>The move that started on the QT rewrite continued today. Long-end gilt curve held ~10bp below Wednesday&rsquo;s pre-decision level; mid-cap rate-sensitive complex added another leg. The 16.5% discount to 133.7p NAV, 8.14% yield, and merchant-generation profile are unchanged from the beginning of the week; the discount rate under all of it is what moved. If the November MPC delivers a hike, this is where the tape will test whether the QT-rewrite mechanic or the rate-decision mechanic is dominant. As of tonight, QT is winning. The position is now ~£9,450 versus £9,317 at Wednesday&rsquo;s marker.</p>
 </div>
 
 <div class="bl">
-<div class="bl-head"><span class="tick">SHEL.L</span><span class="chip neg">Third down session in three</span><span class="px">Friday London open ~3,570&ndash;3,590p implied</span></div>
-<p>The five-week run from ~3,050p to 3,652p is now unwinding at roughly the rate the crude curve is unwinding. London closed at 3,652p on the 16th before the Brent settle-and-then-give-another-$3; the Friday open should price around 3,570&ndash;3,590p on integrated-major beta of ~0.5. Book impact is ~£100&ndash;130 giveback on the £6,853 position, roughly 0.07% of total portfolio value. Not a thesis break &mdash; crude at $103 still services the position &mdash; but the sequencing is no longer one-way and the November BoE hike (if delivered) is a further headwind on the discount rate side.</p>
+<div class="bl-head"><span class="tick">SHEL.L</span><span class="chip neg">Wednesday high, unwound</span><span class="px">~3,570&ndash;3,576p · Brent $103.29</span></div>
+<p>The Friday London close puts Shell at roughly the level yesterday&rsquo;s brief priced. The position at 3,570p implies ~£6,720&ndash;6,750, a giveback of £100&ndash;130 from Wednesday&rsquo;s marker &mdash; entirely explained by the ~2% Brent move over the same window. Not a thesis break: crude at $103 still services the position economics, the Q3 dividend at $0.71/share is confirmed for December payment, and the Q3 earnings on the calendar for late October will capture average crude closer to $106 through the quarter, not the marginal $103 now. What has broken is the one-way narrative; the next material catalyst is the Q3 print itself.</p>
 </div>
 
 <div class="bl">
-<div class="bl-head"><span class="tick">ATT.L</span><span class="chip mix">Trim outcome, day two</span><span class="px">693p · discount ~9% · SOXX +3%</span></div>
-<p>Second read on Monday&rsquo;s trim thesis: it is holding up broadly against the middle scenario, but a semi-composite +3% session is the specific outcome the argument said was less likely than a further sector selloff. If the trim was executed at 690p on Monday, this is the first session where not-trimming would have been marginally the better call. Not enough evidence to reverse the trade &mdash; the argument was about the shape of the risk distribution over the FOMC/BoE binaries, and both of those have now cleared without the tail scenarios materialising. The natural next check-in is BoJ Friday plus the following week&rsquo;s calendar, particularly the 24 September Nvidia investor day equivalent (none on the calendar) or the first hyperscaler capex commentary at Alphabet Q3 (28 October, still five weeks out). No action tonight.</p>
+<div class="bl-head"><span class="tick">NVDA (look-through)</span><span class="chip neg">Sector-composite bounce fades</span><span class="px">$217.44, &minus;1.51% · AMD &minus;2.4%</span></div>
+<p>The read-through to your fund sleeve is a small negative today, entirely offset by the mega-cap-software bid. Look-through weights: ATT ~9.2%, VUAG ~7.6%, SWDA ~5.5%, Royal London ~5.3%, Global All Cap ~4.2%, VUSA ~5.5%, SMH ~11%. Aggregate NVDA exposure ~£5,180 tonight versus ~£5,253 Wednesday; the &minus;1.5% price move takes about £78 off the sleeve. That is offset by MSFT +1.5%, AAPL +1.4%, GOOGL +1.3%, META +1.3% at aggregate look-through weights that are, in total, roughly the same size as the NVDA weight. Net wash on the tech-concentrated sleeve.</p>
 </div>
 
 <div class="bl">
-<div class="bl-head"><span class="tick">GSK.L</span><span class="chip neu">A quiet day earned</span><span class="px">rest after the WCLC / FDA week</span></div>
-<p>No specific news, price broadly stable after four sessions of catalyst-compounded gains that took GSK from ~1,720p on 12 September to ~1,895p on the 15th. Consensus target 2,155p still stands. The position is a Hold-rated stock with an underappreciated pipeline; the ratio of price to catalyst dose has improved but nothing on today&rsquo;s tape changes it in either direction.</p>
+<div class="bl-head"><span class="tick">Fund sleeve (US-linked)</span><span class="chip mix">Tomorrow&rsquo;s NAVs digest a mixed close</span><span class="px">S&amp;P +0.17% · Nasdaq +0.39% · SOXX mixed</span></div>
+<p>The lines that price against tonight&rsquo;s New York close &mdash; ATT (already priced), VUAG, VUSA, SWDA, Royal London Global Equity Select, Global All Cap, plus the direct-ETF sleeve of SMH.L and RBOT.L &mdash; will book Monday&rsquo;s NAVs at essentially flat-to-marginally-positive on Friday&rsquo;s close. The mixed sector composition (mega-cap-software up, semis down at the largest names) is nearly a wash across the fund weights. Aggregate impact on the ~£52,750 tech-concentrated block is roughly &minus;£50 to +£150, well inside the day&rsquo;s noise range.</p>
+</div>
+
+<div class="bl">
+<div class="bl-head"><span class="tick">GSK.L</span><span class="chip neu">Quiet</span><span class="px">~1,870p · pharma sector calm</span></div>
+<p>No specific news. Price broadly flat on the day. Consensus target 2,155p still stands. Position is £1,799 tonight, essentially unchanged.</p>
 </div>
 
 <div class="bl">
 <div class="bl-head"><span class="tick">DiDi, EMQQ, Games Workshop</span><span class="chip neu">Standing quietly</span><span class="px">one line each</span></div>
-<p><b>Games Workshop</b> at ~17,600p, essentially flat &mdash; still the best-placed line in the book for a hawkish-inflation environment (no AI weight, no direct rate sensitivity, no gas cost pass-through). <b>DiDi</b> and <b>EMQQ</b> continue to trade the China August activity backdrop from Monday; no new China data today. The next scheduled catalyst on either remains DiDi Q3 in late November.</p>
+<p><b>Games Workshop</b> at ~18,110p per the last public tick, essentially flat. Still the best-placed line in the book for a hawkish-inflation environment. <b>DiDi</b> and <b>EMQQ</b> continue to trade the China August activity backdrop from earlier in the week; no fresh China data. Next scheduled DiDi catalyst is Q3 in late November.</p>
 </div>
 
 </div>
 
 <div class="note">
-<p><span class="lab">No new trade idea tonight</span>The FOMC and BoE binaries are behind us with the middle-scenario outcome for both. That is exactly the environment where the honest answer is &ldquo;the book carries.&rdquo; BoJ Friday is the last of the September central-bank trio and is worth watching for carry-trade transmission rather than for a trade &mdash; you hold nothing Japanese directly. The next entry-level event with genuine trade content is the ONS September CPI on 21 October, three days before the Budget, at which point the fuel-price pass-through gets its second look and the November MPC becomes concrete.</p>
+<p><span class="lab">No new trade idea tonight</span>Third session in a row. The BoJ hike/dovish tone combination is not a trade you take with the sleeves you have &mdash; you hold nothing Japanese, no direct FX exposure, and the carry-financed tech transmission is a marginal positive that is already in the price. Brent&rsquo;s two-day fade is not big enough to reverse the Shell position and would need $95 or a Middle East resolution to trigger. The next event with genuine trade content remains UK September CPI on 21 October, three days before the Budget, at which point the November MPC becomes concrete and the fuel-price transmission gets its second look. Between now and then the calendar is quiet other than the BoJ intervention risk on USD/JPY, which is a &ldquo;watch, don&rsquo;t position&rdquo; item.</p>
 </div>
 </section>
 
 <section id="s7">
 <h2><span class="no">07</span>Week ahead</h2>
-<p class="sub">Next 48 hours. One central bank left in the sequence, plus one UK data print worth watching.</p>
+<p class="sub">The regular Saturday review handles Friday closes across every line. Below is what sits between now and then.</p>
 
 <div class="cal">
 <div class="day">
-  <div class="dname">Thursday <span>· 17 September · done</span></div>
+  <div class="dname">Friday <span>· 18 September · done</span></div>
   <ul>
-    <li>BoE held 6&ndash;3 at 3.75%, marked inflation forecast up to &ldquo;slightly over 4%&rdquo; in early 2027, and rewrote QT to £46bn/year with active gilt sales paused six months.</li>
-    <li>UK 10-year gilt yield eased below 5.35%; FTSE 250 +1.1% led by homebuilders (Barratt Redrow +12%).</li>
-    <li>US 10-year Treasury fell to 4.95%, ending eight sessions of gains; SOXX +3%; S&amp;P 500 +0.59% to 7,596.</li>
-    <li>Brent &minus;2.1% to $103.61 on Saudi confirming increased Hormuz routing.</li>
-    <li>US initial jobless claims held at 206k (in line); Philly Fed 31.3 forecast vs 47.4 prior (a meaningful step-down if delivered).</li>
-  </ul>
-</div>
-<div class="day key">
-  <div class="dname">Friday <span>· 18 September · the day</span></div>
-  <ul>
-    <li><b>Bank of Japan.</b> 100% priced for 25bp to 1.25%, per rate-probability trackers as of mid-week. Ueda flagged the September window at Jackson Hole and Bessent has pressed for &ldquo;decisive&rdquo; steps to tame the weak yen. Transmission: a hiked BoJ raises the funding-leg cost for global carry trades and reaches every fund line indirectly; you hold nothing Japanese directly. USD/JPY reaction is the specific pair to watch.</li>
-    <li><b>UK August retail sales, 07:00 UK.</b> The read on whether the fuel-price CPI is showing up as a demand hit. Relevant to Games Workshop&rsquo;s UK consumer base at the margin.</li>
-    <li>Japanese CPI, US industrial production and capacity utilisation, Fed&rsquo;s Bowman speaks.</li>
-    <li><b>Quarterly triple witching.</b> Elevated volume; the close tells you little about the underlying tape.</li>
+    <li>BoJ hiked 25bp to 1.25% on a 7&ndash;2 vote; Ueda declined to guide a pace for further hikes. USD/JPY +0.63% to ~156.95.</li>
+    <li>Japan August CPI ex-fresh-food 1.7% y/y, below 1.8% consensus and July print. Government energy subsidies did the work.</li>
+    <li>UK August retail sales +0.5% m/m against &minus;0.2% consensus. Three-month volumes +0.9%.</li>
+    <li>US industrial production unchanged (vs +0.3% consensus). Capacity utilisation 76.3% unchanged.</li>
+    <li>US 10Y +5bp to 5.004%, back through the round number. Dow &minus;0.18% to 51,682 for worst week since March. S&amp;P +0.17% to 7,650.50. Nasdaq +0.39% to 26,522.</li>
+    <li>NVDA &minus;1.5% to $217.44, AMD &minus;2.4% to $459.61. Microsoft +1.5%, Apple +1.4%, Alphabet +1.3%, Meta +1.3%.</li>
+    <li>Brent settled $103.29, &minus;1.5% on the session, down 5% off Monday&rsquo;s peak. TTF ~€78.50, NBP 198.64p.</li>
+    <li>FTSE 100 gave back most of Thursday&rsquo;s 1.2% BoE bounce; FTSE 250 steady. DAX +0.77%, CAC 40 +0.57%.</li>
+    <li>Quarterly triple witching cleared without incident; ~$7trn notional expired at the close.</li>
+    <li>Gassco raised Ormen Lange unplanned-shutdown impact to 14.9 mcm/d; outage now extended to 1 February 2027.</li>
   </ul>
 </div>
 <div class="day">
   <div class="dname">Weekend <span>· through Sunday</span></div>
   <ul>
     <li>Standard Saturday portfolio week-in-review is the natural next full P&amp;L moment.</li>
-    <li>Nothing else scheduled through the weekend.</li>
+    <li>Nothing else scheduled. Middle East headlines are the only unscheduled input worth watching for a Monday gap risk.</li>
+  </ul>
+</div>
+<div class="day key">
+  <div class="dname">Monday <span>· 22 September</span></div>
+  <ul>
+    <li><b>Broadcom dividend record date.</b> Payable 30 September. Position needs to be held through Monday to qualify.</li>
+    <li>Nothing else on the calendar. A quiet week ahead, punctuated by Fedspeak into month-end.</li>
   </ul>
 </div>
 </div>
 
 <div class="later">
-<div class="lcard"><div class="when">Mon 21 Sep</div><div class="what">Broadcom dividend record date</div><div class="why">Payable 30 September. Hold through Monday to qualify.</div></div>
-<div class="lcard"><div class="when">Tue 23 Sep</div><div class="what">Norwegian outage peak</div><div class="why">Week 38 heaviest day of the maintenance calendar.</div></div>
-<div class="lcard"><div class="when">Fri 2 Oct</div><div class="what">Ormen Lange returns (public track)</div><div class="why">24.5 mcm/d back on. Still the dated bearish catalyst on the gas curve.</div></div>
+<div class="lcard"><div class="when">Tue 23 Sep</div><div class="what">Norwegian outage peak</div><div class="why">Week 38 heaviest scheduled maintenance day. Overlaid on the Ormen Lange extension, this is now the peak Norwegian supply loss of the calendar.</div></div>
+<div class="lcard"><div class="when">Late Sep</div><div class="what">EU Commission winter preparedness</div><div class="why">Expected policy statement on storage, LNG imports, and the 80% mandatory target.</div></div>
+<div class="lcard"><div class="when">Fri 3 Oct</div><div class="what">US September NFP</div><div class="why">The first data point that could change the December Fed pricing.</div></div>
 <div class="lcard"><div class="when">Mon 5 Oct</div><div class="what">Games Workshop 140p dividend</div><div class="why">About £21 on 15 shares.</div></div>
-<div class="lcard"><div class="when">Tue 21 Oct</div><div class="what">UK September CPI</div><div class="why">Three days before the Budget. Motor fuel pass-through gets its second look.</div></div>
-<div class="lcard"><div class="when">Wed 28 Oct</div><div class="what">UK Autumn Budget</div><div class="why">£13.8bn headroom, but the QT rewrite has arguably given the Chancellor a little breathing room on the long end.</div></div>
-<div class="lcard"><div class="when">Wed 28 Oct</div><div class="what">Microsoft, Alphabet, Meta Q3</div><div class="why">The dated test of the AI pace narrative: capex guidance from all three at once.</div></div>
-<div class="lcard"><div class="when">Thu 5 Nov</div><div class="what">Bank of England, MPR</div><div class="why">First meeting after today&rsquo;s hawkish hold. Now the live meeting for a hike.</div></div>
+<div class="lcard"><div class="when">Tue 14 Oct</div><div class="what">UK labour market data</div><div class="why">Wage growth print, first read since the BoE hawkish hold.</div></div>
+<div class="lcard"><div class="when">Wed 15 Oct</div><div class="what">US September CPI</div><div class="why">The specific event that resets the December Fed probability.</div></div>
+<div class="lcard"><div class="when">Mon 20 Oct</div><div class="what">TSMC Q3</div><div class="why">The tone-setter for hyperscaler capex reads on 28 October.</div></div>
+<div class="lcard"><div class="when">Tue 21 Oct</div><div class="what">UK September CPI</div><div class="why">Three days before the Budget. Motor fuel pass-through second look; November MPC concrete.</div></div>
+<div class="lcard"><div class="when">Wed 28 Oct</div><div class="what">Microsoft, Alphabet, Meta Q3</div><div class="why">The dated test of the AI-pace narrative: capex guidance from all three at once.</div></div>
+<div class="lcard"><div class="when">Wed 28 Oct</div><div class="what">UK Autumn Budget</div><div class="why">£13.8bn headroom; QT rewrite has given the Chancellor slightly more room on the long end.</div></div>
 <div class="lcard"><div class="when">Late Oct</div><div class="what">Shell and GSK Q3</div><div class="why">Shell&rsquo;s first quarter fully reflecting the crude and gas rally.</div></div>
-<div class="lcard"><div class="when">Wed 18 Nov</div><div class="what">NVIDIA Q3 FY27</div><div class="why">Your largest look-through exposure at ~£5,253.</div></div>
+<div class="lcard"><div class="when">Thu 5 Nov</div><div class="what">Bank of England, MPR</div><div class="why">First meeting after the September hawkish hold. Now the live meeting for a hike.</div></div>
+<div class="lcard"><div class="when">Wed 18 Nov</div><div class="what">NVIDIA Q3 FY27</div><div class="why">Your largest look-through exposure at ~£5,180.</div></div>
 <div class="lcard"><div class="when">Fri 27 Nov</div><div class="what">DiDi Global Q3</div><div class="why">Next catalyst for the position nearest its low.</div></div>
-<div class="lcard"><div class="when">Wed 10 Dec</div><div class="what">Fed decision</div><div class="why">Where Warsh&rsquo;s dot-plot commitment gets tested. 60&ndash;70% priced.</div></div>
+<div class="lcard"><div class="when">Wed 10 Dec</div><div class="what">Fed decision</div><div class="why">Where the December hike probability gets tested. Priced at 65&ndash;70% tonight.</div></div>
 </div>
 </section>
 
@@ -438,25 +443,34 @@ footer li{margin-bottom:4px}
 <footer>
 <h4>Sources</h4>
 <ul>
-<li>Bank of England September 2026 minutes and monetary policy summary: bankofengland.co.uk</li>
-<li>BoE gilt-sales market notice 17 September 2026: bankofengland.co.uk/markets/market-notices</li>
-<li>BoE decision reaction and QT rewrite: Reuters via Investing.com, CNBC, Bloomberg, Business Recorder, Securities.io, EBC Financial Group</li>
+<li>Bank of Japan decision, vote and Ueda press conference: Bloomberg, CNBC, Japan Times, Nation Thailand, Nippon.com, Babypips</li>
+<li>USD/JPY reaction: FXStreet, Bloomberg</li>
+<li>Japan August CPI: Bloomberg, Japan Times, Investing.com, Substack (Gianluca Benigno)</li>
+<li>UK August retail sales: Bloomberg, Retail Bulletin, FXStreet, ONS, GOV.UK</li>
+<li>US 10-year Treasury and Dow week performance: CNBC, TheStreet, Bloomberg</li>
+<li>S&amp;P 500, Nasdaq, Dow, Nvidia, AMD, mega-cap tech closes: TheStreet, CNBC, Bloomberg, Yahoo Finance</li>
+<li>Triple witching context: Bloomberg, Futunn</li>
 <li>UK 10-year gilt: Trading Economics gilt-yield news feed</li>
-<li>FTSE 100 and FTSE 250 close: LSE.co.uk, Euronext live, MarketScreener, live.euronext.com</li>
-<li>UK homebuilders (Barratt Redrow, Vistry, Bellway, Taylor Wimpey): Financial News UK, Euronext</li>
-<li>GBP/USD: FXStreet, Vantage Markets, LiteFinance, Investing.com</li>
-<li>US Treasury yields post-FOMC: CNBC bond desk, Bloomberg</li>
-<li>S&amp;P 500 close and semis: TheStreet, 24/7 Wall St., Motley Fool</li>
-<li>US jobless claims and Philly Fed: Investing.com, Bloomingbit, Zacks</li>
-<li>Brent and Hormuz routing: CNBC energy desk, Wikipedia 2026&ndash;2028 oil market chronology</li>
-<li>TTF and NBP: Trading Economics, Investing.com, CME Group, Catalyst Commercial UK, Purely Energy</li>
-<li>Norway maintenance: MNI Markets, S&amp;P Global Commodity Insights, Wood Mackenzie</li>
-<li>Qatar force majeure and Edison: LNG Industry, GIIGNL, gasworld, Egypt Oil &amp; Gas, AGBI</li>
-<li>EU storage: MacroMicro AGSI+ tracker, S&amp;P Global, Oxford Institute for Energy Studies, EnergyRiskIQ</li>
-<li>Bank of Japan preview: Reuters via Yahoo Finance, Japan Times, FXStreet, rateprobability.com</li>
+<li>FTSE 100 and FTSE 250 close: LSE.co.uk, proactiveinvestors, KFGO, Sunday Guardian</li>
+<li>DAX and CAC 40 close: Newsquawk, Saxo, MarketScreener, Trading Economics</li>
+<li>Stoxx 600: Bloomberg, NewsBytes</li>
+<li>Shell price: London Stock Exchange, stockanalysis.com, ad-hoc-news.de</li>
+<li>Greencoat UK Wind: LSE.co.uk, Yahoo Finance</li>
+<li>Allianz Technology Trust: Capital.com, Yahoo Finance</li>
+<li>GSK: LSE.co.uk, Yahoo Finance UK</li>
+<li>Games Workshop: LSE.co.uk, ad-hoc-news.de</li>
+<li>Brent: Trading Economics, Fortune, Oilprice.com</li>
+<li>TTF: Trading Economics, tradingpedia.com, oilpriceapi.com, EnergyRiskIQ</li>
+<li>NBP: Trading Economics, Catalyst Commercial, Purely Energy, oilpriceapi.com</li>
+<li>Norwegian gas / Ormen Lange: Wood Mackenzie, Oilprice.com, Bitget News, Argus Media</li>
+<li>Qatar force majeure: LNG Industry, CNBC, AGBI, GIIGNL, Bloomberg</li>
+<li>EU gas storage: MacroMicro AGSI+ tracker, Oxford Institute for Energy Studies, EnergyRiskIQ</li>
+<li>US industrial production and capacity utilisation: Federal Reserve G.17, FX.co, Academic Capital</li>
+<li>Fed Bowman speech: American Banker, Federal Reserve Board</li>
+<li>GBP/USD: Eurochange, poundsterlinglive.com</li>
 </ul>
 <div class="disc">
-<p>Generated 17 September 2026 from holdings.numbers as last saved 12 September 2026 &mdash; 29 lines, £139,641 book cost, no transactions recorded since the Saturday review. Prices are today&rsquo;s intraday or last-traded quotes, captured this evening; London and continental markets have closed and the US session has just closed. Argus, ICIS, Kpler and S&amp;P Global are not reachable from here and no figure above comes from them.</p>
+<p>Generated 18 September 2026 from holdings.numbers as last saved 12 September 2026 &mdash; 29 lines, £139,641 book cost, no transactions recorded since the Saturday review. Prices are today&rsquo;s intraday or last-traded quotes, captured this evening; London, continental and US markets have all closed. Argus, ICIS, Kpler and S&amp;P Global are not reachable from here and no figure above comes from them.</p>
 <p>This is an automated research summary for personal use and not financial advice. I am not a financial adviser and nothing here is a recommendation to buy or sell.</p>
 </div>
 </footer>
