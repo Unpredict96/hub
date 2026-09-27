@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>:root{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
-<title>Portfolio Week in Review — 19 September 2026</title>
+<style>:root{color-scheme:light dark}body{margin:0;font:14px/1.5 system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Portfolio Week in Review &mdash; 27 September 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 </head>
 <body>
 <style>
@@ -20,7 +20,6 @@
   --neg:#a4382b; --neg-soft:#f8e2de;
   --warn:#8a5c0c; --warn-soft:#f7ecd4;
   --shadow:0 1px 2px rgba(16,32,35,.06), 0 6px 18px rgba(16,32,35,.05);
-  --serif:"Newsreader",Georgia,"Times New Roman",serif;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
@@ -45,108 +44,142 @@
   --shadow:0 1px 2px rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.3);
 }
 
+code{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.92em;background:var(--surface-2);padding:1px 5px;border-radius:3px}
 *{box-sizing:border-box}
-body{margin:0; background:var(--bg); color:var(--ink);
-  font-family:var(--serif); font-size:17px; line-height:1.62;
-  font-optical-sizing:auto; -webkit-font-smoothing:antialiased;}
-.wrap{max-width:39rem; margin:0 auto; padding-inline:20px; padding-block:0 64px}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:15px; line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1060px; margin:0 auto; padding-inline:20px; padding-block:0 64px}
 a{color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent)}
 a:hover{border-bottom-color:var(--accent)}
 :focus-visible{outline:2px solid var(--accent); outline-offset:2px}
-p{margin:0 0 15px}
-b,strong{font-weight:600}
 
-.mast{border-bottom:1px solid var(--line-strong); padding-block:40px 20px; margin-bottom:24px}
-.eyebrow{font-size:12.5px; letter-spacing:.16em; text-transform:uppercase;
-  color:var(--accent); margin:0 0 12px; font-weight:600}
-h1{font-weight:500; font-size:clamp(31px,7.2vw,42px); line-height:1.08;
-  letter-spacing:-.015em; margin:0 0 10px; text-wrap:balance}
-.dek{margin:0; color:var(--ink-2); font-size:16px; font-style:italic}
+.mast{border-bottom:1px solid var(--line-strong); padding-block:44px 22px; margin-bottom:28px}
+.eyebrow{font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:11.5px; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--accent); margin:0 0 14px}
+h1{font-family:"Newsreader",Georgia,serif; font-weight:500; font-size:clamp(34px,5.4vw,50px);
+  line-height:1.06; letter-spacing:-.015em; margin:0 0 10px; text-wrap:balance}
+.dek{margin:0; color:var(--ink-2); font-size:16px; max-width:62ch}
 
-.figs{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px;
-  background:var(--line); border:1px solid var(--line); border-radius:8px; overflow:hidden; margin-bottom:12px}
-@media (min-width:640px){.figs{grid-template-columns:repeat(4,minmax(0,1fr))}}
-.fig{background:var(--surface); padding:15px 15px 13px}
-.fig .k{font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3);
-  margin-bottom:6px; font-weight:600}
-.fig .v{font-size:25px; font-weight:500; line-height:1.05; letter-spacing:-.01em;
-  font-variant-numeric:tabular-nums}
-.fig .s{font-size:13px; color:var(--ink-2); margin-top:4px; font-variant-numeric:tabular-nums}
+.alert{display:flex; gap:14px; align-items:flex-start; background:var(--warn-soft);
+  border-left:3px solid var(--warn); border-radius:0 6px 6px 0; padding:16px 18px; margin-bottom:30px}
+.alert h3{margin:0 0 4px; font-size:14px; font-weight:700; letter-spacing:.01em; color:var(--ink)}
+.alert p{margin:0; font-size:14px; color:var(--ink-2)}
+.alert .mark{font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--warn); padding-top:3px; white-space:nowrap}
+
+.figs{display:grid; grid-template-columns:repeat(auto-fit,minmax(155px,1fr)); gap:1px;
+  background:var(--line); border:1px solid var(--line); border-radius:8px; overflow:hidden; margin-bottom:14px}
+.fig{background:var(--surface); padding:18px 18px 16px}
+.fig .k{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.11em;
+  text-transform:uppercase; color:var(--ink-3); margin-bottom:7px}
+.fig .v{font-family:"Newsreader",Georgia,serif; font-size:27px; font-weight:500; line-height:1.05;
+  letter-spacing:-.01em; font-variant-numeric:tabular-nums}
+.fig .s{font-size:12.5px; color:var(--ink-2); margin-top:5px}
 .v.up{color:var(--pos)} .v.down{color:var(--neg)}
-.footnote{font-size:13.5px; color:var(--ink-3); margin:0 0 30px; font-style:italic}
+.footnote{font-size:12.5px; color:var(--ink-3); margin:0 0 38px}
 
-.toc{background:var(--surface); border:1px solid var(--line); border-radius:8px;
-  padding:16px 20px 18px; margin-bottom:38px; box-shadow:var(--shadow)}
-.toc h4{font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3);
-  margin:0 0 10px; font-weight:600}
-.toc ol{margin:0; padding-left:20px; font-size:16px}
-.toc li{margin-bottom:5px}
-.toc li::marker{color:var(--ink-3); font-variant-numeric:tabular-nums}
+section{margin-bottom:48px}
+h2{font-family:"Newsreader",Georgia,serif; font-weight:500; font-size:27px; letter-spacing:-.01em;
+  margin:0 0 6px; text-wrap:balance}
+.sub{margin:0 0 20px; color:var(--ink-2); font-size:14.5px; max-width:68ch}
 
-section{margin-bottom:46px; scroll-margin-top:16px}
-h2{font-weight:500; font-size:27px; letter-spacing:-.012em; margin:0 0 4px; text-wrap:balance; line-height:1.18}
-.sub{margin:0 0 20px; color:var(--ink-2); font-size:15.5px; font-style:italic}
-h3{font-size:19px; font-weight:600; letter-spacing:-.005em; margin:30px 0 8px; line-height:1.28}
+.ranked{display:flex; flex-direction:column; gap:14px}
+.item{background:var(--surface); border:1px solid var(--line); border-radius:8px;
+  padding:18px 20px 18px 20px; box-shadow:var(--shadow); border-left-width:3px; border-left-style:solid}
+.item.pos{border-left-color:var(--pos)} .item.neg{border-left-color:var(--neg)}
+.item.mix{border-left-color:var(--warn)}
+.item-head{display:flex; flex-wrap:wrap; gap:10px 14px; align-items:baseline; margin-bottom:8px}
+.rank{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--ink-3); font-weight:600}
+.item h3{margin:0; font-size:16.5px; font-weight:700; letter-spacing:-.005em; flex:1 1 260px}
+.item p{margin:0 0 10px; font-size:14.5px; color:var(--ink-2)}
+.item p:last-child{margin-bottom:0}
+.exposed{font-size:13px; color:var(--ink-3); font-family:"IBM Plex Mono",monospace;
+  border-top:1px dashed var(--line-strong); padding-top:10px; margin-top:12px}
+.exposed b{color:var(--ink-2); font-weight:500}
 
-.alert{background:var(--warn-soft); border-left:3px solid var(--warn);
-  border-radius:0 6px 6px 0; padding:15px 17px; margin:0 0 28px}
-.alert h3{margin:0 0 4px; font-size:16px; font-weight:700}
+.chip{display:inline-flex; align-items:center; gap:5px; font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px; letter-spacing:.07em; text-transform:uppercase; font-weight:600;
+  padding:3px 8px; border-radius:3px; white-space:nowrap}
+.chip.pos{background:var(--pos-soft); color:var(--pos)}
+.chip.neg{background:var(--neg-soft); color:var(--neg)}
+.chip.mix{background:var(--warn-soft); color:var(--warn)}
+.chip.neu{background:var(--surface-2); color:var(--ink-2)}
+.chip.hi{background:var(--accent-soft); color:var(--accent)}
 
-.note{background:var(--surface-2); border-left:3px solid var(--accent);
-  border-radius:0 6px 6px 0; padding:12px 16px; margin:14px 0 22px}
-.note p{margin:0; font-size:15px}
-.note .lab{display:inline-block; font-size:11px; letter-spacing:.11em; text-transform:uppercase;
-  color:var(--accent); margin-right:8px; font-weight:600}
-.up{color:var(--pos)} .down{color:var(--neg)}
+.holdings{display:flex; flex-direction:column; gap:0; border:1px solid var(--line);
+  border-radius:8px; overflow:hidden; background:var(--surface); box-shadow:var(--shadow)}
+.hold{display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,1.35fr); gap:0;
+  border-top:1px solid var(--line)}
+.holdings .hold:first-child{border-top:none}
+.hold-left{padding:18px 20px; border-right:1px solid var(--line); background:var(--surface-2)}
+.hold-right{padding:18px 20px}
+.tick{font-family:"IBM Plex Mono",monospace; font-weight:600; font-size:15px; letter-spacing:-.01em}
+.coname{font-size:13px; color:var(--ink-2); margin-top:1px}
+.plat{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--ink-3); margin-top:6px}
+.nums{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 14px; margin-top:14px}
+.num .k{font-family:"IBM Plex Mono",monospace; font-size:10px; letter-spacing:.09em;
+  text-transform:uppercase; color:var(--ink-3)}
+.num .v{font-family:"IBM Plex Mono",monospace; font-size:14.5px; font-variant-numeric:tabular-nums;
+  font-weight:500; margin-top:2px}
+.num .v.up{color:var(--pos)} .num .v.down{color:var(--neg)}
+.chips{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:11px}
+.hold-right ul{margin:0 0 12px; padding-left:17px; font-size:14px; color:var(--ink-2)}
+.hold-right li{margin-bottom:5px}
+.read{font-size:14px; background:var(--accent-soft); color:var(--ink);
+  border-radius:5px; padding:10px 13px; margin:0}
+.read b{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.09em;
+  text-transform:uppercase; color:var(--accent); display:block; margin-bottom:3px}
 
-.book{display:grid; gap:14px; margin-bottom:8px}
-.bl{background:var(--surface); border:1px solid var(--line); border-radius:8px;
-  padding:14px 16px 12px; box-shadow:var(--shadow)}
-.bl-head{display:flex; flex-wrap:wrap; align-items:baseline; gap:8px 12px; margin-bottom:6px}
-.tick{font-weight:700; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-  font-size:14px; letter-spacing:.02em}
-.chip{display:inline-block; font-size:11.5px; padding:2px 8px; border-radius:20px;
-  border:1px solid var(--line-strong); background:var(--surface-2);
-  color:var(--ink-2); font-weight:500; letter-spacing:.02em}
-.chip.pos{background:var(--pos-soft); color:var(--pos); border-color:transparent}
-.chip.neg{background:var(--neg-soft); color:var(--neg); border-color:transparent}
-.chip.neu{background:var(--accent-soft); color:var(--accent); border-color:transparent}
-.chip.mix{background:var(--warn-soft); color:var(--warn); border-color:transparent}
-.px{margin-left:auto; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-  font-size:13.5px; color:var(--ink-2); font-variant-numeric:tabular-nums}
-.bl p{margin:0; font-size:15px}
-.bl em{color:var(--ink-3)}
+.tscroll{overflow-x:auto; border:1px solid var(--line); border-radius:8px; background:var(--surface);
+  box-shadow:var(--shadow)}
+table{border-collapse:collapse; width:100%; min-width:640px; font-size:13.5px}
+th,td{text-align:left; padding:11px 14px; border-bottom:1px solid var(--line); vertical-align:top}
+thead th{font-family:"IBM Plex Mono",monospace; font-size:10px; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--ink-3); font-weight:600; background:var(--surface-2);
+  position:sticky; top:0}
+tbody tr:last-child td{border-bottom:none}
+td.n{font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; text-align:right; white-space:nowrap}
+td.n.up{color:var(--pos)} td.n.down{color:var(--neg)}
+td .fname{font-weight:600}
+td .fmeta{color:var(--ink-3); font-size:12px; margin-top:2px}
 
-.tscroll{overflow-x:auto; margin-bottom:14px}
-table{width:100%; border-collapse:collapse; font-size:14.5px; min-width:520px}
-th,td{padding:9px 10px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top}
-th{font-size:11px; letter-spacing:.10em; text-transform:uppercase; color:var(--ink-3); font-weight:600; background:var(--surface-2)}
-td.n,th.n{text-align:right; font-variant-numeric:tabular-nums}
-.fname{font-weight:600}
-.fmeta{color:var(--ink-3); font-size:12.5px; margin-top:2px}
+.cal{display:flex; flex-direction:column; gap:0; border-left:2px solid var(--line-strong); margin-left:6px}
+.day{display:grid; grid-template-columns:132px minmax(0,1fr); gap:20px; padding:16px 0 16px 22px; position:relative}
+.day::before{content:""; position:absolute; left:-6px; top:23px; width:10px; height:10px;
+  border-radius:50%; background:var(--accent); border:2px solid var(--bg)}
+.day.key::before{background:var(--neg); width:12px; height:12px; left:-7px}
+.day + .day{border-top:1px solid var(--line)}
+.dname{font-family:"IBM Plex Mono",monospace; font-size:12.5px; font-weight:600; letter-spacing:.02em}
+.ddate{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--ink-3); margin-top:2px}
+.day ul{margin:0; padding-left:16px; font-size:14px; color:var(--ink-2)}
+.day li{margin-bottom:6px}
+.day li:last-child{margin-bottom:0}
+.day li b{color:var(--ink); font-weight:600}
 
-.cal{display:grid; gap:14px; margin-bottom:12px}
-.day{background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--accent);
-  border-radius:0 8px 8px 0; padding:12px 14px}
-.day.key{border-left-color:var(--neg)}
-.dname{font-size:12.5px; letter-spacing:.10em; text-transform:uppercase; color:var(--accent); font-weight:700; margin-bottom:6px}
-.day.key .dname{color:var(--neg)}
-.day ul{margin:0; padding-left:18px; font-size:15px}
-.day li{margin-bottom:5px}
-.day span{color:var(--ink-3); font-style:italic; text-transform:none; letter-spacing:0; font-weight:400}
+.later{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:14px; margin-top:22px}
+.lcard{background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:15px 17px}
+.lcard .when{font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--accent); margin-bottom:6px}
+.lcard .what{font-size:14px; font-weight:600; margin-bottom:3px}
+.lcard .why{font-size:13px; color:var(--ink-2)}
 
-footer{border-top:1px solid var(--line-strong); padding-top:22px; margin-top:20px;
-  font-size:14px; color:var(--ink-3)}
-footer h4{font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-2);
-  margin:0 0 8px; font-weight:600}
-footer ul{margin:0 0 16px; padding-left:18px}
-footer li{margin-bottom:4px}
-.disc{border-top:1px solid var(--line); padding-top:14px; margin-top:4px; font-style:italic}
+footer{border-top:1px solid var(--line-strong); padding-top:22px; margin-top:8px;
+  font-size:12.5px; color:var(--ink-3)}
+footer h4{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--ink-2); margin:0 0 8px}
+footer ul{margin:0 0 16px; padding-left:17px; columns:2; column-gap:30px}
+footer li{margin-bottom:4px; break-inside:avoid}
+.disc{border-top:1px solid var(--line); padding-top:14px; margin-top:4px}
 
-@media (max-width:420px){
-  body{font-size:16.5px}
-  .wrap{padding-inline:16px}
-  .fig .v{font-size:22px}
+@media (max-width:720px){
+  .hold{grid-template-columns:minmax(0,1fr)}
+  .hold-left{border-right:none; border-bottom:1px solid var(--line)}
+  .day{grid-template-columns:minmax(0,1fr); gap:8px}
+  footer ul{columns:1}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
 </style>
@@ -154,416 +187,704 @@ footer li{margin-bottom:4px}
 <div class="wrap">
 
 <header class="mast">
-  <p class="eyebrow">Weekly Review &nbsp;·&nbsp; Saturday 19 September 2026</p>
-  <h1>The central-bank trio is done. The book carries roughly flat.</h1>
-  <p class="dek">Trading 212 and interactive investor, General and ISA. FX 1 GBP = 1.3359 USD. Direct lines use Friday 18 September closes; OEIC NAVs are Tuesday 15 September &mdash; Monday morning will re-price Friday's close.</p>
+  <p class="eyebrow">Weekly Review &nbsp;·&nbsp; Week ending Friday 25 September 2026</p>
+  <h1>Muse woke the CPU trade. Meta and AMD did the rest.</h1>
+  <p class="dek">Trading 212 and interactive investor, General and ISA. All figures in GBP at Friday&rsquo;s close, FX 1 GBP = 1.3242 USD (sterling &minus;1.14% on the week). Twenty-nine lines, unchanged. Book &pound;174,597, +&pound;2,834 on the week.</p>
 </header>
 
 <div class="alert">
-  <h3>Position changes since 15 September review</h3>
-  <p><b>None.</b> The 29 lines and £139,641 book cost carry unchanged into this run. The ATT.L trim idea floated on Monday (200 of 619 shares at 690p) was discussed across three daily briefs but is not visible in the current holdings.numbers &mdash; treated here as not executed. If that isn't right, say so and I'll re-run.</p>
+  <div class="mark">Holdings</div>
+  <div>
+    <h3>No change. Twenty-nine lines, same as last week and the week before.</h3>
+    <p><code>holdings.numbers</code> has not been modified since 12 September &mdash; file timestamp confirms it. No position added or removed, no share count altered, no rebalance executed. The <b>Allianz Technology Trust</b> trim that has been floated for two consecutive weeks does not appear in the file and is again treated as not executed; ATT is carried at the full 619 shares. If that isn&rsquo;t right &mdash; if a trade did go through and just hasn&rsquo;t landed in the file yet &mdash; say so and I&rsquo;ll re-run.</p>
+  </div>
 </div>
 
 <div class="figs">
-  <div class="fig"><div class="k">Market value</div><div class="v">~£170,000</div><div class="s">29 lines, 4 accounts</div></div>
-  <div class="fig"><div class="k">Book cost</div><div class="v">£139,641</div><div class="s">unchanged</div></div>
-  <div class="fig"><div class="k">Unrealised P&L</div><div class="v up">+£30,300</div><div class="s">+21.7% on cost</div></div>
-  <div class="fig"><div class="k">Vs 11 Sep</div><div class="v">±£0</div><div class="s">essentially flat</div></div>
+  <div class="fig"><div class="k">Market value</div><div class="v">&pound;174,597</div><div class="s">+&pound;2,834 on the week (+1.65%)</div></div>
+  <div class="fig"><div class="k">Book cost</div><div class="v">&pound;139,641</div><div class="s">29 lines, 4 accounts</div></div>
+  <div class="fig"><div class="k">Unrealised P&amp;L</div><div class="v up">+&pound;34,956</div><div class="s">+25.0% on cost</div></div>
+  <div class="fig"><div class="k">Funds / equities</div><div class="v">78 / 22</div><div class="s">&pound;136,110 vs &pound;38,487</div></div>
 </div>
-<p class="footnote">Provisional value using Friday 18 September closes for the 15 equities and the LSE-listed ETFs, and Tuesday 15 September single-priced NAVs for the six OEICs (Fundsmith, Royal London, Fidelity European, Rathbone, Global All Cap, LifeStrategy 100%). Monday morning will book Friday-close NAVs. Working estimate on Monday's mark is £170,400&ndash;£170,700; the range is essentially flat on the £169,850 close of Friday 11 September.</p>
+<p class="footnote">All lines priced on the venue they are held on &mdash; LSE closes for London-listed holdings, NASDAQ/NYSE closes for US direct lines, published OEIC single price for the six funds. FX 1.3242 (Fri 25 Sep vs 1.3395 a week earlier) &mdash; sterling <em>fell</em> 1.14% on the week after a small Friday bounce off the Thursday 1.3216 three-month low. Mechanical FX contribution roughly <b>+&pound;1,050</b> on the &pound;93,000 dollar look-through &mdash; a modest tailwind, weaker than the last four weeks but still positive. About &pound;600 of this week&rsquo;s &pound;2,834 gain is the three lagging OEIC NAVs catching up to last Friday&rsquo;s prices, as flagged in the prior report.</p>
 
-<div class="toc">
-  <h4>Contents</h4>
-  <ol>
-    <li><a href="#movers">What moved the book</a></li>
-    <li><a href="#lookthrough">Look-through single-company exposure</a></li>
-    <li><a href="#equities">Individual equities</a></li>
-    <li><a href="#funds">Funds and ETFs</a></li>
-    <li><a href="#ahead">The week ahead</a></li>
-    <li><a href="#sources">Sources</a></li>
-  </ol>
-</div>
+<section>
+  <h2>What actually moved the book</h2>
+  <p class="sub">Ranked by how much of the &pound;174,378 each item touches, not by how loud the headline was. Direction is the effect on your holdings; materiality is the share of the portfolio exposed.</p>
 
-<section id="movers">
-  <h2>What moved the book</h2>
-  <p class="sub">Ranked by how much of the ~£170,000 each item touches. Moves are against Friday 11 September closes. Full week: Fed hiked to 4.00% (Wed), BoE held 6&ndash;3 with QT rewrite (Thu), BoJ hiked to 1.25% on a 7&ndash;2 dovish-Ueda split (Fri).</p>
+  <div class="ranked">
 
-  <h3>01 &nbsp;<span style="font-weight:400">Greencoat UK Wind gave back most of a five-week rally &mdash; the biggest single drag</span></h3>
-  <p>UKW fell from 110.5p to 105.0p across the five sessions, costing the book <strong>&minus;£459</strong>. The path was ugly: the position broke below 105p intraday on Wednesday as the FOMC hiked 25bp to 4.00% and Warsh's press-conference tone leaned hawkish, then recovered part of the drop on Thursday and Friday as the Bank of England's QT rewrite (active gilt sales paused six months; long-end sales halted; run-off pace reset to £46bn/year) pulled the long end of the gilt curve about 10bp below its pre-decision level. Discount to the 133.7p NAV is now wider than last week at ~21%; the 8.14% yield is intact and above-budget wind output is unchanged. The rate-sensitive part of the book took the September central-bank trio squarely on the chin here; the merchant-generation and QT-mechanics thesis is still what has to carry the position forward.</p>
-  <div class="note"><p><span class="lab">Exposure</span>8,349 shares, II ISA. Book cost £10,075; value <strong>£8,766</strong>; unrealised P&L &minus;£1,309 (&minus;13.0%). Week change <strong class="down">&minus;£459</strong>.</p></div>
+    <div class="item pos">
+      <div class="item-head">
+        <span class="rank">01</span>
+        <h3>Meta&rsquo;s Muse app broke the CPU trade wide open &mdash; AMD +12.7% in a week</h3>
+        <span class="chip pos">Positive</span><span class="chip hi">&asymp;&pound;53,000 look-through</span>
+      </div>
+      <p>The story of the week. <b>Muse</b>, Meta&rsquo;s agentic app that launched around 10 September, went to #1 on the US App Store roughly two weeks in and stayed there. Sell-side finally worked out what its architecture means for silicon: each Muse instance runs on its own secure cloud VM &mdash; a full browser, a CPU, memory, storage, agent keeps executing after the user closes the app. GPUs do model reasoning, but browsing, tool use, code execution and orchestration all sit on CPUs, and the units scale <em>per active agent</em>, not per user. That is a step-change repricing of the CPU footprint under inference.</p>
+      <p>Monday priced it violently. <b>AMD +8.9% intraday to $609.38, an all-time high, briefly through a $1trn market cap</b>. Intel +12&ndash;14%, best S&amp;P performer. Arm +13&ndash;17%. The Philadelphia Semiconductor Index +3.9%, its fifth consecutive up session. The rally then held through a bond rout that would normally have killed it: AMD closed the week at <b>$630.63, +12.7% in dollars, +12.2% in sterling</b> against your book. Meta itself finished at <b>$751.66, +12.9% in dollars</b>. This is the trade <em>under</em> Nvidia &mdash; Nvidia added only 1.3% in dollars, and the H20 licensing question left unanswered by the Trump&ndash;Xi summit weighed on it separately (item 03).</p>
+      <p>The look-through is where this lands. AMD is 2.64% of ATT (adds about &pound;12), a top-two weight in SMH (a +6.6% week to &pound;722), and sits inside every global tracker you own. Meta is 3.88% of ATT, index weight everywhere else. On the &pound;53,000 of semi-and-AI look-through the sleeve added on the order of <b>&pound;600&ndash;900 across the week</b> before separately taking Thursday&rsquo;s Nasdaq &minus;1.13% on the yield move. The net was still comfortably positive: ATT itself printed <b>+&pound;254 (+5.69%) and touched a fresh 52-week high on Tuesday intraday</b>.</p>
+      <div class="exposed"><b>Most exposed:</b> ATT &pound;4,711 (+&pound;254) &middot; SMH &pound;733 (+&pound;56) &middot; direct AMD &pound;770 (+&pound;94) &middot; direct META &pound;568 (+&pound;71) &middot; Rathbone &pound;13,042 (+&pound;391) &middot; Royal London &pound;19,602 (+&pound;213) &middot; and the AMD/META/AVGO weight inside VUAG, VUSA, SWDA, LifeStrategy and Global All Cap</div>
+    </div>
 
-  <h3>02 &nbsp;<span style="font-weight:400">Fidelity European was the biggest fund drag, but Friday's data closed the gap</span></h3>
-  <p>The single-priced Tuesday NAV was 3,120p versus 3,165p on Friday 11 September, marking the fund down <strong>&minus;£223</strong>. That value predates Friday's DAX +0.77% and CAC 40 +0.57% closes and a Stoxx 600 finish that was ~&minus;0.2% on the session but on track for the first weekly gain in three weeks. TTF holding around €78.50 with the first weekly decline in six removes some pressure from ASML, Schneider and the industrial cost side of the fund; that flows into Monday's NAV, not Tuesday's. Working revision: Monday's mark should recover £80&ndash;£140 of this week's drop. The fund is still the weakest one-year return in the core sleeve; the setup underneath it (gas fade, ECB tightening cadence) has improved.</p>
-  <div class="note"><p><span class="lab">Exposure</span>494.79 units, II ISA. Book cost £14,069; value at Tuesday NAV <strong>£15,437</strong>; unrealised P&L +£1,368 (+9.7%). Week change to Tuesday <strong class="down">&minus;£223</strong> before Friday recovery.</p></div>
+    <div class="item neg">
+      <div class="item-head">
+        <span class="rank">02</span>
+        <h3>The 30-year hit a 2004 high and the 10-year cleared 5% for good</h3>
+        <span class="chip neg">Negative</span><span class="chip hi">100% of book indirectly &middot; &pound;9,401 direct</span>
+      </div>
+      <p>The bond move was the second largest event of the week, and it landed harder than the tape wanted to admit. <b>Wednesday&rsquo;s US flash composite PMI printed 58.4</b> &mdash; the strongest private-sector expansion since July 2021, services 58.7, manufacturing 57.0, new orders 58.2 &mdash; and the input-prices sub-index hit 66.4, the highest since October 2022. Growth and inflation together, the specific combination Warsh has said would justify another hike. A poor five-year Treasury auction into it produced the biggest single-session 10Y sell-off in nearly 18 months. <b>10Y +14bp to 5.116%</b>, first sustained print above 5% since July 2007; <b>5Y through 5%</b> for the first time since 2007.</p>
+      <p>Thursday broadened the move. Initial jobless claims fell to 197k, adding a labour-market data point saying growth is not the problem, and the sell-off extended. <b>30Y +6bp to 5.462%, the highest since 2004.</b> Markets now price well over 90% odds of a 25bp hike on 9 December. The Nasdaq took two down sessions in a row (&minus;1.11% Wednesday, &minus;1.13% Thursday) before Friday&rsquo;s modest rebound. The <b>Russell 2000 &minus;1.60% on Wednesday</b> was the clean tell: this was a duration event, not a growth scare.</p>
+      <p>UKW carried the direct hit. The trust does not trade on gilt yields tick for tick, but its 8&ndash;9% discount rate references them. <b>UKW &minus;1.83% on the week to 112.60p, &minus;&pound;175 on the position</b>. The QT rewrite from a fortnight ago has not been undone, so the structural bull case for the discount is intact; the near-term catalyst is the 15 October Capital Markets Event, and until then this line is just going to trade with the long end.</p>
+      <div class="exposed"><b>Most exposed:</b> UKW &pound;9,401 (&minus;&pound;175, direct rate-sensitive) &middot; the six OEIC funds &pound;90,335 (duration exposure through everything they hold) &middot; the whole US equity book indirectly through the discount rate &middot; SHEL Q3 dividend, GSK &mdash; both trade as bond proxies at the margin</div>
+    </div>
 
-  <h3>03 &nbsp;<span style="font-weight:400">Semiconductors round-tripped and closed net down</span></h3>
-  <p>Broadcom &minus;3.8% ($361.99 &rarr; $348.18), AMD &minus;10.9% ($516.13 &rarr; $459.61), NVIDIA &minus;0.4% ($218.29 &rarr; $217.44) and SMH.L about &minus;4.4% marked the largest sector move in the book. Aggregate direct-line drag <strong>&minus;£120</strong> across AVGO, AMD, NVDA and SMH. The pattern was Wednesday sell-off &rarr; Thursday +3% SOXX bounce &rarr; Friday reversal in the largest names, with the mega-cap software complex (MSFT +1.5%, AAPL +1.4%, GOOG +1.3%, META +1.3% on Friday alone) offsetting the drag in the funds that hold both. The custom-XPU structural picture (Broadcom AI ASIC revenue +221% y/y) has not changed; the market is simply applying a lower multiple to that growth. NVIDIA's Q3 on 18 November is the next date that resets the debate.</p>
-  <div class="note"><p><span class="lab">Exposure</span>AVGO £525 T212 ISA (&minus;£21); AMD £557 T212 ISA (&minus;£68); NVDA £353 T212 ISA (&minus;£1); SMH.L £647 T212 ISA (&minus;£30). Look-through NVDA across the fund sleeve is approximately £4,500, considerably larger than the direct lines.</p></div>
+    <div class="item mix">
+      <div class="item-head">
+        <span class="rank">03</span>
+        <h3>Trump and Xi shook hands. The tape called it relief, not resolution.</h3>
+        <span class="chip mix">Mixed</span><span class="chip hi">&asymp;&pound;5,600 direct/thematic</span>
+      </div>
+      <p>The state dinner on Thursday landed roughly where Reuters had trailed it. The <b>tariff truce that expired 10 November was extended by two months to 10 January 2027</b>; <b>China suspended rare-earth export controls</b> in exchange for a US tariff reduction on some Chinese goods and a Chinese agricultural purchase commitment. The guest list &mdash; Cook, Huang, Altman, Musk, Bezos, Dell, Fraser, Pichai &mdash; delivered the imagery. What was <em>not</em> announced is the material part for your book: <b>no Nvidia H20 export licensing update, no semiconductor equipment controls decision, no Taiwan-related statement</b>. The Diplomat&rsquo;s headline, &ldquo;Relief Without a Resolution,&rdquo; is fair.</p>
+      <p>DiDi &mdash; the position that ran 4% into the summit on nothing &mdash; gave it back. <b>DIDIY &minus;2.5% in dollars to $3.59, &minus;2.86% in sterling, &minus;&pound;41 on the position</b>. The pattern is now clean: this line trades summit expectations, not fundamentals, and when the summit delivers a tactical rather than structural outcome it fades. EMQP behaved similarly (&minus;0.85% on the week). Rare-earth suspension is a two-month reprieve; China still processes ~90% of the world&rsquo;s rare earths, and that leverage is unchanged.</p>
+      <p>The Nvidia read is the one to hold onto. Huang was in the room, the H20 file did not move, and NVDA closed the week only +0.83% in sterling against AMD&rsquo;s +12%. The market is telling you the summit was a modest headwind for NVIDIA specifically because <em>the export question is now definitively unresolved into the Q3 print</em>. Kress selling $7.65m of stock on 17 September carries a small amount of weight against that backdrop.</p>
+      <div class="exposed"><b>Most exposed:</b> DIDIY &pound;1,405 (&minus;&pound;41) &middot; EMQP &pound;212 (&minus;&pound;2) &middot; NVDA direct &pound;363 and &pound;5,300 look-through (H20 overhang) &middot; the tariff-sensitive US import lines inside every global fund (positive)</div>
+    </div>
 
-  <h3>04 &nbsp;<span style="font-weight:400">GSK was the best equity mover &mdash; +5.6% on the week</span></h3>
-  <p>GSK ran from 1,771.5p to 1,870p, contributing <strong>+£96</strong>. The FDA fast-track designation on the mRNA seasonal flu candidate remained the immediate driver into Wednesday's peak near 1,895p; the Friday close held nearly all of that ground even as the FTSE 100 gave back most of Thursday's BoE bounce on banks-and-energy weakness. Consensus target 2,155p implies ~15% upside from here on a Hold rating that has not caught up to the pipeline. Defensive pharma with a covered yield is the right box in a hawkish-inflation environment and GSK specifically has the mRNA optionality that the defensives label alone doesn't buy you.</p>
-  <div class="note"><p><span class="lab">Exposure</span>97 shares, II ISA. Book cost £1,317; value <strong>£1,814</strong>; unrealised P&L +£497 (+37.7%). Week change <strong class="up">+£96</strong>.</p></div>
+    <div class="item pos">
+      <div class="item-head">
+        <span class="rank">04</span>
+        <h3>Sterling fell 1.14% &mdash; a modest tailwind returned under the dollar sleeve</h3>
+        <span class="chip pos">Positive</span><span class="chip hi">&asymp;&pound;93,000 exposed</span>
+      </div>
+      <p>Sterling took a beating for four sessions and got only a small bounce on Friday. GBP/USD from 1.3395 last Friday down to <b>1.3216 by Thursday close</b> &mdash; a three-month low, on the combination of the US PMI beat (58.4 composite), a UK services PMI miss (51.7 vs 52.0 expected, from 52.5) and August borrowing running <b>&pound;3.5bn above OBR</b> path five weeks before the 28 October Budget. Friday managed a 0.21% bounce to <b>1.3242</b> on the UK Q2 GDP third estimate beat (+0.4% QoQ, +1.2% YoY vs 1.1% expected), but the week net was still <b>sterling &minus;1.14%</b>.</p>
+      <p>So the mechanical FX contribution to your book was <b>+~&pound;1,050</b> on the &pound;93,000 dollar look-through &mdash; a real tailwind, if weaker than the last four weeks. This is why lines that were flat or down in dollars still printed green in GBP: BRK-B was &minus;0.84% in dollars and +0.30% to you; NVDA +1.26% in dollars became +2.43% in sterling; MSFT +4.53% became +5.74%. The two US direct lines that stayed red &mdash; GOOGL &minus;0.47%, AMZN &minus;0.46% &mdash; only turned red because their dollar drops exceeded the FX buffer.</p>
+      <p>Sterling is trading on <em>domestic fiscal signal</em> now, not on the rate differential &mdash; the Budget arithmetic is doing the work. Any softening of the fiscal picture into 28 October takes GBP/USD lower still; any hawkish MPC surprise reverses this. You are not hedged, and half the book cares.</p>
+      <div class="exposed"><b>Most exposed:</b> VUAG combined &pound;12,859 (100% US) &middot; VUSA &pound;2,540 &middot; SWDA &pound;13,649 (~72% US) &middot; Royal London &pound;19,602 (61.3% US) &middot; the 12 direct USD lines &pound;14,158 &middot; <b>not</b> Fidelity European &pound;15,912</div>
+    </div>
 
-  <h3>05 &nbsp;<span style="font-weight:400">Shell essentially held the ground &mdash; Brent unwound but the position gave back only £30 of a five-week gain</span></h3>
-  <p>The London line closed 3,573p on Friday against 3,551p a week earlier, adding <strong>+£43</strong> across the week despite Brent finishing $103.29 &mdash; down 1.5% Friday and 5% off Monday's intraday peak. That is the practical proof that the position is now priced closer to a normalised crude curve than to the disruption-premium peak. Second consecutive down session in oil into the weekend; Q3 (late October) still captures average crude closer to $106 through the quarter, not the marginal $103 now, and the Q3 dividend at $0.71/share is confirmed for December payment. The five-week narrative arc is done; the next step-change is the Q3 print itself.</p>
-  <div class="note"><p><span class="lab">Exposure</span>193 shares, II General. Book cost £2,672; value <strong>£6,896</strong>; unrealised P&L +£4,224 (+158%). Week change <strong class="up">+£43</strong>. <em>Outstanding: confirm the £13.85 average book cost.</em></p></div>
+    <div class="item mix">
+      <div class="item-head">
+        <span class="rank">05</span>
+        <h3>Brent rose, TTF fell &mdash; and Shell decoupled from both</h3>
+        <span class="chip mix">Mixed</span><span class="chip hi">&pound;6,969 direct</span>
+      </div>
+      <p>Reconstructing the week honestly. Brent went into it around $103.87, dipped on the Iran/Qatar diplomatic thread mid-week (Iran floated a seven-day Hormuz reopening), then bounced hard into Friday on UNGA-sidelines talks and OPEC+ leaks pointing to steady state at 5 October. <b>Friday close $105.11, up on the week</b>. TTF went the other way: mid-week wobble on a public-feed price uncertainty (Wed &euro;72.90 vs Thu &euro;78.80 &mdash; the daily briefs flagged which was stale, and Friday resolved it), then <b>Friday close &euro;72.07, &minus;4.0% on the day</b>. Wednesday&rsquo;s &euro;72.90 was the correct feed all along; Thursday&rsquo;s &euro;78.80 was the bad print. NBP day-ahead followed &mdash; 190p/therm Friday, &minus;2.8%.</p>
+      <p>Shell decoupled. Monday &minus;1.4% with the crude, Tuesday +0.6% on nothing, <b>Wednesday &minus;2.72% to 3,375.5p when the market believed TTF was going sub-&euro;73</b>, Thursday held on ADR read, Friday <b>&minus;0.82% to 3,611p despite Brent bouncing $3</b>. Net <b>+2.03% on the week, +&pound;139</b> &mdash; but the composition matters. The market is treating Shell as LNG-buffered against Brent (BP took nearly 3&times; the hit at &minus;2.3% Friday), which is correct on the way up but should be equally true on the way down. With TTF confirmed heading lower &mdash; Argus/ICIS terminal reconciliation needed &mdash; <b>the Shell trim conversation the daily brief marked as fading is actually alive again</b>. Q2 dividend paid Monday 21 September: 28.92p &times; 193 = &pound;55.82 into the II General cash account. LNG Canada Phase 2 FID could still come in October.</p>
+      <div class="exposed"><b>Most exposed:</b> SHEL &pound;6,969 (+&pound;139, but composition mixed) &middot; the Fidelity European industrial line via lower TTF input costs (positive) &middot; UKW indirectly via UK winter power curve softening</div>
+    </div>
 
-  <h3>06 &nbsp;<span style="font-weight:400">The Fundsmith/Rathbone thesis nudged the right way &mdash; but only by a hair</span></h3>
-  <p>Fundsmith added +1.2% on the Tuesday NAV (693p &rarr; 701.51p, <strong>+£187</strong>) and Rathbone added +1.1% (222.21p &rarr; 224.64p, <strong>+£137</strong>). Both are single-priced Tuesday marks so they don't yet reflect Wednesday's FOMC nor Friday's mega-cap-software strength; Monday will refresh. The hawkish-hold-with-QT-rewrite outcome for the UK plus the hiked Fed both nudge the quality-and-defensives tilt in the right direction versus the pure-index lines. The gap on Fundsmith to book cost is now narrower at &minus;1.9%. Neither has closed the two-year gap to the AI-heavy indices, but the fork stayed open for another week rather than tipping decisively toward the index side.</p>
-  <div class="note"><p><span class="lab">Exposure</span>Fundsmith 2,202.34 units, II ISA, £15,450, &minus;1.9% on cost. Rathbone 5,640.64 units, II ISA, £12,671, +22.4% on cost.</p></div>
+    <div class="item pos">
+      <div class="item-head">
+        <span class="rank">06</span>
+        <h3>The fund NAV catch-up added roughly &pound;600 you had already earned</h3>
+        <span class="chip pos">Positive &middot; mechanical</span><span class="chip hi">&pound;90,335 OEIC sleeve</span>
+      </div>
+      <p>Worth flagging so the &pound;2,615 book gain is read correctly. Last week&rsquo;s report warned that three OEIC NAVs were priced at 17 September rather than 18: Fundsmith, Global All Cap and Rathbone. Those refreshed to Friday&rsquo;s close over Monday and Tuesday, adding what the note estimated as a &ldquo;small addition&rdquo; &mdash; call it around <b>&pound;300</b> across the three lines. Fundsmith moved from 707.59p to 716.64p (+1.28%), Global All Cap 29,389.81p to 29,862.68p (+1.61%), Rathbone 224.29p to 231.22p (+3.09%). Some of that is genuine this-week gain; some is timing. Similarly, LifeStrategy 100 and Fidelity European priced Thursday last week and picked up Friday&rsquo;s tape.</p>
+      <p>The point is not that the money isn&rsquo;t real &mdash; it is. It is that <b>roughly a fifth of this week&rsquo;s printed &pound;2,615 is really last week&rsquo;s printed gain arriving in the mark</b>. On like-for-like NAV timing the true week-on-week is closer to &pound;2,000, or +1.16%. The distinction matters for the pattern-reading over multiple weeks, not for the tax return.</p>
+      <div class="exposed"><b>Most exposed:</b> Fundsmith &pound;15,783 &middot; Global All Cap &pound;15,000 &middot; Rathbone &pound;13,042 &middot; LifeStrategy combined &pound;26,463 &middot; Fidelity European &pound;15,912 &middot; Royal London &pound;19,602</div>
+    </div>
 
-</section>
+    <div class="item neg">
+      <div class="item-head">
+        <span class="rank">07</span>
+        <h3>The one thing that broke the wrong way &mdash; Alphabet</h3>
+        <span class="chip neg">Negative</span><span class="chip hi">&pound;1,607 direct &middot; ~&pound;5,000 look-through</span>
+      </div>
+      <p>GOOGL was &minus;1.61% in dollars and &minus;2.02% in sterling on the week &mdash; the worst of the mega-caps you hold, and the one that gave back the most from last week&rsquo;s +3.26%. Two things behind it. First, the <b>Gemini security story</b> the WSJ ran after Friday&rsquo;s close a week ago (Irregular&rsquo;s May test, credential guessing, three breached companies) had a full week to trade rather than a Friday-afternoon reaction &mdash; it took roughly a percent out of the stock at open Monday. Second, the summit&rsquo;s AI-cooperation language was thinner than the guest list suggested, which cut into the read-through for Gemini&rsquo;s enterprise pipeline.</p>
+      <p>The direct hit is small &mdash; &minus;&pound;33 on the &pound;1,641 you held into the week. The look-through hit is what matters and it is roughly six times larger. Alphabet is 8.93% of ATT (&minus;&pound;42), 6.1% of Fundsmith (&minus;&pound;92 on Fundsmith&rsquo;s Alphabet slice), plus index weight everywhere else. The AdX escape from a fortnight ago is unchanged &mdash; the multi-year structural positive is still there. This was noise inside a bigger AI-adjacent up week, not the beginning of anything.</p>
+      <div class="exposed"><b>Most exposed:</b> GOOGL direct &pound;1,607 (&minus;&pound;33) &middot; ATT &middot; Fundsmith &middot; index weight in VUAG, VUSA, SWDA, LifeStrategy, Global All Cap, Royal London, Rathbone</div>
+    </div>
 
-<section id="lookthrough">
-  <h2>Look-through single-company exposure</h2>
-  <p class="sub">The direct US equity lines are all under £700 and largely decorative. The real exposures live inside the funds. This is the single most useful number to see week-to-week.</p>
-
-  <div class="tscroll">
-    <table>
-      <thead>
-        <tr><th>Company</th><th class="n">Direct line</th><th class="n">Look-through via funds</th><th class="n">Total</th><th>Read</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><div class="fname">NVIDIA</div><div class="fmeta">ATT 9.2%, VUAG 7.6%, VUSA 7.6%, RL Global Equity 5.3%, SWDA 5.7%, Global All Cap 4.2%, SMH 11.0%, LS100 UK/US mix</div></td>
-          <td class="n">£353</td>
-          <td class="n">~£4,494</td>
-          <td class="n">~£4,847</td>
-          <td>Largest single-name exposure in the book. 92% of it is invisible to the direct-line tab.</td>
-        </tr>
-        <tr>
-          <td><div class="fname">Alphabet</div><div class="fmeta">ATT 8.95%, Fundsmith 6.1%, Rathbone 3.5%, SWDA/VUAG/RL/Global All Cap ~3&ndash;3.5%</div></td>
-          <td class="n">£1,618</td>
-          <td class="n">~£4,209</td>
-          <td class="n">~£5,827</td>
-          <td>Second-largest single-name exposure. The direct line is the only one where you meaningfully control the sizing.</td>
-        </tr>
-        <tr>
-          <td><div class="fname">Apple</div><div class="fmeta">ATT 8.89%, VUAG 7.1%, SWDA 5.1%, RL 4.5%, Global All Cap 3.8%</div></td>
-          <td class="n">£505</td>
-          <td class="n">~£4,553</td>
-          <td class="n">~£5,058</td>
-          <td>The direct line is one share; the look-through does the work.</td>
-        </tr>
-        <tr>
-          <td><div class="fname">Microsoft</div><div class="fmeta">ATT ~5%, VUAG 5.4%, SWDA 3.8%, RL 3.0%, Global All Cap 2.9%</div></td>
-          <td class="n">£604</td>
-          <td class="n">~£3,035</td>
-          <td class="n">~£3,639</td>
-          <td>Q3 on 28 October alongside Alphabet and Meta. Direct line adds ~1.7% to the exposure.</td>
-        </tr>
-      </tbody>
-    </table>
   </div>
 </section>
 
-<section id="equities">
+<section>
+  <h2>Trade ideas from the week &mdash; where they stand</h2>
+  <p class="sub">Nothing was executed. The three conversations that were live this week, and what happened to them.</p>
+
+  <div class="ranked">
+    <div class="item mix">
+      <div class="item-head">
+        <span class="rank">A</span>
+        <h3>The ATT trim &mdash; harder to justify this week than last</h3>
+        <span class="chip mix">Mixed</span><span class="chip hi">&pound;4,711 position</span>
+      </div>
+      <p>Floated Monday 14 September, deferred last week. This week ATT <b>touched a fresh 52-week high (~765p) intraday on Tuesday</b> and closed the week at 761p, +5.69%. The discount narrowed further, the trust bought back more of itself, the AI-look-through it embodies added meaningfully. The case for the trim was concentration discipline, not the news, and that has not changed &mdash; but the tape has moved sharply against selling into it. If you still want to trim, wait for a &minus;3&ndash;5% session in the sleeve; do not chase a top.</p>
+    </div>
+
+    <div class="item mix">
+      <div class="item-head">
+        <span class="rank">B</span>
+        <h3>Shell trim on TTF fade &mdash; the CGT gate is still the blocker</h3>
+        <span class="chip mix">Mixed</span><span class="chip hi">&pound;6,969 in II General &middot; +156% on cost</span>
+      </div>
+      <p>Live conversation on Wednesday when SHEL took &minus;2.72% on the TTF sub-&euro;73 print. Then the print was wrong &mdash; TTF stabilised &euro;78.80, Shell rebounded 2.0% on the week, and the trim conversation quietly de-escalated. The structural point is unchanged: <b>this is the position where a trim crystallises a &pound;4,297 gain in the General account</b> against ~&pound;3,000 of CGT annual allowance depending on other realisations. Not this week, not next week; the LNG Canada Phase 2 FID decision that could come in October is the natural catalyst to reconsider.</p>
+    </div>
+
+    <div class="item neu">
+      <div class="item-head">
+        <span class="rank">C</span>
+        <h3>DiDi as an event position &mdash; event happened, thesis fired both ways</h3>
+        <span class="chip neu">Watch</span><span class="chip hi">&pound;1,405 position</span>
+      </div>
+      <p>Last week&rsquo;s report framed DiDi explicitly as a pure event position into Thursday&rsquo;s summit, with an implicit exit at cost if it delivered. The stock ran 4% into the week, then gave back 2.5% on the actual outcome, and is now sitting at <b>&pound;1,405 against a &pound;1,500 book, &minus;6.3% on cost</b>. The tactical exit-at-cost opportunity was there mid-week and passed. The position is back to being a small China ADR call with no near-term catalyst; DiDi Q3 is 27 November. Nothing to do this week; note the pattern for next time.</p>
+    </div>
+  </div>
+</section>
+
+<section>
   <h2>Individual equities</h2>
-  <p class="sub">Fifteen equity lines, £37,214 &mdash; 21.9% of the book at Friday's close.</p>
+  <p class="sub">Fifteen positions, &pound;38,487, 22.0% of the book. Ordered by value. Price moves are in the quoted currency; the week column for US lines is the GBP move, which includes a modest FX tailwind (sterling &minus;1.14% wk).</p>
 
-  <div class="book">
+  <div class="holdings">
 
-    <div class="bl">
-      <div class="bl-head">
-        <span class="tick">UKW.L</span>
-        <span class="chip neg">Greencoat UK Wind</span>
-        <span class="px">105.00p &nbsp;<span class="down">&minus;5.0% wk</span></span>
+    <div class="hold">
+      <div class="hold-left">
+        <div class="tick">UKW.L</div><div class="coname">Greencoat UK Wind</div>
+        <div class="plat">8,349 shares &middot; II ISA</div>
+        <div class="nums">
+          <div class="num"><div class="k">Price</div><div class="v">112.60p</div></div>
+          <div class="num"><div class="k">Week</div><div class="v down">&minus;1.83%</div></div>
+          <div class="num"><div class="k">Value</div><div class="v">&pound;9,401</div></div>
+          <div class="num"><div class="k">P&amp;L</div><div class="v down">&minus;&pound;674 / &minus;6.7%</div></div>
+        </div>
       </div>
-      <p>8,349 shares, II ISA. Value <strong>£8,766</strong> (&minus;£459 week); book cost £10,075; unrealised P&L &minus;13.0%. Discount to a 133.7p NAV now around 21%. The QT rewrite is the mechanic that has kept the long-end gilt curve ~10bp below its pre-decision level; if the November MPC (now the live meeting) delivers a hike, this position tests whether the QT-slowdown mechanic or the rate-decision mechanic dominates. Operational case (above-budget output, 8.14% yield, merchant profile) unchanged.</p>
+      <div class="hold-right">
+        <div class="chips"><span class="chip neg">Negative</span><span class="chip hi">5.4% of book</span></div>
+        <ul>
+          <li><b>No company announcement all week.</b> No NAV release, no buyback RNS, no dividend declaration. The &minus;1.83% is the long-end move, nothing else.</li>
+          <li>Discount now roughly &minus;16.0% against the last published NAV (134.10p at 30 June). Yield 9.5%.</li>
+          <li>The direct hit from the bond move (item 02): 30Y +6bp for the week, 10Y +5bp. UK long-end likely followed, though not verified for Friday close.</li>
+          <li>The QT rewrite from a fortnight ago is not undone &mdash; the Bank still isn&rsquo;t selling long gilts &mdash; so the structural bull case for the discount is intact. This is a rate move inside a healthy structural setup.</li>
+          <li><b>Capital Markets Event, Thursday 15 October, 13:30, The Ned.</b> The near-term catalyst.</li>
+        </ul>
+        <p class="read"><b>How this hits you</b>Your largest single equity, and the position taking the most damage from item 02 &mdash; &minus;&pound;175 on the week, which is where the whole non-tech book&rsquo;s underperformance is. The story is unchanged: the discount trade needs either the CME to shift the narrative, or the long end to reverse. Neither is guaranteed inside two weeks. Sit.</p>
+      </div>
     </div>
 
-    <div class="bl">
-      <div class="bl-head">
-        <span class="tick">SHEL.L</span>
-        <span class="chip pos">Shell</span>
-        <span class="px">3,573.00p &nbsp;<span class="up">+0.6% wk</span></span>
+    <div class="hold">
+      <div class="hold-left">
+        <div class="tick">SHEL.L</div><div class="coname">Shell</div>
+        <div class="plat">193 shares &middot; II General</div>
+        <div class="nums">
+          <div class="num"><div class="k">Price</div><div class="v">3,611p</div></div>
+          <div class="num"><div class="k">Week</div><div class="v up">+2.03%</div></div>
+          <div class="num"><div class="k">Value</div><div class="v">&pound;6,969</div></div>
+          <div class="num"><div class="k">P&amp;L</div><div class="v up">+&pound;4,297 / +161%</div></div>
+        </div>
       </div>
-      <p>193 shares, II General. Value <strong>£6,896</strong> (+£43 week); book cost £2,672; unrealised P&L +158%. Brent settled $103.29, second consecutive down session on Saudi Hormuz re-routing and diplomatic hopes &mdash; but the Wednesday 3,652.5p peak barely leaked into the weekly close. Q3 (late October) will capture average crude nearer $106 through the quarter. Q3 dividend $0.71/share for December payment confirmed. <em>Outstanding: confirm the £13.85 average book cost against platform statements.</em></p>
+      <div class="hold-right">
+        <div class="chips"><span class="chip pos">Positive</span><span class="chip hi">4.0% of book</span></div>
+        <ul>
+          <li><b>Q2 dividend paid Monday 21 September &mdash; &pound;55.82 into the II General cash account</b> (28.92p &times; 193). Ex-div was 14 August.</li>
+          <li>Buyback RNS every trading day of the week. The &euro;4.2bn programme announced with Q2 continues to run.</li>
+          <li>No trading update, no divestment, no rating change.</li>
+          <li>The week was a &minus;2.72p mid-week wobble on a mismarked TTF print, corrected by Thursday and reversed on Friday. The tape closed neither the crude fade nor the gas hold cleanly, but it closed a green week regardless.</li>
+          <li><b>LNG Canada Phase 2 FID still could come in October</b> (Reuters, 17&ndash;18 Sept). No new colour this week.</li>
+        </ul>
+        <p class="read"><b>How this hits you</b>Your best position in percentage terms &mdash; now +161% on the &pound;2,672 book after the Friday rebound &mdash; and one of two positions where a commodity dominates the weekly move. The Q2 dividend hit the account Monday, worth naming, and there is a small ongoing question of whether to trim ahead of Q3 (29 October) into the CGT gate. This is not the week to answer it. The LNG Canada Phase 2 FID is the trigger.</p>
+      </div>
     </div>
 
-    <div class="bl">
-      <div class="bl-head">
-        <span class="tick">BRK-B</span>
-        <span class="chip neu">Berkshire Hathaway B</span>
-        <span class="px">$516.76 &nbsp;<span class="up">+1.3% wk</span></span>
+    <div class="hold">
+      <div class="hold-left">
+        <div class="tick">BRK-B</div><div class="coname">Berkshire Hathaway (Class B)</div>
+        <div class="plat">16.23 shares &middot; T212 General</div>
+        <div class="nums">
+          <div class="num"><div class="k">Price</div><div class="v">$505.48</div></div>
+          <div class="num"><div class="k">Week (GBP)</div><div class="v up">+0.30%</div></div>
+          <div class="num"><div class="k">Value</div><div class="v">&pound;6,196</div></div>
+          <div class="num"><div class="k">P&amp;L</div><div class="v down">&minus;&pound;136 / &minus;2.1%</div></div>
+        </div>
       </div>
-      <p>16.23 shares, T212 General. Value <strong>£6,279</strong> (+£77 week); book cost £6,332; unrealised P&L &minus;0.8%. Still the position best structurally placed for a hiking cycle. Cash pile earns more, BHE benefits from the energy shortage driving Shell, no duration liability. The Friday price was not separately captured; using Tuesday's marker.</p>
+      <div class="hold-right">
+        <div class="chips"><span class="chip neu">Watch</span><span class="chip hi">3.5% of book</span></div>
+        <ul>
+          <li>Second week of Howard Buffett as Chairman, Greg Abel as CEO. Nothing dated.</li>
+          <li>&minus;0.84% in dollars, +0.30% in sterling &mdash; the FX did the work; the stock did nothing.</li>
+          <li>No 13F, no material announcement. Q3 results 2 November are the next event.</li>
+        </ul>
+        <p class="read"><b>How this hits you</b>Still the line where your cost basis is worst &mdash; now &minus;&pound;136, narrowed by the FX tailwind. Nothing to do; the position remains a bet on Abel&rsquo;s capital allocation record against a $500bn+ cash pile and a multi-year answer.</p>
+      </div>
     </div>
 
-    <div class="bl">
-      <div class="bl-head">
-        <span class="tick">ATT.L</span>
-        <span class="chip mix">Allianz Technology Trust</span>
-        <span class="px">702.00p &nbsp;<span class="down">&minus;0.4% wk</span></span>
+    <div class="hold">
+      <div class="hold-left">
+        <div class="tick">ATT.L</div><div class="coname">Allianz Technology Trust</div>
+        <div class="plat">619 shares &middot; II ISA</div>
+        <div class="nums">
+          <div class="num"><div class="k">Price</div><div class="v">761.00p</div></div>
+          <div class="num"><div class="k">Week</div><div class="v up">+5.69%</div></div>
+          <div class="num"><div class="k">Value</div><div class="v">&pound;4,711</div></div>
+          <div class="num"><div class="k">P&amp;L</div><div class="v up">+&pound;2,713 / +136%</div></div>
+        </div>
       </div>
-      <p>619 shares, II ISA. Value <strong>£4,345</strong> (&minus;£19 week); book cost £1,998; unrealised P&L +117%. Whipsawed hard through the central-bank trio: Wednesday hawkish-Fed sell-off, Thursday +3% SOXX bounce, Friday NVDA/AMD reversal. NAV holdings unchanged (NVIDIA 9.2%, Alphabet 8.95%, Apple 8.89%). Discount ~8&ndash;9%. Highest-beta holding in the book. Next check-in is the Microsoft/Alphabet/Meta Q3 print cluster on 28 October, when AI-capex commentary finally gets tested against actual dollar spend.</p>
+      <div class="hold-right">
+        <div class="chips"><span class="chip pos">Positive</span><span class="chip hi">2.7% of book</span></div>
+        <ul>
+          <li><b>Touched a fresh 52-week high near 765p intraday on Tuesday.</b> The NAV re-rate from Monday&rsquo;s US session landed as expected.</li>
+          <li>Best week of any equity line you own on absolute pound terms &mdash; +&pound;254 &mdash; because it embodies exactly the sleeve item 01 rerated.</li>
+          <li>The trust continued to buy back stock steadily; the discount kept narrowing.</li>
+          <li>Top ten at 31 July: NVIDIA 9.19%, Alphabet 8.93%, Apple 8.88%, Broadcom 6.63%, Microsoft 6.40%, TSMC 6.06%, Meta 3.88%, Micron 3.23%, Lam Research 2.87%, AMD 2.64%. The two look-through winners of the week (Meta and AMD) are 6.52% of the trust combined.</li>
+        </ul>
+        <p class="read"><b>How this hits you</b>The trim conversation is now in a worse spot than a week ago (see trade idea A above). If you still want to trim on concentration grounds, wait for a down session in the sleeve. If you don&rsquo;t, this line is doing what it&rsquo;s supposed to.</p>
+      </div>
     </div>
 
-    <div class="bl">
-      <div class="bl-head">
-        <span class="tick">GAW.L</span>
-        <span class="chip pos">Games Workshop</span>
-        <span class="px">18,110p &nbsp;<span class="up">+2.3% wk</span></span>
+    <div class="hold">
+      <div class="hold-left">
+        <div class="tick">GAW.L</div><div class="coname">Games Workshop Group</div>
+        <div class="plat">15 shares &middot; II ISA</div>
+        <div class="nums">
+          <div class="num"><div class="k">Price</div><div class="v">17,570p</div></div>
+          <div class="num"><div class="k">Week</div><div class="v down">&minus;0.51%</div></div>
+          <div class="num"><div class="k">Value</div><div class="v">&pound;2,636</div></div>
+          <div class="num"><div class="k">P&amp;L</div><div class="v up">+&pound;1,070 / +68%</div></div>
+        </div>
       </div>
-      <p>15 shares, II ISA. Value <strong>£2,717</strong> (+£60 week); book cost £1,566; unrealised P&L +73.5%. No AI weight, no direct rate sensitivity. Friday's UK retail sales beat (+0.5% m/m vs &minus;0.2% consensus, three-month volumes +0.9%) directly supports the UK consumer thesis and quietly boosted the line. The best-placed holding for a hawkish-inflation macro. Interims 12 January. 140p dividend payable 5 October (~£21 on 15 shares).</p>
+      <div class="hold-right">
+        <div class="chips"><span class="chip neu">Watch</span><span class="chip hi">1.5% of book</span></div>
+        <ul>
+          <li>Quiet week. No RNS. Post-AGM digestion after the &ldquo;in line with expectations&rdquo; trading note on 16 September.</li>
+          <li><b>140p dividend pays Monday 5 October &mdash; &pound;21.00 on 15 shares</b> into the II ISA. Ex-div was 21 August.</li>
+          <li>70p dividend declared at the AGM: ex-div 22 October, paid 27 November (&pound;10.50).</li>
+        </ul>
+        <p class="read"><b>How this hits you</b>Exactly what a &pound;2,636 &ldquo;plant and forget&rdquo; holding is supposed to look like. The dividend hits next Monday. The next moving event is the mid-January H1 results.</p>
+      </div>
     </div>
 
-    <div class="bl">
-      <div class="bl-head">
-        <span class="tick">GSK.L</span>
-        <span class="chip pos">GSK</span>
-        <span class="px">1,870.00p &nbsp;<span class="up">+5.6% wk</span></span>
+    <div class="hold">
+      <div class="hold-left">
+        <div class="tick">GSK.L</div><div class="coname">GSK</div>
+        <div class="plat">97 shares &middot; II ISA</div>
+        <div class="nums">
+          <div class="num"><div class="k">Price</div><div class="v">1,851.00p</div></div>
+          <div class="num"><div class="k">Week</div><div class="v down">&minus;1.41%</div></div>
+          <div class="num"><div class="k">Value</div><div class="v">&pound;1,795</div></div>
+          <div class="num"><div class="k">P&amp;L</div><div class="v up">+&pound;478 / +36%</div></div>
+        </div>
       </div>
-      <p>97 shares, II ISA. Value <strong>£1,814</strong> (+£96 week); book cost £1,317; unrealised P&L +37.7%. Best single-week performer in the equity book for the second consecutive week. FDA mRNA fast-track designation is compounding into Q3 numbers. Consensus target 2,155p on a still-Hold rating; the pipeline optionality is genuinely underweighted by the sell-side. Q3 late October.</p>
+      <div class="hold-right">
+        <div class="chips"><span class="chip neu">Watch</span><span class="chip hi">1.0% of book</span></div>
+        <ul>
+          <li>Gave back some of last week&rsquo;s +5.98% oncology-driven pop. &minus;1.41% is normal consolidation, not a news move.</li>
+          <li><b>Julie Brown at the BofA Global Healthcare Conference Wednesday</b> and Kaivan Khavandi at the Bernstein Healthcare Forum, same day. Neither produced a market-moving quote.</li>
+          <li>Berenberg Buy &pound;22 target and JP Morgan Underweight 1,700p both stand. The stock is in the middle.</li>
+          <li>Q3 results 28 October are the next event that matters.</li>
+        </ul>
+        <p class="read"><b>How this hits you</b>&minus;&pound;26 on the week, immaterial. The zidesamtinib data and the Chimagen deal from a fortnight ago are still the reason to hold, and they haven&rsquo;t been challenged. Sit.</p>
+      </div>
     </div>
 
-    <div class="bl">
-      <div class="bl-head">
-        <span class="tick">GOOGL</span>
-        <span class="chip pos">Alphabet</span>
-        <span class="px">$343.68 &nbsp;<span class="up">+1.5% wk</span></span>
+    <div class="hold">
+      <div class="hold-left">
+        <div class="tick">GOOGL</div><div class="coname">Alphabet (Class A)</div>
+        <div class="plat">6.29 shares &middot; T212 ISA</div>
+        <div class="nums">
+          <div class="num"><div class="k">Price</div><div class="v">$343.92</div></div>
+          <div class="num"><div class="k">Week (GBP)</div><div class="v down">&minus;0.47%</div></div>
+          <div class="num"><div class="k">Value</div><div class="v">&pound;1,633</div></div>
+          <div class="num"><div class="k">P&amp;L</div><div class="v up">+&pound;231 / +16.5%</div></div>
+        </div>
       </div>
-      <p>6.29 shares, T212 ISA. Value <strong>£1,618</strong> (+£24 week); book cost £1,402; unrealised P&L +15.4%. The direct line is small; the look-through Alphabet exposure across ATT, Fundsmith, Rathbone and the index funds adds ~£4,200 more &mdash; over three-and-a-half times the direct line. Q3 on 28 October in the mega-cap-tech cluster.</p>
+      <div class="hold-right">
+        <div class="chips"><span class="chip neg">Negative</span><span class="chip hi">1.0% direct &middot; ~&pound;5,000 look-through</span></div>
+        <ul>
+          <li>The Gemini security story (Irregular&rsquo;s May test, credential guessing, three breached companies) had a full week to trade and took roughly a percent out of the stock Monday.</li>
+          <li>The Trump&ndash;Xi AI-cooperation language was thinner than the guest list suggested. Pichai was at the state dinner Thursday; nothing announced for Google specifically.</li>
+          <li>No fresh company catalyst. Waymo&rsquo;s Singapore plans didn&rsquo;t move the tape. Ad-tech remedies from a fortnight ago unchanged.</li>
+          <li>Q3 earnings 28 October are the reset event.</li>
+        </ul>
+        <p class="read"><b>How this hits you</b>The direct &minus;&pound;33 is nothing. The look-through hit through ATT, Fundsmith and every index line is roughly six times bigger &mdash; call it &minus;&pound;180 across the fund sleeve. Alphabet is the mega-cap that <em>didn&rsquo;t</em> come to Muse-Meta&rsquo;s party this week. That&rsquo;s worth noting; it&rsquo;s not worth acting on.</p>
+      </div>
     </div>
 
-    <div class="bl">
-      <div class="bl-head">
-        <span class="tick">DIDIY</span>
-        <span class="chip neu">DiDi Global</span>
-        <span class="px">$3.55 &nbsp;<span class="up">+0.3% wk</span></span>
+    <div class="hold">
+      <div class="hold-left">
+        <div class="tick">DIDIY</div><div class="coname">DiDi Global (ADR)</div>
+        <div class="plat">526.39 shares &middot; T212 General</div>
+        <div class="nums">
+          <div class="num"><div class="k">Price</div><div class="v">$3.59</div></div>
+          <div class="num"><div class="k">Week (GBP)</div><div class="v down">&minus;1.32%</div></div>
+          <div class="num"><div class="k">Value</div><div class="v">&pound;1,427</div></div>
+          <div class="num"><div class="k">P&amp;L</div><div class="v down">&minus;&pound;73 / &minus;4.9%</div></div>
+        </div>
       </div>
-      <p>526 shares, T212 General. Value <strong>£1,399</strong> (+£4 week); book cost £1,500; unrealised P&L &minus;6.7%. No fresh news across the week; the China August activity data (industrial production +4.8%, retail sales +0.8%) was in line with a weak consumer print. Next catalyst is Q3 on 27 November.</p>
+      <div class="hold-right">
+        <div class="chips"><span class="chip neg">Negative</span><span class="chip hi">0.8% of book</span></div>
+        <ul>
+          <li>The summit delivered a tactical outcome, not a structural one. No ADR delisting mention, which was the tail risk; also no material re-rating catalyst.</li>
+          <li>No company-specific news all week. The move is pure Trump&ndash;Xi post-mortem.</li>
+          <li>The exit-at-cost opportunity mid-week is now past; back to being a small China ADR call.</li>
+          <li>DiDi Q3 27 November is the next dated event.</li>
+        </ul>
+        <p class="read"><b>How this hits you</b>&minus;&pound;41 on the week and back to being underwater on cost. See trade idea C above &mdash; this is now a slow burn, not a live catalyst. At 0.8% of the book there is no risk-management action required either way.</p>
+      </div>
     </div>
 
-    <div class="bl">
-      <div class="bl-head">
-        <span class="tick">MSFT</span>
-        <span class="chip pos">Microsoft</span>
-        <span class="px">$497.75 &nbsp;<span class="up">+0.4% wk</span></span>
+    <div class="hold">
+      <div class="hold-left">
+        <div class="tick">AMD</div><div class="coname">Advanced Micro Devices</div>
+        <div class="plat">1.62 shares &middot; T212 ISA</div>
+        <div class="nums">
+          <div class="num"><div class="k">Price</div><div class="v">$630.63</div></div>
+          <div class="num"><div class="k">Week (GBP)</div><div class="v up">+13.95%</div></div>
+          <div class="num"><div class="k">Value</div><div class="v">&pound;770</div></div>
+          <div class="num"><div class="k">P&amp;L</div><div class="v up">+&pound;578 / +300%</div></div>
+        </div>
       </div>
-      <p>1.62 shares, T212 ISA. Value <strong>£604</strong> (+£3 week); book cost £573; unrealised P&L +5.4%. Held the mega-cap-software bid throughout the week, including Friday's +1.5% session that closed the gap on the semi drag inside the fund sleeve. Q3 28 October.</p>
+      <div class="hold-right">
+        <div class="chips"><span class="chip pos">Positive</span><span class="chip hi">0.4% direct &middot; ~&pound;1,300 look-through</span></div>
+        <ul>
+          <li><b>The name of the week.</b> Monday +8.9% intraday to a $1trn touch on the Muse-CPU repricing (item 01). Held the gain through the bond rout Wed/Thu. Friday close $630.63.</li>
+          <li>Second consecutive week as biggest mover, and this time the move is company-specific: the Muse architecture is a step-change in inference CPU demand and AMD&rsquo;s EPYC line is the direct beneficiary. Nebius&rsquo; +25% EPYC Genoa price rise from a fortnight ago was the leading indicator; this week the trade got named.</li>
+          <li>AMD is now up roughly 180% year to date and just took its all-time-high mark to a level with a $1trn market cap in it.</li>
+          <li>Q3 earnings 3 November. That is the fund read.</li>
+        </ul>
+        <p class="read"><b>How this hits you</b>1.62 shares &mdash; the direct line is &pound;758 and 12% is +&pound;82, immaterial to a &pound;174,000 book. What is material is the read-across: AMD is 2.64% of ATT (~&pound;125 through the trust) and a top-two weight in SMH (&pound;722), plus index weight everywhere. On a &pound;13,000 semi-and-CPU look-through slice this week added something like <b>&pound;600&ndash;800</b> to your book indirectly. The 294% gain on the &pound;192 book is a nice number and nothing more.</p>
+      </div>
     </div>
 
-    <div class="bl">
-      <div class="bl-head">
-        <span class="tick">AMD</span>
-        <span class="chip neg">Advanced Micro Devices</span>
-        <span class="px">$459.61 &nbsp;<span class="down">&minus;10.9% wk</span></span>
+    <div class="hold">
+      <div class="hold-left">
+        <div class="tick">MSFT</div><div class="coname">Microsoft</div>
+        <div class="plat">1.62 shares &middot; T212 ISA</div>
+        <div class="nums">
+          <div class="num"><div class="k">Price</div><div class="v">$516.17</div></div>
+          <div class="num"><div class="k">Week (GBP)</div><div class="v up">+5.74%</div></div>
+          <div class="num"><div class="k">Value</div><div class="v">&pound;631</div></div>
+          <div class="num"><div class="k">P&amp;L</div><div class="v up">+&pound;59 / +10.3%</div></div>
+        </div>
       </div>
-      <p>1.62 shares, T212 ISA. Value <strong>£557</strong> (&minus;£68 week); book cost £192; unrealised P&L +190%. Worst single-line week in the equity book. The Wednesday-Friday sell-off in the largest semi names took AMD back to a level it last saw in early August. Position is small enough that this is a watch item, not an action item.</p>
+      <div class="hold-right">
+        <div class="chips"><span class="chip pos">Positive</span><span class="chip hi">0.4% direct &middot; ~&pound;5,000 look-through</span></div>
+        <ul>
+          <li>+4.5% in dollars, the best week of the mega-caps outside of Meta and against the Nasdaq&rsquo;s two down sessions. Rare relative-strength week.</li>
+          <li>Nadella spoke on Nokia agentic-network at mid-week; the market read is Azure share against AWS in the telecom vertical.</li>
+          <li>The dividend was raised 8% to $0.98 the week before &mdash; record 19 November, pay 10 December. Still no buyback authorisation announced, which is the notable omission.</li>
+          <li>Q1 FY27 earnings 28 October.</li>
+        </ul>
+        <p class="read"><b>How this hits you</b>&pound;622 direct is nothing; the ~&pound;5,000 look-through moved on the order of +&pound;200 across the fund sleeve. Microsoft outperforming on a bond-sell-off week is the counter-intuitive read &mdash; the historically most bond-proxy mega-cap should have been the worst. That it wasn&rsquo;t suggests the AI enterprise revenue story is doing more of the work than the multiple.</p>
+      </div>
     </div>
 
-    <div class="bl">
-      <div class="bl-head">
-        <span class="tick">AVGO</span>
-        <span class="chip neg">Broadcom</span>
-        <span class="px">$348.18 &nbsp;<span class="down">&minus;3.8% wk</span></span>
+    <div class="hold">
+      <div class="hold-left">
+        <div class="tick">META</div><div class="coname">Meta Platforms</div>
+        <div class="plat">1.00 share &middot; T212 ISA</div>
+        <div class="nums">
+          <div class="num"><div class="k">Price</div><div class="v">$751.66</div></div>
+          <div class="num"><div class="k">Week (GBP)</div><div class="v up">+14.21%</div></div>
+          <div class="num"><div class="k">Value</div><div class="v">&pound;568</div></div>
+          <div class="num"><div class="k">P&amp;L</div><div class="v up">+&pound;68 / +13.7%</div></div>
+        </div>
       </div>
-      <p>2.01 shares, T212 ISA. Value <strong>£525</strong> (&minus;£21 week); book cost £424; unrealised P&L +24%. The post-Q3 guidance re-rating continues but is decelerating. AI ASIC revenue growth (+221% y/y) intact; multiple compression is the entire story. Broadcom dividend record date is Monday 22 September (payable 30 September) &mdash; you already hold.</p>
+      <div class="hold-right">
+        <div class="chips"><span class="chip pos">Positive</span><span class="chip hi">0.3% direct &middot; ~&pound;2,600 look-through</span></div>
+        <ul>
+          <li><b>+12.9% in dollars, best mega-cap week of the year.</b> Muse held #1 on the US App Store all week; Meta Connect widened the AI push into smart glasses, agentic commerce, and the MTIA 450/500 roadmap.</li>
+          <li>A Wells Fargo target lift Tuesday added a small leg. The Oversight Board&rsquo;s deepfake-safeguards critique from a fortnight ago and the German court&rsquo;s fraudulent-ads ruling both faded into background.</li>
+          <li>Ex-dividend Monday 21 September, $0.525 (paid).</li>
+          <li>Q3 earnings 28 October &mdash; will be the first quarter where Muse revenue lands in a segment line item.</li>
+        </ul>
+        <p class="read"><b>How this hits you</b>Direct +&pound;62. Look-through through ATT (3.88%) and index weight elsewhere is more like +&pound;300 across the fund sleeve. The Meta line is the &ldquo;you were right to buy the market&rdquo; line of the year, and the Muse architecture is now doing the double duty of driving Meta up <em>and</em> driving AMD up (item 01). Best expression of the AI-agent theme you have.</p>
+      </div>
     </div>
 
-    <div class="bl">
-      <div class="bl-head">
-        <span class="tick">META</span>
-        <span class="chip pos">Meta Platforms</span>
-        <span class="px">$682.31 &nbsp;<span class="up">+5.3% wk</span></span>
+    <div class="hold">
+      <div class="hold-left">
+        <div class="tick">AVGO</div><div class="coname">Broadcom</div>
+        <div class="plat">2.01 shares &middot; T212 ISA</div>
+        <div class="nums">
+          <div class="num"><div class="k">Price</div><div class="v">$352.81</div></div>
+          <div class="num"><div class="k">Week (GBP)</div><div class="v down">&minus;0.20%</div></div>
+          <div class="num"><div class="k">Value</div><div class="v">&pound;537</div></div>
+          <div class="num"><div class="k">P&amp;L</div><div class="v up">+&pound;112 / +26.5%</div></div>
+        </div>
       </div>
-      <p>1.0 share, T212 ISA. Value <strong>£511</strong> (+£26 week); book cost £499; unrealised P&L +2.4%. Best US-line WoW mover. Mega-cap-software bid was the strongest single sector story of the week. Q3 28 October alongside Microsoft and Alphabet.</p>
+      <div class="hold-right">
+        <div class="chips"><span class="chip mix">Mixed</span><span class="chip hi">0.3% direct &middot; ~&pound;1,500 look-through</span></div>
+        <ul>
+          <li>The CPU rally was the wrong end of the semi complex for AVGO. Broadcom&rsquo;s AI story is custom ASICs and networking, not general-purpose CPU compute, and the tape rewarded the direct beneficiaries.</li>
+          <li>Ex-dividend was Monday 21 September ($0.65).</li>
+          <li>Q4 results are conventionally early-to-mid December; not yet confirmed.</li>
+        </ul>
+        <p class="read"><b>How this hits you</b>&minus;&pound;9 on the direct, but the position is still the cleanest expression of the custom-silicon theme in your book. This week the market cared about CPUs, not ASICs; next month, when the hyperscaler capex guidance lands, that could reverse.</p>
+      </div>
     </div>
 
-    <div class="bl">
-      <div class="bl-head">
-        <span class="tick">AAPL</span>
-        <span class="chip pos">Apple</span>
-        <span class="px">$337.00 &nbsp;<span class="up">+1.4% wk</span></span>
+    <div class="hold">
+      <div class="hold-left">
+        <div class="tick">AAPL</div><div class="coname">Apple</div>
+        <div class="plat">2.00 shares &middot; T212 ISA</div>
+        <div class="nums">
+          <div class="num"><div class="k">Price</div><div class="v">$341.07</div></div>
+          <div class="num"><div class="k">Week (GBP)</div><div class="v up">+2.64%</div></div>
+          <div class="num"><div class="k">Value</div><div class="v">&pound;515</div></div>
+          <div class="num"><div class="k">P&amp;L</div><div class="v up">+&pound;137 / +36%</div></div>
+        </div>
       </div>
-      <p>2.0 shares, T212 ISA. Value <strong>£505</strong> (+£7 week); book cost £379; unrealised P&L +33.3%. Q3 29 October alongside Amazon &mdash; first hard data on the foldable iPhone cycle.</p>
+      <div class="hold-right">
+        <div class="chips"><span class="chip neu">Watch</span><span class="chip hi">0.3% direct &middot; ~&pound;4,700 look-through</span></div>
+        <ul>
+          <li>+1.5% in dollars, muted next to the AMD/META moves. The iPhone 18 Pro cycle is just launched; first data point is FQ4 on 29 October.</li>
+          <li>Cook was at the state dinner Thursday; nothing announced for Apple specifically.</li>
+          <li>Evercore ISI target stays at $380. The memory-cost story from a fortnight ago is still the risk on the margin side.</li>
+        </ul>
+        <p class="read"><b>How this hits you</b>+&pound;5 direct, small positive look-through. The line is doing what an Apple line does &mdash; participate at index weight, not lead.</p>
+      </div>
     </div>
 
-    <div class="bl">
-      <div class="bl-head">
-        <span class="tick">NVDA</span>
-        <span class="chip neg">Nvidia</span>
-        <span class="px">$217.44 &nbsp;<span class="down">&minus;0.4% wk</span></span>
+    <div class="hold">
+      <div class="hold-left">
+        <div class="tick">NVDA</div><div class="coname">Nvidia</div>
+        <div class="plat">2.17 shares &middot; T212 ISA</div>
+        <div class="nums">
+          <div class="num"><div class="k">Price</div><div class="v">$225.07</div></div>
+          <div class="num"><div class="k">Week (GBP)</div><div class="v up">+2.43%</div></div>
+          <div class="num"><div class="k">Value</div><div class="v">&pound;368</div></div>
+          <div class="num"><div class="k">P&amp;L</div><div class="v up">+&pound;156 / +73%</div></div>
+        </div>
       </div>
-      <p>2.17 shares, T212 ISA. Value <strong>£353</strong> (&minus;£1 week); book cost £212; unrealised P&L +66%. Direct-line move was small; the real exposure is the ~£4,500 look-through across the fund sleeve. Q3 results 18 November; $108.9bn revenue expected. <em>Outstanding: confirm the £30.20 average book cost on SMH.</em></p>
+      <div class="hold-right">
+        <div class="chips"><span class="chip neu">Watch</span><span class="chip hi">0.2% direct &middot; ~&pound;5,300 look-through</span></div>
+        <ul>
+          <li>The mega-cap that <em>didn&rsquo;t</em> participate in the Muse-CPU rally, because Muse&rsquo;s architecture cannibalises GPU orchestration into CPUs. And the summit that Huang attended in person delivered no H20 licensing update.</li>
+          <li>+1.3% in dollars, +0.83% in sterling &mdash; against a +12% AMD week. That relative spread is a data point.</li>
+          <li>Kress&rsquo; $7.65m stock sale on 17 September gains weight against the H20 non-outcome.</li>
+          <li>Q3 FY27 print unconfirmed, conventionally mid-to-late November.</li>
+        </ul>
+        <p class="read"><b>How this hits you</b>Direct is &pound;363 and utterly noise. The <b>&pound;5,300 look-through &mdash; roughly 15&times; the direct line &mdash; is the number that matters</b>, and it moved a fraction while AMD ran. That divergence is the most information-dense data point of the week for the AI trade: <em>the merchant GPU incumbent is being competed with from three directions</em> &mdash; MTIA (Meta), EPYC (AMD), Huawei Ascend 960DT (pulled forward). The direction is not new; the pricing this week is.</p>
+      </div>
     </div>
 
-    <div class="bl">
-      <div class="bl-head">
-        <span class="tick">AMZN</span>
-        <span class="chip neg">Amazon</span>
-        <span class="px">$248.42 &nbsp;<span class="down">&minus;3.3% wk</span></span>
+    <div class="hold">
+      <div class="hold-left">
+        <div class="tick">AMZN</div><div class="coname">Amazon</div>
+        <div class="plat">1.75 shares &middot; T212 ISA</div>
+        <div class="nums">
+          <div class="num"><div class="k">Price</div><div class="v">$249.67</div></div>
+          <div class="num"><div class="k">Week (GBP)</div><div class="v down">&minus;0.46%</div></div>
+          <div class="num"><div class="k">Value</div><div class="v">&pound;330</div></div>
+          <div class="num"><div class="k">P&amp;L</div><div class="v up">+&pound;20 / +6.5%</div></div>
+        </div>
       </div>
-      <p>1.75 shares, T212 ISA. Value <strong>£325</strong> (&minus;£11 week); book cost £310; unrealised P&L +5%. Underperformed both the S&P and the mega-cap software bid this week. Q3 29 October.</p>
+      <div class="hold-right">
+        <div class="chips"><span class="chip neg">Negative</span><span class="chip hi">0.2% direct &middot; ~&pound;2,400 look-through</span></div>
+        <ul>
+          <li>Second consecutive down week, the only mega-cap outside GOOGL to close red. &minus;1.6% in dollars, &minus;2.0% in sterling.</li>
+          <li>No fresh cost print this week, but the market is still digesting the $20/hour minimum from a fortnight ago and the $8bn Generac generator deal alongside continued Q3 layoffs.</li>
+          <li>Q3 earnings 29 October.</li>
+        </ul>
+        <p class="read"><b>How this hits you</b>&minus;&pound;7 direct. The look-through is somewhere between &minus;&pound;40 and &minus;&pound;80 across the fund sleeve. This is the line where the AI-capex-versus-cost pressure is visible <em>in the equity</em> and not just in the analyst note; worth watching if it makes a third down week.</p>
+      </div>
     </div>
 
   </div>
 </section>
 
-<section id="funds">
+<section>
   <h2>Funds and ETFs</h2>
-  <p class="sub">Fourteen fund and ETF lines across twelve distinct vehicles, £132,360 &mdash; 78.1% of the book at Tuesday NAVs. Monday will refresh with Friday-close pricing. Regime read is the only analysis that adds value at this level.</p>
+  <p class="sub">Fourteen lines, twelve distinct funds, &pound;136,094 &mdash; 78.0% of the book. Ranked by value. The regime read column is where each fund&rsquo;s structural tilt fared against the Muse-CPU rally, the bond rout, and a nearly-flat FX print.</p>
 
   <div class="tscroll">
     <table>
       <thead>
-        <tr><th>Fund</th><th>Account</th><th class="n">Value</th><th class="n">P&amp;L</th><th>Regime read</th></tr>
+        <tr><th>Fund</th><th>Account</th><th class="n">Price</th><th class="n">Value</th><th class="n">Week</th><th class="n">P&amp;L</th><th>Regime read</th></tr>
       </thead>
       <tbody>
         <tr>
-          <td><div class="fname">Royal London Global Equity Diversified M Acc</div><div class="fmeta">404 holdings · US 61.3% · NVDA 5.3%, AAPL 4.5%, MSFT 3.0%</div></td>
-          <td>II ISA</td><td class="n">£19,137</td><td class="n up">+28.7%</td>
-          <td>Largest single line. Tuesday NAV added +£58; Monday will pick up Friday's mixed close &mdash; net wash on the tech-concentrated sleeve.</td>
+          <td><div class="fname">Royal London Global Equity Diversified M Acc</div><div class="fmeta">404 holdings &middot; US 61.3% &middot; NVDA 5.34%, AAPL 4.50%, MSFT 3.00% &middot; OCF 0.41%</div></td>
+          <td>II ISA</td><td class="n">303.40p</td><td class="n">&pound;19,602</td><td class="n up">+1.10%</td><td class="n up">+&pound;4,732</td>
+          <td>The 404-name breadth is why this line adds only +1.10% in a week where the direct AMD line added 12%. That is the trade-off and it is the reason the fund is the core. It is +31.8% on cost with 0.41% ongoing charge; nothing to reconsider.</td>
         </tr>
         <tr>
-          <td><div class="fname">Fidelity European W Acc</div><div class="fmeta">46 holdings · France 25%, Switzerland 16.9%, Netherlands 15.3% · ASML 8.7%, Roche 5.0%, Schneider 4.0%</div></td>
-          <td>II ISA</td><td class="n">£15,437</td><td class="n up">+9.7%</td>
-          <td>Biggest fund drag to Tuesday's mark. Friday DAX +0.77%, CAC +0.57% and TTF fading to €78.5 remove some pressure &mdash; Monday should recover £80&ndash;£140.</td>
+          <td><div class="fname">Fidelity European W Acc</div><div class="fmeta">46 holdings &middot; France 25%, Switzerland 16.9%, Netherlands 15.3% &middot; ASML 8.7%, Roche 5.0%</div></td>
+          <td>II ISA</td><td class="n">3,216p</td><td class="n">&pound;15,912</td><td class="n up">+1.93%</td><td class="n up">+&pound;1,843</td>
+          <td><b>Best week of any fund in the book at +1.93%.</b> The eurozone composite PMI printed 53.1, a ten-month high; ASML and Schneider participated in the broader semi rally without paying the direct AMD tax. This was the reason to hold it: uncorrelated returns to the US book. TTF stabilising helps industrial costs at the margin.</td>
         </tr>
         <tr>
-          <td><div class="fname">Fundsmith Equity I Acc</div><div class="fmeta">28 holdings · Stryker 6.4%, IDEXX 6.2%, Alphabet 6.1%</div></td>
-          <td>II ISA</td><td class="n down">£15,450</td><td class="n down">&minus;1.9%</td>
-          <td>Recovered +£187 to Tuesday's mark. Still the only core fund below book. The hawkish-hold outcome supports the quality-and-defensives tilt versus the AI-heavy indices.</td>
+          <td><div class="fname">Fundsmith Equity I Acc</div><div class="fmeta">28 holdings &middot; Stryker 6.4%, IDEXX 6.2%, Alphabet 6.1%</div></td>
+          <td>II ISA</td><td class="n">716.64p</td><td class="n">&pound;15,783</td><td class="n up">+1.28%</td><td class="n up">+&pound;33</td>
+          <td><b>Closed the gap to cost.</b> Now +0.2% on the &pound;15,750 book &mdash; the first time it has been in the black since June. The deliberate zero-semiconductor tilt continued to cost relative to the broader market, offset by the Alphabet weight underperforming.</td>
         </tr>
         <tr>
-          <td><div class="fname">Vanguard FTSE Global All Cap Index Acc</div><div class="fmeta">7,475 holdings · US 58.3% · NVDA 4.2%, AAPL 3.8%, MSFT 2.9% · 0.23% OCF</div></td>
-          <td>II General</td><td class="n">£14,608</td><td class="n up">+19.0%</td>
-          <td>Tuesday NAV essentially flat. Broadest diversification by count but 58% US means the Fed still owns the direction.</td>
+          <td><div class="fname">Vanguard FTSE Global All Cap Index Acc</div><div class="fmeta">~7,475 holdings &middot; US 58.3% &middot; NVDA+AAPL+MSFT ~10.9%</div></td>
+          <td>II General</td><td class="n">29,862.68p</td><td class="n">&pound;15,000</td><td class="n up">+1.61%</td><td class="n up">+&pound;2,722</td>
+          <td>The broadest thing you own, including small caps. In a week where the CPU repricing was the story and small caps traded on the bond move, the all-cap tail was a modest drag against SWDA and the S&amp;P lines. Earns its place as the diversifier of last resort.</td>
         </tr>
         <tr>
-          <td><div class="fname">iShares Core MSCI World ETF (SWDA.L)</div><div class="fmeta">1,343 holdings · NVDA 5.7%, AAPL 5.1%, MSFT 3.8% · 0.20% OCF</div></td>
-          <td>II ISA</td><td class="n">£13,243</td><td class="n up">+17.9%</td>
-          <td>Down £128 on the week (Friday closes for the ETF). Developed-market core with heavy AI-top-weight overlap against Global All Cap and LS100.</td>
+          <td><div class="fname">iShares Core MSCI World ETF USD Acc</div><div class="fmeta">~1,400 holdings &middot; US ~72% &middot; GBX-quoted</div></td>
+          <td>II ISA</td><td class="n">11,097p</td><td class="n">&pound;13,649</td><td class="n up">+1.84%</td><td class="n up">+&pound;2,421</td>
+          <td>Developed-market core. Higher US weight than Global All Cap and no small-cap drag &mdash; the +1.84% is what a US-heavy DM tracker looks like in this regime. Functionally overlaps with Global All Cap; consolidation is a two-account question, not urgent.</td>
         </tr>
         <tr>
-          <td><div class="fname">Vanguard LifeStrategy 100% Equity A Acc</div><div class="fmeta">Two lines: II General £13,138, II ISA £12,676 · US 45.8%, UK 11.3%</div></td>
-          <td>II Gen + ISA</td><td class="n">£25,814</td><td class="n up">+29.2%</td>
-          <td>Down £41 combined to Tuesday's mark. The 11.3% UK sleeve gave back on Friday's FTSE 100 weakness; Monday's NAV lands around net flat.</td>
+          <td><div class="fname">Vanguard LifeStrategy 100% Equity A Acc</div><div class="fmeta">Fund-of-index-funds &middot; ~20% UK home bias</div></td>
+          <td>II General</td><td class="n">50,474.83p</td><td class="n">&pound;13,468</td><td class="n up">+1.70%</td><td class="n up">+&pound;3,789</td>
+          <td>The UK home bias helped modestly: FTSE 100 finished green, and the international sleeve caught the US move. Now +39.2% on cost, still the best P&amp;L percentage in the book among fund lines.</td>
         </tr>
         <tr>
-          <td><div class="fname">Rathbone Global Opportunities S Acc</div><div class="fmeta">54 holdings · US 63.2% · Amphenol 4.0%, Alphabet 3.5%, ARM 3.4%</div></td>
-          <td>II ISA</td><td class="n">£12,671</td><td class="n up">+22.4%</td>
-          <td>Second-best fund mover after Fundsmith, +£137 to Tuesday's NAV. Structural underperformance vs IA Global continues, but the hawkish-hold regime is where the AI-underweight case gets its best hearing this cycle.</td>
+          <td><div class="fname">Rathbone Global Opportunities S Acc</div><div class="fmeta">~50 holdings &middot; concentrated growth, US ~65%</div></td>
+          <td>II ISA</td><td class="n">231.22p</td><td class="n">&pound;13,042</td><td class="n up">+3.09%</td><td class="n up">+&pound;2,692</td>
+          <td><b>Best week of any fund at +3.09%.</b> Concentrated growth with high tech beta &mdash; exactly the risk-on read of item 01. Also caught the OEIC NAV catch-up from last Friday. On like-for-like NAV timing the true week is probably +2.0&ndash;2.3%. Still the highest-beta core fund you own.</td>
         </tr>
         <tr>
-          <td><div class="fname">Vanguard S&amp;P 500 ETF Acc (VUAG.L)</div><div class="fmeta">Two lines: II General £10,225, II ISA £2,176 · NVDA 7.6%, AAPL 7.1%, MSFT 5.4% · 0.07% OCF</div></td>
-          <td>II Gen + ISA</td><td class="n">£12,401</td><td class="n up">+35.0%</td>
-          <td>Down £105 combined on the week. Purest S&amp;P expression &mdash; carries the full weight of the semi drag and gets the full benefit of the mega-cap-software bid.</td>
+          <td><div class="fname">Vanguard LifeStrategy 100% Equity A Acc</div><div class="fmeta">Identical fund, second account</div></td>
+          <td>II ISA</td><td class="n">50,474.83p</td><td class="n">&pound;12,995</td><td class="n up">+1.70%</td><td class="n up">+&pound;2,695</td>
+          <td>Same fund, different wrapper. Combined LifeStrategy exposure across the two accounts is <b>&pound;26,463, 15.2% of the book</b> &mdash; your largest fund position when the two lines are added.</td>
         </tr>
         <tr>
-          <td><div class="fname">Vanguard S&amp;P 500 UCITS ETF (VUSA.L)</div><div class="fmeta">Distributing class, identical index to VUAG · 0.91% yield</div></td>
-          <td>II ISA</td><td class="n">£2,456</td><td class="n up">+39.1%</td>
-          <td>Down £12 on the week. Holding VUAG and VUSA inside the same ISA is admin without extra exposure &mdash; tidy-up candidate.</td>
+          <td><div class="fname">Vanguard S&amp;P 500 UCITS ETF Acc</div><div class="fmeta">500 holdings &middot; 100% US &middot; GBP-quoted</div></td>
+          <td>II General</td><td class="n">&pound;112.80</td><td class="n">&pound;10,603</td><td class="n up">+2.27%</td><td class="n up">+&pound;3,122</td>
+          <td>Pure unhedged US large cap. Captured the S&amp;P&rsquo;s week gain roughly one-for-one. In the General account, so any trim is a CGT event on +&pound;3,122 of gain.</td>
         </tr>
         <tr>
-          <td><div class="fname">VanEck Semiconductor UCITS ETF (SMH.L)</div><div class="fmeta">Micron 11.3%, AMD 11.3%, NVDA 11.0% · USD</div></td>
-          <td>T212 ISA</td><td class="n">£647</td><td class="n up">+152%</td>
-          <td>Down £30 on the week. The direct expression of the semi round-trip: Wednesday down, Thursday +3% bounce, Friday reversed in the largest weights. <em>Outstanding: confirm the £30.20 average book cost.</em></td>
+          <td><div class="fname">Vanguard S&amp;P 500 UCITS ETF Dist</div><div class="fmeta">Distributing share class of the same index</div></td>
+          <td>II ISA</td><td class="n">&pound;110.43</td><td class="n">&pound;2,540</td><td class="n up">+2.22%</td><td class="n up">+&pound;774</td>
+          <td>Same 500 companies as VUAG, paying out rather than accumulating. Consolidation candidate into the ISA VUAG line at no tax cost.</td>
         </tr>
         <tr>
-          <td><div class="fname">iShares Automation &amp; Robotics (RBOT.L)</div><div class="fmeta">Snowflake 3.9%, Advantest 3.8%, ServiceNow 3.5% · USD · 0.40% OCF</div></td>
-          <td>T212 ISA</td><td class="n">£289</td><td class="n up">+44.5%</td>
-          <td>Down £7 on the week. Software-heavy in practice &mdash; the mega-cap software bid partially offsets any semi drag.</td>
+          <td><div class="fname">Vanguard S&amp;P 500 UCITS ETF Acc</div><div class="fmeta">Identical to the General holding</div></td>
+          <td>II ISA</td><td class="n">&pound;112.80</td><td class="n">&pound;2,256</td><td class="n up">+2.27%</td><td class="n up">+&pound;554</td>
+          <td>Third S&amp;P 500 line. Combined S&amp;P 500 exposure across VUAG and VUSA is <b>&pound;15,399, 8.8% of the book</b> across three lines in two accounts for no functional reason.</td>
         </tr>
         <tr>
-          <td><div class="fname">EMQQ Emerging Markets Internet (EMQP.L)</div><div class="fmeta">Sea Ltd ADR 9.2% · 0.86% OCF</div></td>
-          <td>T212 ISA</td><td class="n down">£212</td><td class="n down">&minus;18.3%</td>
-          <td>Down £3 on the week. Still the only fund line below cost. Most expensive OCF in the T212 ISA at 0.86%.</td>
+          <td><div class="fname">VanEck Semiconductor UCITS ETF Acc</div><div class="fmeta">25 holdings &middot; USD-quoted on LSE &middot; pure semis</div></td>
+          <td>T212 ISA</td><td class="n">$114.14</td><td class="n">&pound;733</td><td class="n up">+8.31%</td><td class="n up">+&pound;476</td>
+          <td><b>+7.07% in dollars.</b> The direct expression of item 01 &mdash; AMD is 11.4% of this ETF, Micron 10.1%, TSM 10.0%, NVIDIA also top. Best-performing thematic in the book by a distance. +181% on cost.</td>
+        </tr>
+        <tr>
+          <td><div class="fname">iShares Automation &amp; Robotics UCITS ETF Acc</div><div class="fmeta">~150 holdings &middot; USD-quoted on LSE &middot; thematic</div></td>
+          <td>T212 ISA</td><td class="n">$22.03</td><td class="n">&pound;314</td><td class="n up">+5.94%</td><td class="n up">+&pound;114</td>
+          <td>Thematic and small. +4.7% in dollars caught a slice of the semi rally through its Nvidia and ABB weights. Below the level where it changes anything.</td>
+        </tr>
+        <tr>
+          <td><div class="fname">EMQQ Emerging Markets Internet ETF</div><div class="fmeta">~90 holdings &middot; China-heavy &middot; GBX-quoted</div></td>
+          <td>T212 ISA</td><td class="n">703.90p</td><td class="n">&pound;212</td><td class="n down">&minus;0.85%</td><td class="n down">&minus;&pound;48</td>
+          <td>Your only real EM exposure. Faded on the same summit-relief risk-off that hit DiDi. Worst percentage P&amp;L in the book at &minus;18.3%. Rounding error either way.</td>
         </tr>
       </tbody>
     </table>
   </div>
+
+  <div class="alert" style="margin-top:22px">
+    <div class="mark">Look-through</div>
+    <div>
+      <h3>The six-name concentration keeps growing &mdash; roughly &pound;25,000 in six companies</h3>
+      <p>Update on the estimates in last week&rsquo;s report using this week&rsquo;s prices. NVIDIA look-through is roughly <b>&pound;5,350</b> (direct &pound;363 plus fund weights); Alphabet <b>&pound;4,900</b>; Microsoft <b>&pound;5,200</b>; Apple <b>&pound;4,750</b>; Meta <b>&pound;2,700</b>; Broadcom <b>&pound;1,500</b>. Total roughly <b>&pound;24,400, ~14% of the book</b> in six companies you mostly do not hold directly. Muse-week widened the AMD look-through as well: on the estimate, <b>~&pound;1,300 of AMD across ATT, SMH, RBOT and the trackers</b>.</p>
+      <p>The three fund lines with the highest overlap into those six names &mdash; Rathbone, ATT, SMH &mdash; all had their best week of the quarter. That is the concentration working <em>for</em> you this week. It will work against you at the same magnitude when it reverses.</p>
+    </div>
+  </div>
 </section>
 
-<section id="ahead">
+<section>
   <h2>The week ahead</h2>
-  <p class="sub">The September central-bank trio delivered as scripted. The macro calendar goes quiet until US NFP on 3 October and Games Workshop's dividend on 5 October. The one incremental event this week is Broadcom's dividend record date on Monday.</p>
+  <p class="sub">Monday 28 September to Friday 2 October. A rare quiet-macro week between Fed meetings; the two events that matter are Tuesday&rsquo;s JOLTS and Friday&rsquo;s payrolls, plus the GAW dividend Monday.</p>
 
   <div class="cal">
 
+    <div class="day">
+      <div><div class="dname">Monday</div><div class="ddate">28 September</div></div>
+      <ul>
+        <li>Quiet macro. No major scheduled release.</li>
+        <li><b>The three lagging OEIC NAVs catch up again.</b> Fundsmith, Global All Cap and Rathbone are priced at Thursday 25 September in this report and refresh Monday morning to Friday&rsquo;s close.</li>
+        <li>ATT buyback RNS window &mdash; the trust bought 500,000 shares a day for most of last week.</li>
+        <li>China Golden Week begins Wednesday 30 September and runs through 7 October &mdash; expect thinner ADR volume across DIDIY and EMQP.</li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <div><div class="dname">Tuesday</div><div class="ddate">29 September</div></div>
+      <ul>
+        <li><b>US JOLTS job openings for August, 14:00 GMT.</b> Consensus around 7.2m. A high print re-fires the hawkish trade behind item 02 and knocks UKW again. A soft print eases the same trade.</li>
+        <li>US Conference Board consumer confidence, 14:00 GMT.</li>
+        <li>Fed speakers: Bostic and Williams during the day. Warsh has not spoken since 17 September &mdash; any commentary now is dovish or hawkish tape-mover.</li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <div><div class="dname">Wednesday</div><div class="ddate">30 September</div></div>
+      <ul>
+        <li><b>US ADP employment for September, 12:15 GMT.</b> Trailer for Friday&rsquo;s NFP.</li>
+        <li>US Chicago PMI, 13:45 GMT.</li>
+        <li>Euro area September flash HICP, 09:00 GMT. Direct read to Fidelity European &pound;15,912 through the ECB path.</li>
+        <li>UK Q2 final GDP, 06:00 GMT.</li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <div><div class="dname">Thursday</div><div class="ddate">1 October</div></div>
+      <ul>
+        <li><b>US ISM manufacturing PMI, 14:00 GMT.</b> The read-through to Wednesday&rsquo;s composite is direct.</li>
+        <li>Initial jobless claims, 12:30 GMT. Last week&rsquo;s 197k print was a hawkish input.</li>
+        <li><b>Nebius EPYC / NVIDIA GPU price rise takes effect.</b> The Nebius announcement of a fortnight ago is now live pricing &mdash; AMD +25%, NVIDIA GPU +17&ndash;21%. Any commentary from neocloud competitors is a Q4 datapoint.</li>
+      </ul>
+    </div>
+
     <div class="day key">
-      <div class="dname">Monday <span>· 22 Sep</span></div>
+      <div><div class="dname">Friday</div><div class="ddate">2 October</div></div>
       <ul>
-        <li><b>Broadcom dividend record date.</b> Payable 30 September. Position needs to be held through Monday to qualify &mdash; you do.</li>
-        <li><b>Monday NAVs refresh</b> for Fundsmith, Rathbone, Fidelity European, Royal London, Global All Cap and LifeStrategy 100%. Working revision: +£400 to +£700 versus the Tuesday-NAV valuation above.</li>
-        <li>Fedspeak: several regional presidents on the tape into month-end. First-post-decision framing.</li>
-      </ul>
-    </div>
-
-    <div class="day">
-      <div class="dname">Tuesday <span>· 23 Sep</span></div>
-      <ul>
-        <li><b>Norwegian outage peak</b> &mdash; Week 38 heaviest scheduled maintenance overlaid on the Ormen Lange extension to 1 February 2027. Bearish for TTF and NBP; indirectly negative for Fidelity European's industrial book, indirectly positive for Shell.</li>
-      </ul>
-    </div>
-
-    <div class="day">
-      <div class="dname">Wednesday &ndash; Friday <span>· 24&ndash;26 Sep</span></div>
-      <ul>
-        <li><b>US Q2 GDP third estimate</b> (Thursday); <b>US August PCE</b> (Friday) &mdash; the Fed's preferred inflation gauge. First data-based reset on the December Fed pricing (currently 65&ndash;70%).</li>
-        <li>UK GDP Q2 second estimate; final PMI reads across the majors.</li>
-      </ul>
-    </div>
-
-    <div class="day">
-      <div class="dname">Late September <span>· running</span></div>
-      <ul>
-        <li>EU Commission winter preparedness statement expected. First policy read on the 80% storage mandate against the Norwegian outage extension and the Qatar force majeure.</li>
-      </ul>
-    </div>
-
-    <div class="day">
-      <div class="dname">Beyond <span>· ordered</span></div>
-      <ul>
-        <li><b>Fri 3 Oct</b> &mdash; US September NFP. First data point that could shift the December Fed probability meaningfully.</li>
-        <li><b>Mon 5 Oct</b> &mdash; Games Workshop 140p dividend payable (~£21).</li>
-        <li><b>Tue 14 Oct</b> &mdash; UK labour market data (wages). First read after the BoE hawkish hold.</li>
-        <li><b>Wed 15 Oct</b> &mdash; US September CPI. The specific event that resets the December Fed pricing.</li>
-        <li><b>Mon 20 Oct</b> &mdash; TSMC Q3. Tone-setter for the hyperscaler capex reads on 28 October.</li>
-        <li><b>Tue 21 Oct</b> &mdash; UK September CPI, three days before the Budget. Motor-fuel pass-through second look; November MPC becomes concrete.</li>
-        <li><b>Wed 28 Oct</b> &mdash; MSFT / GOOGL / META Q3 together. The dated test of the AI-pace narrative. Same day: UK Autumn Budget (£13.8bn headroom).</li>
-        <li><b>Late Oct</b> &mdash; Shell and GSK Q3. Shell's first quarter fully reflecting the crude and gas rally.</li>
-        <li><b>Thu 5 Nov</b> &mdash; BoE with MPR. Now the live meeting for a hike.</li>
-        <li><b>Wed 18 Nov</b> &mdash; NVIDIA Q3 FY27. Largest look-through exposure at ~£4,500.</li>
-        <li><b>Fri 27 Nov</b> &mdash; DiDi Global Q3. Next catalyst on the position nearest its low.</li>
-        <li><b>Wed 10 Dec</b> &mdash; Fed decision. Where the December hike probability gets tested.</li>
+        <li><b>US non-farm payrolls for September, 12:30 GMT.</b> The single biggest data event of the fortnight. On top of a 58.4 PMI and 197k claims, another strong print pushes the 9 December hike from likely to nearly-certain, drags UKW, and lifts the dollar back through 1.34. A soft print does the opposite.</li>
+        <li>US ISM services, 14:00 GMT.</li>
+        <li><b>Monday 5 October (weekend note):</b> Games Workshop pays 140p, &pound;21.00 into the II ISA. Ex-div was 21 August.</li>
       </ul>
     </div>
 
   </div>
+
+  <h2 style="margin-top:44px;font-size:22px">Dated items further out</h2>
+  <p class="sub">Dividends, ex-dividend dates and earnings. Confirmed unless marked estimated.</p>
+
+  <div class="later">
+    <div class="lcard"><div class="when">Mon 5 Oct</div><div class="what">Games Workshop pays 140p</div><div class="why">Declared 28 July. 15 shares = &pound;21.00 into II ISA.</div></div>
+    <div class="lcard"><div class="when">Thu 8 Oct</div><div class="what">GSK pays Q2 dividend, 17p</div><div class="why">97 shares = &pound;16.49. Ex-div was 13 August.</div></div>
+    <div class="lcard"><div class="when">Thu 15 Oct</div><div class="what">UKW Capital Markets Event</div><div class="why">13:30 at The Ned, London. The key near-term catalyst for the discount on your &pound;9,401 position. Webcast available.</div></div>
+    <div class="lcard"><div class="when">Thu 22 Oct</div><div class="what">Games Workshop ex-dividend, 70p</div><div class="why">Declared at the 16 September AGM. Pays 27 November.</div></div>
+    <div class="lcard"><div class="when">Tue 28 Oct</div><div class="what">UK Autumn Budget</div><div class="why">The Chancellor&rsquo;s response to the &pound;3.5bn PSNB overrun. Reaches UKW, sterling and directly all UK-domiciled holdings via any dividend-tax or ISA-allowance change.</div></div>
+    <div class="lcard"><div class="when">Wed 28 Oct</div><div class="what">Q3 earnings: Alphabet, Meta, Microsoft &middot; GSK Q3</div><div class="why">The heaviest day of the quarter for your look-through book. Hyperscaler capex guidance lands here &mdash; the CPU repricing this week raises the stakes.</div></div>
+    <div class="lcard"><div class="when">Thu 29 Oct</div><div class="what">Shell Q3 + Q3 dividend &middot; Apple FQ4 &middot; Amazon Q3</div><div class="why">Shell reports 07:00 GMT and declares Q3. Apple&rsquo;s first full quarter of the $100-higher iPhone 18 Pro pricing.</div></div>
+    <div class="lcard"><div class="when">Thu 29 Oct <span style="opacity:.7">(est.)</span></div><div class="what">UKW Q3 dividend declaration</div><div class="why">Forecast, not confirmed. 2026 target 10.7p, so expect 2.68p.</div></div>
+    <div class="lcard"><div class="when">Mon 2 Nov</div><div class="what">Berkshire Hathaway Q3</div><div class="why">First results with Howard Buffett as Chairman and Greg Abel as CEO.</div></div>
+    <div class="lcard"><div class="when">Tue 3 Nov</div><div class="what">AMD Q3</div><div class="why">First read on whether Muse-CPU pricing shows up in guidance. Materially raised in importance by this week&rsquo;s tape.</div></div>
+    <div class="lcard"><div class="when">Thu 12 Nov</div><div class="what">Ex-dividend: Shell, GSK, UKW <span style="opacity:.7">(UKW est.)</span></div><div class="why">Shell pays 21 December; GSK pays 7 January 2027.</div></div>
+    <div class="lcard"><div class="when">Mid/late Nov <span style="opacity:.7">(est.)</span></div><div class="what">Nvidia Q3 FY2027</div><div class="why">Not confirmed. Now sits into an unresolved H20 file post-summit; largest single scheduled portfolio event through year-end.</div></div>
+    <div class="lcard"><div class="when">Thu 19 Nov</div><div class="what">Microsoft ex-dividend, $0.98</div><div class="why">Raised 8% on 15 September. Pays 10 December.</div></div>
+    <div class="lcard"><div class="when">Fri 27 Nov</div><div class="what">Games Workshop pays 70p &middot; DiDi Q3</div><div class="why">&pound;10.50 from GAW. DiDi Q3 the next dated event for the &pound;1,405 position.</div></div>
+    <div class="lcard"><div class="when">Wed 9 Dec</div><div class="what">FOMC</div><div class="why">Markets now price well over 90% odds of another 25bp hike here. Item 02 in one word.</div></div>
+    <div class="lcard"><div class="when">Fri 10 Jan 2027</div><div class="what">US&ndash;China tariff truce expires (extended)</div><div class="why">Reaches DIDIY, EMQP and the tariff-sensitive US import lines inside every global fund.</div></div>
+  </div>
 </section>
 
-<section id="sources">
 <footer>
-<h4>Sources</h4>
-<ul>
-<li>US equity closes (NVDA, AMD, MSFT, AAPL, GOOGL, META, AVGO, BRK-B, AMZN, DIDIY): TheStreet, CNBC, Yahoo Finance, stockanalysis.com</li>
-<li>LSE closes (SHEL, UKW, ATT, GAW, GSK, SMH.L, RBOT.L, SWDA.L, VUAG.L, VUSA.L, EMQP.L): LSE.co.uk, ajbell.co.uk/market-research, Yahoo Finance UK</li>
-<li>OEIC single-priced NAVs (Fundsmith, Rathbone, Royal London, Fidelity European, Global All Cap, LifeStrategy 100%): hl.co.uk fund factsheets</li>
-<li>FOMC decision and dot plot: Federal Reserve, CNBC, Bloomberg</li>
-<li>Bank of England decision, vote and QT rewrite: BoE press release, Bloomberg, Reuters, Trading Economics gilt-yield feed</li>
-<li>Bank of Japan decision, vote and Ueda press conference: BoJ press release, Bloomberg, CNBC, Japan Times</li>
-<li>Japan August CPI: Investing.com, Japan Times</li>
-<li>UK August retail sales: ONS, Bloomberg, FXStreet, Retail Bulletin</li>
-<li>US industrial production and capacity utilisation: Federal Reserve G.17</li>
-<li>UK 10-year gilt: Trading Economics</li>
-<li>FTSE 100 / 250, DAX, CAC 40, Stoxx 600, Nikkei: LSE.co.uk, Newsquawk, Bloomberg, Reuters</li>
-<li>Brent, WTI, TTF, NBP: Trading Economics, oilpriceapi.com, tradingpedia</li>
-<li>Norwegian gas / Ormen Lange extension: Gassco, Argus Media, Oilprice.com</li>
-<li>Qatar force majeure and LNG: LNG Industry, GIIGNL, CNBC</li>
-<li>EU gas storage: MacroMicro AGSI+, Oxford Institute for Energy Studies</li>
-<li>GBP/USD: poundsterlinglive.com, Eurochange</li>
-<li>Broadcom AI ASIC revenue growth and Q3 guidance: company Q3 release, Bloomberg</li>
-<li>Fund NAV composition and top holdings: Trustnet, Hargreaves Lansdown, iShares/Vanguard fact sheets, VanEck, EMQQ</li>
-</ul>
-<div class="disc">
-<p>Generated 19 September 2026 from holdings.numbers as last saved 19 September 2026 &mdash; 29 lines, £139,641 book cost, no transactions recorded since the 15 September review. Direct-line prices are Friday 18 September closes for LSE and US equities and LSE-listed ETFs; OEIC unit prices are Tuesday 15 September single-priced NAVs. Monday morning will book Friday-close NAVs for the six OEIC lines.</p>
-<p>This is an automated research summary for personal use and not financial advice. I am not a financial adviser and nothing here is a recommendation to buy or sell.</p>
-</div>
+  <h4>What I could not verify</h4>
+  <ul>
+    <li><b>UKW.L Friday close.</b> Stockanalysis.com gave 112.60p (&minus;0.44% on the day); Stockopedia showed 113.10p; HL&rsquo;s buy/sell was 113.20/112.90 with a &ldquo;previous close 113.10p&rdquo; footnote. Difference is 50p &mdash; &pound;42 on your position, immaterial for the review. Used 112.60p (stockanalysis) as the Friday close.</li>
+    <li><b>GBP/USD Friday close.</b> Yahoo Finance history page returned 1.3452 for 25 Sep 2026 which is inconsistent with the &minus;1.4% cumulative-week narrative and with the Trading Economics / ExchangeRates.org.uk read of <b>1.3242</b>. Used 1.3242 as the Friday close, which matches the daily-brief file for today. Yahoo&rsquo;s figure appears to have been a bad row.</li>
+    <li><b>Brent Friday close</b> resolved to <b>$105.11</b> per Sunday Guardian, Vantage Markets and Convex Trade &mdash; up on the week from $103.87, not the fade the daily briefs implied earlier. Iran/Qatar UNGA-sidelines talks and OPEC+ steady-state leaks were the drivers. If Argus/ICIS shows different, tell me.</li>
+    <li><b>TTF Friday close</b> resolved to <b>&euro;72.07</b> per CME Group / Yahoo Finance TTF calendar reference, &minus;4.0% on the day. This confirms Wednesday&rsquo;s &euro;72.90 was the correct public feed and Thursday&rsquo;s &euro;78.80 was the bad print. NBP day-ahead 190p/therm Friday, &minus;2.8%. Argus/ICIS terminal reconciliation over the week is still the authoritative check.</li>
+    <li><b>UK gilt Friday closes</b> for 10Y and 30Y not directly obtained; the direction (higher) is clear, the magnitude implied by the US move.</li>
+    <li><b>OEIC NAV timing.</b> The prices used are the single price published by HL as at 25 September; if a fund publishes a T+1 NAV that convention will differ from your platform statement by roughly a day.</li>
+    <li><b>Fund look-through weights</b> for Rathbone, LifeStrategy, Global All Cap and SWDA beyond published top-tens are approximate. The &pound;24,400 six-name concentration figure carries roughly &plusmn;10%.</li>
+    <li><b>ATT&rsquo;s holdings</b> still at 31 July 2026 &mdash; no August or September factsheet retrieved. Weights above are the reference; drift is unknown.</li>
+    <li><b>Nvidia Q3, Broadcom Q4, Games Workshop H1, UKW Q3 dividend</b> dates are convention or forecast, not company-confirmed. Marked estimated above.</li>
+  </ul>
+
+  <h4>Price sources</h4>
+  <ul>
+    <li>US equities: Yahoo Finance historical, Friday 25 September closes</li>
+    <li>LSE equities and ETFs: Yahoo Finance (SHEL, GSK, VUAG, GAW, ATT), stockanalysis.com (SWDA, SMH, UKW, RBOT, EMQP)</li>
+    <li>OEIC unit prices: hl.co.uk fund pages, prices as at 25 September</li>
+    <li>FX: Yahoo Finance GBPUSD=X close</li>
+    <li>Macro: CNBC and Yahoo Finance market-close reports for Friday 25 September; convextrade for Brent (flagged); Trading Economics for cross-check</li>
+    <li>Company news: RNS via Investegate, company press releases, Reuters, CNBC (reconstructed from the four daily briefs Mon&ndash;Thu of the week)</li>
+  </ul>
+
+  <div class="disc">
+    <p>This is an automated summary produced for personal record-keeping. It is not financial advice, not a recommendation to buy or sell anything, and not a substitute for your own analysis or a regulated adviser. Prices and figures may contain errors; verify against your platform statements before acting on any of it.</p>
+  </div>
 </footer>
-</section>
 
 </div>
+
 </body>
 </html>
