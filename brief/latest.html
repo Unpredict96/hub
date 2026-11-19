@@ -185,290 +185,257 @@ footer li{margin-bottom:4px}
 <div class="wrap">
 
 <header class="mast">
-<p class="eyebrow">Daily market brief &middot; Wednesday 18 November 2026</p>
-<h1>Nvidia passed every test in the exit rule and still closed lower. Brent settled $1.95 above Shell&rsquo;s trigger. UK CPI came in a tenth light.</h1>
-<p class="dek">Kress raised the FY28 framing to about 75%, which clears the last open condition. NVDA rose to $159.70 in the first hour, then sold off to close at $150.96 (&minus;2.89%) on succession and China concerns. Brent settled at $91.95 (&minus;$1.19) after a 3.4m bbl US crude build, the closest settle to the $90 Shell trigger so far. UK October CPI was 3.6% against 3.7% expected, which cut December hike pricing from about 90% to 80%. Gilts rallied 78 ticks and sterling fell to 1.3144. The T212 ISA share counts are now in the holdings file, and they change how much the Nvidia line matters to the book. Sixteenth brief with no trade idea.</p>
+<p class="eyebrow">Daily market brief · Thursday 19 November 2026</p>
+<h1>Anthropic opened 34% above its price and closed 17% above it. The S&amp;P fell about 2% for a sixth straight loss. This time TSM and ASML fell with Nvidia. Brent settled $1.98 above Shell’s trigger.</h1>
+<p class="dek">ANT opened at $112.87, peaked at $115.00, and closed at $96.86, against an $83 offer price. While it faded, a Hunterbrook short report on AMD (−7.71%) and a 5.6% fall in UnitedHealth pulled the US market down from a positive open. SPY fell 1.96%, QQQ 2.19% and DIA 2.18%. The supplier/Nvidia split I pointed to last night lasted one session: TSM fell 2.87%, ASML 2.75% and NVDA 3.25%. Brent settled at $91.98 (+3c) after the IRGC claimed mine strikes on two supertankers. That was the third straight session in which a Gulf headline failed to move the settle. The Trump–Xi–Putin statement in Shenzhen pledged more refined-product supply, which is the first real data on Shell’s diesel leg and a headwind for it. NBP Dec-26 fell 11.3p to 201.24p and now trades at a discount to TTF on the curve. The direct lines lost about £307. Seventeenth brief with no trade idea.</p>
 </header>
 
 <div class="figs">
-  <div class="fig"><div class="k">NVDA (close)</div><div class="v down">$150.96</div><div class="s">&minus;2.89% &middot; range $150.40&ndash;159.70 &middot; FY28 ~75%</div></div>
-  <div class="fig"><div class="k">Brent Jan (settle)</div><div class="v down">$91.95</div><div class="s">&minus;$1.19 &middot; <strong>$1.95</strong> above Shell trigger</div></div>
-  <div class="fig"><div class="k">UK CPI Oct</div><div class="v">3.6%</div><div class="s">vs 3.7% cons. &middot; core 2.8% &middot; services 3.7%</div></div>
-  <div class="fig"><div class="k">GBP/USD</div><div class="v down">1.3144</div><div class="s">&minus;0.5% &middot; lowest since 14 Oct &middot; GBP/EUR ~1.198</div></div>
+  <div class="fig"><div class="k">S&amp;P 500 (SPY proxy)</div><div class="v down">−1.96%</div><div class="s">sixth straight loss · QQQ −2.19% · DIA −2.18%</div></div>
+  <div class="fig"><div class="k">ANT first day</div><div class="v up">$96.86</div><div class="s">+16.7% on $83 · opened $112.87 · high $115.00</div></div>
+  <div class="fig"><div class="k">Brent Jan (settle)</div><div class="v">$91.98</div><div class="s">+$0.03 · <strong>$1.98</strong> above Shell trigger · WTI $83.21</div></div>
+  <div class="fig"><div class="k">GBP/USD</div><div class="v down">1.3101</div><div class="s">−0.33% · GBP/EUR ~1.194</div></div>
 </div>
-<p class="footnote">These prices come from web searches, not exchange tapes. US closes are from stockanalysis.com and investingLive&rsquo;s end-of-session wrap. LSE closes are from stockanalysis.com daily history. The Brent and WTI settles come from a single Newsquawk headline at 19:42 UTC. TTF is the Newsquawk intraday range plus one Investing.com snapshot; I have no TTF settle. I have no gilt yield level, only the 78-tick price move. GBP/USD is the investingLive close, which matches Pound Sterling Live&rsquo;s 1.3147. All sterling values in this brief use 1.3144.</p>
+<p class="footnote">These prices come from web searches, not exchange tapes. US single-stock closes and ANT are stockanalysis.com 4:00pm ET closes. I could not get index closes: the stockanalysis index pages returned errors and press closes conflict. The S&amp;P, Nasdaq-100 and Dow moves are the SPY, QQQ and DIA ETF closes, used as proxies. DIDIY is a 3:44pm ET delayed OTC quote, not a close. LSE closes are from stockanalysis.com daily history, stamped after 16:35 GMT. Note that VUAG, VUSA and SWDA closed in London before most of the US fall. The Brent settle is a single Reuters report carried on Yahoo. GBP/USD is the Pound Sterling Live daily close (Barchart, 15-minute delay). All sterling values in this brief use 1.3101.</p>
 
 <div class="alert">
-<p><strong>Set-up, resolved: the project files are in <code>app/brief/</code>.</strong> Yesterday&rsquo;s brief said <code>CLAUDE.md</code> and <code>scripts/build_brief.py</code> were missing. They are in <code>~/my-python-projects/app/brief/</code>, and its <code>holdings.numbers</code> is a symlink to the file in <code>investment/</code>. I used that <code>CLAUDE.md</code> as the rulebook tonight, and built this page with its shell and build script. If <code>investment/</code> is no longer meant to be the working folder for the series, tell me, and I&rsquo;ll write future briefs to <code>app/brief/daily news/</code>. Its latest brief is dated 9 November, so the series has been running here.</p>
-<p><strong>T212 ISA share counts: in.</strong> All six lines are now in <code>holdings.numbers</code> (23 lines, &pound;143,701 book cost), and the shares match <code>holdings_changes.md</code>. That closes a question raised in four briefs in a row. <strong>One new discrepancy.</strong> The GBP book costs imply USD entry prices above the anchors earlier briefs used. At GBP/USD of about 1.337 on 6 November, NVDA&rsquo;s &pound;366.60 for 2.3973 shares works out to about $204 a share, not $185.22. AMZN works out to about $268, not $251, and ASML to about $1,512, not $1,424. The gap differs by line (+10%, +7%, +6%), so it is not a single FX error. This brief takes the holdings file as correct and measures P&amp;L against book cost. If the book costs include something other than price &times; shares, such as an FX fee or a deposit amount entered as cost, please say so.</p>
+<p><strong>Still open, and the first one is now urgent.</strong> (1) <strong>CGT exempt amount left in II General this tax year.</strong> This is the fourth time I have asked. The Shell trim fires on any Brent settle below $90.00, which is now $1.98 away, and it would realise about £1,070 of gain. (2) <strong>Shell book cost.</strong> The £2,737.40 cost implies a £13.85 average. Please confirm no earlier partial sale is still sitting in it before the trim turns it into a tax figure. (3) <strong>T212 ISA book-cost basis.</strong> The implied USD entry prices are 6–10% above the trade prices. Do the costs include FX fees or deposit amounts? (4) <strong>Shell dividend currency election</strong>, which closes at 11:00 GMT on Friday 27 November. (5) <strong>New tonight:</strong> Shell’s leg 3 (diesel crack “firm”) has no numeric threshold. Tonight is the first night with data on it, and the data is soft. See s3 for a proposed level. Do you want one?</p>
 </div>
 
 <nav class="toc"><ol>
 <li><a href="#s1">Five-minute version</a></li>
-<li><a href="#s2">Nvidia: the rule is closed, the stock isn&rsquo;t, and the line is &pound;275</a></li>
-<li><a href="#s3">Oil: $1.95 from the Shell trigger</a></li>
-<li><a href="#s4">Rates: UK CPI a tenth light, the Fed minutes hawkish</a></li>
-<li><a href="#s5">Gas and LNG desk view</a></li>
-<li><a href="#s6">What moved in your book</a></li>
-<li><a href="#s7">Trade idea &mdash; none (sixteenth in a row)</a></li>
-<li><a href="#s8">Next 48 hours</a></li>
-<li><a href="#s9">Sources</a></li>
+<li><a href="#s2">The AI tape: a record IPO, a short report, and the split that lasted a day</a></li>
+<li><a href="#s3">Oil: Gulf headlines don’t move the settle, and diesel has a policy headwind</a></li>
+<li><a href="#s4">Gas and LNG desk view</a></li>
+<li><a href="#s5">What moved in your book</a></li>
+<li><a href="#s6">Trade idea — none (seventeenth in a row)</a></li>
+<li><a href="#s7">Next 48 hours</a></li>
+<li><a href="#s8">Sources</a></li>
 </ol></nav>
 
 <section id="s1">
 <h2><span class="no">01</span>Five-minute version</h2>
-<p class="sub">The Nvidia question is closed on the rule&rsquo;s own terms. The Shell question is now the live one, and it is $1.95 away from triggering.</p>
+<p class="sub">Risk appetite for new AI equity is strong. Risk appetite for the AI incumbents fell further. Shell’s trigger did not get closer today, but the case for the shares weakened on the leg nobody prices daily.</p>
 
-<p><strong>1. Nvidia cleared the FY28 test on the call, then fell 2.9% in the session.</strong> The rule had one condition left open: sell if Kress withdrew or materially cut the roughly 70% FY28 growth framing. She raised it to about 75%. Every condition in the rule has now passed. The stock opened up about 3.5% in premarket, reached $159.70, and closed at $150.96, below Tuesday&rsquo;s pre-print close of $155.46, on volume about 117% above its three-month average. Coverage puts the reversal down to the CEO vacancy and China. The board said it will not bring Huang back, the call refused questions about him, and Yahoo graded the call&rsquo;s optics a C. AMD and Broadcom rose on the day, and so did TSM (+0.81%) and ASML (+0.88%), so the market sold Nvidia&rsquo;s own governance risk and bought the capex read-across. That is the split Monday&rsquo;s brief predicted. <strong>The new share counts show how small the line is:</strong> 2.3973 shares, about <strong>&pound;275</strong>, or 0.16% of the book. Your look-through Nvidia exposure in the funds is roughly ten times that.</p>
+<p><strong>1. Anthropic’s debut was strong, and it did not lift the rest of AI.</strong> ANT opened at $112.87 (press reports say $111.50, possibly a different print), reached $115.00, which briefly valued the company above $2trn, and closed at <strong>$96.86, +16.7%</strong> on its $83 offer, on about 840m shares. From the open to the close it fell 14%. The US market opened slightly higher on the debut and then reversed, pulled down by three things. The first was a <strong>Hunterbrook short report on AMD</strong>, alleging that IEIT Systems, a Chinese server maker on the Entity List, kept receiving AMD firmware updates after it was listed. AMD closed at $489.28, <strong>−7.71%</strong>, and says the claims misrepresent its business. The second was <strong>UnitedHealth −5.59%</strong>, which mattered more for the price-weighted Dow. The third was profit-taking in AI incumbents as money moved into ANT. SPY closed −1.96%, QQQ −2.19% and DIA −2.18%: the S&amp;P’s sixth straight loss, and its longest losing run since at least June. AMZN, the ANT stakeholder in your book, fell <strong>3.94%</strong> and gave back all of Wednesday’s pre-pricing gain. Disclosure: I am an Anthropic model.</p>
 
-<p><strong>2. Brent settled at $91.95, $1.95 above Shell&rsquo;s trim trigger.</strong> This is the closest settle since the rule was set, and Monday&rsquo;s $92.44 was the previous record. The driver was a US crude build of 3.38m bbl against about 58k expected, plus 5.2m bbl of gasoline. WTI settled at $83.26 (&minus;$2.75, &minus;3.2%). The Gulf did not help. A tanker was struck by a projectile 13NM north of Khasab, Iran claimed an MQ-9 shoot-down, and ADNOC confirmed an attack on one of its vessels on Tuesday, but none of it moved the price. Iran&rsquo;s peace proposal requires the US to end hostilities, lift sanctions and the blockade, and release frozen assets before it reopens the Strait. That is a list of preconditions rather than a negotiating position. The S&amp;P energy sector fell almost 3%. Shell closed at <strong>3,595.5p (&minus;2.12%)</strong>, &minus;&pound;152 on your 195 shares.</p>
+<p><strong>2. The suppliers fell with Nvidia this time.</strong> Last night’s brief noted, with the caveat that one session proves nothing, that TSM and ASML rose on the day Nvidia faded. Today they did not: <strong>TSM −2.87%, ASML −2.75%, NVDA −3.25% to $146.06</strong>. That is a new post-Huang closing low, below Wednesday’s $150.40 intraday low. The AMD allegation is the same kind of risk as the BIS rule and the 1–2 December congressional interviews: China, export controls and enforcement. That risk applies to the whole chain, not to Nvidia’s governance alone. The T212 ISA sleeve lost £118 and now stands at £4,565, −7.8% on cost.</p>
 
-<p><strong>3. UK CPI 3.6% against 3.7% expected; the Fed minutes went the other way.</strong> Core held at 2.8%. Services came in at 3.7% against the BoE&rsquo;s 3.9% projection, and that is the part the MPC watches most closely. December hike pricing fell from about 90% to 80%. Gilts rose 78 ticks and outperformed Bunds. The BoE took the unusual step of putting out a statement repeating that it expects inflation to rise in 2027. In the US, the October minutes show &ldquo;almost all&rdquo; participants expecting further hikes, with a couple open to more than 25bp in December. Waller argued for 50bp. The dollar strengthened against six of seven majors, and Benzinga had DXY at a 19-month high. Sterling fell to <strong>1.3144</strong>. The FTSE 100 lost 1.3% to <strong>10,551.17</strong>, led by miners as gold fell 3.2% and copper dropped below $13,000. The S&amp;P lost 0.23% (fifth straight down day), the Dow 1.11%, and the Nasdaq gained 0.42%. Anthropic priced its IPO at <strong>$83</strong>, above the $70&ndash;78 range, and starts trading tomorrow. AMZN rose 3.82%.</p>
+<p><strong>3. Brent settled at $91.98, $1.98 above Shell’s trigger. The diesel leg finally has data, and it is soft.</strong> The IRGC claimed two supertankers carrying more than 4m bbl hit mines and were burning. Iran’s army separately claimed three tankers. Neither claim is independently verified, and the US says the mines were cleared. Brent rose 3 cents. WTI settled at <strong>$83.21</strong>, its lowest since 26 August. The new information came from Shenzhen. Trump, Xi and Putin issued a four-point statement that includes a joint plan to <strong>“increase the production and supply of refined petroleum products.”</strong> It offers no sanctions relief and does not mention Ukraine, but it is aimed squarely at distillate cracks. ICE gasoil Dec fell about $40 on Wednesday to $1,206.75/t, and a single source has it near $1,172.50 today. That implies a crack that has fallen from about $70/bbl to about $65/bbl in two sessions. Shell closed at <strong>3,574.5p (−0.58%)</strong>, −£41 on your 195 shares, holding up better than the US market.</p>
+
+<p><strong>Also:</strong> FTSE 100 −0.9% to <strong>10,452.68</strong>. Sterling fell to <strong>1.3101</strong>. US initial claims were 203k against 197k expected, and the 10-year held about 5.06–5.09%. NBP Dec-26 fell 11.3p to 201.24p even though Prestige reports about 50 mcm/d of corrective maintenance at Troll until 21 November (see s4). That figure needs checking.</p>
 
 <h4 class="mini">Direction and materiality across the book</h4>
 <div class="tscroll"><table>
 <thead><tr><th>Line</th><th>Direction</th><th>Why</th><th>Mat</th></tr></thead>
 <tbody>
-<tr><td><div class="fname">SHEL.L</div><div class="fmeta">II General &middot; 195 sh &middot; &pound;7,011</div></td><td><span class="chip neg">down</span></td><td>3,595.5p (&minus;2.12%, &minus;&pound;152). Brent settled $91.95, $1.95 from the trigger. TTF leg ~36% clear. The trim decision may be one settle away.</td><td>High</td></tr>
-<tr><td><div class="fname">Fund sleeve</div><div class="fmeta">II General + II ISA &middot; ~&pound;139k</div></td><td><span class="chip mix">mixed</span></td><td>Tomorrow&rsquo;s NAVs: S&amp;P &minus;0.23%, offset by sterling &minus;0.5%; FTSE &minus;1.3%; Europe red. My estimate is roughly &minus;&pound;300 to +&pound;200. Tonight&rsquo;s NAVs carry Tuesday&rsquo;s fall.</td><td>Med</td></tr>
-<tr><td><div class="fname">BRK-B</div><div class="fmeta">T212 General &middot; &pound;7,096</div></td><td><span class="chip neg">down</span></td><td>$574.62 (&minus;2.07%, &minus;&pound;150). Fell with the Dow. No company news.</td><td>Med</td></tr>
-<tr><td><div class="fname">UKW.L</div><div class="fmeta">II ISA &middot; 8,771 sh &middot; &pound;10,666</div></td><td><span class="chip pos">up</span></td><td>121.6p (+0.50%, +&pound;53). The softer CPI and the gilt rally both help. Today&rsquo;s print moved, so the feed is live.</td><td>Med</td></tr>
-<tr><td><div class="fname">NVDA</div><div class="fmeta">T212 ISA &middot; 2.3973 sh &middot; &pound;275</div></td><td><span class="chip neg">down</span></td><td>$150.96 (&minus;2.89%), &minus;24.9% on book cost. The rule cleared on all counts. The line is too small to matter at book level.</td><td>Low</td></tr>
-<tr><td><div class="fname">TSM / ASML</div><div class="fmeta">T212 ISA &middot; &pound;1,005 / &pound;746</div></td><td><span class="chip pos">up</span></td><td>TSM $362.62 (+0.81%), ASML $1,395.27 (+0.88%). They held on a day NVDA fell 2.9%.</td><td>Low</td></tr>
-<tr><td><div class="fname">AMZN</div><div class="fmeta">T212 ISA &middot; &pound;932</div></td><td><span class="chip pos">up</span></td><td>$267.74 (+3.82%, +&pound;34). Anthropic priced at $83. Now +1.7% on book cost.</td><td>Low</td></tr>
-<tr><td><div class="fname">LLY / GEV</div><div class="fmeta">T212 ISA &middot; &pound;917 / &pound;807</div></td><td><span class="chip neg">down</span></td><td>LLY $1,382.75 (&minus;2.32%), GEV $772.22 (&minus;0.99%). No company news found.</td><td>Low</td></tr>
-<tr><td><div class="fname">GAW / GSK / DIDIY</div><div class="fmeta">II ISA / T212 General</div></td><td><span class="chip neu">mixed</span></td><td>GAW 16,920p (+2.05%, +&pound;51). GSK 1,858p (&minus;0.59%, &minus;&pound;11). DIDIY $3.12 (+0.32%).</td><td>Low</td></tr>
+<tr><td><div class="fname">Fund sleeve</div><div class="fmeta">II General + II ISA · ~£139k</div></td><td><span class="chip neg">down</span></td><td>US −2% on ~£80k of look-through, cushioned about a sixth by sterling −0.33%. FTSE −0.9%. My estimate is <strong>−£1.2k to −£1.8k</strong>, landing across Friday’s and Monday’s marks. VUAG, VUSA and SWDA closed in London before the US low and will catch down at Friday’s open.</td><td>High</td></tr>
+<tr><td><div class="fname">SHEL.L</div><div class="fmeta">II General · 195 sh · £6,970</div></td><td><span class="chip mix">mixed</span></td><td>3,574.5p (−0.58%, −£41). Brent is $1.98 from the trigger. The Shenzhen refined-product pledge and the gasoil slide weaken leg 3. The TTF leg is still about 40% clear.</td><td>High</td></tr>
+<tr><td><div class="fname">UKW.L</div><div class="fmeta">II ISA · 8,771 sh · £10,560</div></td><td><span class="chip neg">down</span></td><td>120.4p (−0.99%, −£105), giving back Wednesday’s CPI gain. No news. The £236.82 dividend pays on 27 November.</td><td>Med</td></tr>
+<tr><td><div class="fname">T212 ISA sleeve</div><div class="fmeta">6 lines · £4,565</div></td><td><span class="chip neg">down</span></td><td>All six down 2–4% (−£118). AMZN −3.94% on the ANT rotation, NVDA −3.25% to a post-Huang low, TSM/ASML down with it. The sleeve is −7.8% on cost.</td><td>Low</td></tr>
+<tr><td><div class="fname">BRK-B</div><div class="fmeta">T212 General · £7,092</div></td><td><span class="chip neu">flat</span></td><td>$572.39 (−0.39%), against DIA −2.18%. The weaker pound made it about −£4 in GBP. It held up best of anything in the book.</td><td>Low</td></tr>
+<tr><td><div class="fname">GSK / GAW / DIDIY</div><div class="fmeta">II ISA / T212 General</div></td><td><span class="chip neg">down</span></td><td>GSK 1,827p (−1.67%, −£30), now three down days with no news. GAW 16,890p (−0.18%). DIDIY $3.09 (delayed, −0.64%).</td><td>Low</td></tr>
 </tbody></table></div>
 
-<div class="note"><span class="lab">Bottom line</span> The direct lines lost about &pound;195 today. Shell (&minus;&pound;152) and Berkshire (&minus;&pound;150) were partly offset by UKW and GAW (+&pound;104 together). The fund sleeve is roughly flat on my estimate. The NVDA rule is closed: hold, and drop the rule. A position that is 0.16% of the book does not need its own event rule, and its own result has cleared every condition. Shell is now what to watch. One ICE Brent settle below $90.00 fires the 25% trim, about 49 shares or roughly &pound;1,760. It is a II General trade, so it realises a gain of about +156% on cost.</div>
+<div class="note"><span class="lab">Bottom line</span> The direct lines lost about <strong>£307</strong>: UK −£180, T212 ISA −£118, T212 General −£8. The fund sleeve takes the bigger hit, an estimated −£1.2k to −£1.8k, which shows up in the next two pricing rounds rather than tonight. Nothing in today’s tape calls for action. The Shell rule is unchanged, $1.98 from firing. Tonight’s change is that leg 3 has moved from “not verified” to “soft and facing a policy headwind.” That doesn’t trigger anything under the rule as written, but it weakens the case for holding the 75% after a trim through to Q4 results. The rule should have a number for it, and s3 proposes one.</div>
 </section>
 
 <section id="s2">
-<h2><span class="no">02</span>Nvidia: the rule is closed, the stock isn&rsquo;t, and the line is &pound;275</h2>
-<p class="sub">The result answered the fundamental question. The fade shows the market is now pricing governance. The share counts show that, for this book, neither matters as much as the last fortnight of briefs implied.</p>
+<h2><span class="no">02</span>The AI tape: a record IPO, a short report, and the split that lasted a day</h2>
+<p class="sub">Two things happened in the same session. New AI equity found buyers at a high price, and the incumbents lost them. For this book the second matters more, because ~£80k of fund look-through is concentrated in the incumbents.</p>
 
-<h4 class="mini">The last condition</h4>
-<p>Yesterday&rsquo;s brief set the FY28 test before the call so that the after-hours move could not decide it. It would fire if Kress withdrew the roughly 70% framing, cut it below about 50%, or stopped giving multi-year framing. Instead, management pointed to <strong>about 75% FY28 revenue growth</strong> (Yahoo Finance; Motley Fool). Kress called the demand outlook &ldquo;explosive&rdquo;. The higher base matters here, because 75% on a year that has already outrun August&rsquo;s guide is a bigger absolute number than 70% was then. BofA called the call &ldquo;very reassuring&rdquo; and kept its $280 target.</p>
+<h4 class="mini">The debut</h4>
+<p>The numbers first. Priced at $83, above the $70–78 range. Opened at $112.87 on stockanalysis (CNN and others report $111.50 and an 11:48–11:50 ET open). High $115.00, low $92.72, close <strong>$96.86</strong>, after hours $97.00. Volume was about 840m shares, roughly the size of the whole offering, so a lot of the float changed hands on day one. Forbes puts the raise at <strong>$81.3bn</strong>, against the roughly $68.5bn (825m × $83) I used last night. The gap is about 155m shares, so either the greenshoe was exercised or the base deal was larger than reported. Your book is not exposed to the difference, so I have left it unresolved.</p>
+<p>The shape matters more than the level. A 34% pop that halves by the close is what heavy allocation flipping looks like when the book is 6–7× covered: demand at the open, supply from allocated holders into it. CBC quoted a strategist calling it a “big near-term win” for a “very nervous” AI sector. The rest of the session didn’t agree. By the close the best you can say is that the market paid up for a new AI asset and sold old ones to pay for it.</p>
+<p><strong>Disclosure, again:</strong> I am an Anthropic model. I have no view on ANT as an investment that you should weight, and I won’t pitch it. Your exposure comes through Amazon’s stake and through the fund sleeve’s large-cap tech weight, and it is small either way.</p>
 
+<h4 class="mini">The short report</h4>
+<p>Hunterbrook’s allegation (CNBC, CNN) is specific: IEIT Systems, a Chinese server maker on the Commerce Department’s Entity List, kept receiving updated AMD firmware after it was listed. AMD says the claims misrepresent its business practices and relationships. The stock fell 7.71% to $489.28, the second-worst S&amp;P performer intraday per CNN. I have not read the report, and I won’t pass on its claims beyond that summary.</p>
+<p>It matters for the book because the allegation is about <em>enforcement</em>, not demand. This week now has three items of the same kind: Monday’s BIS interim licence rule, the House Foreign Affairs interviews on 1–2 December (Huang, then Nvidia’s general counsel), and now a firmware-leakage allegation against the second US GPU vendor. If Washington’s response is tighter controls on software, firmware or service flows as well as hardware, everyone in the chain pays: Nvidia and AMD directly, and TSMC and ASML through China-linked wafer and tool demand. That is why the suppliers fell with Nvidia today and didn’t on Wednesday. Wednesday’s question was Nvidia’s governance. Today’s was the chain’s China exposure.</p>
+
+<h4 class="mini">The split, revisited</h4>
 <div class="tscroll"><table>
-<thead><tr><th>Condition</th><th>Threshold</th><th>Outcome</th><th>Status</th></tr></thead>
+<thead><tr><th>Name</th><th>Wed 18 Nov</th><th>Thu 19 Nov</th><th>Two days</th></tr></thead>
 <tbody>
-<tr><td>Q3 revenue miss &gt;200bp</td><td>&lt; ~$105.8bn</td><td>$115.8bn</td><td><span class="chip pos">clear</span></td></tr>
-<tr><td>Q4 guide below Q3 actual</td><td>&lt; $115.8bn</td><td>$130bn (~$120.7bn ex-week)</td><td><span class="chip pos">clear</span></td></tr>
-<tr><td>FY28 framing withdrawn or &lt;~50%</td><td>~70% held</td><td>Raised to ~75%</td><td><span class="chip pos">clear</span></td></tr>
+<tr><td>NVDA</td><td class="n down">−2.89%</td><td class="n down">−3.25%</td><td class="n down">−6.0%</td></tr>
+<tr><td>TSM</td><td class="n up">+0.81%</td><td class="n down">−2.87%</td><td class="n down">−2.1%</td></tr>
+<tr><td>ASML</td><td class="n up">+0.88%</td><td class="n down">−2.75%</td><td class="n down">−1.9%</td></tr>
+<tr><td>AMD</td><td class="n up">up (not verified)</td><td class="n down">−7.71%</td><td>—</td></tr>
+<tr><td>AMZN</td><td class="n up">+3.82%</td><td class="n down">−3.94%</td><td class="n down">−0.3%</td></tr>
 </tbody></table></div>
+<p>Over two days the suppliers are still ahead of Nvidia by about 4 points, so the governance discount has not gone away. But last night’s evidence that the market was “separating Nvidia’s governance from TSMC’s fundamentals” rested on one session, and it now has to share space with a second session that went the other way. My reading: the governance discount on NVDA is real, and the enforcement risk is pricing in across the chain on top of it. The second is the one that reaches the fund sleeve.</p>
 
-<p>Two items from yesterday&rsquo;s list of things to listen for are still unanswered. <strong>Gross-margin recovery:</strong> none of the coverage I could reach repeats or revises the 72&ndash;73% FY28 path, so I can&rsquo;t say whether it held. <strong>Vendor financing:</strong> Yahoo describes Kress as &ldquo;more measured&rdquo; about support for neoclouds such as CoreWeave and reads it as discipline. I found no number for the vendor-financed share of the $47.5bn AI-cloud bucket. CoreWeave rose 4.5% premarket and was down 5.2% by 11:05 ET, and the Motley Fool headline was &ldquo;Nvidia&rsquo;s blowout earnings fail to ease debt concerns&rdquo;. The market took &ldquo;more measured&rdquo; as bad news for the borrowers, which is what Dan Niles warned about on Tuesday.</p>
-
-<h4 class="mini">Why a beat-and-raise closed lower</h4>
-<p>The stock&rsquo;s range was $150.40&ndash;159.70, so it gave up about $8.70 from the high, and volume was about 117% above average. Three causes, in order of how much evidence I have for each. (1) <strong>Succession.</strong> The chair told the call there are no plans to reinstate Huang, and the company ruled out questions about him. None of the eight analysts raised him, and neither Kress nor Jones mentioned him. Yahoo graded Kress A on the numbers and C on optics, and Jones C&minus;. KeyBanc&rsquo;s Vinh says the open succession keeps the stock range-bound. (2) <strong>China and Washington.</strong> Huang and Kress both face congressional interviews (Huang on 1 December, the general counsel on 2 December), and Monday&rsquo;s BIS rule is still being absorbed. (3) <strong>The quality of the beat.</strong> As set out yesterday, the 14-week quarter means the Q4 guide is about +4% sequential like-for-like, and the margin step-down is real even though it was flagged.</p>
-<p>The peer moves are the useful signal. AMD and Broadcom rose, TSM gained 0.81% and ASML 0.88%. If the market had doubted AI demand, the suppliers would have fallen with Nvidia. They didn&rsquo;t. The discount is specific to Nvidia, and capex demand is not being questioned. That was Monday&rsquo;s argument for why a clean print helps TSM and ASML more than NVDA, and one session is consistent with it. One session does not prove it.</p>
-
-<h4 class="mini">What the share counts change</h4>
-<p>Two weeks of briefs gave the Nvidia exit rule the space of a core position. The numbers now in the holdings file show it isn&rsquo;t one:</p>
-<div class="tscroll"><table>
-<thead><tr><th>T212 ISA line</th><th>Shares</th><th>Value</th><th>Book</th><th>On cost</th><th>% of book*</th></tr></thead>
-<tbody>
-<tr><td>TSM</td><td class="n">3.6445</td><td class="n">&pound;1,005</td><td class="n">&pound;1,100</td><td class="n down">&minus;8.6%</td><td class="n">0.6%</td></tr>
-<tr><td>AMZN</td><td class="n">4.5762</td><td class="n">&pound;932</td><td class="n">&pound;917</td><td class="n up">+1.7%</td><td class="n">0.5%</td></tr>
-<tr><td>LLY</td><td class="n">0.8716</td><td class="n">&pound;917</td><td class="n">&pound;917</td><td class="n">0.0%</td><td class="n">0.5%</td></tr>
-<tr><td>GEV</td><td class="n">1.3738</td><td class="n">&pound;807</td><td class="n">&pound;855</td><td class="n down">&minus;5.6%</td><td class="n">0.5%</td></tr>
-<tr><td>ASML</td><td class="n">0.7025</td><td class="n">&pound;746</td><td class="n">&pound;794</td><td class="n down">&minus;6.1%</td><td class="n">0.4%</td></tr>
-<tr><td>NVDA</td><td class="n">2.3973</td><td class="n">&pound;275</td><td class="n">&pound;367</td><td class="n down">&minus;24.9%</td><td class="n">0.16%</td></tr>
-<tr><td><strong>Sleeve</strong></td><td></td><td class="n"><strong>&pound;4,683</strong></td><td class="n"><strong>&pound;4,949</strong></td><td class="n down"><strong>&minus;5.4%</strong></td><td class="n"><strong>~2.7%</strong></td></tr>
-</tbody></table></div>
-<p class="footnote">* Against an approximate total of &pound;172k: Saturday&rsquo;s &pound;170.3k confirmed perimeter plus this sleeve, before this week&rsquo;s fund moves. Saturday&rsquo;s review will reconcile it.</p>
-<p>So the whole T212 ISA sleeve is about 2.7% of the book, and Nvidia is the smallest line in it. Saturday&rsquo;s review estimated about &pound;3,200 of Nvidia look-through in the funds (SWDA, Global All Cap, Fundsmith at ~4.5%, Royal London at 2.7%, plus VUAG/VUSA). That is about <strong>twelve times</strong> the direct line. Two conclusions follow. First, the direct NVDA line was never the book&rsquo;s Nvidia risk, the funds were, and no trade on a &pound;275 line changes that. Second, the T212 ISA is the cheapest account to trade in, but the positions in it are too small to move the book. <code>CLAUDE.md</code> describes the same asymmetry across accounts: the cheap trades are small and the meaningful trades are expensive.</p>
-<p>From here I&rsquo;ll treat NVDA as a normal small holding, mentioned when there is news, with no standing rule. If you want a rule kept, tell me what loss on a &pound;367 cost line you would act on. At &minus;24.9%, the line is about &pound;92 below cost.</p>
+<h4 class="mini">Rates and FX: background, not the driver</h4>
+<p>Claims came in at 203k against 197k expected. They are soft, but not enough to change December. CNBC had a 25bp Fed hike about 95% priced after Wednesday’s minutes, and nothing today challenges that. The 10-year was about 5.06–5.09% depending on the snapshot, little changed. So the equity sell-off was not a rates move. That makes it more about positioning and AI, and therefore more likely to reverse if the AMD story fades. I have no gilt level for today. The last verified ones are the 10-year around 5.29% and the 2-year just above 5% earlier in the week, both before Wednesday’s 78-tick rally. GBP/USD fell to <strong>1.3101</strong> (−0.33%, range 1.3094–1.3173). That is a third straight lower close and the lowest since mid-October. GBP/EUR is about 1.194. The weaker pound took about a sixth off the GBP cost of today’s US fall to the book.</p>
 </section>
 
 <section id="s3">
-<h2><span class="no">03</span>Oil: $1.95 from the Shell trigger</h2>
-<p class="sub">Inventories did today what headlines have failed to do for a week. The flows argument from Monday&rsquo;s brief is now backed by US stock data, and the trigger is within one ordinary day&rsquo;s move.</p>
+<h2><span class="no">03</span>Oil: Gulf headlines don’t move the settle, and diesel has a policy headwind</h2>
+<p class="sub">Brent’s risk premium has stopped responding to tanker headlines. Shell’s third leg is now the weakest of the three, and it is the only one without a number on it.</p>
 
 <h4 class="mini">The tape</h4>
-<p><strong>Tuesday&rsquo;s settle</strong>, which I didn&rsquo;t have last night, was Brent $93.14 and WTI $86.01. <strong>Wednesday:</strong> Brent Jan&rsquo;27 traded $91.00&ndash;93.54 and settled <strong>$91.95 (&minus;$1.19, &minus;1.3%)</strong>. WTI traded $82.38&ndash;84.77 and settled <strong>$83.26 (&minus;$2.75)</strong>, with a late screen at about $82.08. The settles come from a Newsquawk headline at 19:42 UTC. A Business Recorder intraday read of $91.93 supports the Brent figure. WTI fell more than twice as far as Brent, as you would expect from a US-led stock build. The Brent&ndash;WTI spread widened to about $8.70, which also suggests the weakness is in the Atlantic Basin rather than in Gulf supply.</p>
-<p><strong>EIA:</strong> crude +3.38m bbl against about +58k expected, to 417.8m. Gasoline +5.2m to 215.9m. The API had shown +5.28m on Tuesday night, so the direction was known before the EIA release, but the size of the miss against consensus was not.</p>
+<p>Brent Jan’27 settled at <strong>$91.98 (+$0.03)</strong> and WTI at <strong>$83.21</strong> (−$0.05), WTI’s lowest settle since 26 August (Reuters via Yahoo). That is one source. FinanceFeeds had Brent at $92.12 intraday and HDFC Sky had $91.70 in the Asian session, so the settle is consistent with the day’s range. The Brent–WTI spread is about $8.77, as wide as Wednesday’s, and the weakness is still in the Atlantic Basin.</p>
 
-<h4 class="mini">Why the Gulf didn&rsquo;t offset it</h4>
-<p>Today&rsquo;s incidents were at the same intensity as last week&rsquo;s. UKMTO reported a tanker hit by a projectile 13NM north of Khasab. Iran&rsquo;s army claimed it shot down a US MQ-9. ADNOC Logistics confirmed one of its vessels was attacked on 17 November. Iran&rsquo;s two-day peace proposal reportedly requires the US to end hostilities, lift oil sanctions and the naval blockade, and release frozen assets before Iran reopens the Strait. That makes the reopening the last step of any deal, after everything else has been agreed. A Trump&ndash;Putin bilateral is pencilled in for Thursday with no time set.</p>
-<p><strong>A correction to yesterday.</strong> Tuesday&rsquo;s brief called the Qeshm strike the first US strike on Iranian territory &ldquo;in this run of incidents&rdquo;. CNBC reported US strikes on Qeshm on <strong>3 November</strong>, and Brent briefly went above $107 that day. So Tuesday&rsquo;s strike was the second this month, not the first. The conclusion is stronger for it. On 3 November a Qeshm strike added more than $5 intraday. On 17 November it added about $2, and the gain was gone by Wednesday&rsquo;s settle. The risk premium for this type of event has fallen by more than half in two weeks.</p>
+<h4 class="mini">Three sessions of headline decay</h4>
+<p>On 3 November a US strike on Qeshm added more than $5 intraday. On 17 November the second Qeshm strike added about $2, and the gain had gone by the next settle. Today the IRGC claimed two supertankers with more than 4m bbl between them hit mines and were burning near the southern coast, and the army separately claimed three tankers. UKMTO confirmed a projectile strike with an engine-room fire, but not the mine claims, and the US military maintains the mines were cleared. Brent rose 3 cents. The market now treats Iranian claims as unverified until UKMTO or an owner confirms them, and treats confirmed single-ship incidents as already priced. The things that would still move it: a confirmed multi-ship loss, an insurer withdrawing cover, or a change in the actual crude transit count, which my sources describe as mostly recovered.</p>
 
-<h4 class="mini">Shell&rsquo;s three legs tonight</h4>
+<h4 class="mini">Shenzhen: what the trilateral said about oil</h4>
+<p>Trump, Xi and Putin met for about 90 minutes at APEC in Shenzhen, the first formal three-way US–China–Russia meeting (CNBC, NBC, spotmedia.ro). Their four-point joint statement covers UN reform, a warning to the ICC “and similar bodies,” nuclear risk reduction, and a plan to <em>“increase the production and supply of refined petroleum products for the benefit of all nations.”</em> It does not lift or ease sanctions and does not mention Ukraine. Putin’s aide said the bilateral session touched on the war with no “particularly important statements.” A note on last night’s calendar: I had this down as a Trump–Putin bilateral. It was a trilateral with a bilateral alongside it.</p>
+<p>A statement of intent doesn’t produce barrels of diesel, so the real effect will be smaller than the headline. But it is the third step in a sequence this year: Trump’s tariff waiver on Russian diesel and the purchase deal, the IEA’s 15 October release of more than 20m bbl of diesel, and now a joint pledge from the world’s largest refiner (China), the largest diesel exporter before 2022 (Russia), and the US. The policy direction is plainly towards lower distillate cracks. For Shell, that hits the Marketing and Trading margin that has carried the last two quarters.</p>
+
+<h4 class="mini">Shell’s three legs tonight</h4>
 <div class="tscroll"><table>
 <thead><tr><th>Leg</th><th>Trigger</th><th>Tonight</th><th>Headroom</th><th>Since yesterday</th></tr></thead>
 <tbody>
-<tr><td>1. TTF &gt; &euro;60</td><td>front-month</td><td>~&euro;84.7 (range &euro;81.77&ndash;86.49)</td><td class="n">~+41%; +36% at the low</td><td>Slightly narrower; still wide</td></tr>
-<tr><td>2. Brent &gt; $90 settle</td><td>ICE front-month settle</td><td>$91.95</td><td class="n down">+$1.95 (+2.2%)</td><td><strong>Tightest yet</strong>, from $3.14 on Tuesday</td></tr>
-<tr><td>3. Diesel crack firm</td><td>&mdash;</td><td>Not verified</td><td>&mdash;</td><td>Fourth brief without data; gasoline build is a negative read</td></tr>
+<tr><td>1. TTF</td><td>&gt; €60 front-month</td><td>~€83–85.5 (sources conflict; s4)</td><td class="n">~+38–42%</td><td>Unchanged, wide</td></tr>
+<tr><td>2. Brent</td><td>&gt; $90 ICE front-month settle</td><td>$91.98</td><td class="n">+$1.98 (+2.2%)</td><td>3c wider</td></tr>
+<tr><td>3. Diesel crack</td><td>“firm” (no number)</td><td>ICE gasoil Dec ~$1,172.50/t → implied ~$65/bbl over Brent</td><td>—</td><td><strong>First data in five briefs: down ~$5/bbl in two sessions, plus a policy headwind</strong></td></tr>
 </tbody></table></div>
-<p>The rule is unchanged: <strong>trim 25%</strong>, about 49 shares or roughly &pound;1,760 at tonight&rsquo;s 3,595.5p, on an ICE Brent front-month settle below $90.00. Hold the rest through Q4 results in late January. $1.95 is a 2.1% move, and Brent&rsquo;s daily settle-to-settle changes this month have mostly been between 1% and 4%. The trigger could fire on any day this week with no special news.</p>
-<p><strong>Contract roll.</strong> The settles quoted are for Jan&rsquo;27 (F7), which is now the front month. The rule refers to the front-month settle, so no adjustment is needed. If you use a different contract to judge the trigger, tell me which.</p>
-<p><strong>What would stop it firing.</strong> A Gulf event large enough to add $5 or more, which this week&rsquo;s strikes have not done, or a reversal in inventories next Wednesday. <strong>What would bring it forward.</strong> Thursday&rsquo;s Trump&ndash;Putin meeting, if it produces anything on Russian barrels or sanctions. So would any sign that Iran&rsquo;s preconditions are being negotiated rather than rejected.</p>
-<p><strong>Wrapper.</strong> II General. A trim of about &pound;1,760 at about +156% on cost realises a gain of roughly &pound;1,070. Whether CGT is due depends on how much of your annual exempt amount is left after any other General-account disposals this tax year. This is the third time I&rsquo;ve asked, and it now matters this week rather than at some later point. The &pound;58 dividend (ex 12 November, pays 21 December) is secured whatever happens to the trim. The currency election closes at 11:00 GMT on Friday 27 November.</p>
-<p><strong>Open question (from <code>CLAUDE.md</code>):</strong> the &pound;2,737.40 book cost implies a &pound;13.85 average. Before a trim makes it a tax figure, please confirm that no earlier partial sale is still sitting un-netted in that cost.</p>
+<p><strong>About the leg-3 figures.</strong> The $1,206.75/t Wednesday print (−$40, −3.21%) comes from one Substack post, and the ~$1,172.50 Thursday figure from one commodity-board note. Neither is an ICE settle. The crack is my own conversion at 7.45 bbl/t against the Brent settle, so it is a gasoil–Brent futures spread, not an ARA diesel crack. Your Argus or Platts screens would replace all of this (see s4).</p>
+<p><strong>Proposed number for leg 3.</strong> The rule calls the crack “firm” and never says what firm means, which is why this leg has had no verdict for five briefs. One proposal: treat leg 3 as failed on a gasoil–Brent front-month spread below <strong>$55/bbl</strong> for three consecutive sessions. That level is about 15% below tonight’s estimate and still well above pre-2022 norms, so crossing it would mean the distillate premium is actually unwinding rather than just easing. A failed leg 3 should not trigger a trade by itself, because Brent is the trigger. It should change what happens after the trim: with leg 3 failed, the post-trim 75% would be held to Q4 results on two legs instead of three, and the case for a second trim would need examining then. This is a change to your rule. I won’t apply it unless you confirm it.</p>
+<p><strong>The trim rule itself is unchanged.</strong> An ICE Brent front-month settle below $90.00 triggers a 25% trim, about 49 shares or roughly £1,750 at 3,574.5p, realising about £1,070 of gain in II General. The CGT question in the alert box applies.</p>
 </section>
 
 <section id="s4">
-<h2><span class="no">04</span>Rates: UK CPI a tenth light, the Fed minutes hawkish</h2>
-<p class="sub">The BoE got some room; the Fed made it clear it doesn&rsquo;t think it has any. In this book the gap between them shows up mainly through sterling.</p>
-
-<h4 class="mini">UK</h4>
-<p>October CPI was <strong>3.6% y/y</strong>, up from 3.5%. Market consensus was 3.7% (FXStreet), and Pound Sterling Live gives the BoE&rsquo;s own forecast as 3.73%. Yesterday&rsquo;s brief carried a 3.6% consensus. Sources disagree, but the market traded it as a miss. <strong>Core 2.8%</strong>, unchanged and in line. <strong>Services 3.7%</strong> against the BoE&rsquo;s 3.9%, which is the most important number in the release. December hike pricing fell from <strong>about 90% to about 80%</strong>. Gilts rose 78 ticks and outperformed Bunds (+4). I can&rsquo;t verify a closing 2-year or 10-year yield. The last levels I have are the 2-year just above 5% and the 10-year above 5.35% on 16 November. A 78-tick rally in the futures roughly implies 8&ndash;10bp lower at the 10-year, but that is an inference, not a print. The BoE&rsquo;s unscheduled reminder that it expects inflation to rise in 2027 looks like an attempt to stop the market treating one soft services print as a turn. One economist still expects CPI above 4% early next year.</p>
-<p><strong>For the book:</strong> UKW rose 0.5% on the gilt rally, the right direction for a duration-sensitive trust that pays its dividend on 27 November. The WCfD consultation closes on 9 December. GSK fell 0.59% and has not recovered from Tuesday&rsquo;s unexplained 3.14% fall. GAW rose 2.05% and gave back none of it.</p>
-
-<h4 class="mini">US</h4>
-<p>The minutes of the 27&ndash;28 October meeting, at which the Fed held at 3.75&ndash;4.00% with Cook and Hammack dissenting for +25bp, show &ldquo;almost all&rdquo; participants expecting further hikes. A couple said a move larger than 25bp could be warranted in December if the inflation data disappointed. Almost all discussed the risk that returns on AI investment disappoint. That reads across to the Nvidia lending story and to the fund sleeve&rsquo;s large US tech weight. Waller argued for 50bp, or a clearer signal that more tightening is coming, on the grounds that about 70% of core services components are running above 3%. CNBC has a 25bp December hike about 95% priced. The question now is whether the move is 25bp or 50bp, not whether there is one.</p>
-<p>The curve flattened. The 2-year rose 1.5bp to <strong>4.804%</strong> and the 10-year fell 3.5bp to <strong>5.068%</strong>. Housing starts came in at 1.309m against 1.245m expected, and pending home sales fell 4.7% against &minus;2.0% expected. Gold fell 3.17% to about $3,727, silver 4.78%, and bitcoin 3.72%. A firm dollar and higher real-rate expectations hit hard assets.</p>
-
-<h4 class="mini">FX</h4>
-<p>GBP/USD closed at <strong>1.3144</strong>, its lowest since 14 October. It fell from 1.3193 to 1.3172 within ten minutes of the CPI release, and kept falling as the Fed minutes and Waller took the dollar higher. EUR/USD was 1.0973 and EUR/GBP traded 0.8320&ndash;0.8336, so GBP/EUR is about 1.198&ndash;1.20. On roughly &pound;80k of US look-through plus the &pound;11.8k of direct US lines, a 0.5% fall in sterling adds about &pound;450 in GBP terms. That is why the fund sleeve should be roughly flat tomorrow even though the S&amp;P fell, and why BRK-B lost &pound;150 rather than &pound;160.</p>
-</section>
-
-<section id="s5">
-<h2><span class="no">05</span>Gas and LNG desk view</h2>
-<p class="sub">TTF eased within a &euro;4.70 range ahead of the cold. The NBP premium I put down to Norway on Tuesday has a weaker basis tonight, because UK LNG sendout was much higher by the 16th than the 12 November figure I used. Germany is at the lowest level for the date in more than a decade.</p>
+<h2><span class="no">04</span>Gas and LNG desk view</h2>
+<p class="sub">NBP sold off on the curve even though Prestige reports a large Troll outage, and Dec-26 is now at a discount to TTF. The UK premium was a prompt weather-and-wind premium all along. A correction to last night’s JKM spread removes most of the Asia-pull argument.</p>
 
 <h4 class="mini">Prices</h4>
-<p><strong>TTF front-month:</strong> traded <strong>&euro;81.77&ndash;86.49/MWh</strong> on Wednesday (Newsquawk), against &euro;83.75&ndash;86.92 on Tuesday. Investing.com had it at <strong>&euro;84.71 (&minus;0.6%)</strong> at an unstated time. Tuesday&rsquo;s December settle was <strong>&euro;85.40</strong> (FXLeaders), which fills yesterday&rsquo;s gap. I have no Wednesday settle. The &euro;81.77 low is the lowest print since late October and about 19% below the &euro;100+ peak of 28 October. Brent fell 1.3% on the day, while TTF&rsquo;s probable fall was 0.6&ndash;1%. The weather forecast is doing more for gas than inventories are doing to oil.</p>
-<p><strong>NBP:</strong> the day-ahead settles I can now verify are <strong>232.40p on 13 November</strong> (+25.40p, on Norwegian outages and low wind) and <strong>224.90p on 16 November</strong> (&minus;7.50p, as the Troll outage was extended only to a fixed date rather than left open). I have nothing for the 17th or 18th. Tuesday&rsquo;s front-month at 213.88p (10:12 GMT) is the latest NBP number. Forwards from Tuesday&rsquo;s brief: Q1-27 about 222p, Summer-27 about 163p.</p>
-<p><strong>TTF against NBP.</strong> At GBP/EUR 1.198, &euro;84.71 is about <strong>207p/therm</strong>. That fits NBP front-month trading a few pence above TTF, as on Tuesday. The explanation changes, though (see Supply). The 13&ndash;16 November day-ahead spike was Norway plus low wind, and both had eased by the 16th.</p>
-<p><strong>JKM:</strong> no fresh assessment. The last figure I have is $31.35/MMBtu, now two days old and not verified, and $31.76 on 3 November is the latest dated secondary-source print. At EUR/USD 1.0973, TTF &euro;84.71 is about <strong>$27.2/MMBtu</strong>. If JKM has held, the Asia premium is about $4, slightly wider than Tuesday&rsquo;s $3.6 because the euro weakened.</p>
-<p><strong>UK power:</strong> Winter 26/27 baseload not verified.</p>
+<p><strong>TTF front-month:</strong> my sources disagree, and I can’t reconcile them. Serbia-Energy reports a settle of <strong>€85.49 (+0.9%)</strong>, with an early move towards €86 the next session. Tradingpedia reports a rise of 2.6% to <strong>€82.93</strong>. An EnergyRiskIQ page dated today shows €81.15 (−5.24%), which looks stale. The most likely reading is a front-month settle in the €83–85.5 range, up on the day, as the cold forecast for 20 November and the Hormuz mine claims offset Wednesday’s sell-off. Wednesday’s TTF day-ahead was about <strong>€80.50</strong> (Prestige). I still have no verified Wednesday front-month settle. The €81.77 Wednesday low remains the lowest print since late October.</p>
+<p><strong>NBP</strong> (Prestige, Wednesday settles): day-ahead <strong>202.60p</strong>, after 206.00p on the 17th, 224.90p on the 16th and 232.40p on the 13th. That is 30p off in three sessions. <strong>Dec-26 201.24p (−11.28p)</strong>, <strong>Q1-27 197.67p</strong>. Prestige says the fall reflected the market judging the Gulf premium overdone, not any easing of supply. I have nothing for NBP today.</p>
+<p><strong>TTF against NBP: this is tonight’s main observation.</strong> At GBP/EUR 1.1986 (Wednesday), TTF at around €84.7 front-month is about <strong>207p/therm</strong>. Against NBP Dec-26 at 201.24p, NBP is trading at a discount to TTF of roughly <strong>6p</strong>. Q1-27 at 197.67p is lower again. On the prompt, TTF day-ahead at €80.50 is about 197.6p, so NBP day-ahead (202.60p) is still about 5p over. So the UK premium now exists only on the prompt, and the curve has flipped to a discount. That fits last night’s revision: with UK LNG sendout at about 76 mcm/d and Norway mostly back, the NBP premium of 13–16 November was weather and wind, not structural. Two caveats. My TTF Dec figure is a Wednesday snapshot, not a settle, and a ±€1 error is ±2.5p in this spread. And Prestige’s Troll figure (below) cuts the other way.</p>
+<p><strong>JKM, and a correction.</strong> Last night I put the Asia premium over TTF at about $4/MMBtu, using a $31.35 JKM figure I flagged as unverified. Better-sourced prints put JKM at <strong>$27.77 on 17 November</strong> (Trading Economics) and about <strong>$27.88 intraday on the 18th (−3.5%)</strong>, with physical cargo indications around $26.00. Against TTF at about $27.2/MMBtu (€84.7 at EUR/USD 1.0973), the front-month premium is about <strong>$0.5–1.3</strong>, and on physical cargoes it may be close to zero or negative. With the spread that narrow, Asia is not pulling flexible US cargoes away from Europe, and last night’s question about December-loading US diversions matters less. Henry Hub is about $3.26.</p>
+<p><strong>UK power</strong> (Prestige, Wednesday): day-ahead baseload <strong>£185.60/MWh (+£5.60)</strong>, peak £198.20. Dec-26 <strong>£168.44 (−£10.54)</strong>, Cal-27 about <strong>£128 (−5%)</strong>. The prompt rose on low wind and cold, while forwards fell with gas. I don’t have a Winter 26/27 baseload.</p>
 
 <h4 class="mini">Storage</h4>
-<p><strong>EU aggregate:</strong> 70.4% on 17 November (Reuters via Yahoo, carried from Tuesday). No fresh print for the 18th. ENGIE had net withdrawals of about 3 TWh/d in the week to 9 November. That is about 19 points below the five-year average and about 12 points below last year.</p>
-<p><strong>Germany:</strong> <strong>57.19% on 16 November</strong> (AGSI+ via MacroMicro), and 57.28% on the 15th (gasspeicher.app), which that tracker says is lower than any 15 November in the past ten years. It was about 61% on 1 November, the lowest start to winter since records began in 2011. That is roughly 3.8 points in 15 days, or about <strong>0.25 points a day</strong> on a run of mostly mild weather, a little below the 0.3/day I estimated on Monday. Tuesday&rsquo;s INES warning that supply &ldquo;may not be fully secured&rdquo; in extreme cold is now the reference point for the cold spell forecast from about 20 November. Germany&rsquo;s request for 4% storage flexibility goes to the Energy Council in the week of 1 December.</p>
-<p><strong>Italy:</strong> about 91% at last check, not re-verified. <strong>UK:</strong> aggregate about 40% and Rough at 0.0 TWh, both from last week and not re-verified.</p>
+<p><strong>EU aggregate:</strong> <strong>70.5% on 15 November</strong>, against a five-year average of about 89% and about 82% this time last year (IntelliNews, citing GIE). On 17 November, 14 of the 18 storage countries were drawing and only Belgium was still injecting. I have no print for the 18th or 19th.</p>
+<p><strong>Germany:</strong> <strong>57.1% on 17 November</strong>, down from 61.0% on 1 November. The 7-day average net withdrawal to the 15th was <strong>589 GWh/d</strong>. That is roughly 0.24 points a day on German working capacity, consistent with the ~0.25/day mild-weather baseline from Wednesday. It is the lowest level for the date since at least 2011. Policy: the cabinet approved a draft law on 11 November for a <strong>24 TWh strategic reserve</strong>, about 10% of German capacity and for emergency use only. The 4% storage-flexibility request goes to the Energy Council in the week of 1 December. The test starts tomorrow. If the cold spell arrives as forecast, the draw rate should rise well above 0.25/day. A sustained 0.4/day would put Germany near 45% by mid-December.</p>
+<p><strong>Italy</strong> about 91% and <strong>UK</strong> about 40% aggregate with <strong>Rough at 0.0 TWh</strong>, all from last week and not re-verified. Rough is still the structural difference. The UK has no seasonal buffer to speak of, which is why the NBP prompt rises on cold and wind while the curve does not.</p>
 
 <h4 class="mini">Supply</h4>
-<p><strong>Norway.</strong> Gassco raised the unplanned Troll outage from 7.3 to <strong>11.3 mcm/d</strong>, and Montel reported Equinor extending it to Tuesday the 17th. Another report on the 16th expected Troll back on the 17th. I can&rsquo;t confirm it returned. The new item is <strong>Visund</strong>. The fire took out about 13.2 mcm/d, roughly 3.7% of export capacity, and a Gassco notice gave <strong>16 November</strong> as the scheduled end date, &ldquo;subject to revision&rdquo;. Tuesday&rsquo;s brief said Visund had no return date, which was wrong. Total nominations were <strong>327.9 mcm/d</strong> on the morning of the 16th. If Troll and Visund are both back, roughly 24 mcm/d has returned since last week. That is the bearish catalyst for NBP that I named on Tuesday, and it may already have happened. I can&rsquo;t verify Åsgard (6.5 mcm/d unplanned on the 12th).</p>
-<p><strong>UK LNG sendout:</strong> about <strong>76 mcm/d on 16 November</strong>, up from about 47 mcm/d on 12 November. This weakens Tuesday&rsquo;s argument that NBP&rsquo;s premium could widen while sendout stayed in the 40s. Sendout is not in the 40s. A small NBP premium with Norway recovering and terminals sending out 76 mcm/d looks like a weather and wind premium, not a structural one.</p>
-<p><strong>Qatar.</strong> Force majeure is extended to <strong>at least the end of December</strong>. Edison reported on 29 October that <strong>38 cargoes</strong> (about 5 bcm) had been suspended since April. Trains 4 and 6 are damaged, about 12.8 Mtpa or roughly 17% of exports, with repairs measured in years. The QatarEnergy CEO&rsquo;s condition for restarting the undamaged trains is that &ldquo;hostilities cease&rdquo;. Iran&rsquo;s preconditions on Hormuz today push that further away. LNG transits out of Hormuz are still estimated at about one-third of pre-war levels, while crude flows have mostly recovered. That divergence is why TTF has held up better than Brent this week.</p>
-<p><strong>US:</strong> record feedgas over the weekend, as reported Tuesday. No new figure. <strong>Freight:</strong> not verified.</p>
+<p><strong>Norway.</strong> Two reports conflict. A market report dated 18 November says Gassco flagged a <strong>new unplanned processing outage at Troll removing about 10 mcm/d</strong>, duration not confirmed. Prestige’s 19 November report says <strong>corrective maintenance at Troll is removing about 50 mcm/d until 21 November</strong>. Fifty mcm/d is very large, roughly 15% of NCS exports and more than the Troll and Visund outages combined last week. If it were true, I would expect NBP to have risen, not to have lost 11p on Dec-26. Either Prestige has a capacity figure (as distinct from an outage figure) wrong, or the market looked through a three-day event to the end-November recovery. I lean towards the first, but this is the single most useful item I can’t verify tonight. <strong>Visund</strong> (13.2 mcm/d) was scheduled back on 16 November, and I can’t confirm it returned. UKCS output was <strong>109.6 mcm/d</strong> (Prestige). I don’t have total NCS nominations for today. The last figure was about 328 mcm/d on the 16th–17th.</p>
+<p><strong>UK LNG sendout:</strong> no new print. The last was about 76 mcm/d on the 16th.</p>
+<p><strong>Qatar.</strong> Force majeure runs to at least the end of December. Ras Laffan loadings recovered to about half of pre-war levels in early November, but most of the extra cargoes have not yet appeared in Hormuz transits. One account says Europe is currently receiving no Qatari LNG. Trains 4 and 6 (about 12.8 Mtpa, ~17% of capacity) are out for an estimated three to five years. <strong>Orlen</strong> exercised a termination right on one long-term Qatari contract on 10 November, citing the continuing force majeure. Its second contract runs to 2034. That makes Orlen the first buyer to walk away. If others follow, Qatar’s European offtake shrinks permanently, even after the undamaged trains are flowing freely again. Today’s mine claims in the eastern Strait are the type of event that keeps LNG transits at about a third of normal while crude has mostly recovered.</p>
+<p><strong>Freight:</strong> not verified.</p>
 
 <h4 class="mini">Policy</h4>
-<p>No new Commission or IEA measures today. The open items are Germany&rsquo;s 4% storage flexibility request at the Energy Council (week of 1 December) and the UK WCfD consultation (closes 9 December).</p>
+<p>No new Commission or IEA measures today. Open items: the German storage flexibility request (Energy Council, week of 1 December), the 24 TWh reserve bill in the Bundestag, and the UK WCfD consultation (closes 9 December).</p>
 
-<div class="note"><span class="lab">What your screens would show that I can&rsquo;t &mdash; ranked by how much it would change this section</span>
+<div class="note"><span class="lab">What your screens would show that I can’t — ranked by how much it would change this section</span>
 <ol>
-<li><strong>Gassco UMMs: whether Troll (11.3) and Visund (13.2) actually returned on the 16th&ndash;17th</strong>, the Åsgard status, and today&rsquo;s total NCS nominations. If ~24 mcm/d is back, NBP&rsquo;s premium has lost its supply reason.</li>
-<li><strong>ICIS/Argus: TTF and NBP settles for Tuesday and Wednesday</strong>, front-month, Dec-26 and Jan-27, plus NBP day-ahead. I have a Tuesday TTF December settle (&euro;85.40) and nothing for NBP since the 16th.</li>
-<li><strong>Kpler: LNG transits out of Hormuz this week</strong>, and destination changes on December-loading US cargoes. With JKM about $4 over TTF, are US cargoes turning toward Asia?</li>
-<li><strong>Platts JKM</strong> for Tuesday and Wednesday. My figure is two days old.</li>
-<li><strong>Platts/Argus ARA diesel crack.</strong> Shell&rsquo;s third leg has had no data for four briefs, and today&rsquo;s gasoline build is a warning sign for it.</li>
-<li><strong>AGSI+ Germany for 17&ndash;18 November</strong>, and your desk&rsquo;s draw estimate for the 20 November cold spell.</li>
-<li><strong>National Gas: UK storage and Rough</strong>, to replace last week&rsquo;s 40% and 0.0 TWh.</li>
-<li><strong>Spark30/Spark25 rates</strong> and Hormuz war-risk premia after the Khasab incident.</li>
+<li><strong>Gassco UMMs for Troll today:</strong> is it about 10 mcm/d unplanned, or about 50 mcm/d corrective maintenance until 21 November? Did Visund return on the 16th, and what are total NCS nominations? If 50 is right, the NBP curve discount has no supply basis and should not last.</li>
+<li><strong>ICIS/Argus TTF and NBP settles for Wednesday and Thursday</strong>: front-month, Dec-26, Jan-27 and Q1-27. That would settle the €81–85.5 disagreement and confirm whether NBP Dec is really at a discount of about 6p to TTF.</li>
+<li><strong>Argus/Platts ARA diesel crack</strong> (ULSD 10ppm vs Brent) for 17–19 November, plus your desk’s read on whether the Shenzhen refined-products pledge means anything physical. This would replace my gasoil–Brent proxy and settle Shell’s leg 3.</li>
+<li><strong>AGSI+ Germany for 18–19 November</strong> and your desk’s draw forecast for the cold spell from the 20th.</li>
+<li><strong>Kpler: LNG transits through Hormuz this week</strong> and Qatari cargo destinations. Did any of the extra Ras Laffan loadings go west?</li>
+<li><strong>Platts JKM assessments for 18–19 November.</strong> They would confirm that the Asia premium is about $1, not the $4 I reported last night.</li>
+<li><strong>National Gas: UK storage, Rough, and LNG sendout</strong> since the 16th.</li>
+<li><strong>Spark30/Spark25</strong> and Hormuz war-risk premia after today’s mine claims.</li>
 <li><strong>ICIS UK Winter 26/27 baseload.</strong></li>
 </ol></div>
 </section>
 
-<section id="s6">
-<h2><span class="no">06</span>What moved in your book</h2>
-<p class="sub">The direct lines lost about &pound;195: UK &minus;&pound;59, T212 General &minus;&pound;146, T212 ISA +&pound;11. With share counts in, every line can now be valued in pounds.</p>
+<section id="s5">
+<h2><span class="no">05</span>What moved in your book</h2>
+<p class="sub">The direct lines lost about £307: UK −£180, T212 ISA −£118, T212 General −£8. The larger loss is in the funds, and it hasn’t been priced yet.</p>
 
 <div class="book">
-<div class="bl"><div class="bl-head"><span class="tick">SHEL.L</span><span class="chip neg">trigger $1.95 away</span><span class="px">3,595.5p &middot; &minus;2.12% &middot; &minus;&pound;152</span></div>
-<p>About &pound;7,011, +156% on cost. Fell with the energy sector as Brent dropped. The ADR fell 2.98%, the LSE line slightly less, helped by the weaker pound. The three legs are covered in s3. This is the line to watch at each Brent settle from now on.</p></div>
+<div class="bl"><div class="bl-head"><span class="tick">Funds</span><span class="chip neg">US −2% to come</span><span class="px">II General + II ISA · ~£139k</span></div>
+<p>Tonight’s OEIC prices carry Wednesday, which I estimated at −£300 to +£200. Thursday’s US fall will show up over the next two pricing rounds. On about £80k of US look-through, −2.0% in dollars less the 0.33% sterling cushion is about <strong>−£1,340</strong>. The FTSE’s −0.9% on the UK parts of LifeStrategy, Royal London and Global All Cap adds roughly −£100. Fidelity European depends on a Stoxx close I couldn’t verify (it was +0.2% mid-morning, before the US turned). Net: <strong>−£1.2k to −£1.8k</strong>. The London-listed ETFs are a timing artefact: VUAG closed at £107.98 (+0.22%), VUSA at £105.71 (+0.23%) and SWDA at 10,609p (+0.06%), all at 16:30 GMT, before most of the US fall. Together they are about £29k (VUAG £12.3k across both accounts, SWDA £14.3k, VUSA £2.4k). Expect them to open about 1–1.5% lower on Friday unless the US recovers overnight. These are estimates, not marks. Saturday reconciles them.</p></div>
 
-<div class="bl"><div class="bl-head"><span class="tick">BRK-B</span><span class="chip neg">down with the Dow</span><span class="px">$574.62 &middot; &minus;2.07% &middot; &minus;&pound;150</span></div>
-<p>About &pound;7,096. A second straight fall roughly double the S&amp;P&rsquo;s, in line with the Dow (&minus;1.11%) and the value rotation out of financials and energy. No company news. The weaker pound took about &pound;35 off the GBP loss.</p></div>
+<div class="bl"><div class="bl-head"><span class="tick">SHEL.L</span><span class="chip mix">trigger $1.98 away</span><span class="px">3,574.5p · −0.58% · −£41</span></div>
+<p>About £6,970, +155% on cost. It held up well against a −2% US tape because Brent was flat and the FTSE fell less. The legs and the proposed leg-3 number are in s3.</p></div>
 
-<div class="bl"><div class="bl-head"><span class="tick">UKW.L</span><span class="chip pos">CPI helped</span><span class="px">121.6p &middot; +0.50% &middot; +&pound;53</span></div>
-<p>About &pound;10,666. Today&rsquo;s print moved, so the feed is live. stockanalysis shows Tuesday at 121.0p with no change listed, so I still can&rsquo;t tell whether Tuesday traded or the feed was stale. Your platform&rsquo;s history would settle it. The &pound;236.82 dividend pays on 27 November.</p></div>
+<div class="bl"><div class="bl-head"><span class="tick">UKW.L</span><span class="chip neg">gave back CPI</span><span class="px">120.4p · −0.99% · −£105</span></div>
+<p>About £10,560, roughly flat on cost (+0.3%). It gave back more than Wednesday’s 0.5% CPI gain. I can’t check today’s gilt move, so I can’t tell whether this was duration or risk-off. No company news. The £236.82 dividend pays on 27 November. It is the largest direct line by value and the one most sensitive to the 17 December MPC.</p></div>
 
-<div class="bl"><div class="bl-head"><span class="tick">GAW.L</span><span class="chip pos">recovered</span><span class="px">16,920p &middot; +2.05% &middot; +&pound;51</span></div>
-<p>About &pound;2,538. More than recovered Tuesday&rsquo;s fall, against a FTSE down 1.3%. No news. The &pound;10.50 dividend pays on 27 November.</p></div>
+<div class="bl"><div class="bl-head"><span class="tick">AMZN</span><span class="chip neg">sold the ANT news</span><span class="px">$257.18 · −3.94% · −£34</span></div>
+<p>About £898, −2.0% on cost. Wednesday’s +3.82% pricing pop has gone, and a little more. The stake is locked up and gets marked to market. That ANT closed at $96.86, not at the $112.87 open, is the most likely reason the stock didn’t hold. The disclosure in s2 applies.</p></div>
 
-<div class="bl"><div class="bl-head"><span class="tick">GSK.L</span><span class="chip neg">no rebound</span><span class="px">1,858p &middot; &minus;0.59% &middot; &minus;&pound;11</span></div>
-<p>About &pound;1,802. Still no reason found for Tuesday&rsquo;s 3.14% fall, and no rebound today. The ADR lost 1.34%. Still unexplained.</p></div>
+<div class="bl"><div class="bl-head"><span class="tick">NVDA</span><span class="chip neg">post-Huang low</span><span class="px">$146.06 · −3.25% · −£8</span></div>
+<p>About £267, −27.1% on cost. A new closing low since the resignation. No standing rule, as agreed last night. Covered in s2.</p></div>
 
-<div class="bl"><div class="bl-head"><span class="tick">AMZN</span><span class="chip pos">Anthropic bid</span><span class="px">$267.74 &middot; +3.82% &middot; +&pound;34</span></div>
-<p>About &pound;932, +1.7% on cost. Disclosure: I am an Anthropic model, so weigh what follows with that in mind. Anthropic priced at $83 against a $70&ndash;78 range: about 825m shares, roughly $68.5bn, and a valuation reported above $1.4trn. Trading starts Thursday as ANT. Amazon&rsquo;s stake is locked up and gets marked to market, which is why the stock moves with the deal. The first-day trade will decide whether today&rsquo;s gain holds.</p></div>
+<div class="bl"><div class="bl-head"><span class="tick">TSM / ASML</span><span class="chip neg">fell with the chain</span><span class="px">$352.20 −2.87% · $1,356.84 −2.75%</span></div>
+<p>£980 (−10.9% on cost) and £728 (−8.4%), together −£44. Wednesday’s divergence from Nvidia reversed. See s2 for why this was an enforcement move and not a governance one.</p></div>
 
-<div class="bl"><div class="bl-head"><span class="tick">NVDA</span><span class="chip neg">rule cleared, faded</span><span class="px">$150.96 &middot; &minus;2.89% &middot; &minus;&pound;8</span></div>
-<p>About &pound;275, &minus;24.9% on cost. Covered in s2. The $0.25 dividend has a 2 December record date and is negligible.</p></div>
+<div class="bl"><div class="bl-head"><span class="tick">LLY / GEV</span><span class="chip neg">third / second down day</span><span class="px">$1,351.49 −2.26% · $756.41 −2.05%</span></div>
+<p>£899 (−1.9% on cost) and £793 (−7.3%). No company news for either. LLY is now about 7% below last Thursday’s $1,460 intraday high, a pullback with the market rather than a story of its own.</p></div>
 
-<div class="bl"><div class="bl-head"><span class="tick">TSM / ASML</span><span class="chip pos">held the read-across</span><span class="px">$362.62 +0.81% &middot; $1,395.27 +0.88%</span></div>
-<p>&pound;1,005 (&minus;8.6% on cost) and &pound;746 (&minus;6.1%). TSM&rsquo;s first up day after four down. Neither faded with Nvidia, which answers the question I set on Tuesday. That is one session, not a trend.</p></div>
+<div class="bl"><div class="bl-head"><span class="tick">GSK.L</span><span class="chip neg">three down days</span><span class="px">1,827p · −1.67% · −£30</span></div>
+<p>About £1,772. Down about 5.3% since Monday’s close, and I still can’t find a cause. Searches return only July and April news. Your platform’s news feed, or an RNS check, would settle whether something was published.</p></div>
 
-<div class="bl"><div class="bl-head"><span class="tick">LLY</span><span class="chip neg">soft</span><span class="px">$1,382.75 &middot; &minus;2.32% &middot; &minus;&pound;22</span></div>
-<p>About &pound;917, flat on cost. No news found. Two down days take it about 5% below last Thursday&rsquo;s $1,460 intraday high.</p></div>
+<div class="bl"><div class="bl-head"><span class="tick">BRK-B</span><span class="chip neu">held</span><span class="px">$572.39 · −0.39% · −£4</span></div>
+<p>About £7,092, +12.0% on cost. It fell a fifth as much as DIA, the defensive behaviour the 14 November review pointed to.</p></div>
 
-<div class="bl"><div class="bl-head"><span class="tick">GEV</span><span class="chip neg">gave back Tuesday</span><span class="px">$772.22 &middot; &minus;0.99% &middot; &minus;&pound;8</span></div>
-<p>About &pound;807, &minus;5.6% on cost. No news.</p></div>
-
-<div class="bl"><div class="bl-head"><span class="tick">DIDIY</span><span class="chip neu">flat</span><span class="px">$3.12 &middot; +0.32%</span></div>
-<p>About &pound;1,250. stockanalysis now shows Tuesday&rsquo;s close as $3.11, not the $3.10 I used last night. Q3 results on 27 November.</p></div>
-
-<div class="bl"><div class="bl-head"><span class="tick">Funds</span><span class="chip mix">~flat tomorrow</span><span class="px">II General + II ISA &middot; ~&pound;139k</span></div>
-<p>Tonight&rsquo;s OEIC prices carry Tuesday (S&amp;P &minus;1.0%, FTSE &minus;1.8%), which I estimated at &minus;&pound;1.0k to &minus;&pound;1.5k. Tomorrow&rsquo;s carry today. On about &pound;80k of US look-through, the S&amp;P&rsquo;s &minus;0.23% is offset by sterling&rsquo;s &minus;0.5%, a net of about +&pound;200. The FTSE&rsquo;s &minus;1.3% on the UK parts of LifeStrategy, Royal London and Global All Cap is about &minus;&pound;130 to &minus;&pound;150. A weak Europe weighs on Fidelity European (no index level verified). Net: <strong>about &minus;&pound;300 to +&pound;200</strong>. These are estimates, not marks. Saturday reconciles them.</p></div>
+<div class="bl"><div class="bl-head"><span class="tick">GAW / DIDIY</span><span class="chip neu">quiet</span><span class="px">16,890p −0.18% · $3.09 −0.64%</span></div>
+<p>GAW about £2,534, no news. DIDIY about £1,242 (delayed quote, not a close); Q3 results on 27 November.</p></div>
 </div>
+</section>
+
+<section id="s6">
+<h2><span class="no">06</span>Trade idea — none (seventeenth in a row)</h2>
+<p class="sub">I looked at three candidates. Two fail the materiality or timing test. The third is a change to a rule, not a trade.</p>
+
+<p><strong>Buy the TSM/ASML dip: no.</strong> On Wednesday I closed this off “unless TSM falls well below $360 without the capex story changing.” TSM is at $352.20, so the price condition is half met. The rest of it is not, because the capex story did change today. Demand didn’t move, but the enforcement risk to the chain went up, and a chip stock 2% cheaper doesn’t compensate for a new export-control allegation two weeks before a congressional hearing. The materiality problem from Wednesday also still applies. An add that fits the T212 ISA sleeve is £500–1,000, under 1% of the book.</p>
+
+<p><strong>Pre-empt the Shell trim on the diesel leg: no.</strong> Of the three candidates this one has the most going for it, and it is still a no. The case for it: the two legs that the rule doesn’t use as triggers are moving in opposite directions, one wide (TTF) and one weakening (diesel). The Gulf premium is no longer reacting to headlines. And Brent is one ordinary day’s move from $90. Against it: the rule was built so that Brent decides, and selling a II General position, where a mistake costs the most, on a single-source gasoil print and a joint statement of intent is exactly the discretion the rule exists to prevent. The right response is the leg-3 threshold proposed in s3. It makes the third leg measurable without touching the trigger.</p>
+
+<p><strong>Buy ANT: no, and not from me.</strong> Same reasons as last night, with one more. A stock that gives back half its opening pop on day one with turnover equal to the float is still finding its holders. That is not a setup for a weeks-to-months horizon.</p>
+
+<p>Tonight’s actions are all decisions only you can take: the CGT exempt amount (needed before Shell can trigger), whether to adopt the leg-3 threshold, and the Shell dividend currency.</p>
 </section>
 
 <section id="s7">
-<h2><span class="no">07</span>Trade idea &mdash; none (sixteenth in a row)</h2>
-<p class="sub">The two candidates I considered tonight both fail on the same point: the sleeve where trading is cheap is too small for any trade in it to matter to the book.</p>
-
-<p><strong>Add to TSM: revisited, as promised on Tuesday, and still no.</strong> Tuesday&rsquo;s brief set two conditions for looking again: share counts, and one session showing whether the suppliers held up after Nvidia&rsquo;s results. Both are now met. The share counts show TSM at &pound;1,005, and TSM rose 0.81% on a day NVDA fell 2.89%. The argument for adding has improved. The market is separating Nvidia&rsquo;s governance from TSMC&rsquo;s fundamentals, the FY28 framing went up to 75%, and October revenue was +59.7% y/y. Three reasons it still doesn&rsquo;t clear the bar. (1) <strong>Materiality.</strong> An add that makes sense against a &pound;1,005 line in the T212 ISA is &pound;500&ndash;1,000, or 0.3&ndash;0.6% of the book. Below about 1% it doesn&rsquo;t change outcomes, and above it TSM would be the largest line in a sleeve that is already five-sixths AI capex. (2) <strong>The minutes.</strong> &ldquo;Almost all&rdquo; FOMC participants discussed the risk that AI returns disappoint, and Waller wants 50bp. A hiking cycle that may speed up is the wrong backdrop for adding long-duration capex exposure. (3) <strong>The bear case is unchanged.</strong> CoreWeave fell 5% today because Kress was &ldquo;more measured&rdquo; on financing. The neocloud bucket is where TSMC&rsquo;s wafer demand slows first, one or two quarters after Nvidia&rsquo;s does. This one is closed unless TSM falls well below $360 without the capex story changing.</p>
-
-<p><strong>Sell the Shell trim before the trigger: no.</strong> With Brent $1.95 from the trigger, there is a case for acting early to avoid a gap through $90. The rule was set to stop exactly this kind of discretion. Last week a strike on Iran added $5 or more within hours, and the premium is smaller now but not gone. Pre-empting the trigger by $2 means selling on a forecast. And the trade is in II General, the account where a mistaken sale costs the most. The rule stands as written.</p>
-
-<p><strong>Buy ANT on the first trade: no, and I shouldn&rsquo;t be the one pitching it.</strong> I am an Anthropic model. Beyond that, the book already holds Anthropic through Amazon&rsquo;s stake and through Nvidia and Google&rsquo;s private-placement commitments, all of which reach the fund sleeve. And a 6&ndash;7&times; oversubscribed deal priced above range does not fit the weeks-to-months horizon this book uses.</p>
-
-<p>The actions tonight are admin: confirm the T212 ISA book-cost basis, check how much CGT exempt amount is left in II General before Shell triggers, and choose the Shell dividend currency before 27 November.</p>
-</section>
-
-<section id="s8">
-<h2><span class="no">08</span>Next 48 hours</h2>
-<p class="sub">Anthropic&rsquo;s first trade, the cold spell arriving, and each Brent settle from here measured against $90.</p>
+<h2><span class="no">07</span>Next 48 hours</h2>
+<p class="sub">The cold arrives, the ETFs catch down, and Brent settles against $90 again.</p>
 <div class="cal">
-<div class="day key"><div class="dname">Thursday 19 November</div><ul>
-<li><strong>Brent settle against $90.00.</strong> The Shell trigger is $1.95 away. If it settles below, the rule says trim 25% (about 49 shares) in Friday&rsquo;s session.</li>
-<li><strong>Anthropic (ANT) first trade on Nasdaq</strong>, priced at $83. Read-across to AMZN and to appetite for new AI equity. See the disclosure in s6.</li>
-<li>Trump&ndash;Putin bilateral, timing unconfirmed. Watch for anything on Russian oil.</li>
-<li>US weekly jobless claims; ECB account of the October meeting.</li>
-<li>Gassco updates on Troll and Visund. AGSI+ Germany for the 17th.</li>
-</ul></div>
 <div class="day key"><div class="dname">Friday 20 November</div><ul>
-<li><strong>European cold spell</strong> forecast to start. Watch the German draw rate against the ~0.25 points/day mild-weather baseline.</li>
+<li><strong>Brent settle against $90.00</strong> ($1.98 away). If it settles below, the rule says trim 25% (about 49 shares) at the next session, Monday 23 November.</li>
+<li><strong>European cold spell</strong> forecast to start. Watch the German draw rate against the ~0.24–0.25 points/day baseline. Above 0.4 sustained is the level that starts to matter for end-winter.</li>
+<li><strong>Troll:</strong> whether the Prestige 50 mcm/d figure is real, and its stated 21 November end date.</li>
+<li><strong>London open:</strong> VUAG, VUSA and SWDA catching down to Thursday’s US close, about 1–1.5% unless the US recovers overnight.</li>
 <li>Flash PMIs (euro area, UK, US); UK retail sales (October).</li>
+<li>AMD follow-through and any company rebuttal. ANT’s second session.</li>
+</ul></div>
+<div class="day"><div class="dname">Saturday 21 November</div><ul>
+<li><strong>Weekly review.</strong> The first with all 23 lines priced. It reconciles this week’s fund estimates (Tuesday −£1.0k to −£1.5k, Wednesday roughly flat, Thursday −£1.2k to −£1.8k) against actual marks.</li>
 </ul></div>
 </div>
 <div class="later">
-<div class="lcard"><div class="when">Sat 21 Nov</div><div class="what">Weekly review</div><div class="why">The first review with all 23 lines priced. Reconciles the fund estimates.</div></div>
-<div class="lcard"><div class="when">Fri 27 Nov</div><div class="what">Shell currency election 11:00 GMT; UKW + GAW pay; DiDi Q3</div><div class="why">&pound;236.82 + &pound;10.50 to the II ISA.</div></div>
-<div class="lcard"><div class="when">Tue 1 Dec</div><div class="what">Huang before House Foreign Affairs</div><div class="why">General counsel on 2 Dec. Energy Council on German storage flexibility that week.</div></div>
-<div class="lcard"><div class="when">Wed 9 Dec</div><div class="what">FOMC; WCfD consultation closes</div><div class="why">25bp about 95% priced. 50bp now under discussion.</div></div>
-<div class="lcard"><div class="when">Thu 17 Dec</div><div class="what">BoE December MPC</div><div class="why">About 80% priced after CPI, down from 90%.</div></div>
-<div class="lcard"><div class="when">Mon 21 Dec</div><div class="what">Shell Q3 dividend pays</div><div class="why">About &pound;58 to II General.</div></div>
+<div class="lcard"><div class="when">Fri 27 Nov</div><div class="what">Shell currency election 11:00 GMT; UKW + GAW pay; DiDi Q3</div><div class="why">£236.82 + £10.50 to the II ISA.</div></div>
+<div class="lcard"><div class="when">Tue 1 Dec</div><div class="what">Huang before House Foreign Affairs</div><div class="why">General counsel on 2 Dec. After the AMD allegation, likely to cover enforcement chain-wide. Energy Council on German storage flexibility that week.</div></div>
+<div class="lcard"><div class="when">Wed 9 Dec</div><div class="what">FOMC; WCfD consultation closes</div><div class="why">25bp about 95% priced. Waller wants 50bp.</div></div>
+<div class="lcard"><div class="when">Thu 17 Dec</div><div class="what">BoE December MPC</div><div class="why">About 80% priced for a hike after CPI.</div></div>
+<div class="lcard"><div class="when">Mon 21 Dec</div><div class="what">Shell Q3 dividend pays</div><div class="why">About £58 to II General.</div></div>
 </div>
 </section>
 
-<footer id="s9">
+<footer id="s8">
 <h4>Sources</h4>
 <ul>
-<li>Yahoo Finance &mdash; Nvidia delivered a monster quarter, then its new leaders stumbled on the earnings call (18 Nov); BofA &ldquo;very reassuring&rdquo;</li>
-<li>Motley Fool &mdash; Stock market today, 18 Nov: Nvidia slips on strong results; CoreWeave slides as debt concerns persist; Colette Kress just delivered excellent news</li>
-<li>CNN / NBC News &mdash; Nvidia rules out Huang&rsquo;s return; post-Huang era (17&ndash;18 Nov)</li>
-<li>StockTitan &mdash; Stock market today live, 18 Nov 2026 (FOMC minutes, intraday moves)</li>
-<li>investingLive &mdash; Americas FX news wrap 18 Nov: Waller / Fed minutes put a bigger December hike in play (closes, yields, FX, EIA, housing)</li>
-<li>CNBC &mdash; Longer-dated Treasury yields fall as traders weigh Waller, Fed minutes; Anthropic prices IPO at $83 (18 Nov)</li>
-<li>Newsquawk &mdash; European market wrap, 18 Nov 2026 (gilts, BoE pricing, TTF range, Brent/WTI settles, FX, geopolitics)</li>
-<li>Business Recorder / Invezz / Discovery Alert &mdash; EIA crude build, intraday Brent (18 Nov)</li>
-<li>CNBC &mdash; Oil prices after US strike on Qeshm Island (3 Nov) &mdash; basis for the correction in s3</li>
-<li>Alliance News via LSE.co.uk / Yahoo UK &mdash; FTSE 100 sinks as miners plummet, inflation rises (18 Nov)</li>
-<li>FXStreet / VT Markets / Pound Sterling Live / TradingNews &mdash; UK CPI October and sterling reaction</li>
-<li>Investing.com / FXLeaders &mdash; European gas prices ease (TTF &euro;84.71); Tuesday December settle &euro;85.40</li>
-<li>Montel &mdash; Troll outage 11.3 mcm/d and extension; Discovery Alert &mdash; Visund fire and Gassco end date</li>
-<li>Prestige Business Solutions &mdash; Energy market reports 13 and 16 Nov (NBP DA settles, nominations, UK LNG sendout)</li>
-<li>MacroMicro (AGSI+) / gasspeicher.app / ENGIE EnergyScan / RMX &mdash; German and EU storage</li>
-<li>Kpler blog / Alupetra / Discovery Alert &mdash; Qatar force majeure, Ras Laffan damage, JKM history</li>
-<li>StockAnalysis &mdash; prices and daily history for NVDA, AMZN, ASML, TSM, LLY, GEV, BRK.B, DIDIY, SHEL (LSE and ADR), GSK, UKW, GAW</li>
-<li>Holdings: <code>holdings.numbers</code> via <code>scripts/read_holdings.py</code>; <code>holdings_changes.md</code></li>
+<li>StockAnalysis — 19 Nov closes and daily history: NVDA, AMZN, ASML, TSM, LLY, GEV, BRK.B, DIDIY (delayed), AMD, UNH, ANT, SPY, QQQ, DIA; LSE: SHEL, UKW, GSK, GAW, SWDA, VUAG, VUSA</li>
+<li>Pound Sterling Live — GBP/USD daily table, 19 Nov (Barchart, 15-min delay)</li>
+<li>Yahoo Finance — Oil settles flat as Hormuz disruptions offset global surplus fears (Brent/WTI settles, 19 Nov); Stock market today, 19 Nov live blog (Dow −1,000, Anthropic debut)</li>
+<li>FinanceFeeds / HDFC Sky / TradingNews — intraday Brent and WTI, 19 Nov</li>
+<li>CNN / CBS / NBC / Forbes / CBC / Kiplinger — Anthropic IPO and first-day trading (open, range, $81.3bn raise)</li>
+<li>CNBC — AMD stock dives on short-seller report of alleged China exposure (19 Nov); CNN live blog on AMD and the index fall</li>
+<li>Benzinga / 24/7 Wall St / JournalArta — S&amp;P sixth straight loss, midday levels, UNH, VIX</li>
+<li>Briefs.co / StreetStats — US jobless claims 203k vs 197k; Treasury yields 19 Nov</li>
+<li>MarketScreener (Alliance News) / Brit Brief / Global Banking &amp; Finance — FTSE 100 and FTSE 250 close, sterling, Shell, 19 Nov</li>
+<li>MLQ.ai — Stoxx 600 and DAX, 18 Nov close and 19 Nov morning</li>
+<li>CNBC / NBC / NPR / spotmedia.ro / ABC — Trump–Xi–Putin trilateral and joint statement, Shenzhen, 19 Nov; PBS — Russian diesel deal</li>
+<li>Al-Monitor / Iran International / AzerNews / CBS — IRGC mine claims, UKMTO, Qeshm strikes</li>
+<li>Global Biodiesel (Substack) / Commodity-Board — ICE gasoil Dec, 18–19 Nov; Global Energy Flow — IEA diesel release</li>
+<li>Prestige Business Solutions — Energy market reports 17, 18 and 19 Nov (NBP DA and curve, TTF DA, UK power, Troll, UKCS)</li>
+<li>Serbia-Energy / Tradingpedia / EnergyRiskIQ / FXLeaders — TTF, 17–19 Nov (conflicting)</li>
+<li>Rallies.ai / Montel / Discovery Alert — Troll and Visund outages, Gassco notices</li>
+<li>IntelliNews / ENGIE EnergyScan / EnergyRiskIQ / Serbia-Energy — EU and German storage, German strategic reserve law</li>
+<li>Trading Economics / LNGPriceIndex / OilPriceAPI — JKM, TTF $/MMBtu, Henry Hub (basis for the JKM correction)</li>
+<li>OilPrice.com / Serbia-Energy / Discovery Alert / Fox Business — Qatar force majeure, Ras Laffan loadings, Orlen termination</li>
+<li>Fixed Income News / MLQ.ai / Trading Economics — gilt levels earlier in the week, BoE pricing</li>
+<li>Holdings: holdings.numbers via scripts/read_holdings.py; holdings_changes.md; prior snapshot price_history/prices_2026-11-18.json</li>
 </ul>
-<p class="disc">This is an automated summary for personal use and not financial advice. Prices are web-search reads, not settled exchange closes unless stated. Reconcile specific figures against primary sources and your own platform before acting.</p>
+<p class="disc">This is an automated summary for personal use and not financial advice. Prices come from web searches. Single-stock and ETF figures are stated 4:00pm ET or LSE closes from one aggregator, and the energy settles are single-source press reads, not exchange settlement files. Index moves are ETF proxies. Reconcile specific figures against primary sources and your own platform before acting.</p>
 </footer>
 
 </div>
