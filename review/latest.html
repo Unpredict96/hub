@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>:root{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
-<title>Portfolio Week in Review &mdash; 14 November 2026</title>
+<title>Portfolio Week in Review</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&display=swap">
@@ -58,6 +58,7 @@ a:hover{border-bottom-color:var(--accent)}
 p{margin:0 0 15px}
 b,strong{font-weight:600}
 
+/* ---------- masthead ---------- */
 .mast{border-bottom:1px solid var(--line-strong); padding-block:40px 20px; margin-bottom:24px}
 .eyebrow{font-size:12.5px; letter-spacing:.16em; text-transform:uppercase;
   color:var(--accent); margin:0 0 12px; font-weight:600}
@@ -65,6 +66,7 @@ h1{font-weight:500; font-size:clamp(31px,7.2vw,42px); line-height:1.08;
   letter-spacing:-.015em; margin:0 0 10px; text-wrap:balance}
 .dek{margin:0; color:var(--ink-2); font-size:16px; font-style:italic}
 
+/* ---------- signal strip ---------- */
 .figs{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px;
   background:var(--line); border:1px solid var(--line); border-radius:8px; overflow:hidden; margin-bottom:12px}
 @media (min-width:640px){.figs{grid-template-columns:repeat(4,minmax(0,1fr))}}
@@ -77,6 +79,7 @@ h1{font-weight:500; font-size:clamp(31px,7.2vw,42px); line-height:1.08;
 .v.up{color:var(--pos)} .v.down{color:var(--neg)}
 .footnote{font-size:13.5px; color:var(--ink-3); margin:0 0 30px; font-style:italic}
 
+/* ---------- contents ---------- */
 .toc{background:var(--surface); border:1px solid var(--line); border-radius:8px;
   padding:16px 20px 18px; margin-bottom:38px; box-shadow:var(--shadow)}
 .toc h4{font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3);
@@ -85,6 +88,7 @@ h1{font-weight:500; font-size:clamp(31px,7.2vw,42px); line-height:1.08;
 .toc li{margin-bottom:5px}
 .toc li::marker{color:var(--ink-3); font-variant-numeric:tabular-nums}
 
+/* ---------- sections ---------- */
 section{margin-bottom:46px; scroll-margin-top:16px}
 h2{font-weight:500; font-size:27px; letter-spacing:-.012em; margin:0 0 4px; text-wrap:balance; line-height:1.18}
 h2 .no{color:var(--ink-3); font-size:19px; font-variant-numeric:tabular-nums; margin-right:8px}
@@ -95,20 +99,18 @@ h4.mini{font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:va
 ul.body{margin:0 0 16px; padding-left:20px}
 ul.body li{margin-bottom:7px}
 
+/* ---------- alert ---------- */
 .alert{background:var(--warn-soft); border-left:3px solid var(--warn);
   border-radius:0 6px 6px 0; padding:15px 17px; margin:0 0 28px}
 .alert h3{margin:0 0 4px; font-size:16px; font-weight:700}
 .alert p{margin:0; font-size:15px; color:var(--ink-2)}
-.alert ul{margin:8px 0 0; padding-left:18px; font-size:15px; color:var(--ink-2)}
-.alert ul li{margin-bottom:4px}
 .note{background:var(--accent-soft); border-radius:6px; padding:14px 16px; margin:18px 0}
 .note p{margin:0 0 10px; font-size:15.5px}
 .note p:last-child{margin-bottom:0}
 .note .lab{font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent);
   font-weight:600; display:block; margin-bottom:4px}
-.note ul{margin:6px 0 0; padding-left:20px; font-size:15px}
-.note ul li{margin-bottom:5px}
 
+/* ---------- chips ---------- */
 .chip{display:inline-flex; align-items:center; font-size:11.5px; letter-spacing:.07em;
   text-transform:uppercase; font-weight:600; padding:3px 8px; border-radius:3px; white-space:nowrap}
 .chip.pos{background:var(--pos-soft); color:var(--pos)}
@@ -116,6 +118,7 @@ ul.body li{margin-bottom:7px}
 .chip.mix{background:var(--warn-soft); color:var(--warn)}
 .chip.neu{background:var(--surface-2); color:var(--ink-2)}
 
+/* ---------- tables ---------- */
 .tscroll{overflow-x:auto; border:1px solid var(--line); border-radius:8px; background:var(--surface);
   box-shadow:var(--shadow); margin:0 0 18px}
 table{border-collapse:collapse; width:100%; min-width:460px; font-size:15px}
@@ -128,37 +131,19 @@ td.n.up{color:var(--pos)} td.n.down{color:var(--neg)}
 td .fname{font-weight:600}
 td .fmeta{color:var(--ink-3); font-size:13px; margin-top:1px}
 
-.ranked .item{border:1px solid var(--line); border-radius:8px; padding:16px 18px;
-  background:var(--surface); box-shadow:var(--shadow); margin-bottom:14px}
-.ranked .item.pos{border-left:3px solid var(--pos)}
-.ranked .item.neg{border-left:3px solid var(--neg)}
-.ranked .item.mix{border-left:3px solid var(--warn)}
-.ranked .item.neu{border-left:3px solid var(--line-strong)}
-.item-head{display:flex; flex-wrap:wrap; gap:6px 10px; align-items:center; margin-bottom:8px}
-.item-head .rank{font-size:12px; font-weight:700; color:var(--ink-3); letter-spacing:.06em; font-variant-numeric:tabular-nums}
-.item-head h3{margin:0; font-size:17.5px; flex:1 1 60%; line-height:1.25}
-.ranked .item p{font-size:15.5px; color:var(--ink); margin:0 0 10px}
-.ranked .item p.exposed{color:var(--ink-2); font-size:14.5px; margin-top:6px}
+/* ---------- book lines ---------- */
+.book{border:1px solid var(--line); border-radius:8px; overflow:hidden;
+  background:var(--surface); box-shadow:var(--shadow); margin-bottom:18px}
+.bl{padding:15px 18px; border-top:1px solid var(--line)}
+.book .bl:first-child{border-top:none}
+.bl-head{display:flex; flex-wrap:wrap; gap:8px 12px; align-items:baseline; margin-bottom:5px}
+.tick{font-weight:700; font-size:16px; letter-spacing:.01em}
+.px{font-variant-numeric:tabular-nums; font-size:15px; color:var(--ink-2); margin-left:auto}
+.px .up{color:var(--pos)} .px .down{color:var(--neg)}
+.bl p{margin:0; font-size:15.5px; color:var(--ink-2)}
+.bl p + p{margin-top:8px}
 
-.holdings .hold{border:1px solid var(--line); border-radius:8px; background:var(--surface);
-  box-shadow:var(--shadow); margin-bottom:16px; overflow:hidden}
-.hold-left{background:var(--surface-2); padding:14px 16px 12px; border-bottom:1px solid var(--line)}
-.hold-left .tick{font-weight:700; font-size:17px; letter-spacing:.01em}
-.hold-left .coname{font-size:14px; color:var(--ink-2); margin-top:1px}
-.hold-left .plat{font-size:12.5px; color:var(--ink-3); margin-top:5px; letter-spacing:.03em}
-.hold-left .nums{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 14px; margin-top:12px}
-@media (min-width:460px){.hold-left .nums{grid-template-columns:repeat(4,minmax(0,1fr))}}
-.hold-left .num .k{font-size:10.5px; color:var(--ink-3); letter-spacing:.09em; text-transform:uppercase; font-weight:600}
-.hold-left .num .v{font-size:16px; font-variant-numeric:tabular-nums; margin-top:2px; font-weight:600}
-.hold-left .num .v.up{color:var(--pos)} .hold-left .num .v.down{color:var(--neg)}
-.hold-right{padding:15px 18px 17px}
-.hold-right .chips{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:10px}
-.hold-right ul{margin:0 0 10px; padding-left:18px; font-size:15.5px}
-.hold-right ul li{margin-bottom:6px}
-.hold-right p.read{font-size:15.5px; margin:10px 0 0}
-.hold-right p.read b:first-child{display:block; font-size:11.5px; letter-spacing:.09em; text-transform:uppercase;
-  color:var(--accent); margin-bottom:3px}
-
+/* ---------- calendar ---------- */
 .cal{border-left:2px solid var(--line-strong); margin-left:5px}
 .day{padding:15px 0 15px 20px; position:relative}
 .day::before{content:""; position:absolute; left:-6px; top:22px; width:10px; height:10px;
@@ -180,6 +165,7 @@ td .fmeta{color:var(--ink-3); font-size:13px; margin-top:1px}
 .lcard .what{font-size:15.5px; font-weight:600; margin-bottom:2px}
 .lcard .why{font-size:14px; color:var(--ink-2); line-height:1.45}
 
+/* ---------- footer ---------- */
 footer{border-top:1px solid var(--line-strong); padding-top:20px; margin-top:8px;
   font-size:14px; color:var(--ink-3)}
 footer h4{font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-2);
@@ -199,31 +185,32 @@ footer li{margin-bottom:4px}
 <div class="wrap">
 
 <header class="mast">
-  <p class="eyebrow">Portfolio Week in Review &middot; Saturday 14 November 2026</p>
-  <h1>Jensen Huang resigned. Hormuz re&#8209;escalated. Berkshire hit a fresh high, Lilly hit a fresh high, Shell held.</h1>
-  <p class="dek">The week clawed back last week's drawdown on index rebound and a Huang&#8209;shock rotation that specifically rewarded the two defensives already in the book. Thursday&rsquo;s Nvidia 8&#8209;K is a direct hit on the T212 ISA line that is <b>still pending share count</b> and also a direct forcing event on the Q3 FY27 release Monday 17 November. Friday 13 November close is <b>not yet captured in the price snapshot</b> &mdash; marks are Thursday 12 November closes.</p>
+  <p class="eyebrow">Portfolio Week in Review &middot; Saturday 21 November 2026</p>
+  <h1>Nvidia beat, then got an SEC accounting question. The S&amp;P fell 8.4% in dollars. The book lost about &pound;8.9k, and 84% of that was in the funds.</h1>
+  <p class="dek">Nvidia passed every test in its exit rule on Tuesday and Wednesday. By Friday the market was asking a different question: whether its numbers can be trusted. The AI capex chain sold off as one trade, and Brent came within six cents of Shell&rsquo;s trigger intraday before settling $2.57 clear. The T212 ISA sleeve lost 12.4% in a week. The direct Nvidia line is &pound;231, and your Nvidia exposure through the funds is about 18 times that.</p>
 </header>
 
 <div class="figs">
-  <div class="fig"><div class="k">Market value (Thu close)</div><div class="v">&pound;170,500</div><div class="s">approx. &mdash; pre new T212 ISA buys (still pending)</div></div>
-  <div class="fig"><div class="k">Book cost</div><div class="v">&pound;138,752</div><div class="s">unchanged on existing 17 lines; new buys pending share counts</div></div>
-  <div class="fig"><div class="k">Unrealised P&amp;L</div><div class="v up">+&pound;31,750</div><div class="s">+22.9% on confirmed perimeter</div></div>
-  <div class="fig"><div class="k">WoW change</div><div class="v up">+&pound;3,900</div><div class="s">+2.35% approx &middot; funds +&pound;3,307, direct equities +&pound;615</div></div>
+  <div class="fig"><div class="k">Market value</div><div class="v">&pound;165,192</div><div class="s">23 lines &middot; Fri 20 Nov close &middot; OEICs estimated</div></div>
+  <div class="fig"><div class="k">Book cost</div><div class="v">&pound;143,701</div><div class="s">from holdings.numbers &middot; +&pound;4,949 vs last review&rsquo;s perimeter</div></div>
+  <div class="fig"><div class="k">Unrealised P&amp;L</div><div class="v up">+&pound;21,491</div><div class="s">+15.0% on cost</div></div>
+  <div class="fig"><div class="k">Week on week</div><div class="v down">&minus;&pound;8,885</div><div class="s">&minus;5.1% &middot; funds &minus;&pound;7,427 &middot; equities &minus;&pound;1,458</div></div>
 </div>
-<p class="footnote">Direct equities priced at Thursday 12 November LSE / NYSE close on native venue &mdash; Friday 13 November closes are not yet in the price snapshot. OEIC fund NAVs are Thursday catch&#8209;up estimates against the week's index moves and will reprint Monday evening with the actual Friday marks. GBP/USD 1.3263 (&minus;0.79% WoW; dollar strength adds translation lift to USD lines). The UKW Q3 ex&#8209;dividend went Thursday: <b>&pound;236.82 locked to II ISA</b>, pays Friday 27 November.</p>
+<p class="footnote">Fri 13 Nov to Fri 20 Nov, on all 23 lines. Direct equities and the three London ETFs are priced at Friday closes on the venue each line is held on: SHEL, GSK, UKW, GAW, SWDA, VUAG and VUSA on the London lines, not the ADRs. ASML is priced on the New York line because the T212 ISA holds the US listing. The six OEICs are <b>estimates</b>: I could not reach any NAV source (FT blocked, HL search runs in JavaScript, Trustnet 404). They are last week&rsquo;s marks rolled forward on index proxies, so treat that &minus;&pound;5.8k as &plusmn;&pound;1.5k. GBP/USD is 1.3086 (Fri 13: 1.3211, so sterling fell 0.95% on the week, which cushions the dollar lines). London closed at 16:30 GMT, before the US low. On about &pound;75k of US look-through that leaves roughly &minus;&pound;1k still to come through on Monday unless New York recovers. Prices come from web searches of reported closes, not exchange tapes.</p>
 
 <div class="alert">
-  <h3>Second consecutive review: six T212 ISA positions still need share counts and book costs</h3>
-  <p>Per <code>holdings_changes.md</code>, the T212 ISA cash sleeve was redeployed on Friday 6 November into <b>six positions</b>, but the share counts and book costs are still not filled in and still not in <code>holdings.numbers</code>. The review treats the T212 ISA as excluded from the headline figures until those confirm. Nominal perimeter count is <b>23 lines</b>; confirmed&#8209;and&#8209;priced perimeter is still <b>17 lines</b>. All six new lines have now moved materially in the week and the sizing matters more each session.</p>
+  <h3>Holdings changes: six T212 ISA lines are now in the book. Nothing has disappeared.</h3>
+  <p><b>Against last Saturday&rsquo;s review:</b> six lines appear that the review left out as &ldquo;pending&rdquo;. They are all in <code>holdings.numbers</code> and match <code>holdings_changes.md</code> to the share. The file&rsquo;s timestamp is 6 Nov 22:20, so they were probably already there last Saturday, and the review should have picked them up. That was my mistake, not a late entry on your part. The book goes from 17 lines and &pound;138,751.99 to <b>23 lines and &pound;143,701.09</b>:</p>
   <ul>
-    <li><b>NVDA</b> (Nvidia) &mdash; <b>line approximately &minus;11.4% vs $185.22 Fri 6 Nov entry</b> after Huang resigned Thursday; close $164.06 &minus;6.65%. Q3 FY27 release <b>Monday 17 Nov</b> under Kress&#8209;as&#8209;interim&#8209;CEO is the next forcing event.</li>
-    <li><b>AMZN</b> (Amazon) &mdash; line approximately <b>+6.0% vs $251 Fri entry</b>; Thu close $266.17 &minus;1.05%.</li>
-    <li><b>ASML</b> (ASML Holding) &mdash; line approximately <b>+7.7% vs $1,424 Fri entry</b>, the strongest new&#8209;position gain in the sleeve; Thu close $1,534.24 +1.75%. Held through the Huang shock.</li>
-    <li><b>GEV</b> (GE Vernova) &mdash; line approximately <b>+6.6% vs ~$774 Mon 9 Nov anchor</b>; Thu intraday ~$825.</li>
-    <li><b>TSM</b> (Taiwan Semiconductor) &mdash; Thu close $405.56 &minus;2.14% on direct Nvidia read&#8209;through; TSMC October revenue <b>+59.7% YoY</b> fundamentals specifically unchanged.</li>
-    <li><b>LLY</b> (Eli Lilly) &mdash; line approximately <b>+6.6% vs $1,356 Mon 9 Nov anchor</b>; intraday new <b>all&#8209;time high $1,460</b> Thursday on China orforglipron approval; market cap approximately $1.1 trillion specifically matching Berkshire.</li>
+    <li><b>TSM</b> Taiwan Semiconductor: 3.64453264 sh &middot; book &pound;1,099.80</li>
+    <li><b>AMZN</b> Amazon: 4.57619338 sh &middot; book &pound;916.50</li>
+    <li><b>LLY</b> Eli Lilly: 0.87162446 sh &middot; book &pound;916.50</li>
+    <li><b>GEV</b> GE Vernova: 1.37383823 sh &middot; book &pound;855.40</li>
+    <li><b>ASML</b> ASML: 0.70254111 sh &middot; book &pound;794.30</li>
+    <li><b>NVDA</b> Nvidia: 2.39726897 sh &middot; book &pound;366.60</li>
   </ul>
-  <p style="margin-top:8px"><b>If that list isn't right, or if the shares and book costs aren't the ones you booked, say so and I'll re&#8209;run.</b> The sooner the shares land, the sooner the NVDA line can be sized ahead of Monday's Q3 call.</p>
+  <p><b>Against the last snapshot (20 Nov):</b> no change. The same fifteen priced lines and share counts, and no trades logged since 6 Nov. Everything in <code>holdings_changes.md</code> (the 21 and 29 Oct exits and the 6 Nov buys) is now reflected in <code>holdings.numbers</code>, so you could clear that file.</p>
+  <p>One question is still open: the book costs imply USD entry prices 6&ndash;10% above the 6 Nov trade prices (NVDA about $204 against $185.22). Do they include FX fees or deposit amounts? <b>If any of this isn&rsquo;t right, say so and I&rsquo;ll re-run.</b></p>
 </div>
 
 <nav class="toc" aria-label="Contents">
@@ -232,547 +219,327 @@ footer li{margin-bottom:4px}
     <li><a href="#s2">What actually moved the book</a></li>
     <li><a href="#s3">Individual equities</a></li>
     <li><a href="#s4">Funds and ETFs</a></li>
-    <li><a href="#s5">Look&#8209;through concentration</a></li>
+    <li><a href="#s5">Look-through concentration</a></li>
     <li><a href="#s6">The week ahead</a></li>
-    <li><a href="#s7">What I could not verify</a></li>
+    <li><a href="#s7">Open questions and what I could not verify</a></li>
   </ol>
 </nav>
 
 <section id="s1">
   <h2><span class="no">1</span> Headline figures</h2>
-  <p class="sub">Book added approximately +&pound;3.9k Thursday&#8209;on&#8209;Thursday as the US index rebound from last week&rsquo;s chip rout lifted the fund sleeve and the two US direct lines printed new highs. Shell gave back only &minus;0.7% despite Doha dead&#8209;and&#8209;buried; UKW ex&#8209;dividend specifically crystallised &pound;236.82 of cash. The T212 ISA perimeter is pending confirmation for a second week and is excluded from these figures.</p>
+  <p class="sub">This was a market drawdown, not a stock-specific one: every line fell, and the falls track each line&rsquo;s exposure to the AI capex trade almost exactly.</p>
 
   <div class="tscroll">
     <table>
       <thead>
-        <tr><th>Account</th><th>Lines</th><th class="n">Book cost</th><th class="n">Market value</th><th class="n">Unrealised P&amp;L</th><th class="n">WoW change</th></tr>
+        <tr><th>Account</th><th>Lines</th><th class="n">Book cost</th><th class="n">Market value</th><th class="n">Unrealised P&amp;L</th><th class="n">WoW</th></tr>
       </thead>
       <tbody>
-        <tr>
-          <td><div class="fname">II General</div><div class="fmeta">SHEL + three Vanguard trackers</div></td>
-          <td>4</td>
-          <td class="n">&pound;32,174.90</td>
-          <td class="n">&pound;45,728</td>
-          <td class="n up">+&pound;13,553 &middot; +42%</td>
-          <td class="n up">+&pound;859</td>
-        </tr>
-        <tr>
-          <td><div class="fname">II ISA</div><div class="fmeta">GSK, UKW, GAW + 8 OEICs/ETFs</div></td>
-          <td>11</td>
-          <td class="n">&pound;98,745.54</td>
-          <td class="n">&pound;115,978</td>
-          <td class="n up">+&pound;17,232 &middot; +17.4%</td>
-          <td class="n up">+&pound;2,423</td>
-        </tr>
-        <tr>
-          <td><div class="fname">T212 General</div><div class="fmeta">BRK&#8209;B + DIDIY</div></td>
-          <td>2</td>
-          <td class="n">&pound;7,831.55</td>
-          <td class="n">&pound;8,567</td>
-          <td class="n up">+&pound;736 &middot; +9.4%</td>
-          <td class="n up">+&pound;421</td>
-        </tr>
-        <tr>
-          <td><div class="fname">T212 ISA</div><div class="fmeta">Six new lines Fri 6 Nov &mdash; still pending confirm</div></td>
-          <td>(6)</td>
-          <td class="n">pending</td>
-          <td class="n">pending</td>
-          <td class="n">pending</td>
-          <td class="n">pending</td>
-        </tr>
-        <tr>
-          <td><b>Confirmed total</b></td>
-          <td><b>17</b></td>
-          <td class="n"><b>&pound;138,751.99</b></td>
-          <td class="n"><b>&pound;170,273</b></td>
-          <td class="n up"><b>+&pound;31,521 &middot; +22.7%</b></td>
-          <td class="n up"><b>+&pound;3,703 approx</b></td>
-        </tr>
+        <tr><td><div class="fname">II General</div><div class="fmeta">SHEL, VUAG, LifeStrategy, Global All Cap</div></td><td>4</td><td class="n">&pound;32,174.90</td><td class="n">&pound;43,200</td><td class="n up">+&pound;11,025 &middot; +34.3%</td><td class="n down">&minus;&pound;2,333</td></tr>
+        <tr><td><div class="fname">II ISA</div><div class="fmeta">GSK, UKW, GAW, SWDA, VUAG, VUSA + 5 OEICs</div></td><td>11</td><td class="n">&pound;98,745.54</td><td class="n">&pound;109,410</td><td class="n up">+&pound;10,665 &middot; +10.8%</td><td class="n down">&minus;&pound;5,632</td></tr>
+        <tr><td><div class="fname">T212 General</div><div class="fmeta">BRK-B, DIDIY</div></td><td>2</td><td class="n">&pound;7,831.55</td><td class="n">&pound;8,289</td><td class="n up">+&pound;458 &middot; +5.8%</td><td class="n down">&minus;&pound;311</td></tr>
+        <tr><td><div class="fname">T212 ISA</div><div class="fmeta">TSM, AMZN, LLY, GEV, ASML, NVDA</div></td><td>6</td><td class="n">&pound;4,949.10</td><td class="n">&pound;4,292</td><td class="n down">&minus;&pound;657 &middot; &minus;13.3%</td><td class="n down">&minus;&pound;609</td></tr>
+        <tr><td><div class="fname">Whole book</div></td><td>23</td><td class="n">&pound;143,701.09</td><td class="n">&pound;165,192</td><td class="n up">+&pound;21,491 &middot; +15.0%</td><td class="n down">&minus;&pound;8,885 &middot; &minus;5.1%</td></tr>
       </tbody>
     </table>
   </div>
 
-  <p class="sub">Equity / fund split on the confirmed perimeter: <b>18% / 82%</b>. Add the <b>&pound;236.82 UKW dividend</b> locked Thursday (pays 27 November) and the receivable&#8209;adjusted WoW lift is approximately <b>+&pound;3,940</b>. The T212 ISA six&#8209;position sleeve, when confirmed, will shift the equity/fund mix toward direct equities but the quantum still depends on the shares booked.</p>
+  <p><b>Funds and ETFs</b> are &pound;131,008, 79.3% of the book (&minus;&pound;7,427, &minus;5.4%). <b>Direct equities</b> are &pound;34,184, 20.7% (&minus;&pound;1,458, &minus;4.1%). The direct sleeve fell less than the funds even though it contains the six worst performers, because Shell, UKW, BRK-B and the UK names are defensive and make up 80% of it.</p>
+  <p><b>Bridge to last Saturday.</b> Last week&rsquo;s headline of &pound;170,273 was on 17 lines at Thursday 12 Nov marks. The same 17 lines are now &pound;160,900, down &pound;9,373 on that basis. Friday 13 Nov (now captured) accounts for about &pound;1.1k of that. Part of that figure is the US trackers falling on the day, and part is last week&rsquo;s OEIC estimates being rolled forward. <b>Not in the figures:</b> &pound;236.82 UKW and &pound;10.50 GAW cash paying into the II ISA on Friday (the GAW ex-date is not confirmed), and about &pound;58 of Shell Q3 dividend paying on 21 December.</p>
 
   <div class="note">
-    <div class="lab">Bottom line</div>
-    <p>Last week&rsquo;s Shell&#8209;led &minus;&pound;3k drawdown has been more than reclaimed through the index rebound, with the confirmed perimeter now at approximately <b>+22.9% on cost</b> &mdash; a new high. The <b>Huang resignation on Thursday</b> is the week&rsquo;s defining event: the single Nvidia 8&#8209;K re&#8209;framed the entire AI chip sleeve and specifically moved the Monday 17 November Q3 forcing event from &ldquo;probe vs earnings&rdquo; to &ldquo;Kress&rsquo;s first call as interim CEO.&rdquo; The <b>Shell three&#8209;leg thesis widened</b> across the week after Wednesday&rsquo;s tightest reading: all three legs are now specifically further from their trim triggers, not closer. The <b>UKW ex&#8209;dividend</b> specifically ran clean and <b>locked &pound;236.82</b> in cash on 8,771 shares.</p>
+    <p class="lab">Bottom line</p>
+    <p>About &pound;8.9k off, and around 84% of it came through the fund sleeve, which no rule or trade idea in this series covers. Nothing fired. Shell&rsquo;s Brent leg held at the settle every day, though the margin was $1.95 on Wednesday. The Nvidia exit rule passed all of its conditions. The T212 ISA sleeve fell hardest in percentage terms (&minus;12.4%), but it is 2.6% of the book. The number to keep in mind: <b>your Nvidia exposure is about &pound;4.3k, of which &pound;231 is the line you can see</b>. If the accounting question gets worse, the fund sleeve carries the hit, not the ISA.</p>
   </div>
 </section>
 
 <section id="s2">
   <h2><span class="no">2</span> What actually moved the book</h2>
-  <p class="sub">Ranked by how much of the portfolio each item touches. The three items above the fold this week are the Huang resignation (direct hit on NVDA plus look&#8209;through across the AI sleeve), the Hormuz re&#8209;escalation that re&#8209;opened the Shell three&#8209;leg thesis mid&#8209;compression, and the US index rebound that drove the fund sleeve.</p>
+  <p class="sub">Ranked by how much of the portfolio each item touches, not by the size of the headline. The Anthropic IPO got the most coverage this week and comes nearly last.</p>
 
-  <div class="ranked">
-
-    <div class="item neg">
-      <div class="item-head"><span class="rank">01</span><h3>Jensen Huang resigned Thursday &mdash; Kress is interim CEO, Monday&rsquo;s Q3 is a different event</h3><span class="chip neg">Negative</span><span class="chip neg">Highest materiality</span></div>
-      <p>The Thursday 12 November mid&#8209;session 8&#8209;K: <b>Jensen Huang has resigned</b> as President, Chief Executive Officer, and a member of the Board of Directors, effective immediately, after 33 years. <b>Colette Kress</b> (CFO since 2013) is <b>Interim CEO</b> and will continue as CFO. <b>Harvey C. Jones</b> was appointed as the <b>first&#8209;ever separate Chair of the Board</b>. The Board is searching for a permanent CEO and considering both internal and external candidates. Yahoo Finance reported a <b>third affair allegation</b> emerged in the Thursday news flow.</p>
-      <p>Specific market read: intraday low approximately <b>$160.86 at the open</b> &mdash; a <b>&minus;12% morning plunge</b> from Wednesday&rsquo;s $175.78 close; close <b>$164.06 &minus;6.65%</b>. Stock now <b>approximately &minus;35% from the all&#8209;time high</b>. Three analyst actions landed Thursday: <b>Truist Hold at $174 PT</b>, <b>Craig&#8209;Hallum Hold at $180 PT</b>, <b>Citi cut PT from $285 to $225</b> (cutting 21% of upside).</p>
-      <p>The week arc into Thursday had already stacked: <b>Mon 9 Nov $177.51 &minus;4.89%</b> (board opened Huang spy probe overnight Sat&ndash;Sun); <b>Tue 10 Nov $168.89 &minus;4.9%</b> with an intraday low ~$162 on The Information&rsquo;s $7.5bn chip&#8209;diversion piece (FBI / Wachtell / subpoena escalation); <b>Wed 11 Nov $175.78 +4.08%</b> on a CoreWeave beat that relit the AI trade briefly; <b>Thu 12 Nov $164.06 &minus;6.65%</b> on the 8&#8209;K.</p>
-      <p class="exposed"><b>What this touches:</b> directly the <b>T212 ISA NVDA line</b> (share count pending) at approximately &minus;11.4% vs $185.22 Friday 6 Nov entry; indirectly approximately <b>&pound;3,200 of fund&#8209;sleeve exposure</b> through SWDA, Global All Cap, Fundsmith (approximately 4.5% NVDA weight), Royal London (2.70%) &mdash; the broader fund sleeve nonetheless lifted on the week because the index rebound outweighed the Nvidia&#8209;specific drag. <b>Monday 17 November Q3 FY27 under Kress&#8209;as&#8209;interim&#8209;CEO</b> is the specific forcing event: the $108bn &plusmn;2% revenue guide was authored by Huang, Kress is the voice on FY28 framing. The Thursday brief carried the <b>hold&#8209;through&#8209;call</b> recommendation with trim trigger shifting to &ldquo;<b>Kress withdraws FY28 revenue framing or Q3 misses by more than 200bp</b>.&rdquo; Position sizing cannot be confirmed until the share count lands.</p>
+  <div class="book">
+    <div class="bl">
+      <div class="bl-head"><span class="tick">01 &middot; The AI capex chain sold off as one trade</span><span class="chip neg">Negative</span><span class="chip neg">~&pound;115k touched</span></div>
+      <p>The S&amp;P lost 8.4% in dollars over five straight down sessions (SPY: Mon &minus;1.92%, Tue &minus;1.02%, Wed &minus;0.23%, Thu &minus;1.96%, Fri &minus;3.58%). On Friday it closed about 11.5% below its 6 October record, in a correction, and the Dow was in one too. The Stoxx 600 lost 5.8%, its worst week since March. The FTSE 100 lost about 5.1%. This was not a broad sale of growth. Lilly fell 0.3% on the day QQQ fell 5.5%. The market sold the chain: chips, lithography, foundry and AI power. GEV fell 7.7% on Friday with no company news, which is the clearest example. The week also had a Hunterbrook short report on AMD (Thu, &minus;7.7%, then &minus;13.3% Fri) and a BIS rule closing off rented compute for Chinese firms (Mon).</p>
+      <p><b>What this touches:</b> every global fund line, about &pound;115k excluding Fidelity European, with about &pound;75&ndash;80k of US look-through. The fund sleeve is &minus;&pound;7,427 on the week (ETFs &minus;&pound;1,618 at verified prices, OEICs about &minus;&pound;5.8k estimated). Sterling&rsquo;s 0.95% fall gave back roughly &pound;700. Rathbone (growth tilt) is likely the weakest OEIC. Royal London and the two LifeStrategy lines, with their UK weight, are likely the strongest. Fidelity European has no US tech, but it fell with European banks and luxury, so it did not protect the book this week.</p>
     </div>
 
-    <div class="item pos">
-      <div class="item-head"><span class="rank">02</span><h3>Hormuz re&#8209;escalated and Trump&rsquo;s &ldquo;got their Strait&rdquo; killed the Doha track &mdash; Shell three legs widened</h3><span class="chip pos">Positive</span><span class="chip mix">High materiality</span></div>
-      <p><b>Wednesday 11 November</b>: Iran&rsquo;s Revolutionary Guards Navy reported two supertankers disabled by mine explosions in the Strait. <b>Thursday 12 November</b>: Iran&rsquo;s military claimed <b>four more tanker strikes</b> on Thursday and said Iran had also struck <b>Omani island navigation systems</b>. November running total through 12 November: at least <b>41 attacks on ships</b> in and near the Strait &mdash; already <b>+21% above October&rsquo;s full&#8209;month total of 34</b>, with 18 November days still to run. <b>Trump posted on Truth Social</b>: &ldquo;We've got their money, Hundreds of Billions of Dollars, and we've got their Strait!&rdquo; and said he no longer needs an Iran deal. Fox News reported a shouting match between Trump and Netanyahu amid an Iran peace&#8209;demand unveiling &mdash; the Monday Qatari&#8209;mediator channel is not just paused but specifically blocked between two separate parties.</p>
-      <p>The commodity transmission: <b>Brent Thursday approximately $94.48 +1.30%</b> (WoW &minus;3.15% on a settle&#8209;to&#8209;settle basis from Friday 6 Nov $97.55 &mdash; the week closed below last week&rsquo;s anchor but <b>well above the mid&#8209;week lows</b>). <b>TTF Thursday leapt +7.84% to approximately &euro;93.45/MWh</b> &mdash; the single biggest gas day since the Visund platform fire plus Germany&rsquo;s Wednesday 11 November strategic&#8209;reserve announcement; TTF <b>WoW +6.92%</b> from &euro;87.40.</p>
-      <p>Specific thesis read on Shell: all three legs <b>widened</b> across the week after Wednesday&rsquo;s tightest reading, not compressed. <b>Leg 1 (TTF &gt; &euro;60)</b> intact at &euro;93.45, now <b>+55.75% above trigger</b> (from +45% Wed, +46% last Fri); <b>Leg 2 (Brent &gt; $90)</b> intact at $94.48, now <b>+4.98% above trigger</b> (from the Wednesday reading of +3.63% &mdash; which was the tightest margin of the thesis since it was framed); <b>Leg 3 (diesel crack firm)</b> <b>REINFORCED</b> through the Agioi Fanendes moving away from the US coast on 9 November with no declared alternative port.</p>
-      <p class="exposed"><b>What this touches:</b> SHEL direct <b>&pound;7,134</b> (II General, 195 sh; still +161% on cost after a modest &minus;0.7% week); Fidelity European via lower chemical/auto input costs if TTF were to retreat (not the case this week); UKW via the duration path (higher gas prices specifically widen the rationale for retaining EGL beyond 2028, feeding the WCfD opt&#8209;in conversation). <b>The specific trim trigger remains a clean Brent close below $90</b> &mdash; now specifically further from trigger than it was at Wednesday&rsquo;s tightest reading. <b>Hold through Q4 late&#8209;January 2027 release stands.</b></p>
+    <div class="bl">
+      <div class="bl-head"><span class="tick">02 &middot; Nvidia: beat, raise, then an accounting question</span><span class="chip neg">Negative</span><span class="chip neg">High &middot; ~&pound;4.3k direct + look-through</span></div>
+      <p>The sequence matters. <b>Tue 17:</b> Q3 FY27 revenue $115.8bn against a $108bn &plusmn;2% guide (+103% y/y). Data centre $107.6bn, adj. EPS $2.68 against about $2.48. Q4 guided to $130bn &plusmn;3%. That includes an extra week (about $120.7bn without it) and assumes zero China data-centre revenue. Gross margin is guided down to 71&ndash;72% from 74.9%. The <b>10-Q was not filed</b> with results, after nine straight quarters of same-day filing, and the WSJ reported an SEC civil inquiry into whether disclosures misled investors. <b>Wed 18:</b> Kress raised the FY28 framing to about 75%, which cleared the last exit-rule condition. The stock reached $159.70, then closed at $150.96, below the pre-print close. <b>Thu 19:</b> $146.06, a post-Huang low. <b>Fri 20:</b> Reuters, citing two people briefed, reported SEC enforcement staff are looking at <b>potential accounting issues</b>. The stock fell 13.79% to $125.85, its worst day since DeepSeek, and 22.7% on the week.</p>
+      <p><b>What this touches:</b> the &pound;231 NVDA line (&minus;37% on cost), the rest of the T212 ISA chain, and about &pound;4.05k of Nvidia held through the funds. The next hard data point is the 10-Q, which a secondary source puts due around 4 December. If it is filed clean, much of Friday&rsquo;s move can reverse. An NT 10-Q or an auditor qualification would be a separate and worse event.</p>
     </div>
 
-    <div class="item pos">
-      <div class="item-head"><span class="rank">03</span><h3>US index rebound +3.3% S&amp;P / +4.2% Nasdaq WoW lifted the fund sleeve +&pound;3.3k</h3><span class="chip pos">Positive</span><span class="chip pos">Broadest touch across the book</span></div>
-      <p>The week specifically reversed <b>most</b> of last week&rsquo;s chip&#8209;rout damage on the fund side. US indices: <b>S&amp;P 500 7,595.30 Thu close</b>, up <b>approximately +3.29% WoW</b> from last Friday&rsquo;s 7,353.73 reconciled close; <b>Nasdaq approximately +4.2% WoW</b> (24,315 reconciled Friday to ~25,341 Thursday close after Wed&rsquo;s intraday 25,466 on CoreWeave); <b>FTSE 100 10,863.09 Thu close</b>, <b>+1.80% WoW</b> from 10,670.50. GBP/USD <b>1.3263 Thursday</b>, <b>&minus;0.79% WoW</b> from 1.3368 &mdash; the dollar strengthened, adding a modest translation lift to USD&#8209;denominated sleeves.</p>
-      <p>Trigger stack for the index rebound: <b>Mon 9 Nov</b> Berkshire Q3 release the prior Saturday + AMZN re&#8209;initiation pop on T212 ISA line opens; <b>Tue 10 Nov</b> US CPI October <b>+0.4% headline / +0.3% core</b> (both in line with consensus) kept the Fed December hike at 88.8% probability; <b>Wed 11 Nov</b> Veterans Day bond holiday allowed the CoreWeave beat to relight the AI trade without Treasury&#8209;side vol; <b>Thu 12 Nov</b> absorbed the Huang shock through non&#8209;Nvidia large&#8209;caps (BRK&#8209;B hit a fresh all&#8209;time high, LLY hit a fresh intraday high on China orforglipron approval). Fund&#8209;sleeve mark approximately <b>&pound;139.7k</b> Thursday against <b>&pound;136.4k</b> Fri 6 Nov anchor = approximately <b>+&pound;3,307 WoW</b>.</p>
-      <p class="exposed"><b>What this touches:</b> the entire fund sleeve &mdash; VUAG/VUSA +&pound;490, Rathbone +&pound;520, LifeStrategy combined +&pound;534, Fundsmith +&pound;400, SWDA +&pound;430, Global All Cap +&pound;363, Royal London +&pound;367, Fidelity European +&pound;203. The single&#8209;NAV OEIC marks still lag by a day: <b>Monday 16 November evening NAVs</b> will capture both Thursday and Friday 13 November together. Expect a reconciliation delta of up to <b>&plusmn;&pound;500</b> on the fund&#8209;sleeve total once the actual Friday marks publish.</p>
+    <div class="bl">
+      <div class="bl-head"><span class="tick">03 &middot; Brent tested the Shell trigger and held</span><span class="chip mix">Near miss</span><span class="chip mix">High &middot; &pound;6,970 + the trim rule</span></div>
+      <p>Brent settled at $95.84 on 13 Nov and $92.57 on 20 Nov, &minus;3.4% and its third weekly fall. Daily settles: Mon $92.44, Wed <b>$91.95, the closest yet</b> (after a 3.38m bbl US crude build), Thu $91.98, Fri $92.57. On Friday it traded down to about $90.06 (Trading Economics CFD) in the European morning, six cents from the line, then short-covering ahead of Thanksgiving week lifted it. The bearish case: Hormuz flows are back near pre-war levels, the IEA put Q4 at a 1.7 mb/d surplus, and Goldman expects a $88 average for 2027. Three Gulf headlines in a row (mine claims and the Khasab projectile) failed to move the settle. The only bid that worked was Tuesday&rsquo;s US strike on Qeshm Island.</p>
+      <p><b>What this touches:</b> SHEL directly (&minus;3.9% WoW, &minus;&pound;283), and the decision the rule would force. A settle below $90.00 trims 25%, about 49 shares, roughly &pound;1,750 of proceeds and about &pound;1,060 of realised gain in II General. Leg 3 now has data, and it is soft. The Trump&ndash;Xi&ndash;Putin Shenzhen statement pledged more refined-product supply, and the implied diesel crack fell from about $70 to $65/bbl in two sessions. Leg 1 is wide, with TTF around &euro;85.5.</p>
     </div>
 
-    <div class="item pos">
-      <div class="item-head"><span class="rank">04</span><h3>Berkshire fresh all&#8209;time high $592.08 on Huang&#8209;shock flight&#8209;to&#8209;quality</h3><span class="chip pos">Positive</span><span class="chip pos">Direct line move</span></div>
-      <p>BRK&#8209;B week arc: <b>Mon 9 Nov $576.63 +0.75%</b> after an intraday low ~$565.14; <b>Tue 10 Nov all&#8209;time&#8209;high close $583.34 +1.41%</b>; <b>Wed 11 Nov $579.95 &minus;0.58%</b> on the Veterans Day bond holiday; <b>Thu 12 Nov $592.08 +2.09%</b> &mdash; <b>fresh all&#8209;time high</b> on Huang&#8209;shock flight&#8209;to&#8209;quality. WoW <b>+$19.75 / +3.45% USD</b> from $572.33 Friday 6 Nov; combined with dollar strength the GBP mark moves <b>from &pound;6,949 to &pound;7,246</b> = <b>+&pound;296 WoW</b>.</p>
-      <p>Specific signal: the second governance&#8209;shock session this review period (last week was the AI chip rout Thursday 5 Nov) that pulled flows into non&#8209;AI mega&#8209;caps, and Berkshire again absorbed the shock exceptionally. UBS $628 target now <b>6.1% above spot</b> (compressed from 10% last Friday as the price moved up). <b>Abel formally takes CEO on 1 January 2027</b>, now <b>48 days away</b>; first full Abel&#8209;era Annual Letter is late February 2027.</p>
-      <p class="exposed"><b>What this touches:</b> BRK&#8209;B direct <b>&pound;7,246</b> (T212 General, 16.23 sh); the AI&#8209;chip&#8209;credit mirror thesis (BRK&#8209;B rallied through the exact session Nvidia printed its worst loss since its recent all&#8209;time high); the Apple look&#8209;through (Apple is 22% of BRK&#8209;B equity book) &mdash; Apple has held flat&#8209;to&#8209;positive through the week. <b>Hold through the Abel transition stands.</b></p>
+    <div class="bl">
+      <div class="bl-head"><span class="tick">04 &middot; UK rates: CPI a tenth light, the BoE still hawkish</span><span class="chip mix">Mixed</span><span class="chip mix">Medium &middot; UKW, GSK, UK fund weight</span></div>
+      <p>Pill said on Monday the BoE has &ldquo;further to go&rdquo;, and the 2-year gilt touched 5.015%, its highest since 2023. October CPI on Wednesday was 3.6% against 3.7% expected (core 2.8%, services 3.7% against the BoE&rsquo;s 3.9%). December hike pricing fell from about 90% to 80% and gilts rallied 78 ticks. October retail sales on Friday beat at +0.7% m/m against &minus;0.1%, but that was households stockpiling under the &ldquo;Be Ready&rdquo; campaign, which is a food-inflation impulse rather than evidence of demand. The US 10-year fell back below 5% on Friday (about 4.95&ndash;4.97%) as money moved into safety.</p>
+      <p><b>What this touches:</b> UKW (&minus;1.4% WoW). It rose on CPI day, then fell 2.9% on Thursday and Friday even though yields fell, so the move was not about duration. Also GSK (&minus;3.6%, still no news behind it) and the UK part of LifeStrategy and Royal London. <b>Correction carried from Monday&rsquo;s brief:</b> the Budget was on 28 October. It is not still to come, as last week&rsquo;s review said. The remaining UK duration event is the BoE on 17 December.</p>
     </div>
 
-    <div class="item pos">
-      <div class="item-head"><span class="rank">05</span><h3>UKW ex&#8209;dividend ran clean on Thursday &mdash; &pound;236.82 locked to II ISA</h3><span class="chip pos">Positive</span><span class="chip pos">Direct cash locked</span></div>
-      <p>Thursday 12 November was ex&#8209;dividend day for UKW&rsquo;s Q3 interim at <b>2.7p</b>. The cum&#8209;dividend print carried into Thursday at <b>122.40p</b>; the fair&#8209;value reference now sits at approximately 119.70p, but <b>the shares specifically held near the cum&#8209;div level</b> through the session &mdash; the duration bid under a UK 10Y gilt at approximately 5.20% held the position against the natural ex&#8209;div drift. WoW <b>+0.40p / +0.33%</b> from 122.00p last Friday = <b>+&pound;35 on 8,771 shares on the price line</b>, <b>plus &pound;236.82 cash locked</b> to II ISA (pays Friday 27 November).</p>
-      <p>Week arc: <b>Mon 9 Nov anchor&#8209;corrected to 120.80p</b> (not the directional 122.00p previously carried); <b>Tue</b> ~flat; <b>Wed 11 Nov</b> held 122.10&ndash;123.50p range; <b>Thu 12 Nov</b> ex&#8209;div 2.7p went to II ISA. WCfD opt&#8209;in RNS still outstanding; consultation closes <b>Wed 9 December</b>.</p>
-      <p class="exposed"><b>What this touches:</b> UKW direct <b>&pound;10,736</b> (II ISA, 8,771 sh); the duration&#8209;proxy / discount&#8209;to&#8209;NAV mechanism (NAV discount approximately 13%; 12&#8209;month forecast dividend approximately 10.7p = ~8.75% forward yield at Thursday&rsquo;s close); the Budget Wednesday 26 November is now <b>12 days away</b> and remains the specific duration event for the UK sleeve. <b>No action.</b> The capital&#8209;allocation call on WCfD opt&#8209;in remains end&#8209;of&#8209;November with the consultation close.</p>
+    <div class="bl">
+      <div class="bl-head"><span class="tick">05 &middot; Sterling fell 0.95% against the dollar</span><span class="chip pos">Positive</span><span class="chip neu">Broad, small</span></div>
+      <p>GBP/USD went from 1.3211 to 1.3086. Hawkish Fed minutes and a DXY at a 19-month high outweighed the BoE. This added roughly &pound;700&ndash;800 of translation gain across the US look-through and the eight dollar lines. It is the only thing that went the book&rsquo;s way at scale this week.</p>
     </div>
 
-    <div class="item pos">
-      <div class="item-head"><span class="rank">06</span><h3>Eli Lilly intraday all&#8209;time high $1,460 on China orforglipron approval &mdash; now ties Berkshire on market cap</h3><span class="chip pos">Positive</span><span class="chip pos">New direct line (pending confirm)</span></div>
-      <p>Thursday 12 November: <b>China&rsquo;s medicine regulator approved orforglipron</b>, Lilly&rsquo;s GLP&#8209;1 obesity pill &mdash; the specific regulatory catalyst that tiers the Chinese market into the GLP&#8209;1 revenue envelope. LLY closed <b>$1,446.06 +0.96%</b> after an <b>intraday new all&#8209;time high of $1,460</b>. Market cap approximately <b>$1.1 trillion</b> &mdash; now specifically matching Berkshire Hathaway. Line approximately <b>+6.6% versus Monday 9 Nov $1,356 anchor</b> (the Fri 6 Nov entry level is not captured in the prior week brief but the Monday close is the practical anchor to run against).</p>
-      <p class="exposed"><b>What this touches:</b> directly the T212 ISA LLY line (share count pending); indirectly approximately <b>&pound;1,750</b> via Fundsmith / global trackers / Royal London. The structural GLP&#8209;1 thesis is now specifically harder to challenge after the China approval. <b>No action pending confirm.</b></p>
+    <div class="bl">
+      <div class="bl-head"><span class="tick">06 &middot; Berkshire did its job</span><span class="chip pos">Relative positive</span><span class="chip neu">Low &middot; &pound;7,071</span></div>
+      <p>BRK-B fell 3.9% in dollars against &minus;8.4% for the S&amp;P, and fell a tenth as much as SPY on Friday. It was defensive on three of the five days, which is the AI-hedge behaviour the thesis rests on. In sterling it fell 2.9% (&minus;&pound;214).</p>
     </div>
 
-    <div class="item mix">
-      <div class="item-head"><span class="rank">07</span><h3>DiDi JPMorgan upgrade specifically lifted the line off the 52W low into the week ahead of Q3</h3><span class="chip pos">Positive</span><span class="chip mix">Small line, specific analyst event</span></div>
-      <p>DIDIY week arc: essentially flat through Monday&ndash;Tuesday around $3.04&ndash;3.08; Wednesday $3.37 +1.05%; <b>Thursday $3.33 &minus;1.19%</b>. WoW <b>+$0.29 / +9.54%</b> from $3.04 Friday 6 Nov = <b>+&pound;124 on 526.394 shares</b> combining price and FX. Specific trigger: <b>JPMorgan Thursday raised PT to $4.50 from $4.00</b> (held Neutral) &mdash; the <b>first analyst upgrade since the position opened</b>. Line specifically moved from approximately <b>&minus;19.5% on cost last Friday to approximately &minus;11.1% on Thursday</b> &mdash; an eight&#8209;point swing on the P&amp;L percentage in one week on an otherwise quiet line. Q3 release is <b>Friday 27 November</b>; US&ndash;China tariff truce expiry <b>Fri 10 January 2027</b> remains the second catalyst window.</p>
-      <p class="exposed"><b>What this touches:</b> DIDIY direct <b>&pound;1,322</b> (T212 General, 526.394 sh). Specifically the first weekly review period in which the line has delivered a net positive mark since purchase.</p>
+    <div class="bl">
+      <div class="bl-head"><span class="tick">07 &middot; Anthropic IPO</span><span class="chip neu">Neutral</span><span class="chip neu">Low &middot; via AMZN</span></div>
+      <p>It priced at $83 (range $70&ndash;78) on Wednesday, opened at $112.87 on Thursday and closed at $96.86. AMZN rose 3.8% into the pricing and gave all of it back the next day as money moved from incumbents into ANT. The book&rsquo;s exposure is Amazon&rsquo;s stake, and it is small. Disclosure as in the dailies: I am an Anthropic model, and I have no view on ANT that you should weight.</p>
     </div>
+  </div>
 
-    <div class="item neu">
-      <div class="item-head"><span class="rank">08</span><h3>UK Q3 GDP +0.7% in line &mdash; no UK rates re&#8209;price, specific sleeve impact via GSK and the funds, not direct</h3><span class="chip neu">Neutral tape</span><span class="chip neu">Low materiality</span></div>
-      <p>Thursday 12 November 07:00 ONS: <b>UK Q3 preliminary GDP +0.7% QoQ, +1.9% YoY</b> &mdash; both prints in line with consensus and specifically in line with the BoE November MPR. Services carried the quarter at +0.9%; business&#8209;facing services +1.0%, consumer&#8209;facing +0.5%. September monthly GDP +0.2% beat the flat consensus; August revised down from +0.1% to 0.0%. <b>UK 10Y gilt approximately 5.20%</b> &mdash; held the Wednesday level; <b>UK 30Y rebounded +7bp to 5.71%</b> on the fiscal&#8209;headroom concern into the Budget. OIS pricing another 25bp BoE hike by year end at approximately <b>60&ndash;65% probability</b>. GBP/USD eased further to <b>1.3263</b> on US jobless claims 200k vs 194k consensus kept the Fed December hike at 88.8%. <b>FTSE 100 +0.25%</b> Thursday to 10,863.09 specifically absorbed the US Huang shock through its energy, defensive and dividend weight.</p>
-      <p class="exposed"><b>What this touches:</b> <b>GSK.L +1.14% to 1,908.50p Thursday</b> on the duration bid rotation reversing Wednesday&rsquo;s pullback; <b>GAW.L +1.63% to 16,800p</b> on the FTSE rotation; UKW held Thursday near the cum&#8209;div level; Fidelity European sleeve benefited modestly on UK&#8209;adjacent European bid. The Autumn Budget <b>Wednesday 26 November</b> is now <b>12 days away</b> and remains the specific UK duration event into year end.</p>
-    </div>
-
+  <h4 class="mini">Follow-up on the week&rsquo;s ideas and rules</h4>
+  <p>The dailies pitched no trade this week. That makes eighteen briefs in a row without one, and that was the right call. Four standing setups were discussed, and here is where each stands:</p>
+  <div class="tscroll">
+    <table>
+      <thead><tr><th>Setup</th><th>Raised</th><th>Since then</th><th>Thesis</th></tr></thead>
+      <tbody>
+        <tr><td><div class="fname">NVDA exit rule</div><div class="fmeta">sell on Q3 miss &gt;200bp, FY28 withdrawn, or Q4 guide &lt; Q3</div></td><td>12&ndash;16 Nov</td><td>All three conditions passed (Tue&ndash;Wed). Then the stock fell 17% over Thu&ndash;Fri on the SEC report.</td><td><span class="chip mix">Rule closed. Question changed.</span> The rule tested the numbers. Friday questions whether the numbers are right, which the rule does not cover. At &pound;231, inside an ISA with no loss to harvest, the decision is worth &pound;20&ndash;60 either way.</td></tr>
+        <tr><td><div class="fname">Shell three-leg trim</div><div class="fmeta">25% on a Brent settle &lt; $90</div></td><td>standing</td><td>Closest settle $91.95 (Wed). Intraday $90.06 (Fri). Settle $92.57.</td><td><span class="chip mix">Intact, thin</span> Leg 1 wide, leg 2 has $2.57, leg 3 soft. Friday showed why the rule uses the settle: an intraday sale would have been about 4% below the close and taxable.</td></tr>
+        <tr><td><div class="fname">TSM/ASML dip-buy</div><div class="fmeta">TSM near $360, if the capex story is unchanged</div></td><td>Wed 18</td><td>TSM reached $319, so the price condition was met.</td><td><span class="chip neg">Condition failed</span> The capex story has changed: it now carries an accounting doubt. The sizing problem is also still there (an ISA add is under 1% of the book).</td></tr>
+        <tr><td><div class="fname">S&amp;P add in the ISA on the correction</div></td><td>Fri 20</td><td>Index about 11.5% off its high.</td><td><span class="chip neu">Plan, not a trade</span> Only if the 10-Q is filed clean by early December and the index is still 8% or more off its high. It needs your ISA cash and remaining allowance to size.</td></tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
 <section id="s3">
   <h2><span class="no">3</span> Individual equities</h2>
-  <p class="sub">Each direct equity on the confirmed perimeter with Thursday 12 November close on native venue, week&#8209;on&#8209;week move against Friday 6 November, position value, P&amp;L on book, the week's news, and the specific read. Fri 13 Nov close is not yet in the price snapshot. New T212 ISA lines are flagged in the alert at the top and tracked in the look&#8209;through table pending share counts.</p>
+  <p class="sub">All twelve direct lines. Friday 20 Nov close on the venue each line is held on, the move against Friday 13 Nov, value at 1.3086, and P&amp;L against the book cost in holdings.numbers.</p>
 
-  <div class="holdings">
-
-    <div class="hold">
-      <div class="hold-left">
-        <div class="tick">SHEL.L</div>
-        <div class="coname">Shell plc</div>
-        <div class="plat">II General &middot; 195 shares</div>
-        <div class="nums">
-          <div class="num"><div class="k">Price (Thu close)</div><div class="v">3,658.50p</div></div>
-          <div class="num"><div class="k">WoW</div><div class="v down">&minus;0.71%</div></div>
-          <div class="num"><div class="k">Value</div><div class="v">&pound;7,134</div></div>
-          <div class="num"><div class="k">P&amp;L on book</div><div class="v up">+161%</div></div>
-        </div>
-      </div>
-      <div class="hold-right">
-        <div class="chips"><span class="chip pos">Three legs widened</span><span class="chip pos">Doha track killed</span><span class="chip pos">Leg 3 reinforced</span></div>
-        <ul>
-          <li><b>Mon 9 Nov directional ~3,680p</b>; <b>Tue 10 Nov ~3,625p &minus;1.5%</b> on US CPI session; <b>Wed 11 Nov +1.27% to 3,670.50p</b> on Hormuz re&#8209;escalation plus Brent +0.99% to $93.27; <b>Thu 12 Nov &minus;0.33% to 3,658.50p</b> as oil bid absorbed by broader risk&#8209;off on Huang.</li>
-          <li><b>Three legs</b> after Thursday widened versus Wednesday's tightest reading: <b>Leg 1 TTF &gt; &euro;60 intact at &euro;93.45</b> (+55.75% above trigger, up from +45% Wed, +46% last Fri); <b>Leg 2 Brent &gt; $90 intact at $94.48</b> (+4.98% above trigger, up from Wed's +3.63% tightest reading); <b>Leg 3 (diesel crack firm) REINFORCED</b> through Agioi Fanendes moving away from US coast 9 Nov with no declared alternative port.</li>
-          <li>Trump Thursday Truth Social &ldquo;we&rsquo;ve got their Strait&rdquo; effectively killed the Doha diplomatic track that drove <b>last week&rsquo;s &minus;8.72%</b>. Qatari mediator channel now blocked between two separate parties.</li>
-          <li><b>JPMorgan GBp 4,100 target</b> now <b>12% above spot</b>. Shell $5bn Q4 buyback runs through late January 2027 Q4 release &mdash; the specific thesis catalyst.</li>
-        </ul>
-        <p class="read"><b>How this hits you</b>&minus;&pound;51 on the week on 195 shares &mdash; a negligible give&#8209;back versus last week&rsquo;s &minus;&pound;686 as the diplomatic track that drove the drawdown was specifically unwound. Position still +161% on cost. <b>Hold through Q4 late&#8209;January 2027 release stands.</b> <b>Specific break trigger for next week:</b> a clean Brent close below $90 remains the only event that opens the trim conversation. Nothing in this week&rsquo;s data pattern points toward that trigger.</p>
-      </div>
+  <h4 class="mini">II General</h4>
+  <div class="book">
+    <div class="bl">
+      <div class="bl-head"><span class="tick">SHEL.L</span><span class="chip mix">Trigger tested</span><span class="chip neg">Leg 3 soft</span><span class="px">3,574.5p &middot; <span class="down">&minus;3.90%</span> &middot; &pound;6,970 &middot; <span class="up">+&pound;4,233 (+155%)</span></span></div>
+      <p>Shell plc &middot; 195 sh &middot; LSE line. The week ran 3,705.5 Mon, 3,673.5 Tue, 3,595.5 Wed (&minus;2.12% on the crude build), 3,574.5 Thu, and a reported unchanged 3,574.5 Fri after trading as low as 3,435.18p. Stockanalysis shows Friday with its own open, high, low and volume (9.5m), so it is not a copied row, but an exactly unchanged close after a 4% range is worth checking on your platform.</p>
+      <p>Brent settles $92.44 / $91.95 / $91.98 / $92.57. The Shenzhen refined-product pledge took the gasoil crack from about $70 to $65/bbl. Q3 interim $0.3906 went ex on 12 Nov and pays 21 Dec (about &pound;58). The currency election closes <b>11:00 GMT Fri 27 Nov</b>.</p>
+      <p><b>How this hits you:</b> &minus;&pound;283 on the week. The trim decision is one bad settle away, and it is the costliest decision in the book: a taxable sale in II General with a cost basis of &pound;13.85 a share. Two things are still missing that you need before it fires: the CGT exempt amount left this tax year, and confirmation that no earlier partial sale is still sitting in the book cost. The daily brief proposed a numeric leg-3 threshold ($55/bbl crack for three sessions) and it still needs your yes or no.</p>
     </div>
+  </div>
 
-    <div class="hold">
-      <div class="hold-left">
-        <div class="tick">UKW.L</div>
-        <div class="coname">Greencoat UK Wind</div>
-        <div class="plat">II ISA &middot; 8,771 shares</div>
-        <div class="nums">
-          <div class="num"><div class="k">Price (Thu close)</div><div class="v">122.40p</div></div>
-          <div class="num"><div class="k">WoW</div><div class="v up">+0.33%</div></div>
-          <div class="num"><div class="k">Value</div><div class="v">&pound;10,736</div></div>
-          <div class="num"><div class="k">P&amp;L on book</div><div class="v up">+&pound;130 &middot; +1.2%</div></div>
-        </div>
-      </div>
-      <div class="hold-right">
-        <div class="chips"><span class="chip pos">Ex&#8209;div 2.7p clean</span><span class="chip pos">&pound;236.82 cash locked</span></div>
-        <ul>
-          <li><b>Thu 12 Nov ex&#8209;dividend Q3 2.7p</b>; cum&#8209;div print 122.40p; fair&#8209;value reference approximately 119.70p but <b>shares held near cum&#8209;div level</b>. <b>&pound;236.82 cash locked to II ISA</b> (pays Friday 27 November).</li>
-          <li>Mon 9 Nov anchor&#8209;corrected to <b>120.80p</b> (not the 122.00p directional previously carried); Tue/Wed held 122.10&ndash;123.50p range; Thu ex&#8209;div 2.7p.</li>
-          <li><b>UK 10Y gilt approximately 5.20%</b> Thursday &mdash; held the Wednesday level; <b>UK 30Y rebounded +7bp to 5.71%</b> on fiscal&#8209;headroom concern. The duration bid is specifically what cushioned the ex&#8209;div drift.</li>
-          <li>WCfD opt&#8209;in RNS still outstanding. Budget consultation closes <b>Wed 9 December</b>. Forward yield approximately <b>8.75%</b> at Thursday&rsquo;s close.</li>
-        </ul>
-        <p class="read"><b>How this hits you</b>+&pound;35 on the price line on 8,771 shares, plus <b>&pound;236.82 cash locked</b> to II ISA (pays 27 Nov). Position now approximately +1.2% on cost. <b>No action.</b> Specific capital&#8209;allocation call on WCfD opt&#8209;in remains end&#8209;of&#8209;November with consultation close.</p>
-      </div>
+  <h4 class="mini">II ISA</h4>
+  <div class="book">
+    <div class="bl">
+      <div class="bl-head"><span class="tick">UKW.L</span><span class="chip neg">Fell against yields</span><span class="px">118.10p &middot; <span class="down">&minus;1.42%</span> &middot; &pound;10,359 &middot; <span class="down">&minus;&pound;168 (&minus;1.6%)</span></span></div>
+      <p>Greencoat UK Wind &middot; 8,771 sh. 121.0 Mon, 121.0 Tue (possibly a stale print), 121.6 Wed (+0.5% on CPI), 120.4 Thu, 118.1 Fri. The Thursday and Friday fall of 2.9% came with gilts and Treasuries rallying, so duration is not the explanation. Risk-off selling in UK small and mid caps, or rotation out of yield ahead of the MPC, are the likely candidates. There was no RNS.</p>
+      <p>The Q3 2.7p dividend, &pound;236.82, pays Friday 27 Nov. The WCfD consultation closes on 9 Dec, and the opt-in RNS is still outstanding.</p>
+      <p><b>How this hits you:</b> &minus;&pound;149, and it is back below cost. It is the largest direct line. Nothing fires. At about 118p the forward yield is close to 9%, but the market is not paying for that this week. The 17 Dec MPC is what matters for it.</p>
     </div>
-
-    <div class="hold">
-      <div class="hold-left">
-        <div class="tick">GSK.L</div>
-        <div class="coname">GSK plc</div>
-        <div class="plat">II ISA &middot; 97 shares</div>
-        <div class="nums">
-          <div class="num"><div class="k">Price (Thu close)</div><div class="v">1,908.50p</div></div>
-          <div class="num"><div class="k">WoW</div><div class="v up">+3.69%</div></div>
-          <div class="num"><div class="k">Value</div><div class="v">&pound;1,851</div></div>
-          <div class="num"><div class="k">P&amp;L on book</div><div class="v up">+&pound;588 &middot; +46%</div></div>
-        </div>
-      </div>
-      <div class="hold-right">
-        <div class="chips"><span class="chip pos">UK duration bid</span><span class="chip pos">Pharma defensive rotation</span></div>
-        <ul>
-          <li><b>Mon 9 Nov +0.77% to 1,904.50p</b>; Tue approximately flat; <b>Wed 11 Nov &minus;1.56% to 1,887p</b> on UK duration bid weakening into Budget; <b>Thu 12 Nov +1.14% to 1,908.50p</b> on UK Q3 GDP in&#8209;line print plus duration rotation reversing Wednesday&rsquo;s pullback.</li>
-          <li>GSK specifically benefited from the Huang&#8209;shock rotation out of US tech into UK defensives on Thursday.</li>
-          <li>Jefferies GBp 2,500 target <b>31% above spot</b>. January FY release next catalyst. Vaccine&#8209;franchise Q4 test remains the specific release event.</li>
-        </ul>
-        <p class="read"><b>How this hits you</b>+&pound;66 on the week on 97 shares. Position back to approximately +46% on cost after last week&rsquo;s pullback. <b>No action</b> &mdash; the thesis test is the Q4 franchise call in January.</p>
-      </div>
+    <div class="bl">
+      <div class="bl-head"><span class="tick">GSK.L</span><span class="chip neg">Unexplained drift</span><span class="px">1,842.5p &middot; <span class="down">&minus;3.61%</span> &middot; &pound;1,787 &middot; <span class="up">+&pound;470 (+35.7%)</span></span></div>
+      <p>GSK plc &middot; 97 sh. It rose to 1,929.5 Mon, then fell &minus;3.14% Tue to 1,869 with no news, then three down days to 1,827 Thu, then +0.85% Fri. I could not find an RNS or broker action behind the Tuesday to Thursday fall.</p>
+      <p><b>How this hits you:</b> &minus;&pound;67. It is a small line and remains a defensive. The next real test is FY results in late January.</p>
     </div>
-
-    <div class="hold">
-      <div class="hold-left">
-        <div class="tick">GAW.L</div>
-        <div class="coname">Games Workshop Group</div>
-        <div class="plat">II ISA &middot; 15 shares</div>
-        <div class="nums">
-          <div class="num"><div class="k">Price (Thu close)</div><div class="v">16,800p</div></div>
-          <div class="num"><div class="k">WoW</div><div class="v up">+6.06%</div></div>
-          <div class="num"><div class="k">Value</div><div class="v">&pound;2,520</div></div>
-          <div class="num"><div class="k">P&amp;L on book</div><div class="v up">+&pound;957 &middot; +63%</div></div>
-        </div>
-      </div>
-      <div class="hold-right">
-        <div class="chips"><span class="chip pos">UK consumer bid</span><span class="chip pos">FTSE rotation beneficiary</span></div>
-        <ul>
-          <li><b>Mon 9 Nov +3.85% to 16,450p</b>; <b>Wed 11 Nov +0.49% from Mon to 16,530p</b>; <b>Thu 12 Nov +1.63% to 16,800p</b> on UK consumer bid plus FTSE +0.25% rotation (the UK index absorbed the Huang shock through its defensive and consumer weights).</li>
-          <li>70p AGM dividend <b>ex approximately 13 November</b> (Friday &mdash; may already have gone ex), pay Fri 27 Nov = <b>&pound;10.50 to II ISA</b>. H1 results mid&#8209;January next catalyst.</li>
-        </ul>
-        <p class="read"><b>How this hits you</b>+&pound;144 on the week on 15 shares &mdash; the biggest percentage move in the UK direct sleeve. Position now approximately +63% on cost. <b>No action</b>; the structural insulation continues to work in UK defensive rotation setups, and H1 mid&#8209;January is the specific next test.</p>
-      </div>
+    <div class="bl">
+      <div class="bl-head"><span class="tick">GAW.L</span><span class="chip neu">Held up</span><span class="px">16,570p &middot; <span class="down">&minus;1.54%</span> &middot; &pound;2,486 &middot; <span class="up">+&pound;920 (+58.7%)</span></span></div>
+      <p>Games Workshop &middot; 15 sh. 16,890 Mon to 16,570 Fri, falling mostly on Friday (&minus;1.89%). There was no company news. The 70p dividend (&pound;10.50) is due to pay on 27 Nov, but I have not confirmed the ex-date.</p>
+      <p><b>How this hits you:</b> &minus;&pound;39. It did what it usually does in a drawdown. H1 results in mid-January are the next test.</p>
     </div>
+  </div>
 
-    <div class="hold">
-      <div class="hold-left">
-        <div class="tick">BRK-B</div>
-        <div class="coname">Berkshire Hathaway Class B</div>
-        <div class="plat">T212 General &middot; 16.23 shares</div>
-        <div class="nums">
-          <div class="num"><div class="k">Price (Thu close)</div><div class="v">$592.08</div></div>
-          <div class="num"><div class="k">WoW</div><div class="v up">+3.45%</div></div>
-          <div class="num"><div class="k">Value</div><div class="v">&pound;7,246</div></div>
-          <div class="num"><div class="k">P&amp;L on book</div><div class="v up">+&pound;821 &middot; +12%</div></div>
-        </div>
-      </div>
-      <div class="hold-right">
-        <div class="chips"><span class="chip pos">Fresh all&#8209;time high Thu</span><span class="chip pos">Huang&#8209;shock flight&#8209;to&#8209;quality</span></div>
-        <ul>
-          <li><b>Mon 9 Nov $576.63 +0.75%</b> after an intraday low ~$565.14; <b>Tue 10 Nov all&#8209;time&#8209;high close $583.34 +1.41%</b>; <b>Wed 11 Nov $579.95 &minus;0.58%</b> on Veterans Day bond holiday; <b>Thu 12 Nov $592.08 +2.09%</b> &mdash; <b>fresh all&#8209;time high</b> on Huang&#8209;shock flight&#8209;to&#8209;quality.</li>
-          <li>USD +3.45% WoW combined with GBP weakening &minus;0.79% gives GBP mark <b>+&pound;296 WoW</b>. Position now approximately +12% on cost.</li>
-          <li>UBS $628 target <b>6.1% above spot</b> (compressed from 10% last Friday as the price moved up). <b>Abel formally takes CEO on 1 January 2027</b> &mdash; 48 days away.</li>
-        </ul>
-        <p class="read"><b>How this hits you</b>+&pound;296 on the week on 16.23 shares &mdash; the single biggest WoW gainer on the confirmed perimeter (edging out GAW on absolute pounds). The Thursday ATH on a Huang&#8209;shock session validates the AI&#8209;chip&#8209;credit mirror thesis for the second week running. <b>Hold through the Abel transition stands.</b></p>
-      </div>
+  <h4 class="mini">T212 General</h4>
+  <div class="book">
+    <div class="bl">
+      <div class="bl-head"><span class="tick">BRK-B</span><span class="chip pos">Defensive, as designed</span><span class="px">$570.04 &middot; <span class="down">&minus;3.86%</span> &middot; &pound;7,071 &middot; <span class="up">+&pound;739 (+11.7%)</span></span></div>
+      <p>Berkshire Hathaway B &middot; 16.2316 sh &middot; NYSE. 592.85 Mon, 586.76 Tue, 574.62 Wed (&minus;2.07%, fell with the Dow), 572.39 Thu, 570.04 Fri (&minus;0.35% on a &minus;3.6% day). Abel becomes CEO on 1 Jan.</p>
+      <p><b>How this hits you:</b> &minus;&pound;214. It lost less than half as much as the S&amp;P. Of everything in the book, it most clearly worked as a hedge against the AI chain.</p>
     </div>
-
-    <div class="hold">
-      <div class="hold-left">
-        <div class="tick">DIDIY</div>
-        <div class="coname">DiDi Global ADR</div>
-        <div class="plat">T212 General &middot; 526.394 shares</div>
-        <div class="nums">
-          <div class="num"><div class="k">Price (Thu close)</div><div class="v">$3.33</div></div>
-          <div class="num"><div class="k">WoW</div><div class="v up">+9.54%</div></div>
-          <div class="num"><div class="k">Value</div><div class="v">&pound;1,322</div></div>
-          <div class="num"><div class="k">P&amp;L on book</div><div class="v down">&minus;&pound;165 &middot; &minus;11.1%</div></div>
-        </div>
-      </div>
-      <div class="hold-right">
-        <div class="chips"><span class="chip pos">JPMorgan PT raise</span><span class="chip pos">First upgrade since purchase</span></div>
-        <ul>
-          <li><b>Thursday: JPMorgan raised PT to $4.50 from $4.00</b> (held Neutral) &mdash; <b>first analyst upgrade since the position opened</b>.</li>
-          <li>Week arc: flat Mon/Tue around $3.04&ndash;3.08; Wed $3.37 +1.05%; Thu $3.33 &minus;1.19% (minor give&#8209;back after the upgrade pop). WoW <b>+9.54%</b> from $3.04.</li>
-          <li>Position specifically moved from <b>&minus;19.5% on cost last Friday to &minus;11.1% on Thursday</b> &mdash; an eight&#8209;point swing on the P&amp;L percentage in one week.</li>
-          <li><b>Q3 release Friday 27 November</b> next catalyst; US&ndash;China tariff truce expiry <b>Fri 10 January 2027</b> remains the second catalyst window.</li>
-        </ul>
-        <p class="read"><b>How this hits you</b>+&pound;124 on the week on 526.394 shares &mdash; the <b>first weekly review in which DIDIY has delivered a net positive mark since purchase</b>. Hold through Q3 Nov 27 catalyst or Q1 2027 US&ndash;China truce expiry.</p>
-      </div>
+    <div class="bl">
+      <div class="bl-head"><span class="tick">DIDIY</span><span class="chip neg">Gave back the upgrade</span><span class="px">$3.03 &middot; <span class="down">&minus;8.18%</span> &middot; &pound;1,219 &middot; <span class="down">&minus;&pound;281 (&minus;18.7%)</span></span></div>
+      <p>DiDi Global ADR &middot; 526.3939 sh &middot; OTC. It fell 3.6% Mon on the China October activity miss, then drifted. The Friday close is $3.03 (stockanalysis, &ldquo;at close&rdquo;), replacing the $3.00 delayed quote in Friday&rsquo;s brief. Q3 results are on Friday 27 Nov.</p>
+      <p><b>How this hits you:</b> &minus;&pound;96. Last week&rsquo;s JPMorgan-driven recovery is gone. It is a small line in a taxable account, and a loss here would be usable against Shell if that trim fires. Q3 is the catalyst.</p>
     </div>
+  </div>
 
+  <h4 class="mini">T212 ISA: six lines, &pound;4,292, &minus;12.4% on the week, &minus;13.3% on cost</h4>
+  <div class="book">
+    <div class="bl">
+      <div class="bl-head"><span class="tick">TSM</span><span class="chip neg">Chain sold</span><span class="px">$319.09 &middot; <span class="down">&minus;19.97%</span> &middot; &pound;889 &middot; <span class="down">&minus;&pound;211 (&minus;19.2%)</span></span></div>
+      <p>Taiwan Semiconductor ADR &middot; 3.6445 sh. 373.45 Mon (&minus;6.34%), 359.69 Tue, 362.62 Wed (rose as NVDA fell), 352.20 Thu, 319.09 Fri (&minus;9.37%, its worst day of the drawdown). October revenue +59.7% y/y has not changed. What changed is the multiple the market will pay for AI revenue while Nvidia&rsquo;s accounts are in question.</p>
+      <p><b>How this hits you:</b> &minus;&pound;211, the biggest pound loss in the sleeve. It is under 1% of the book.</p>
+    </div>
+    <div class="bl">
+      <div class="bl-head"><span class="tick">AMZN</span><span class="chip neg">Hyperscaler capex read</span><span class="px">$246.45 &middot; <span class="down">&minus;7.58%</span> &middot; &pound;862 &middot; <span class="down">&minus;&pound;55 (&minus;6.0%)</span></span></div>
+      <p>Amazon &middot; 4.5762 sh. 257.75 Mon, 257.89 Tue, 267.74 Wed (+3.82% into the ANT pricing), 257.18 Thu (&minus;3.94%), 246.45 Fri (&minus;4.24%). The Friday driver was the question over hyperscaler capex plans, not the ANT stake.</p>
+      <p><b>How this hits you:</b> &minus;&pound;62. You hold about &pound;2.5k more Amazon through the funds than in this line.</p>
+    </div>
+    <div class="bl">
+      <div class="bl-head"><span class="tick">LLY</span><span class="chip pos">Not traded as AI</span><span class="px">$1,347.53 &middot; <span class="down">&minus;6.65%</span> &middot; &pound;898 &middot; <span class="down">&minus;&pound;19 (&minus;2.1%)</span></span></div>
+      <p>Eli Lilly &middot; 0.8716 sh. Most of the week&rsquo;s loss came Tuesday and Wednesday in broad selling with no company news (1,415.55, then 1,382.75). It lost only 0.27% on Friday&rsquo;s rout. Last week&rsquo;s China orforglipron approval still stands.</p>
+      <p><b>How this hits you:</b> &minus;&pound;55. It is the only line in the sleeve that didn&rsquo;t trade with the AI chain, which is the diversification it was bought for.</p>
+    </div>
+    <div class="bl">
+      <div class="bl-head"><span class="tick">GEV</span><span class="chip neg">Priced as AI power</span><span class="px">$698.10 &middot; <span class="down">&minus;13.08%</span> &middot; &pound;733 &middot; <span class="down">&minus;&pound;122 (&minus;14.3%)</span></span></div>
+      <p>GE Vernova &middot; 1.3738 sh. 763.57 Mon (&minus;4.93%), 779.91 Tue (+2.14%, the only line up that day), 772.22 Wed, 756.41 Thu, 698.10 Fri (&minus;7.69%). No company news all week.</p>
+      <p><b>How this hits you:</b> &minus;&pound;102. The market is treating it as AI infrastructure, not as a grid name. Expect it to move with the chain until that changes.</p>
+    </div>
+    <div class="bl">
+      <div class="bl-head"><span class="tick">ASML</span><span class="chip neg">Chain sold</span><span class="px">$1,268.38 &middot; <span class="down">&minus;15.17%</span> &middot; &pound;681 &middot; <span class="down">&minus;&pound;113 (&minus;14.3%)</span></span></div>
+      <p>ASML, New York line (the T212 ISA holds the US listing, so this is the correct venue) &middot; 0.7025 sh. 1,406.79 Mon (&minus;5.91%), 1,383.11 Tue, 1,395.27 Wed, 1,356.84 Thu, 1,268.38 Fri (&minus;6.48%; Amsterdam about &minus;9% at the 17:30 CET close near the US low).</p>
+      <p><b>How this hits you:</b> &minus;&pound;114. Fidelity European holds roughly as much ASML again as this line.</p>
+    </div>
+    <div class="bl">
+      <div class="bl-head"><span class="tick">NVDA</span><span class="chip neg">Accounting question</span><span class="px">$125.85 &middot; <span class="down">&minus;22.72%</span> &middot; &pound;231 &middot; <span class="down">&minus;&pound;136 (&minus;37.1%)</span></span></div>
+      <p>Nvidia &middot; 2.3973 sh. 156.14 Mon, 155.46 Tue (beat after hours), 150.96 Wed, 146.06 Thu, 125.85 Fri. The full sequence is in s2. Mizuho cut its target to $220 and UBS to $240 on Monday. The House Foreign Affairs interviews are on 1&ndash;2 Dec, and the 10-Q is due around 4 Dec.</p>
+      <p><b>How this hits you:</b> &minus;&pound;65. This line is 0.14% of the book. If you would not buy it today at $125.85, selling it inside the ISA costs nothing in tax. If you are indifferent, holding through the 10-Q is fine. In either case, s5 is where the Nvidia risk actually sits.</p>
+    </div>
   </div>
 </section>
 
 <section id="s4">
   <h2><span class="no">4</span> Funds and ETFs</h2>
-  <p class="sub">Marked at Thursday 12 November catch&#8209;up estimates against the week's index moves. Actual single prices for OEIC NAVs publish Monday 16 November evening (Fundsmith, Royal London, Rathbone, Fidelity European, LifeStrategy, Global All Cap) and will capture both Thursday and Friday 13 November. ETF marks are approximate at Thursday close.</p>
-
-  <h4 class="mini">Market context &mdash; week to Thursday 12 November</h4>
-  <p class="sub">S&amp;P 500 approximately <b>+3.29% WoW</b> to 7,595.30, Nasdaq approximately <b>+4.2% WoW</b> (reversing most of last week&rsquo;s chip rout), FTSE 100 approximately <b>+1.80% WoW</b> to 10,863.09. US 10Y approximately 4.93%; UK 10Y approximately 5.20%; UK 30Y rebounded to 5.71% +7bp. GBP/USD closed Thursday 1.3263 (&minus;0.79% WoW).</p>
+  <p class="sub">Macro and structural tilt only. The ETFs are verified London closes. The OEICs are estimates (see the footnote under the figures) and will differ from what your platform shows: OEIC prices are struck around noon and lag the US by a session.</p>
 
   <div class="tscroll">
     <table>
-      <thead>
-        <tr><th>Fund / ETF</th><th>Account</th><th class="n">Approx MV</th><th class="n">WoW</th><th>Macro / structural read</th></tr>
-      </thead>
+      <thead><tr><th>Fund / ETF</th><th>Account</th><th class="n">MV</th><th class="n">WoW</th><th class="n">P&amp;L on cost</th><th>Tilt and this week&rsquo;s read</th></tr></thead>
       <tbody>
-        <tr>
-          <td><div class="fname">Royal London Global Equity Divers M Acc</div><div class="fmeta">OEIC &middot; single&#8209;NAV daily</div></td>
-          <td>II ISA</td>
-          <td class="n">&pound;20,765</td>
-          <td class="n up">+&pound;367</td>
-          <td>UK/global dividend tilt with ~2.70% NVDA, 3.00% MSFT. The NVDA weight took a Huang&#8209;shock hit Thursday; the UK financials and dividend&#8209;payers weight rallied on the UK duration bid. Approximate +1.8% WoW net.</td>
-        </tr>
-        <tr>
-          <td><div class="fname">Fidelity European W Acc</div><div class="fmeta">OEIC &middot; single&#8209;NAV daily</div></td>
-          <td>II ISA</td>
-          <td class="n">&pound;17,103</td>
-          <td class="n up">+&pound;203</td>
-          <td>Zero US large&#8209;cap tech &mdash; specifically insulated from Thursday&rsquo;s Huang shock. Approximate +1.2% WoW on European sympathetic bid plus modest chemicals/autos lift until Thursday&rsquo;s TTF spike unwound some of the input&#8209;cost relief.</td>
-        </tr>
-        <tr>
-          <td><div class="fname">Fundsmith Equity I Acc</div><div class="fmeta">OEIC &middot; single&#8209;NAV daily</div></td>
-          <td>II ISA</td>
-          <td class="n">&pound;15,967</td>
-          <td class="n up">+&pound;400</td>
-          <td>Quality&#8209;defensive factor &mdash; MSFT ~10% largest weight, Alphabet 6.1%, Stryker, IDEXX, L'Or&eacute;al. Approximate 4.5% NVDA weight took a &minus;11% drag on the Nvidia sleeve; MSFT and quality compounders carried the mark. Approximate +2.6% WoW net.</td>
-        </tr>
-        <tr>
-          <td><div class="fname">iShares Core MSCI World ETF USD Acc</div><div class="fmeta">SWDA &middot; GBX&#8209;quoted ETF daily</div></td>
-          <td>II ISA</td>
-          <td class="n">&pound;14,856</td>
-          <td class="n up">+&pound;430</td>
-          <td>~1,400 holdings &middot; US ~72%. Caught the full S&amp;P/Nasdaq rebound in real time, partially offset by Nvidia weight. Approximate +3.0% WoW; GBP weakness adds modest translation lift.</td>
-        </tr>
-        <tr>
-          <td><div class="fname">Vanguard FTSE Global All Cap Idx Acc</div><div class="fmeta">OEIC &middot; single&#8209;NAV daily</div></td>
-          <td>II General</td>
-          <td class="n">&pound;14,883</td>
-          <td class="n up">+&pound;363</td>
-          <td>~7,475 holdings &middot; US 58.3% &middot; NVDA+AAPL+MSFT ~10.9% &middot; UK home bias. Approximate +2.5% WoW on the sleeve &mdash; the UK home bias specifically cushioned the Nvidia weight.</td>
-        </tr>
-        <tr>
-          <td><div class="fname">Vanguard LifeStrategy 100% Equity A Acc</div><div class="fmeta">OEIC &middot; single&#8209;NAV daily (two lines across accounts)</div></td>
-          <td>II ISA + II General</td>
-          <td class="n">&pound;27,228</td>
-          <td class="n up">+&pound;534</td>
-          <td>FTSE 100 ~25% + global tracker core. Approximate +2.0% WoW; the FTSE outperformance on UK Q3 GDP in&#8209;line print specifically supported. The two LifeStrategy lines remain the single biggest sleeve by MV.</td>
-        </tr>
-        <tr>
-          <td><div class="fname">Rathbone Global Opportunities S Acc</div><div class="fmeta">OEIC &middot; single&#8209;NAV daily</div></td>
-          <td>II ISA</td>
-          <td class="n">&pound;13,590</td>
-          <td class="n up">+&pound;520</td>
-          <td>Growth tilt &mdash; sympathetic to Wednesday CoreWeave&#8209;led AI reflation and Thursday&rsquo;s non&#8209;Nvidia large&#8209;cap bid. Approximate +4.0% WoW &mdash; the single strongest fund&#8209;sleeve recovery versus last week&rsquo;s drawdown.</td>
-        </tr>
-        <tr>
-          <td><div class="fname">Vanguard S&amp;P 500 ETF USD Acc GBP</div><div class="fmeta">VUAG &middot; GBP&#8209;quoted ETF daily (two accounts)</div></td>
-          <td>II General + II ISA</td>
-          <td class="n">&pound;12,775</td>
-          <td class="n up">+&pound;410</td>
-          <td>Pure S&amp;P 500. Weekly S&amp;P +3.29% is the direct mark; GBP weakness adds modest translation lift. Combined VUAG across accounts remains the single largest ETF line.</td>
-        </tr>
-        <tr>
-          <td><div class="fname">Vanguard S&amp;P 500 UCITS ETF GBP</div><div class="fmeta">VUSA &middot; GBP&#8209;quoted ETF daily (distributing class)</div></td>
-          <td>II ISA</td>
-          <td class="n">&pound;2,522</td>
-          <td class="n up">+&pound;80</td>
-          <td>Same 500 companies, distributing share class. Consolidation into VUAG at no tax cost remains an open conversation but is non&#8209;urgent.</td>
-        </tr>
+        <tr><td><div class="fname">Vanguard LifeStrategy 100% A Acc</div><div class="fmeta">OEIC &middot; two lines &middot; est.</div></td><td>II ISA + II Gen</td><td class="n">&pound;25,630</td><td class="n down">&minus;&pound;1,435</td><td class="n up">+&pound;4,452</td><td>About 25% UK home bias plus global core. The UK weight helped a little, but the FTSE also fell about 5%. It is the largest sleeve by value. The II General line is +29% on cost.</td></tr>
+        <tr><td><div class="fname">Royal London Global Equity Divers M Acc</div><div class="fmeta">OEIC &middot; est.</div></td><td>II ISA</td><td class="n">&pound;19,487</td><td class="n down">&minus;&pound;1,091</td><td class="n up">+&pound;3,417</td><td>Diversified with a dividend tilt. Mega-cap tech weights are below index, so it should come in at the better end.</td></tr>
+        <tr><td><div class="fname">Fidelity European W Acc</div><div class="fmeta">OEIC &middot; est.</div></td><td>II ISA</td><td class="n">&pound;16,116</td><td class="n down">&minus;&pound;902</td><td class="n up">+&pound;1,246</td><td>No US tech, but it holds ASML, European banks and luxury. Stoxx 600 &minus;5.8%. It did not diversify the book this week.</td></tr>
+        <tr><td><div class="fname">Fundsmith Equity I Acc</div><div class="fmeta">OEIC &middot; est.</div></td><td>II ISA</td><td class="n">&pound;15,126</td><td class="n down">&minus;&pound;713</td><td class="n down">&minus;&pound;624</td><td>Quality factor. MSFT about 10% and Alphabet about 6% are the hyperscaler capex exposure. It is the only fund below cost, but this mark is the least reliable estimate in the table.</td></tr>
+        <tr><td><div class="fname">Vanguard FTSE Global All Cap Acc</div><div class="fmeta">OEIC &middot; est.</div></td><td>II General</td><td class="n">&pound;13,953</td><td class="n down">&minus;&pound;796</td><td class="n up">+&pound;1,675</td><td>Broad world including EM and small caps, about 60% US. Taiwan exposure (TSMC) fell with the chain.</td></tr>
+        <tr><td><div class="fname">iShares Core MSCI World (SWDA)</div><div class="fmeta">ETF &middot; 10,288p &middot; verified</div></td><td>II ISA</td><td class="n">&pound;13,889</td><td class="n down">&minus;&pound;810</td><td class="n up">+&pound;1,360</td><td>&minus;5.51% WoW (10,888 to 10,288p). About 72% US, developed markets only. The London close missed part of Friday&rsquo;s US fall.</td></tr>
+        <tr><td><div class="fname">Rathbone Global Opportunities S Acc</div><div class="fmeta">OEIC &middot; est.</div></td><td>II ISA</td><td class="n">&pound;12,554</td><td class="n down">&minus;&pound;873</td><td class="n up">+&pound;1,404</td><td>Growth and mid-cap tilt. In this tape it is the most likely to come in below my estimate.</td></tr>
+        <tr><td><div class="fname">Vanguard S&amp;P 500 Acc (VUAG)</div><div class="fmeta">ETF &middot; &pound;104.40 &middot; verified</div></td><td>II Gen + II ISA</td><td class="n">&pound;11,902</td><td class="n down">&minus;&pound;674</td><td class="n up">+&pound;2,718</td><td>&minus;5.37% in sterling against &minus;8.4% for the S&amp;P in dollars. The gap is the timing of the London close plus sterling&rsquo;s fall. Expect some catch-down on Monday.</td></tr>
+        <tr><td><div class="fname">Vanguard S&amp;P 500 Dist (VUSA)</div><div class="fmeta">ETF &middot; &pound;102.23 &middot; verified</div></td><td>II ISA</td><td class="n">&pound;2,351</td><td class="n down">&minus;&pound;133</td><td class="n up">+&pound;585</td><td>Same index as VUAG, distributing class. Consolidating into VUAG is still a tidy-up for some other time, not a trade.</td></tr>
+        <tr><td><div class="fname">Fund sleeve total</div></td><td></td><td class="n">&pound;131,008</td><td class="n down">&minus;&pound;7,427</td><td class="n up">+&pound;16,235</td><td>79.3% of the book. ETFs &minus;&pound;1,618 verified, OEICs about &minus;&pound;5.8k estimated.</td></tr>
       </tbody>
     </table>
   </div>
-
-  <p class="sub">T212 ISA still holds no fund or ETF lines after the Fri 6 Nov redeployment &mdash; the six new positions are all direct equity rather than thematic ETFs. Fund&#8209;sleeve total approximately <b>&pound;139.7k</b> Thursday against <b>&pound;136.4k</b> Fri 6 Nov anchor = <b>+&pound;3,307 WoW</b>.</p>
+  <p>The structural point this week: <b>the funds are where the book&rsquo;s AI risk sits, and they are also the costliest place to act.</b> The three Vanguard lines in II General sit on low book costs, so any reduction there is a CGT event, and making one on the first week of a correction ahead of a binary 10-Q would be the worst possible timing. The cheap wrappers (the T212 ISA) hold the small positions. This is the same asymmetry noted before, and this week it was the asymmetry that mattered.</p>
 </section>
 
 <section id="s5">
-  <h2><span class="no">5</span> Look&#8209;through concentration</h2>
-  <p class="sub">The confirmed direct dollar lines are still BRK&#8209;B and DIDIY only; everything else US runs through fund NAVs. The six Friday 6 Nov T212 ISA buys have now moved materially for a full week and sizing them matters more by the session. Pending share counts, this table is still the pre&#8209;confirmation state.</p>
+  <h2><span class="no">5</span> Look-through concentration</h2>
+  <p class="sub">Single-company exposure across direct lines and fund holdings, at Friday marks. This is the most useful table in the review: the direct lines show a fraction of the real exposure.</p>
 
   <div class="tscroll">
     <table>
-      <thead>
-        <tr><th>Company</th><th class="n">Direct exposure</th><th class="n">Indirect (fund look&#8209;through)</th><th class="n">Total</th><th>Change vs last Saturday&rsquo;s review</th></tr>
-      </thead>
+      <thead><tr><th>Company</th><th class="n">Direct</th><th class="n">Via funds</th><th class="n">Total</th><th class="n">% of book</th><th>Read</th></tr></thead>
       <tbody>
-        <tr>
-          <td><b>Microsoft (MSFT)</b></td>
-          <td class="n">&pound;0</td>
-          <td class="n">~&pound;5,200</td>
-          <td class="n">~&pound;5,200</td>
-          <td>Indirect via Fundsmith (~10% largest weight), global trackers, Royal London 3.00%. Approximately +&pound;100 WoW on the fund NAV rebound.</td>
-        </tr>
-        <tr>
-          <td><b>Alphabet (GOOGL)</b></td>
-          <td class="n">&pound;0</td>
-          <td class="n">~&pound;3,500</td>
-          <td class="n">~&pound;3,500</td>
-          <td>No direct line (not in the Fri 6 Nov re&#8209;initiations). Indirect only through Fundsmith 6.1% and global trackers. Approximately +&pound;100 WoW.</td>
-        </tr>
-        <tr>
-          <td><b>Apple (AAPL)</b></td>
-          <td class="n">&pound;0</td>
-          <td class="n">~&pound;3,200</td>
-          <td class="n">~&pound;3,200</td>
-          <td>Indirect via VUAG/VUSA + global trackers + Vanguard All Cap. Apple held through the week &mdash; BRK&#8209;B&rsquo;s 22% Apple weight specifically worked for the position as BRK&#8209;B hit a new ATH.</td>
-        </tr>
-        <tr>
-          <td><b>NVIDIA (NVDA)</b></td>
-          <td class="n">pending</td>
-          <td class="n">~&pound;3,200</td>
-          <td class="n">pending</td>
-          <td><b>Direct line approximately &minus;11.4% vs $185.22 entry</b> after Huang resigned Thursday. Indirect sleeve took approximately an &minus;11% drag on the Nvidia weight across SWDA, Global All Cap, Fundsmith (~4.5%), Royal London (2.70%). Nvidia 5Y CDS data pre&#8209;Huang was <b>139bp</b>; not yet reconciled post&#8209;resignation. <b>Q3 FY27 Monday 17 November</b> under Kress&#8209;as&#8209;interim&#8209;CEO.</td>
-        </tr>
-        <tr>
-          <td><b>Amazon (AMZN)</b></td>
-          <td class="n">pending</td>
-          <td class="n">~&pound;2,500</td>
-          <td class="n">pending</td>
-          <td>Direct line approximately <b>+6.0% vs $251 entry</b>; Thu close $266.17 &minus;1.05%. Indirect via trackers.</td>
-        </tr>
-        <tr>
-          <td><b>Taiwan Semiconductor (TSM)</b></td>
-          <td class="n">pending</td>
-          <td class="n">~&pound;1,850</td>
-          <td class="n">pending</td>
-          <td>Direct line Thursday close $405.56 &minus;2.14%. <b>TSMC October revenue NT$586.9bn ($17.88bn) +59.7% YoY</b> released Monday AMC lifted Wed +3.80% before Thu Nvidia read&#8209;through. Indirect via SWDA / Vanguard All Cap.</td>
-        </tr>
-        <tr>
-          <td><b>Eli Lilly (LLY)</b></td>
-          <td class="n">pending</td>
-          <td class="n">~&pound;1,750</td>
-          <td class="n">pending</td>
-          <td>Direct line approximately <b>+6.6% vs Mon $1,356 anchor</b>. <b>Intraday new all&#8209;time high $1,460 Thursday</b> on China orforglipron approval. Market cap now specifically matches Berkshire at ~$1.1T. Indirect via Fundsmith / global trackers.</td>
-        </tr>
-        <tr>
-          <td><b>ASML Holding (ASML)</b></td>
-          <td class="n">pending</td>
-          <td class="n">~&pound;870</td>
-          <td class="n">pending</td>
-          <td>Direct line approximately <b>+7.7% vs $1,424 entry</b> &mdash; the <b>strongest new&#8209;position gain</b> in the sleeve. Thu close $1,534.24 +1.75%. Held through Huang shock; probe stopped at Huang, not the broader chip stack. Indirect via Fidelity European.</td>
-        </tr>
-        <tr>
-          <td><b>GE Vernova (GEV)</b></td>
-          <td class="n">pending</td>
-          <td class="n">~&pound;360</td>
-          <td class="n">pending</td>
-          <td>Direct line approximately <b>+6.6% vs ~$774 Mon anchor</b>. Thu intraday ~$825 +1.9% (close uncertain). JPMorgan trimmed PT $1,035 to $1,000 (held Overweight). Thin indirect via SWDA / VUAG.</td>
-        </tr>
+        <tr><td><div class="fname">Microsoft</div></td><td class="n">&pound;0</td><td class="n">~&pound;5,120</td><td class="n">~&pound;5,120</td><td class="n">3.1%</td><td>Largest single name. Fundsmith (about 10%) carries more than a third of it.</td></tr>
+        <tr><td><div class="fname">Alphabet</div></td><td class="n">&pound;0</td><td class="n">~&pound;4,310</td><td class="n">~&pound;4,310</td><td class="n">2.6%</td><td>Fundsmith about 6%, plus the trackers.</td></tr>
+        <tr><td><div class="fname">NVIDIA</div></td><td class="n">&pound;231</td><td class="n">~&pound;4,050</td><td class="n">~&pound;4,280</td><td class="n">2.6%</td><td><b>About 18 times the direct line.</b> Another 20% fall in NVDA costs about &pound;860, of which &pound;46 is the line you can see.</td></tr>
+        <tr><td><div class="fname">Apple</div></td><td class="n">&pound;0</td><td class="n">~&pound;3,960</td><td class="n">~&pound;3,960</td><td class="n">2.4%</td><td>Includes about &pound;350 through BRK-B&rsquo;s stake.</td></tr>
+        <tr><td><div class="fname">Amazon</div></td><td class="n">&pound;862</td><td class="n">~&pound;2,510</td><td class="n">~&pound;3,370</td><td class="n">2.0%</td><td>The direct line is about a quarter of the total.</td></tr>
+        <tr><td><div class="fname">Eli Lilly</div></td><td class="n">&pound;898</td><td class="n">~&pound;870</td><td class="n">~&pound;1,770</td><td class="n">1.1%</td><td>About half direct.</td></tr>
+        <tr><td><div class="fname">ASML</div></td><td class="n">&pound;681</td><td class="n">~&pound;1,000</td><td class="n">~&pound;1,700</td><td class="n">1.0%</td><td>Mostly through Fidelity European.</td></tr>
+        <tr><td><div class="fname">TSMC</div></td><td class="n">&pound;889</td><td class="n">~&pound;550</td><td class="n">~&pound;1,450</td><td class="n">0.9%</td><td>Taiwan is EM, so SWDA and VUAG hold none. It comes through Global All Cap, LifeStrategy and Royal London.</td></tr>
       </tbody>
     </table>
   </div>
-
-  <p class="sub">Total hyperscaler + chip + supply&#8209;chain look&#8209;through across the four largest names (MSFT + NVDA + GOOGL + AAPL) on the confirmed perimeter: approximately <b>&pound;15,100</b>, or <b>~9%</b> of confirmed MV. The Friday 6 November buys continue to sit outside this count pending share confirmation &mdash; once confirmed, this table will finally flip materially and the direct/indirect split on NVDA, AMZN, ASML and TSM can be computed.</p>
+  <p><b>Four-name total (MSFT, NVDA, GOOGL, AAPL): about &pound;17.7k, or 10.7% of the book.</b> Adding Amazon makes it about &pound;21.0k, 12.7%. Total US equity look-through is about &pound;75&ndash;80k, roughly half the book. On that base, the 8.4% fall in the S&amp;P is most of this week&rsquo;s loss.</p>
+  <p><b>Method, and a change from last week.</b> The weights are approximate. Fundsmith&rsquo;s and Royal London&rsquo;s come from their published top tens as carried in earlier reviews. The tracker weights are scaled from current index weights, adjusted for Nvidia&rsquo;s fall. Rathbone&rsquo;s are a guess. Treat each row as &plusmn;15%. Last week&rsquo;s table (MSFT &pound;5.2k, GOOGL &pound;3.5k, AAPL &pound;3.2k, NVDA &pound;3.2k indirect) left the trackers&rsquo; mega-cap weights largely out. The NVDA indirect figure rising while the stock fell 23% reflects that re-estimate, not new buying. Factsheet weights for the six OEICs would tighten this a lot. If you can pull them from your II account, please send them.</p>
 </section>
 
 <section id="s6">
   <h2><span class="no">6</span> The week ahead</h2>
-  <p class="sub">Monday 17 November is the <b>Nvidia Q3 FY27 release under Kress&#8209;as&#8209;interim&#8209;CEO</b> &mdash; the single forcing event for the T212 ISA NVDA line and specifically the first Nvidia call without Jensen Huang on the line since the company went public in 1999. Wednesday is UK CPI (BoE&rsquo;s last pre&#8209;December data point). Friday is global flash PMIs. Budget is now 12 days away.</p>
+  <p class="sub">A holiday-shortened US week. The order matters: Troll and the PMIs on Monday, a thin Thanksgiving tape, then a crowded Friday for the book before OPEC+ on Sunday.</p>
 
   <div class="cal">
     <div class="day">
-      <div class="dname">Sunday 15 November</div>
+      <div class="dname">Saturday&ndash;Sunday 21&ndash;22 November</div>
       <ul>
-        <li>Late&#8209;weekend prep for Monday Nvidia Q3.</li>
+        <li><b>Troll</b> stated return date was 21 Nov (Prestige). If it is back, 40&ndash;50 mcm/d returns just as the cold spell arrives. That is bearish NBP and supportive for Shell only through TTF, where there is plenty of headroom.</li>
+        <li>Two US LNG cargoes due into Milford Haven on 21 Nov.</li>
       </ul>
     </div>
     <div class="day key">
-      <div class="dname">Monday 17 November <span>&mdash; Nvidia Q3 FY27 under Kress</span></div>
+      <div class="dname">Monday 23 November <span>&mdash; PMIs, catch-down, Brent vs $90</span></div>
       <ul>
-        <li><b>Nvidia Q3 FY27 release AMC</b> &mdash; FIRST ever release under an interim CEO. $108bn &plusmn;2% revenue guide was Huang&#8209;authored; Kress is the voice on the FY28 framing. The specific trim trigger shifts from &ldquo;Huang language shifts toward transition&rdquo; (satisfied already) to &ldquo;<b>Kress withdraws FY28 revenue framing or Q3 misses by more than 200bp</b>.&rdquo; Pending T212 ISA share count the position sizing cannot be confirmed before Monday&rsquo;s close.</li>
-        <li><b>OEIC single&#8209;NAV catch&#8209;up</b> Monday evening marks capture Thursday 12 Nov and Friday 13 Nov together across the Fundsmith / Royal London / LifeStrategy / Global All Cap / Rathbone / Fidelity European sleeve.</li>
+        <li><b>Flash PMIs</b> for the euro area, UK and US. Consensus: EZ composite 51.1, UK services 52.5, US composite 55.6. A weak US print on top of the AI sell-off strengthens the case for a smaller Fed hike.</li>
+        <li><b>London open catch-down</b> on VUAG/VUSA/SWDA for the part of Friday&rsquo;s US fall they missed, and <b>OEIC prices</b> in the evening carrying Friday. This is when the &minus;&pound;5.8k OEIC estimate gets tested.</li>
+        <li><b>Brent settle against $90.00</b> ($2.57 cushion). A settle below it trims Shell by 25% (about 49 shares) at the next session.</li>
+        <li>Nvidia: any SEC or company statement, or update on the 10-Q timing.</li>
       </ul>
     </div>
     <div class="day">
-      <div class="dname">Tuesday 18 November</div>
+      <div class="dname">Tuesday 24 &ndash; Wednesday 25 November</div>
       <ul>
-        <li><b>US retail sales October</b> &mdash; post&#8209;shutdown catch&#8209;up print; tests consumer momentum against the hot NFP.</li>
-        <li>UK DMO gilt syndication window &mdash; relevant to the UKW duration path and GSK pharma&#8209;defensive rotation.</li>
+        <li>The US usually releases a block of data before Thanksgiving. I have not verified this year&rsquo;s calendar, which may have shifted after the shutdown.</li>
+        <li>Thin, pre-holiday liquidity in US equities and crude. Friday&rsquo;s Brent short-covering was positioning for this.</li>
+      </ul>
+    </div>
+    <div class="day">
+      <div class="dname">Thursday 26 November <span>&mdash; US Thanksgiving</span></div>
+      <ul>
+        <li>NYSE closed, Friday half day. London is open on the US Thursday close of Wednesday.</li>
       </ul>
     </div>
     <div class="day key">
-      <div class="dname">Wednesday 19 November</div>
+      <div class="dname">Friday 27 November <span>&mdash; four book items in one day</span></div>
       <ul>
-        <li><b>UK CPI October</b> &mdash; BoE&rsquo;s last pre&#8209;December data point. The hike path to 4.25% peak was framed on a Q2 2027 CPI forecast of ~5%; the October print specifically tests whether the staff forecast is tracking.</li>
-        <li>US housing starts.</li>
+        <li><b>Shell dividend currency election closes 11:00 GMT.</b> Check your II General default.</li>
+        <li><b>UKW &pound;236.82 + GAW &pound;10.50</b> pay into the II ISA.</li>
+        <li><b>DiDi Q3</b> results. It is the first catalyst for DIDIY since purchase, and the line is &minus;18.7%.</li>
+        <li>Torness planned outage starts, keeping the prompt UK power premium.</li>
       </ul>
     </div>
-    <div class="day">
-      <div class="dname">Thursday 20 November</div>
+    <div class="day key">
+      <div class="dname">Sunday 29 November <span>&mdash; OPEC+</span></div>
       <ul>
-        <li>US weekly jobless claims.</li>
-        <li>ECB account of October meeting; Eurozone consumer confidence.</li>
-      </ul>
-    </div>
-    <div class="day">
-      <div class="dname">Friday 21 November</div>
-      <ul>
-        <li><b>UK retail sales October</b>.</li>
-        <li><b>Global flash PMIs</b> (UK / Eurozone / US).</li>
-        <li><b>Saturday 22 Nov</b> is the next weekly review.</li>
+        <li>OPEC+ ministerial sets 2027 policy and reviews capacity. It is the largest scheduled risk to Shell&rsquo;s Brent leg and lands before Monday&rsquo;s settle.</li>
       </ul>
     </div>
   </div>
 
-  <h4 class="mini">Later&#8209;dated items</h4>
   <div class="later">
-    <div class="lcard"><div class="when">Wed 26 Nov</div><div class="what">UK Autumn Budget &mdash; Reeves</div><div class="why">12 days from today. The specific UK duration event. Fiscal shortfall approximately &pound;25bn vs expected headroom approximately &pound;15bn. Direct touch on UKW and the UK ISA sleeve.</div></div>
-    <div class="lcard"><div class="when">Fri 27 Nov</div><div class="what">UKW + GAW dividend payment</div><div class="why">&pound;236.82 UKW + &pound;10.50 GAW = <b>&pound;247.32 cash</b> to II ISA.</div></div>
-    <div class="lcard"><div class="when">Fri 27 Nov</div><div class="what">DiDi Q3 release</div><div class="why">First DIDIY catalyst since purchase. Thursday&rsquo;s JPMorgan upgrade pulled the line to approximately &minus;11.1% on cost from &minus;19.5% in one week.</div></div>
-    <div class="lcard"><div class="when">Wed 9 Dec</div><div class="what">WCfD consultation closes</div><div class="why">Specific window for UKW capital&#8209;allocation decision on WCfD opt&#8209;in.</div></div>
-    <div class="lcard"><div class="when">Wed 17 Dec</div><div class="what">BoE December MPC</div><div class="why">Tests whether 4.25% is the peak. OIS prices approximately 62% probability of another 25bp hike.</div></div>
-    <div class="lcard"><div class="when">1 Jan 2027</div><div class="what">Abel formally takes CEO at Berkshire</div><div class="why">48 days away. First full Abel&#8209;era Annual Letter late February 2027.</div></div>
-    <div class="lcard"><div class="when">Fri 10 Jan 2027</div><div class="what">US&ndash;China tariff truce expiry</div><div class="why">Reaches DIDIY directly and the dollar&#8209;earner slice of every global tracker.</div></div>
-    <div class="lcard"><div class="when">Late Jan 2027</div><div class="what">Shell Q4 2026 results</div><div class="why">$5bn buyback programme completes. CGT&#8209;on&#8209;gain gate re&#8209;assessed. Also GSK FY results and Alphabet Q4 call (first 2027 capex guide).</div></div>
+    <div class="lcard"><div class="when">Tue 1 &ndash; Wed 2 Dec</div><div class="what">Huang, then Nvidia&rsquo;s general counsel, before House Foreign Affairs</div><div class="why">The export-control thread. The EU Energy Council on German storage flexibility is the same week.</div></div>
+    <div class="lcard"><div class="when">~Fri 4 Dec</div><div class="what">Nvidia 10-Q deadline</div><div class="why">The first hard data point on the accounting question. An NT 10-Q would be a separate negative event. US payrolls are the same day.</div></div>
+    <div class="lcard"><div class="when">Wed 9 Dec</div><div class="what">FOMC; WCfD consultation closes</div><div class="why">25bp is fully priced and Waller wants 50bp. WCfD is the UKW decision.</div></div>
+    <div class="lcard"><div class="when">Thu 17 Dec</div><div class="what">BoE December MPC</div><div class="why">About 80% priced for a hike. This is the UK duration event for UKW, now that the Budget has already happened.</div></div>
+    <div class="lcard"><div class="when">Mon 21 Dec</div><div class="what">Shell Q3 dividend pays</div><div class="why">About &pound;58 on 195 shares.</div></div>
+    <div class="lcard"><div class="when">1 Jan 2027</div><div class="what">Abel becomes Berkshire CEO</div><div class="why">BRK-B has been the best hedge in the book through this drawdown.</div></div>
+    <div class="lcard"><div class="when">Late Jan 2027</div><div class="what">Shell Q4, GSK FY, GAW H1 (mid-Jan)</div><div class="why">The thesis tests for the three largest UK direct lines.</div></div>
   </div>
 </section>
 
 <section id="s7">
-  <h2><span class="no">7</span> What I could not verify</h2>
-
+  <h2><span class="no">7</span> Open questions and what I could not verify</h2>
   <div class="note">
-    <div class="lab">Flagged for you</div>
-    <ul>
-      <li><b>Friday 13 November closes</b> are not yet captured in the price snapshot or in a daily brief. Direct&#8209;equity marks and the headline WoW are measured <b>Thursday 12 November close against Friday 6 November close</b>. If Friday 13 Nov moved the book materially (either way), the figures in this review will need adjustment; the pattern across the week suggests the direction of risk is modest.</li>
-      <li><b>T212 ISA six&#8209;position Fri 6 Nov redeployment:</b> share counts and book costs still not filled in on <code>holdings_changes.md</code> or in <code>holdings.numbers</code> &mdash; second consecutive weekly review flagging this. The review continues to treat the sleeve as excluded from the headline figures and flags the six names (NVDA, AMZN, ASML, GEV, TSM, LLY) at the top. <b>Please confirm &mdash; the sooner the shares land, the sooner the NVDA line can be sized ahead of Monday&rsquo;s Q3 call.</b></li>
-      <li><b>OEIC NAVs for Thursday 12 November and Friday 13 November:</b> all six OEIC lines marked at Thursday catch&#8209;up estimates. Actual single prices publish Monday 16 November evening and will capture both Thursday and Friday together. Expect a reconciliation delta of up to <b>&plusmn;&pound;500</b> on the fund&#8209;sleeve total.</li>
-      <li><b>GEV Thursday 12 November close</b> is an intraday 1:22 pm ET read of approximately $825; the full session close was not captured in the Thursday brief. Line percentage versus Monday anchor approximate.</li>
-      <li><b>TSM Friday 6 November entry close</b> is not captured in the prior&#8209;week daily brief source material; line direction is positive Thursday vs entry but the percentage pending. Please confirm the entry price when the T212 ISA shares are confirmed.</li>
-      <li><b>Mon 9 Nov anchor correction</b> for UKW (to 120.80p, not the 122.00p directional previously carried) and GSK (to ~1,890p, not the 1,904.50p directional) came through in the Monday brief. The on&#8209;cost percentages carry those re&#8209;anchored values.</li>
-      <li><b>Nvidia 5Y CDS</b> last captured at 139bp Friday 6 November; the post&#8209;Huang&#8209;resignation level is not yet reconciled. The credit tape response to the resignation and the Monday Q3 is specifically the next data point to watch beyond the equity close.</li>
-      <li><b>Look&#8209;through single&#8209;name exposure</b> for Rathbone, LifeStrategy, Global All Cap and SWDA beyond published top&#8209;tens remains approximate; the nine&#8209;name concentration carries roughly <b>&plusmn;10%</b>.</li>
-    </ul>
+    <p class="lab">Questions for you, most urgent first</p>
+    <p><b>1. CGT exempt amount left in II General this tax year.</b> This is the sixth time I have asked. The Shell trim is one Brent settle away and would realise about &pound;1,060.</p>
+    <p><b>2. Shell dividend currency election</b>, which closes at 11:00 GMT on Friday.</p>
+    <p><b>3. Shell book cost</b> (&pound;13.85 a share): confirm no earlier partial sale is still sitting in it.</p>
+    <p><b>4. T212 ISA book-cost basis</b>: the implied entry prices are 6&ndash;10% above the trade prices.</p>
+    <p><b>5. A numeric leg-3 threshold</b> for Shell ($55/bbl crack for three sessions was proposed).</p>
+    <p><b>6. OEIC prices and factsheet top-ten weights</b> from your II account, which would replace the two weakest numbers in this review.</p>
   </div>
+  <ul>
+    <li><b>All six OEIC marks are estimates.</b> No NAV source was reachable. The values roll last week&rsquo;s (also estimated) Thursday marks forward on index proxies. The OEIC total of about &pound;102.9k is &plusmn;&pound;1.5k on the level and the week.</li>
+    <li><b>SMH book-cost check</b> from CLAUDE.md no longer applies: SMH.L was sold on 29 Oct.</li>
+    <li>The <b>Shell Friday close</b> is reported exactly unchanged at 3,574.5p after a 3,435&ndash;3,587.5p range. Please confirm it on your platform.</li>
+    <li>The <b>Brent Friday settle</b> ($92.57) comes from one secondary report. It is consistent with CNBC&rsquo;s $92.22 after the settlement window. The $90.06 low is a CFD print, not an ICE low.</li>
+    <li><b>GBP/USD</b> 1.3086: Pound Sterling Live shows 1.3085&ndash;1.3086 for Friday and may still be intraday. The difference is immaterial.</li>
+    <li>The <b>GAW ex-dividend date</b> and therefore the &pound;10.50 receivable are not confirmed.</li>
+    <li><b>Look-through weights</b> are &plusmn;15% per row (method in s5).</li>
+    <li>The <b>US calendar for Tue&ndash;Wed 24&ndash;25 Nov</b> has not been verified.</li>
+    <li><b>Project paths:</b> <code>scripts/</code> is a symlink to <code>app/brief/scripts</code>, so the build script resolves the repo as <code>app/brief/</code>. I wrote this review to <code>investment/portfolio review/</code> by absolute path so it sits with the rest of the series. Tell me if the reviews should live in <code>app/brief/</code> instead.</li>
+  </ul>
 </section>
 
 <footer>
   <h4>Sources</h4>
   <ul>
-    <li><b>Direct equity closes:</b> London Stock Exchange / AJ Bell for GBX lines (SHEL, GSK, UKW, GAW); NYSE for BRK&#8209;B, LLY, GEV; Nasdaq for AMZN, ASML, NVDA; OTC Markets for DIDIY. All Thursday 12 November 2026 close marks on native venue; Friday 13 November not yet captured.</li>
-    <li><b>Nvidia 8&#8209;K Thursday 12 November:</b> Jensen Huang resigned as President, CEO and board member effective immediately; Colette Kress Interim CEO retaining CFO; Harvey C. Jones first&#8209;ever separate Chair. Q3 FY27 release Monday 17 November under Kress.</li>
-    <li><b>Analyst actions on NVDA Thursday:</b> Truist Hold $174 PT; Craig&#8209;Hallum Hold $180 PT; Citi cut PT $285 to $225.</li>
-    <li><b>LLY orforglipron approval:</b> China medicine regulator approved GLP&#8209;1 obesity pill Thursday 12 November; intraday new ATH $1,460; market cap approximately $1.1T.</li>
-    <li><b>DIDIY analyst action:</b> JPMorgan raised PT to $4.50 from $4.00 (Neutral) &mdash; first analyst upgrade since position opened.</li>
-    <li><b>TSMC October revenue:</b> NT$586.9bn ($17.88bn) +59.7% YoY released Monday 10 November AMC.</li>
-    <li><b>Macro:</b> UK ONS Q3 preliminary GDP +0.7% QoQ / +1.9% YoY Thursday 12 November 07:00 release; US CPI October +0.4% headline / +0.3% core Tuesday 10 November; US jobless claims 200k Thursday 12 November; BoE November MPR peak path approximately 4.25%; CME FedWatch December Fed hike probability 88.8% (25bp) / 11.2% (50bp).</li>
-    <li><b>Energy / gas:</b> ICE TTF front&#8209;month Thursday 12 November approximately &euro;93.45/MWh (+7.84% on day, biggest since Visund platform fire); UK NBP approximately 225p/therm; EU gas storage AGSI+ approximately 71.3% aggregate / Germany approximately 57.7%; Qatar force majeure extended to 29 December 2026.</li>
-    <li><b>Hormuz escalation:</b> Iran Revolutionary Guards Navy Wed 11 Nov two supertankers mined; Thu 12 Nov four more tanker strikes claimed plus Omani island navigation systems; November running total approximately 41 attacks. Trump Truth Social Thu 12 Nov &ldquo;we&rsquo;ve got their Strait&rdquo; killed the Doha mediator channel.</li>
-    <li><b>OEIC NAV estimates:</b> indicative; actual single prices from Hargreaves Lansdown / Trustnet / Fundsmith factsheet will reprint Monday 16 November evening to capture Thursday and Friday together.</li>
-    <li><b>Prior review:</b> <code>portfolio review/portfolio_review_2026-11-07.html</code>. Daily briefs for 9, 11 and 12 November 2026 synthesised in sequence.</li>
-    <li><b>Changes log:</b> <code>holdings_changes.md</code> &mdash; six T212 ISA positions executed Friday 6 November (NVDA, AMZN, ASML, GEV, TSM, LLY) still pending share and cost confirmation.</li>
+    <li><b>Holdings:</b> <code>holdings.numbers</code> via <code>scripts/read_holdings.py</code> (23 lines, &pound;143,701.09); <code>holdings_changes.md</code>.</li>
+    <li><b>Closes, Fri 20 and Fri 13 Nov:</b> stockanalysis.com daily history: LSE SHEL, UKW, GSK, GAW, SWDA, VUAG, VUSA; NYSE/Nasdaq BRK.B, NVDA, AMZN, ASML, TSM, LLY, GEV; OTC DIDIY. Fri 13 Nov direct closes as recorded in <code>price_history/prices_2026-11-16.json</code>; ETF and DIDIY Fri 13 closes re-fetched today.</li>
+    <li><b>GBP/USD:</b> Pound Sterling Live daily table (1.3211 on 13 Nov, 1.3086 on 20 Nov).</li>
+    <li><b>Nvidia:</b> Reuters (via Investing.com and others) on the SEC accounting inquiry, 20 Nov; WSJ via <a href="https://pymnts.com/legal/2026/sec-investigating-whether-nvidia-misled-investors">PYMNTS</a> and <a href="https://www.investmentnews.com/equities/embattled-nvidia-faces-sec-probe-as-california-attorney-general-mulls-action/269054">InvestmentNews</a> on the SEC civil probe and California AG, 17 Nov; Q3 FY27 release and call coverage, 17&ndash;18 Nov; 10-Q timing per FourWeekMBA/UBS as cited in the dailies.</li>
+    <li><b>Oil, gas, UK rates, PMIs, ANT, AMD:</b> as sourced in the daily briefs of 16&ndash;20 Nov 2026 (Reuters, CNBC, Newsquawk, rallies.ai, Trading Economics, Prestige energy reports, ONS, FXStreet, Orbex). This review synthesises those briefs and the 14 Nov review.</li>
+    <li><b>Not reachable:</b> FT fund tearsheets (blocked), HL fund search (JavaScript-only), Trustnet (404). Argus, ICIS, Kpler and S&amp;P Global are not available to me, and no figure here comes from them.</li>
   </ul>
-  <p class="disc">This review is a snapshot of a personal investment portfolio for the author's own planning. It is <b>not financial advice</b>, is not a solicitation to buy or sell securities, and does not account for your personal circumstances, tax position, time horizon or risk tolerance. Prices and dividends mentioned are historical and may not reflect current market conditions. Where marks are approximate, the uncertainty is flagged inline. Always verify any numbers against your own platform statements and consult an authorised adviser before acting.</p>
+  <p class="disc">This is an automated summary for personal use and not financial advice. Prices come from web searches of reported closes, not exchange tapes. Settles are single-source press reads where stated, OEIC values are estimates, and look-through exposures are approximations. Reconcile figures against your own platform before acting.</p>
 </footer>
 
 </div>
